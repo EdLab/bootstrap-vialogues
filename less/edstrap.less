@@ -1,0 +1,199 @@
+// Define all modules that will override default bootstrap values
+
+// Core variables and mixins
+
+@static-url: "../..";
+
+@font-face {
+  font-family: 'News Gothic BT';
+  src: url('@{static-url}/webfonts/eot/style_134188.eot'), /* IE9 */
+     url('@{static-url}/webfonts/eot/style_134188.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+     url('@{static-url}/webfonts/woff/style_134188.woff') format('woff'), /* Modern Browser */
+     url('@{static-url}/webfonts/ttf/style_134188.ttf') format('truetype'), /* Safari, Android, iOS */
+     url('@{static-url}/webfonts/svg/style_134188.svg#NewsGothicBT-Reg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'News Gothic BT Condensed';
+  src: url('@{static-url}/webfonts/eot/style_134169.eot'),
+     url('@{static-url}/webfonts/eot/style_134169.eot?#iefix') format('embedded-opentype'),
+     url('@{static-url}/webfonts/woff/style_134169.woff') format('woff'),
+     url('@{static-url}/webfonts/ttf/style_134169.ttf') format('truetype'),
+     url('@{static-url}/webfonts/svg/style_134169.svg#NewsGothicCnBT-Reg') format('svg');
+}
+
+@font-face {
+  font-family: 'vialogues';
+  src: url('@{static-url}/webfonts/eot/vialogues.eot?10270553'),
+       url('@{static-url}/webfonts/eot/vialogues.eot?10270553#iefix') format('embedded-opentype'),
+       url('@{static-url}/webfonts/woff/vialogues.woff?10270553') format('woff'),
+       url('@{static-url}/webfonts/ttf/vialogues.ttf?10270553') format('truetype'),
+       url('@{static-url}/webfonts/svg/vialogues.svg?10270553#vialogues') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+  cursor: pointer;
+}
+ 
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "vialogues";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-rss:before { content: '\e802'; } 
+.icon-facebook:before { content: '\e803'; }
+.icon-gplus:before { content: '\e801'; }
+.icon-twitter:before { content: '\e81b'; }
+.icon-email:before { content: '\e804'; }
+.icon-up:before { content: '\e815'; } 
+.icon-down:before { content: '\e814'; } 
+.icon-pencil:before { content: '\e808'; } 
+.icon-star:before { content: '\e80f'; } 
+.icon-left-open:before { content: '\e810'; } 
+.icon-right-open:before { content: '\e811'; } 
+.icon-cancel-circled:before { content: '\e800'; } 
+.icon-cancel:before { content: '\e805'; } 
+.icon-plus:before { content: '\e809'; } 
+.icon-minus:before { content: '\e80a'; } 
+.icon-plus-squared-small:before { content: '\e818'; } 
+.icon-minus-squared-small:before { content: '\e819'; } 
+.icon-check-empty:before { content: '\e807'; } 
+.icon-check:before { content: '\e806'; } 
+.icon-comment:before { content: '\e812'; }
+.icon-cog:before { content: '\e816'; } 
+.icon-print:before { content: '\e80e'; } 
+.icon-spin:before { content: '\e813'; } 
+.icon-reply:before { content: '\e80d'; } 
+.icon-search:before { content: '\e80c'; }
+.icon-video-info:before { content: '\e817'; } 
+.icon-cc:before { content: '\e81a'; }
+.icon-comment-1:before { content: '\e80b'; }
+.icon-comment-2:before { content: '\e812'; }
+.icon-moderate:before { content: '\e81c'; }
+.icon-request:before { content: '\e81d'; }
+
+
+
+/** Animation example, for spinners **/
+.animate-spin {
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+  display: inline-block;
+}
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-ms-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+
+// Reset
+
+// Core CSS
+
+// Components
+
+// Components w/ JavaScript
+
+// Utility classes
