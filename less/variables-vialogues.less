@@ -1,38 +1,83 @@
-// Define all modules that will override default bootstrap values
+// Colors
+// -------------------------
+@gray-dark:              #353535;
+@gray:                   #999;
+@gray-light:             #ccc;
 
-// Core variables and mixins
+@blue-dark:              #0000bb; // need review
+@blue:                   #0096d5;
+@blue-light:             #16e8fb;
 
-@static-url: "../..";
+
+@brand-primary:         #428bca;
+@brand-success:         #5cb85c;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+@brand-info:            #5bc0de;
+
+
+@body-bg:               #fff;
+@text-color:            @gray-dark;
+
+
+@link-color:            @blue;
+@link-hover-color:      @blue-light;
+
+
+// Custom Fonts
+// -------------------------
+
+@font-family-ngbt:        'News Gothic BT', Helvetica, Arial, sans-serif;
+@font-family-ngbt-cond:   'News Gothic BT Condensed', Helvetica, Arial, sans-serif;
+@font-family-base:        @font-family-ngbt;
+
+@webfont-dir:             '../fonts';
+
+@font-size-base:          14px;
+@font-size-large:         ceil(@font-size-base * 1.25); // ~18px
+@font-size-small:         ceil(@font-size-base * 0.85); // ~12px
+
+@font-size-h1:            floor(@font-size-base * 2.6); // ~36px
+@font-size-h2:            floor(@font-size-base * 2.15); // ~30px
+@font-size-h3:            ceil(@font-size-base * 1.7); // ~24px
+@font-size-h4:            ceil(@font-size-base * 1.25); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil(@font-size-base * 0.85); // ~12px
+
+@headings-font-family:    @font-family-base;
+
 
 @font-face {
   font-family: 'News Gothic BT';
-  src: url('@{static-url}/webfonts/eot/style_134188.eot'), /* IE9 */
-     url('@{static-url}/webfonts/eot/style_134188.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
-     url('@{static-url}/webfonts/woff/style_134188.woff') format('woff'), /* Modern Browser */
-     url('@{static-url}/webfonts/ttf/style_134188.ttf') format('truetype'), /* Safari, Android, iOS */
-     url('@{static-url}/webfonts/svg/style_134188.svg#NewsGothicBT-Reg') format('svg'); /* Legacy iOS */
+  src: url('@{webfont-dir}/eot/style_134188.eot'), /* IE9 */
+     url('@{webfont-dir}/eot/style_134188.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+     url('@{webfont-dir}/woff/style_134188.woff') format('woff'), /* Modern Browser */
+     url('@{webfont-dir}/ttf/style_134188.ttf') format('truetype'), /* Safari, Android, iOS */
+     url('@{webfont-dir}/svg/style_134188.svg#NewsGothicBT-Reg') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
   font-family: 'News Gothic BT Condensed';
-  src: url('@{static-url}/webfonts/eot/style_134169.eot'),
-     url('@{static-url}/webfonts/eot/style_134169.eot?#iefix') format('embedded-opentype'),
-     url('@{static-url}/webfonts/woff/style_134169.woff') format('woff'),
-     url('@{static-url}/webfonts/ttf/style_134169.ttf') format('truetype'),
-     url('@{static-url}/webfonts/svg/style_134169.svg#NewsGothicCnBT-Reg') format('svg');
+  src: url('@{webfont-dir}/eot/style_134169.eot'),
+     url('@{webfont-dir}/eot/style_134169.eot?#iefix') format('embedded-opentype'),
+     url('@{webfont-dir}/woff/style_134169.woff') format('woff'),
+     url('@{webfont-dir}/ttf/style_134169.ttf') format('truetype'),
+     url('@{webfont-dir}/svg/style_134169.svg#NewsGothicCnBT-Reg') format('svg');
 }
+
+// Fontello Styles
+// -------------------------
 
 @font-face {
   font-family: 'vialogues';
-  src: url('@{static-url}/webfonts/eot/vialogues.eot?10270553'),
-       url('@{static-url}/webfonts/eot/vialogues.eot?10270553#iefix') format('embedded-opentype'),
-       url('@{static-url}/webfonts/woff/vialogues.woff?10270553') format('woff'),
-       url('@{static-url}/webfonts/ttf/vialogues.ttf?10270553') format('truetype'),
-       url('@{static-url}/webfonts/svg/vialogues.svg?10270553#vialogues') format('svg');
+  src: url('@{webfont-dir}/eot/vialogues.eot?10270553'),
+       url('@{webfont-dir}/eot/vialogues.eot?10270553#iefix') format('embedded-opentype'),
+       url('@{webfont-dir}/woff/vialogues.woff?10270553') format('woff'),
+       url('@{webfont-dir}/ttf/vialogues.ttf?10270553') format('truetype'),
+       url('@{webfont-dir}/svg/vialogues.svg?10270553#vialogues') format('svg');
   font-weight: normal;
   font-style: normal;
 }
-
 
 [class^="icon-"], [class*=" icon-"] {
   cursor: pointer;
@@ -49,7 +94,6 @@
   width: 1em;
   margin-right: .2em;
   text-align: center;
-  /* opacity: .8; */
  
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
@@ -62,11 +106,6 @@
   /* remove if not needed */
   margin-left: .2em;
  
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
- 
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
 .icon-rss:before { content: '\e802'; } 
@@ -89,6 +128,7 @@
 .icon-check-empty:before { content: '\e807'; } 
 .icon-check:before { content: '\e806'; } 
 .icon-comment:before { content: '\e812'; }
+.icon-comment-1:before { content: '\e80b'; }
 .icon-cog:before { content: '\e816'; } 
 .icon-print:before { content: '\e80e'; } 
 .icon-spin:before { content: '\e813'; } 
@@ -96,14 +136,10 @@
 .icon-search:before { content: '\e80c'; }
 .icon-video-info:before { content: '\e817'; } 
 .icon-cc:before { content: '\e81a'; }
-.icon-comment-1:before { content: '\e80b'; }
-.icon-comment-2:before { content: '\e812'; }
 .icon-moderate:before { content: '\e81c'; }
 .icon-request:before { content: '\e81d'; }
 
-
-
-/** Animation example, for spinners **/
+/** Animation for spinners **/
 .animate-spin {
   -moz-animation: spin 2s infinite linear;
   -o-animation: spin 2s infinite linear;
@@ -187,13 +223,20 @@
   }
 }
 
+// Media queries breakpoints
+// --------------------------------------------------
 
-// Reset
 
-// Core CSS
+// Medium screen / desktop
+// Note: Deprecated @screen-md and @screen-desktop as of v3.0.1
+@screen-md:                  960px;
+@screen-md-min:              @screen-md;
+@screen-desktop:             @screen-md-min;
 
-// Components
 
-// Components w/ JavaScript
+// Navbar
+// -------------------------
 
-// Utility classes
+@navbar-height:                    40px;
+@navbar-margin-bottom:             40px;
+
