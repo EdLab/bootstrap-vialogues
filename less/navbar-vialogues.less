@@ -7,8 +7,52 @@
 	border-bottom-color: #fff !important;
 }
 
+// Custom Buttons
+// --------------------------------------------------
 
-// navigation components
+.icon-notification-active {
+	position: relative;
+}
+
+.icon-notification-active:before {
+	opacity: 0.7;
+	color: #4eeefc !important;
+	z-index: -1;
+}
+
+.icon-notification-active:after {
+	content: '\e80b';
+	font-family: vialogues;
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	display: inline-block;
+	width: 1em;
+	font-size: 75%;
+	vertical-align: super;
+	margin-left: -1em;
+	z-index: 100;
+
+	opacity: 0.7;
+	color: @brand-theme;
+}
+
+button:hover > .icon-notification-active:before, button:hover > .icon-notification-active:after {
+	opacity: 0.9;
+}
+
+.super-text {
+	color: #fff;
+	font-size: 50%;
+	vertical-align: super;
+	position: relative;
+	left: -0.75em;
+	width: 1em;
+	display: inline-block;
+	text-align: center;
+}
+
+// Navigation Components
 // --------------------------------------------------
 
 #navigation {
@@ -31,7 +75,7 @@
 }
 
 #navigation > ul.list-inline > li {
-	padding: 0;
+	padding: 0 0 0 10px;
 }
 
 #navigation > ul.list-inline > li.divider-left {
@@ -47,15 +91,15 @@
 #navigation > ul.list-inline > li.divider-left a {
 	color: white;
 	text-decoration: none;
+	font-size: 125%;
 }
 
 #navigation > ul.list-inline > li > button {
 	background-color: transparent;
 	border: none;
 	height: 100%;
-	font-size: 125%;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 #navigation > ul.list-inline > li > .button-delegate {
