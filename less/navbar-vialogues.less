@@ -6,10 +6,11 @@
 }
 
 .icon-notification-active:before {
-	opacity: 0.7;
-	color: /*#4eeefc*/ @blue-light !important;
 	z-index: -1;
-	font-size: 1.5em;
+	font-size: 21px;
+	
+	color: @blue-light !important;
+	opacity: 1 !important;  /* reset transparency */
 }
 
 .icon-notification-active:after {
@@ -19,29 +20,22 @@
 	font-weight: normal;
 	speak: none;
 	display: inline-block;
-	width: 1em;
-	font-size: 0.5em;
+	width: 12px;
+	font-size: 12px;
 	vertical-align: super;
-	margin-left: -1em;
+	margin-left: -12px;
 	z-index: 100;
 
-	opacity: 0.7;
 	color: @brand-theme;
+	opacity: 1 !important; /* reset transparency */
 }
 
-button:hover > .icon-notification-active:before, button:hover > .icon-notification-active:after {
-	opacity: 0.9;
+button#request_btn, button#notification_btn {
+	opacity: 0.8;
 }
 
-.super-text {
-	color: #fff;
-	font-size: 50%;
-	vertical-align: super;
-	position: relative;
-	left: -0.75em;
-	width: 1em;
-	display: inline-block;
-	text-align: center;
+button#request_btn:hover, button#notification_btn:hover {
+	opacity: 1;
 }
 
 // Navigation Components
@@ -68,12 +62,9 @@ button:hover > .icon-notification-active:before, button:hover > .icon-notificati
 #navigation > ul.list-inline > li {
 	vertical-align: top;
 	height: @navbar-height;
-	padding: 0 0 0 10px;
 }
 
 #navigation > ul.list-inline > li.divider-left {
-	margin-left: -2px; 
-	border-left: 2px groove @gray-dark;
 	padding: 0 10px;
 }
 
@@ -93,6 +84,7 @@ button:hover > .icon-notification-active:before, button:hover > .icon-notificati
 	height: 100%;
 	padding-left: 0;
 	padding-right: 0;
+	position: relative;
 }
 
 #navigation > ul.list-inline > li > .button-delegate {
@@ -130,6 +122,12 @@ button:hover > .icon-notification-active:before, button:hover > .icon-notificati
 	padding: 0;
 	margin: 5px 0;
 	color: @gray;
+}
+
+#navigation .text-over-icon {
+	left: 22px;
+	bottom: 9px;
+	font-size: 11px;
 }
 
 // Popover List
@@ -321,9 +319,11 @@ button:hover > .icon-notification-active:before, button:hover > .icon-notificati
 	padding: 0 10px;
 }
 
-#footer > a#copyright {
+#footer a#copyright {
 	color: @gray;
 	text-decoration: none;
+	text-align: left;
+	padding-left: 0;
 }
 
 #footer .footer-sprite:before {
