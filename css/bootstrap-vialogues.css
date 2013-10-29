@@ -311,7 +311,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #fefefe;
 }
 .sr-only {
   position: absolute;
@@ -461,15 +461,15 @@ h6 .small {
 }
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 30px;
 }
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 24px;
 }
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 21px;
 }
 h4,
 .h4 {
@@ -486,7 +486,7 @@ h6,
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #fefefe;
 }
 ul,
 ol {
@@ -575,7 +575,7 @@ abbr.initialism {
 blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
-  border-left: 5px solid #eeeeee;
+  border-left: 5px solid #fefefe;
 }
 blockquote p {
   font-size: 17.5px;
@@ -596,7 +596,7 @@ blockquote small:before {
 blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #eeeeee;
+  border-right: 5px solid #fefefe;
   border-left: 0;
 }
 blockquote.pull-right p,
@@ -1639,7 +1639,7 @@ output {
 .form-control[readonly],
 fieldset[disabled] .form-control {
   cursor: not-allowed;
-  background-color: #eeeeee;
+  background-color: #fefefe;
 }
 textarea.form-control {
   height: auto;
@@ -3277,7 +3277,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   line-height: 1;
   color: #999999;
   text-align: center;
-  background-color: #eeeeee;
+  background-color: #fefefe;
   border: 1px solid #cccccc;
   border-radius: 4px;
 }
@@ -3378,7 +3378,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: #fefefe;
 }
 .nav > li.disabled > a {
   color: #cccccc;
@@ -3393,7 +3393,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  background-color: #eeeeee;
+  background-color: #fefefe;
   border-color: #0096d5;
 }
 .nav .open > a .caret,
@@ -3425,7 +3425,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   border-radius: 4px 4px 0 0;
 }
 .nav-tabs > li > a:hover {
-  border-color: #eeeeee #eeeeee #dddddd;
+  border-color: #fefefe #fefefe #dddddd;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
@@ -4153,7 +4153,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  background-color: #eeeeee;
+  background-color: #fefefe;
 }
 .pagination > .active > a,
 .pagination > .active > span,
@@ -4252,7 +4252,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .pager li > a:hover,
 .pager li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: #fefefe;
 }
 .pager .next > a,
 .pager .next > span {
@@ -4375,7 +4375,7 @@ a.list-group-item.active > .badge,
   font-weight: 200;
   line-height: 2.1428571435;
   color: inherit;
-  background-color: #eeeeee;
+  background-color: #fefefe;
 }
 .jumbotron h1 {
   line-height: 1;
@@ -5995,7 +5995,6 @@ td.visible-print {
   speak: none;
   display: inline-block;
   text-decoration: inherit;
-  width: 1em;
   margin-right: .2em;
   text-align: center;
   /* For safety - reset parent styles, that can break glyph codes*/
@@ -6179,18 +6178,21 @@ td.visible-print {
     transform: rotate(359deg);
   }
 }
-.white-caret {
-  border-top-color: #fff !important;
-  border-bottom-color: #fff !important;
+@media (min-width: 768px) {
+  .container {
+    width: 960px;
+  }
 }
 .icon-notification-active {
   position: relative;
 }
 .icon-notification-active:before {
-  opacity: 0.7;
-  color: /*#4eeefc*/ #16e8fb !important;
   z-index: -1;
-  font-size: 1.5em;
+  font-size: 21px;
+  color: #16e8fb !important;
+  opacity: 1 !important;
+  /* reset transparency */
+
 }
 .icon-notification-active:after {
   content: '\e80b';
@@ -6199,27 +6201,23 @@ td.visible-print {
   font-weight: normal;
   speak: none;
   display: inline-block;
-  width: 1em;
-  font-size: 0.5em;
+  width: 12px;
+  font-size: 12px;
   vertical-align: super;
-  margin-left: -1em;
+  margin-left: -12px;
   z-index: 100;
-  opacity: 0.7;
   color: #cc0000;
+  opacity: 1 !important;
+  /* reset transparency */
+
 }
-button:hover > .icon-notification-active:before,
-button:hover > .icon-notification-active:after {
-  opacity: 0.9;
+button#request_btn,
+button#notification_btn {
+  opacity: 0.8;
 }
-.super-text {
-  color: #fff;
-  font-size: 50%;
-  vertical-align: super;
-  position: relative;
-  left: -0.75em;
-  width: 1em;
-  display: inline-block;
-  text-align: center;
+button#request_btn:hover,
+button#notification_btn:hover {
+  opacity: 1;
 }
 #navigation {
   height: 40px;
@@ -6233,15 +6231,12 @@ button:hover > .icon-notification-active:after {
   display: block;
   background: url(../assets/img/vialogues_sprites.png) no-repeat -170px -50px;
 }
+#navigation > ul.list-inline {
+  white-space: nowrap;
+}
 #navigation > ul.list-inline > li {
   vertical-align: top;
   height: 40px;
-  padding: 0 0 0 10px;
-}
-#navigation > ul.list-inline > li.divider-left {
-  margin-left: -2px;
-  border-left: 2px groove #353535;
-  padding: 0 10px;
 }
 #navigation > ul.list-inline > li.divider-left:not([id="cas_menu"]):hover {
   background-color: #353535;
@@ -6257,6 +6252,7 @@ button:hover > .icon-notification-active:after {
   height: 100%;
   padding-left: 0;
   padding-right: 0;
+  position: relative;
 }
 #navigation > ul.list-inline > li > .button-delegate {
   position: relative;
@@ -6289,6 +6285,12 @@ button:hover > .icon-notification-active:after {
   padding: 0;
   margin: 5px 0;
   color: #999999;
+}
+#navigation .text-over-icon {
+  left: 22px;
+  bottom: 9px;
+  font-size: 11px;
+  width: 15px;
 }
 #navigation .popover-content {
   padding: 0;
@@ -6393,8 +6395,8 @@ button:hover > .icon-notification-active:after {
 #navigation li#cas_menu #caslinks a {
   display: inline-block;
   line-height: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   cursor: pointer;
 }
 #navigation li#cas_menu #caslinks a.cas_login_selected {
@@ -6408,22 +6410,15 @@ button:hover > .icon-notification-active:after {
   background-color: #999999;
   color: #fff !important;
 }
-/* Page Structuring
+/* Footer
 -------------------------------------------------- */
-html,
-body {
-  height: 100%;
-}
-#wrap {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -60px;
-  padding: 0 0 60px;
-}
 #footer {
-  height: 60px;
-  background-color: #f5f5f5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 10px 20px 28px 20px;
+  font-size: 12px;
+  background-color: #fefefe;
 }
 #footer > ul.list-inline > li {
   vertical-align: top;
@@ -6438,7 +6433,372 @@ body {
   border-left: 2px groove #16e8fb;
   padding: 0 10px;
 }
-#footer > a#copyright {
+#footer a#copyright {
   color: #999999;
   text-decoration: none;
+  text-align: left;
+  padding-left: 0;
+}
+#footer .footer-sprite:before {
+  line-height: 20px;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+#footer .icon-twitter:before {
+  background-color: #999999;
+  color: #fff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 15px;
+}
+#footer .icon-twitter:hover:before {
+  background-color: #00aced;
+}
+#footer .icon-rss:before {
+  color: #999999;
+  font-size: 19px;
+}
+#footer .icon-rss:hover:before {
+  color: #ff6600;
+}
+.breadcrumb {
+  font-family: 'News Gothic BT Condensed', Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  padding: 0;
+  background-color: transparent;
+}
+.vialogues-primary-color {
+  color: #428bca;
+}
+.vialogues-theme-color {
+  color: #cc0000;
+}
+.vialogues-success-color {
+  color: #5cb85c;
+}
+.vialogues-warning-color {
+  color: #f0ad4e;
+}
+.vialogues-danger-color {
+  color: #d9534f;
+}
+.vialogues-info-color {
+  color: #5bc0de;
+}
+.fill-height {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+.vertical-center {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+}
+.hspacer-20 {
+  margin-top: 20px;
+}
+.hspacer-20:before,
+.hspacer-20:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.hspacer-20:after {
+  clear: both;
+}
+.hspacer-20:before,
+.hspacer-20:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.hspacer-20:after {
+  clear: both;
+}
+.hspacer-40 {
+  margin-top: 40px;
+}
+.hspacer-40:before,
+.hspacer-40:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.hspacer-40:after {
+  clear: both;
+}
+.hspacer-40:before,
+.hspacer-40:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.hspacer-40:after {
+  clear: both;
+}
+.divider-top {
+  margin-top: 1px;
+  border-top: 1px solid #999999;
+}
+.divider-left {
+  margin-left: -2px;
+  border-left: 2px groove #353535;
+}
+.text-color,
+.text-color a {
+  color: #353535;
+  text-decoration: none;
+}
+a.breadcrumb,
+.breadcrumb a {
+  text-decoration: none;
+}
+/* 
+ * for displaying text over webfont icons 
+ * should be a separate span immediately after the icon
+ */
+.text-over-icon {
+  color: #fff;
+  font-size: 50%;
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 1em;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+/*
+ * truncate string to a single line in a container, showing "..." if texts overflow
+ */
+.truncate-1 > *:first-child {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 25px;
+  height: 25px;
+}
+/* 
+ * Multi-line Truncate Pure CSS Hack
+ * http://codepen.io/romanrudenko/pen/bpeDF 
+ */
+.truncate-2 {
+  white-space: initial;
+  overflow: hidden;
+  height: 50px;
+  position: relative;
+}
+.truncate-2:before {
+  content: "";
+  float: left;
+  width: 5px;
+  height: 50px;
+}
+.truncate-2:after {
+  content: "...";
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  float: right;
+  position: relative;
+  top: -31px;
+  left: 100%;
+  width: 1.5em;
+  margin-left: -1.5em;
+  padding-right: 5px;
+  text-align: right;
+  background-size: 100% 100%;
+  /* 1706x1 image, gradient for IE9. Transparent at 0% -> white at 15% -> white at 100%.*/
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABqoAAAABCAMAAACRxg/eAAAABGdBTUEAALGPC/xhBQAAAwBQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wDWRdwAAAP90Uk5Tfet1sDrNWZIeSRDcocCFLWj1CbhSfuMl1EGoYJkYM8Zui/rwBk15FefYKrxGtKydZQzfIdDJNj1VpFyVcY6BBBwxw2yI/Pfy7RInQ09ie5B0eIMDD+kb5eEk2tbSMMs5QL66tkyyrqpYpl+fm5drAf0H+AoN8+4TFhkf3SIoKwDONDfHO8Q+wURHSlBTVlqiXWNmaZNvcox2iYZ/fAL+9vsFCPkL9A4R8e/sFOjqFxrm5B3i4CDeIybb2SnX1SzT0S/PMsw1yjjIxTzCP79CvbtFuUi3tUuzTrGvUa1Uq6lXp6Vbo16gYZ6cZJpnmJZqlG2RcI9zjYp6d4eChIAu7+D8pQAAASFJREFUOMtjqK+fG2y/UKVwkVDxEsOSZSFcyz3LV6tXrJOtXB/msImjaqtxzfZI8R1etbu16vbx/zsY63hYrvGoWdPxeJaWU+ZtZxIkz3l3XNTpvMzZdS1F9YZP922RnrsWvQ8y2PoeW014miX93HfiK4NJbwQmv89z/qgw9bPNtK8BTDN+Bqr98JvDIDr7r93voD98s365zPyuOP2b7Rf/T+xTPli/y30r8zrnpf6L7Gc8/U8sH2U+lLqffk/vTtot5pup13WvJl8RvpR0Qft84lne9tNOrSflm0+YHos7wtpwyORAzH6JvdF7NHdF7eSu3ma0JWKz2MbwDRprQtcyrvIoW6m8wr10qeB8t6LFSgtcC+b9HwWjYBSMglEw2AEA3ckkQdBniOMAAAAASUVORK5CYII=);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#ffffff), color-stop(15%, #ffffff));
+  background: -moz-linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff 15%, #ffffff);
+  background: -o-linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff 15%, #ffffff);
+  background: -ms-linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff 15%, #ffffff);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff 15%, #ffffff);
+}
+.ellipsis i:before {
+  content: "Read More";
+}
+.truncate-2 > *:first-child {
+  float: right;
+  width: 100%;
+  margin-left: -5px;
+}
+/* Page Structuring
+-------------------------------------------------- */
+html,
+body {
+  height: 100%;
+}
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -80px;
+  padding: 0 0 80px;
+  position: relative;
+}
+#wrap > #navigation {
+  z-index: 999;
+}
+#wrap > #center_section {
+  z-index: 100;
+}
+#footer {
+  height: 80px;
+  position: relative;
+}
+#bottom_gradient {
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  margin-top: -200px;
+  z-index: -1;
+  background: -moz-linear-gradient(top, #ffffff 0%, #efefef 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #efefef));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #ffffff 0%, #efefef 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #ffffff 0%, #efefef 100%);
+  /* Opera11.10+ */
+
+  background: -ms-linear-gradient(top, #ffffff 0%, #efefef 100%);
+  /* IE10+ */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#efefef', GradientType=0);
+  /* IE6-9 */
+
+  background: linear-gradient(top, #ffffff 0%, #efefef 100%);
+  /* W3C */
+
+}
+/* Components
+-------------------------------------------------- */
+.edlab-logo {
+  background: url(../assets/img/vialogues_sprites.png) no-repeat -340px -50px;
+  width: 102px;
+  height: 26px;
+  display: inline-block;
+  margin: 10px;
+}
+.white-caret {
+  border-top-color: #fff !important;
+  border-bottom-color: #fff !important;
+}
+.shadow-light {
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  /* For IE 8 */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#666666')";
+  /* For IE 5.5 - 7 */
+
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#666666');
+}
+.icon-moderate:before {
+  background-color: #cc0000;
+  color: #fff;
+  font-size: xx-small;
+  line-height: 1em;
+  width: 1.3em;
+  vertical-align: middle;
+}
+/* Vialogue Entry */
+.vialogue-entry > .thumbnail {
+  position: relative;
+  margin-top: 22px;
+}
+.vialogue-entry .thumbnail-underlay {
+  display: table;
+  float: none;
+  background-color: #000;
+}
+.vialogue-entry .thumbnail-overlay {
+  text-shadow: #353535 1px 1px 2px;
+  color: #fff;
+  position: absolute;
+}
+.vialogue-entry .caption {
+  text-align: left;
+  font-family: 'News Gothic BT Condensed', Helvetica, Arial, sans-serif;
+}
+.vialogue-entry-block {
+  float: left !important;
+  position: relative;
+}
+.vialogue-entry-block-md {
+  float: left !important;
+  position: relative;
+  width: 320px;
+  padding: 0 10px;
+}
+.vialogue-entry-block-md > .vialogue-entry .thumbnail > img {
+  width: 290px;
+  height: 218px;
+}
+.vialogue-entry-block-md .thumbnail-overlay {
+  top: 73%;
+  right: 7%;
+}
+.vialogue-entry-block-md .comment-count {
+  position: absolute;
+  right: 2%;
+  top: -5%;
+}
+.vialogue-entry-block-md .comment-count .icon-comment {
+  font-size: 44px;
+}
+.vialogue-entry-block-md .comment-count .text-over-icon {
+  font-size: 22px;
+  margin-top: 6px;
+}
+.vialogue-entry-block-sm {
+  float: left !important;
+  position: relative;
+  width: 210px;
+  height: 210px;
+  padding: 0 24px 24px 0;
+}
+.vialogue-entry-block-sm > .vialogue-entry .thumbnail > img {
+  width: 182px;
+  height: 137px;
+}
+.vialogue-entry-block-sm .thumbnail-overlay {
+  top: 61%;
+  right: 7%;
+}
+.vialogue-entry-block-sm .comment-count {
+  position: absolute;
+  right: 2%;
+  top: -5%;
+}
+.vialogue-entry-block-sm .comment-count .icon-comment {
+  font-size: 33px;
+}
+.vialogue-entry-block-sm .comment-count .text-over-icon {
+  font-size: 17px;
+  margin-top: 6px;
 }

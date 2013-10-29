@@ -62,14 +62,15 @@ button#request_btn:hover, button#notification_btn:hover {
 #navigation > ul.list-inline > li {
 	vertical-align: top;
 	height: @navbar-height;
-}
-
-#navigation > ul.list-inline > li.divider-left {
-	padding: 0 10px;
+	line-height: 100%;
 }
 
 #navigation > ul.list-inline > li.divider-left:not([id="cas_menu"]):hover {
 	background-color: @gray-dark;
+}
+
+#navigation > ul.list-inline > li.divider-left > a {
+	line-height: 36px;
 }
 
 #navigation > ul.list-inline > li.divider-left a {
@@ -128,6 +129,7 @@ button#request_btn:hover, button#notification_btn:hover {
 	left: 22px;
 	bottom: 9px;
 	font-size: 11px;
+	width: 15px;
 }
 
 // Popover List
@@ -180,7 +182,7 @@ button#request_btn:hover, button#notification_btn:hover {
 @search-input-height: 25px;
 
 #navigation li#search > form {
-	padding-top: 6px;
+	padding-top: 7px;
 	padding-left: 10px;
 	padding-right: 10px;
 }

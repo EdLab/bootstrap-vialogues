@@ -21,15 +21,33 @@
 	color: @brand-info;
 }
 
+.condensed {
+	font-family: @font-family-ngbt-cond;
+}
+
+
+.strong {
+	font-weight: bold;
+}
+
 .fill-height {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
 }
 
+.vertical-center {
+	display: table-cell;
+	float: none;
+	vertical-align: middle;
+}
+
 .hspacer-20 {
-	margin-top: 20px;
-	.clearfix;
+	.hspacer(20px);
+}
+
+.hspacer-40 {
+	.hspacer(40px);
 }
 
 .divider-top {
@@ -42,6 +60,24 @@
 	border-left: 2px groove @gray-dark;
 }
 
+.text-color, .text-color a {
+	color: @text-color;
+	text-decoration: none;
+}
+
+a.breadcrumb, .breadcrumb a {
+	text-decoration: none;
+	color: @gray;
+}
+
+a.breadcrumb.active, .breadcrumb.active a {
+	color: @link-color;
+}
+
+a.breadcrumb.active:hover, .breadcrumb.active a:hover {
+	color: @link-hover-color;
+}
+
 /* 
  * for displaying text over webfont icons 
  * should be a separate span immediately after the icon
@@ -51,13 +87,14 @@
 	font-size: 50%;
 	display: inline-block;
 	position: absolute;
-	width: 1em;
+	width: 100%;
 	height: 1em;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	margin: auto;
+	text-align: center;
 }
 
 /*
@@ -198,28 +235,161 @@ html, body {
 	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#666666');
 }
 
-.vialogue-entry-block-sm {
+.icon-moderate:before {
+	background-color: @brand-theme;
+	color: #fff;
+	font-size: xx-small;
+	line-height: 1em;
+	width: 1.3em;
+	vertical-align: middle;
+}
+
+/* Vialogue Entry */
+
+.vialogue-entry  > .thumbnail {
 	position: relative;
-	display: inline-block;
-	vertical-align: top;
-	width: 185px;
-	height: 185px;
-	margin: 0 24px;
-	-moz-border-radius: 0 0 5px 5px;
-	-webkit-border-radius: 0 0 5px 5px;
-	-o-border-radius: 0 0 5px 5px;
-	border-radius: 0 0 5px 5px;
-	background-color: #fff;
+	margin-top: 22px;
 }
 
-.vialogue-entry-block-sm > .thumbnail {
-	width: 100%;
-	height: 143px;
-	overflow: hidden;
+.vialogue-entry .thumbnail-underlay {
+	display: table;
+	float: none;
+	background-color: #000;
 }
 
-.vialogue-entry-block-sm > .thumbnail > .comment-count {
-	width: 100%;
-	height: 143px;
-	overflow: hidden;
+.vialogue-entry .thumbnail-overlay {
+	text-shadow: @text-color 1px 1px 2px;
+    color: #fff;
+    position: absolute;
+}
+
+.vialogue-entry .caption {
+	.condensed;
+	text-align: left;
+}
+
+.vialogue-entry-block {
+	.pull-left;
+    position: relative;
+}
+
+/* Vialogue Entry Block MD */
+
+.vialogue-entry-block-md {
+	.vialogue-entry-block;
+    width: 320px;
+    padding: 0 10px;
+}
+.vialogue-entry-block-md > .vialogue-entry .thumbnail > img {
+	width: 290px;
+	height: 218px;
+}
+
+.vialogue-entry-block-md .thumbnail-overlay {
+    top: 73%;
+    right: 7%;
+}
+
+.vialogue-entry-block-md .comment-count {
+	position: absolute;
+	right: 2%;
+	top: -5%;
+}
+
+.vialogue-entry-block-md .comment-count .icon-comment {
+	font-size: 44px;
+}
+
+.vialogue-entry-block-md .comment-count .text-over-icon {
+	font-size: 22px;
+	margin-top: 6px;
+}
+
+/* Vialogue Entry Block SM */
+
+.vialogue-entry-block-sm {
+	.vialogue-entry-block;
+	width: 200px;
+	height: 200px;
+	padding: 0 24px 24px 0;
+}
+
+.vialogue-entry-block-sm > .vialogue-entry .thumbnail > img {
+	width: 167px;
+	height: 125px;
+}
+
+.vialogue-entry-block-sm .thumbnail-overlay {
+    top: 61%;
+    right: 7%;
+}
+
+.vialogue-entry-block-sm .comment-count {
+	position: absolute;
+	right: 2%;
+	top: -5%;
+}
+
+.vialogue-entry-block-sm .comment-count .icon-comment {
+	font-size: 35px;
+}
+
+.vialogue-entry-block-sm .comment-count .text-over-icon {
+	font-size: @font-size-large;
+	margin-top: 6px;
+}
+
+/* Vialogue Entry Row */
+
+.vialogue-entry-row {
+	.vialogue-entry-block;
+	width: 300px;
+	padding: 15px 0;
+}
+
+.vialogue-entry-row > .vialogue-entry .thumbnail {
+	width: 85px;
+	height: 77px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.vialogue-entry-row .thumbnail-overlay {
+    right: 7%;
+    color: @gray-dark;
+    font-size: @font-size-xsmall;
+    text-shadow: none;
+}
+
+.vialogue-entry-row .comment-count {
+	position: absolute;
+	right: 5%;
+	top: -5%;
+}
+
+.vialogue-entry-row .comment-count .icon-comment {
+	font-size: @font-size-large;
+}
+
+.vialogue-entry-row .comment-count .text-over-icon {
+	font-size: @font-size-xsmall;
+	margin-top: 1px;
+}
+
+.vialogue-entry-row .caption {
+	position: absolute;
+	top: 0;
+	left: 85px;
+	width: 200px;
+	padding-top: 0;
+}
+
+.vialogue-entry-row .description {
+	.text-color;
+	position: absolute;
+	top: 23px;
+	left: 85px;
+	width: 200px;
+	padding-top: 0;
+	padding-left: 9px;
 }
