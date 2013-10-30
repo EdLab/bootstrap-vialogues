@@ -109,8 +109,8 @@ a.breadcrumb.active:hover, .breadcrumb.active a:hover {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	line-height: 25px;
-	height: 25px;
+	line-height: 1em;
+	height: 1em;
 }
 
 /* 
@@ -121,7 +121,7 @@ a.breadcrumb.active:hover, .breadcrumb.active a:hover {
 .truncate-2 {
 	white-space: initial;
 	overflow: hidden;
-	height: 50px;
+	height: 3em;
 	position: relative;
 }
 
@@ -250,26 +250,29 @@ html, body {
 
 /* Vialogue Entry */
 
-.vialogue-entry  > .thumbnail {
-	position: relative;
-	margin-top: 22px;
-}
+.vialogue-entry  {
+	
+	> .thumbnail {
+		position: relative;
+		margin-top: 22px;
+	}
 
-.vialogue-entry .thumbnail-underlay {
-	display: table;
-	float: none;
-	background-color: #000;
-}
-
-.vialogue-entry .thumbnail-overlay {
-	text-shadow: @text-color 1px 1px 2px;
-    color: #fff;
-    position: absolute;
-}
-
-.vialogue-entry .caption {
-	.condensed;
-	text-align: left;
+	.thumbnail-underlay {
+		display: table;
+		float: none;
+		background-color: #000;
+	}
+	
+	.thumbnail-overlay {
+		text-shadow: @text-color 1px 1px 2px;
+	    color: #fff;
+	    position: absolute;
+	}
+	
+	.caption {
+		.condensed;
+		text-align: left;
+	}
 }
 
 .vialogue-entry-block {
@@ -280,125 +283,225 @@ html, body {
 /* Vialogue Entry Block MD */
 
 .vialogue-entry-block-md {
+	
 	.vialogue-entry-block;
     width: 320px;
     padding: 0 10px;
-}
-.vialogue-entry-block-md > .vialogue-entry .thumbnail > img {
-	width: 290px;
-	height: 218px;
-}
-
-.vialogue-entry-block-md .thumbnail-overlay {
-    top: 73%;
-    right: 7%;
-}
-
-.vialogue-entry-block-md .comment-count {
-	position: absolute;
-	right: 2%;
-	top: -5%;
-}
-
-.vialogue-entry-block-md .comment-count .icon-comment {
-	font-size: 44px;
-}
-
-.vialogue-entry-block-md .comment-count .text-over-icon {
-	font-size: 22px;
-	margin-top: 6px;
+    
+	> .vialogue-entry .thumbnail > img {
+		width: 290px;
+		height: 218px;
+	}
+	
+	.thumbnail-overlay {
+	    top: 73%;
+	    right: 7%;
+	}
+	
+	.comment-count {
+		position: absolute;
+		right: 2%;
+		top: -5%;
+	}
+	
+	.comment-count .icon-comment {
+		font-size: 44px;
+	}
+	
+	.comment-count .text-over-icon {
+		font-size: 22px;
+		margin-top: 6px;
+	}
 }
 
 /* Vialogue Entry Block SM */
 
 .vialogue-entry-block-sm {
+
 	.vialogue-entry-block;
 	width: 200px;
 	height: 200px;
 	padding: 0 24px 24px 0;
-}
 
-.vialogue-entry-block-sm > .vialogue-entry .thumbnail > img {
-	width: 167px;
-	height: 125px;
-}
-
-.vialogue-entry-block-sm .thumbnail-overlay {
-    top: 61%;
-    right: 7%;
-}
-
-.vialogue-entry-block-sm .comment-count {
-	position: absolute;
-	right: 2%;
-	top: -5%;
-}
-
-.vialogue-entry-block-sm .comment-count .icon-comment {
-	font-size: 35px;
-}
-
-.vialogue-entry-block-sm .comment-count .text-over-icon {
-	font-size: @font-size-large;
-	margin-top: 6px;
+	> .vialogue-entry .thumbnail > img {
+		width: 167px;
+		height: 125px;
+	}
+	
+	.thumbnail-overlay {
+	    top: 61%;
+	    right: 7%;
+	}
+	
+	.comment-count {
+		position: absolute;
+		right: 2%;
+		top: -5%;
+	}
+	
+	.comment-count .icon-comment {
+		font-size: 35px;
+	}
+	
+	.comment-count .text-over-icon {
+		font-size: @font-size-large;
+		margin-top: 6px;
+	}
 }
 
 /* Vialogue Entry Row */
 
 .vialogue-entry-row {
+
 	.vialogue-entry-block;
 	width: 300px;
 	padding: 15px 0;
+
+	> .vialogue-entry .thumbnail {
+		width: 85px;
+		height: 80px;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	
+	> .vialogue-entry .thumbnail img {
+		width: 75px;
+		height: 56px;
+	}
+	
+	.thumbnail-overlay {
+	    right: 7%;
+	    color: @gray-dark;
+	    font-size: @font-size-xsmall;
+	    text-shadow: none;
+	}
+	
+	.comment-count {
+		position: absolute;
+		right: 5%;
+		top: -5%;
+	}
+	
+	.comment-count .icon-comment {
+		font-size: @font-size-large;
+	}
+	
+	.comment-count .text-over-icon {
+		font-size: @font-size-xsmall;
+		margin-top: 1px;
+	}
+	
+	.caption {
+		position: absolute;
+		top: 0;
+		left: 85px;
+		width: 200px;
+		padding-top: 0;
+	}
+	
+	.description {
+		.text-color;
+		position: absolute;
+		top: 23px;
+		left: 85px;
+		width: 200px;
+		padding-top: 0;
+		padding-left: 9px;
+	}
 }
 
-.vialogue-entry-row > .vialogue-entry .thumbnail {
-	width: 85px;
-	height: 80px;
-	margin-top: 0;
-	margin-bottom: 0;
+/* Video Entry */
+
+.video-entry  {
+	
+	> .thumbnail {
+		position: relative;
+		margin-top: 22px;
+	}
+
+	.thumbnail-underlay {
+		display: table;
+		float: none;
+		background-color: #000;
+	}
+	
+	.thumbnail-overlay {
+		text-shadow: @text-color 1px 1px 2px;
+	    color: #fff;
+	    position: absolute;
+	}
+	
+	.caption {
+		text-align: left;
+	}
 }
 
-.vialogue-entry-row > .vialogue-entry .thumbnail img {
-  width: 75px;
-  height: 56px;
-}
+/* Video Entry Row */
 
-.vialogue-entry-row .thumbnail-overlay {
-    right: 7%;
-    color: @gray-dark;
-    font-size: @font-size-xsmall;
-    text-shadow: none;
-}
+.video-entry-row {
 
-.vialogue-entry-row .comment-count {
-	position: absolute;
-	right: 5%;
-	top: -5%;
-}
+	.vialogue-entry-block;
+	width: 300px;
+	padding: 15px 0;
 
-.vialogue-entry-row .comment-count .icon-comment {
-	font-size: @font-size-large;
-}
-
-.vialogue-entry-row .comment-count .text-over-icon {
-	font-size: @font-size-xsmall;
-	margin-top: 1px;
-}
-
-.vialogue-entry-row .caption {
-	position: absolute;
-	top: 0;
-	left: 85px;
-	width: 200px;
-	padding-top: 0;
-}
-
-.vialogue-entry-row .description {
-	.text-color;
-	position: absolute;
-	top: 23px;
-	left: 85px;
-	width: 200px;
-	padding-top: 0;
-	padding-left: 9px;
+	> .video-entry .thumbnail {
+		width: 90px;
+		height: 90px;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	
+	> .video-entry .thumbnail img {
+		width: 80px;
+		height: 60px;
+	}
+	
+	.thumbnail-overlay {
+	    right: 7%;
+	    color: @gray-dark;
+	    font-size: @font-size-xsmall;
+	    text-shadow: none;
+	    padding-top: 5px;
+	}
+	
+	.caption {
+		.strong;
+		position: absolute;
+		top: 0;
+		left: 90px;
+		padding-top: 0;
+		width: 215px;
+	}
+	
+	.caption span:first-child {
+		max-width: 125px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+	.duration {
+		display: inline-block;
+	}
+	
+	.description {
+		.text-color;
+		position: absolute;
+		top: 23px;
+		left: 90px;
+		width: 200px;
+		padding-top: 0;
+		padding-left: 9px;
+	}
+	
+	.new {
+		position: absolute;
+		left: 95px;
+		bottom: 0;
+	}
+	
+	.icon-pencil {
+		position: absolute;
+		top: 0;
+		left: 285px;
+	}
 }
