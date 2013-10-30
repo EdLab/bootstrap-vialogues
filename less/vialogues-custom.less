@@ -50,6 +50,10 @@
 	.hspacer(40px);
 }
 
+.bumper-60 {
+  margin-bottom: 60px; /* push next div down for better look */
+}
+
 .divider-top {
 	margin-top: 1px;
 	border-top: 1px solid @gray;
@@ -60,14 +64,14 @@
 	border-left: 2px groove @gray-dark;
 }
 
-.text-color, .text-color a {
+.text-color, .text-color a, .text-color:hover, .text-color a:hover {
 	color: @text-color;
 	text-decoration: none;
 }
 
 a.breadcrumb, .breadcrumb a {
+  color: @gray;
 	text-decoration: none;
-	color: @gray;
 }
 
 a.breadcrumb.active, .breadcrumb.active a {
@@ -349,9 +353,14 @@ html, body {
 
 .vialogue-entry-row > .vialogue-entry .thumbnail {
 	width: 85px;
-	height: 77px;
+	height: 80px;
 	margin-top: 0;
 	margin-bottom: 0;
+}
+
+.vialogue-entry-row > .vialogue-entry .thumbnail img {
+  width: 75px;
+  height: 56px;
 }
 
 .vialogue-entry-row .thumbnail-overlay {

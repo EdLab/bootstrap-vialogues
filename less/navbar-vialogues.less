@@ -1,43 +1,3 @@
-// Custom Buttons
-// --------------------------------------------------
-
-.icon-notification-active {
-	position: relative;
-}
-
-.icon-notification-active:before {
-	z-index: -1;
-	font-size: 21px;
-	
-	color: @blue-light !important;
-	opacity: 1 !important;  /* reset transparency */
-}
-
-.icon-notification-active:after {
-	content: '\e80b';
-	font-family: vialogues;
-	font-style: normal;
-	font-weight: normal;
-	speak: none;
-	display: inline-block;
-	width: 12px;
-	font-size: 12px;
-	vertical-align: super;
-	margin-left: -12px;
-	z-index: 100;
-
-	color: @brand-theme;
-	opacity: 1 !important; /* reset transparency */
-}
-
-button#request_btn, button#notification_btn {
-	opacity: 0.8;
-}
-
-button#request_btn:hover, button#notification_btn:hover {
-	opacity: 1;
-}
-
 // Navigation Components
 // --------------------------------------------------
 
@@ -46,255 +6,297 @@ button#request_btn:hover, button#notification_btn:hover {
 	width: @screen-md;
 	margin-bottom: @navbar-margin-bottom;
 	background: url(../assets/img/vialogues_sprites.png) no-repeat right top;
-}
-
-#top_logo {
-	width: 160px;
-	height: 54px;
-	display: block;
-	background: url(../assets/img/vialogues_sprites.png) no-repeat -170px -50px;	
-}
-
-#navigation > ul.list-inline {
-	white-space: nowrap;
-}
-
-#navigation > ul.list-inline > li {
-	vertical-align: top;
-	height: @navbar-height;
-	line-height: 100%;
-}
-
-#navigation > ul.list-inline > li.divider-left:not([id="cas_menu"]):hover {
-	background-color: @gray-dark;
-}
-
-#navigation > ul.list-inline > li.divider-left > a {
-	line-height: 36px;
-}
-
-#navigation > ul.list-inline > li.divider-left a {
-	color: white;
-	text-decoration: none;
-	font-size: 125%;
-}
-
-#navigation > ul.list-inline > li > button {
-	background-color: transparent;
-	border: none;
-	height: 100%;
-	padding-left: 0;
-	padding-right: 0;
-	position: relative;
-}
-
-#navigation > ul.list-inline > li > .button-delegate {
-	position: relative;
-	top: 40px;
-	left: 23px;
-	width: 0;
-	height: 0;
-}
-
-#navigation [class^="icon-"]:before, #navigation [class*=" icon-"]:before {
-	color: @gray-light;
-	opacity: 0.7;
-}
-
-#navigation [class^="icon-"]:hover:before, #navigation [class*=" icon-"]:hover:before {
-	opacity: 0.95;
-}
-
-#navigation #user_menu #user_menu_ext {
-	top: 0;
-	color: @text-color;
-}
-
-#navigation #user_menu #user_menu_ext a {
-	color: @link-color;
-}
-
-#navigation ul.dropdown-menu > li.dropdown-header {
-	color: @text-color;
-	padding: 0 10px;
-}
-
-#navigation ul.dropdown-menu > li.divider {
-	padding: 0;
-	margin: 5px 0;
-	color: @gray;
-}
-
-#navigation .text-over-icon {
-	left: 22px;
-	bottom: 9px;
-	font-size: 11px;
-	width: 15px;
-}
-
-// Popover List
-// --------------------------------------------------
-
-#navigation .popover-content {
-	padding: 0;
-}
-
-#navigation .popover-content ul.list-group {
-	margin-bottom: 0;
-	width: 250px;
-	padding: 5px 0 0 0;
-}
-
-#navigation .popover-content ul.list-group > li.list-group-item  {
-	padding: 0 5px;
-	border: none;
-	font-size: @font-size-small;
-	line-height: 1.2em;
-}
-
-#navigation .popover-content ul.list-group > li.list-group-item:hover {
 	
+	#top_logo {
+    width: 160px;
+    height: 54px;
+    display: block;
+    background: url(../assets/img/vialogues_sprites.png) no-repeat -170px -50px;  
+  }
+  
+  > ul.list-inline {
+    white-space: nowrap;
+  }
+  
+  > ul.list-inline > li {
+    vertical-align: top;
+    height: @navbar-height;
+    line-height: 100%;
+  }
+  
+  > ul.list-inline > li.divider-left:not([id="cas_menu"]):hover {
+    background-color: @gray-dark;
+  }
+  
+  > ul.list-inline > li.divider-left > a {
+    line-height: 36px;
+  }
+  
+  > ul.list-inline > li.divider-left a {
+    color: white;
+    text-decoration: none;
+    font-size: 125%;
+  }
+  
+  > ul.list-inline > li > button {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+  }
+  
+  > ul.list-inline > li > .button-delegate {
+    position: relative;
+    top: 40px;
+    left: 23px;
+    width: 0;
+    height: 0;
+  }
+  
+  [class^="icon-"]:before, [class*=" icon-"]:before {
+    color: @gray-light;
+    opacity: 0.7;
+  }
+  
+  [class^="icon-"]:hover:before, [class*=" icon-"]:hover:before {
+    opacity: 0.95;
+  }
+  
+  #user_menu #user_menu_ext {
+    top: 0;
+    color: @text-color;
+  }
+  
+  #user_menu #user_menu_ext a {
+    color: @link-color;
+  }
+  
+  ul.dropdown-menu > li.dropdown-header {
+    color: @text-color;
+    padding: 0 10px;
+  }
+  
+  ul.dropdown-menu > li.divider {
+    padding: 0;
+    margin: 5px 0;
+    color: @gray;
+  }
+  
+  .text-over-icon {
+    left: 22px;
+    bottom: 9px;
+    font-size: 11px;
+    width: 15px;
+  }
+
+  // Custom Buttons
+  // --------------------------------------------------
+  
+  .icon-notification-active {
+    position: relative;
+  }
+  
+  .icon-notification-active:before {
+    z-index: -1;
+    font-size: 21px;
+    
+    color: @blue-light !important;
+    opacity: 1 !important;  /* reset transparency */
+  }
+  
+  .icon-notification-active:after {
+    content: '\e80b';
+    font-family: vialogues;
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    width: 12px;
+    font-size: 12px;
+    vertical-align: super;
+    margin-left: -12px;
+    z-index: 100;
+  
+    color: @brand-theme;
+    opacity: 1 !important; /* reset transparency */
+  }
+  
+  button#request_btn, button#notification_btn {
+    opacity: 0.8;
+  }
+  
+  button#request_btn:hover, button#notification_btn:hover {
+    opacity: 1;
+  }
+  
+  // Popover List
+  // --------------------------------------------------
+  
+  .popover-content {
+    padding: 0;
+  }
+  
+  .popover-content ul.list-group {
+    margin-bottom: 0;
+    width: 250px;
+    padding: 5px 0 0 0;
+  }
+  
+  .popover-content ul.list-group > li.list-group-item  {
+    padding: 0 5px;
+    border: none;
+    font-size: @font-size-small;
+    line-height: 1.2em;
+  }
+  
+  .popover-content ul.list-group > li.list-group-item:hover {
+    
+  }
+  
+  .popover-content ul.list-group > li.list-group-item a {
+    color: @text-color;
+  }
+  
+  .popover-content ul.list-group > li.list-group-item:hover a {
+    display: block;
+    width: 100%;
+    color: #fff;
+    background-color: @gray;
+    text-decoration: none;
+  }
+  
+  .popover-content ul.list-group > li.divider {
+    width: 100%;
+    height: 0;
+    margin: 3px 0;
+    list-style: none;
+    border-bottom: solid 1px @gray;
+  }
+  
+  // Search Form
+  // --------------------------------------------------
+  
+  @search-input-height: 25px;
+  
+  li#search > form {
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  input#id_q {
+    width: 230px;
+    height: @search-input-height;
+    border: 0;
+    background-color: #ccc;
+  }
+  
+  #search div#advanced_search {
+    visibility: hidden;
+  }
+  
+  #search:hover div#advanced_search {
+    visibility: visible;
+  }
+  
+  #search_button {
+    background-color: #ccc;
+    width: 28px;
+    height: @search-input-height;
+    border: none;
+    border-radius: 0;
+    margin: 0 0 0 -1px;
+    padding: 0;
+  }
+  
+  #search_button .icon-search:before {
+    color: @text-color;
+    opacity: 1;
+    line-height: @search-input-height; // for vertical align
+  }
+  
+  #search_options {
+    background-color: @gray-dark;
+    color: #fff;
+    position: relative;
+    left: 120px;
+  }
+  
+  #advanced_search ul.dropdown-menu {
+    position: absolute;
+    top: -2px;
+    width: 230px;
+    background-color: @gray-dark;
+    color: #fff;
+    font-size: x-small;
+    padding: 5px 0;
+    margin-left: 40px;
+  }
+  
+  #advanced_search ul.dropdown-menu > li {
+    padding: 0 5px;
+  }
+  
+  #advanced_search ul.dropdown-menu > li > span {
+    display: table-cell;
+  }
+  
+  #advanced_search ul.dropdown-menu > li > span:nth-child(2) {
+    width: 100%;
+  }
+  
+  #advanced_search ul.dropdown-menu label {
+    padding-right: 10px;
+  }
+  
+  #advanced_search ul.dropdown-menu input {
+    width: 100%;
+  }
+  
+  // CAS Menu Styles
+  // --------------------------------------------------
+  
+  li#cas_menu {
+    height: @navbar-height;
+  }
+  
+  li#cas_menu #caslinks {
+    display: inline-block;
+    height: 100%;
+  }
+  
+  li#cas_menu #caslinks a {
+    display: inline-block;
+    line-height: @navbar-height;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+  }
+  
+  li#cas_menu #caslinks a.cas_login_selected {
+    background-color: @gray-dark;
+    border: none;
+  }
+  
+  li#cas_menu #caslinks a.casHeaderLink:hover {
+    background-color: @gray-dark;
+  }
+  
+  // User Dropdown Menu
+  // --------------------------------------------------
+  
+  ul.dropdown-menu > li:hover a {
+    background-color: @gray;
+    color: #fff !important;
+  }
 }
 
-#navigation .popover-content ul.list-group > li.list-group-item a {
-	color: @text-color;
-}
 
-#navigation .popover-content ul.list-group > li.list-group-item:hover a {
-	display: block;
-	width: 100%;
-	color: #fff;
-	background-color: @gray;
-	text-decoration: none;
-}
 
-#navigation .popover-content ul.list-group > li.divider {
-	width: 100%;
-	height: 0;
-	margin: 3px 0;
-	list-style: none;
-	border-bottom: solid 1px @gray;
-}
-
-// Search Form
+// Footer Components
 // --------------------------------------------------
-
-@search-input-height: 25px;
-
-#navigation li#search > form {
-	padding-top: 7px;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-#navigation input#id_q {
-	width: 230px;
-	height: @search-input-height;
-	border: 0;
-	background-color: #ccc;
-}
-
-#navigation #search div#advanced_search {
-	visibility: hidden;
-}
-
-#navigation #search:hover div#advanced_search {
-	visibility: visible;
-}
-
-#navigation #search_button {
-	background-color: #ccc;
-	width: 28px;
-	height: @search-input-height;
-	border: none;
-	border-radius: 0;
-	margin: 0 0 0 -1px;
-	padding: 0;
-}
-
-#navigation #search_button .icon-search:before {
-	color: @text-color;
-	opacity: 1;
-	line-height: @search-input-height; // for vertical align
-}
-
-#navigation #search_options {
-	background-color: @gray-dark;
-	color: #fff;
-	position: relative;
-	left: 120px;
-}
-
-#navigation #advanced_search ul.dropdown-menu {
-	position: absolute;
-	top: -2px;
-	width: 230px;
-	background-color: @gray-dark;
-	color: #fff;
-	font-size: x-small;
-	padding: 5px 0;
-	margin-left: 40px;
-}
-
-#navigation #advanced_search ul.dropdown-menu > li {
-	padding: 0 5px;
-}
-
-#navigation #advanced_search ul.dropdown-menu > li > span {
-	display: table-cell;
-}
-
-#navigation #advanced_search ul.dropdown-menu > li > span:nth-child(2) {
-	width: 100%;
-}
-
-#navigation #advanced_search ul.dropdown-menu label {
-	padding-right: 10px;
-}
-
-#navigation #advanced_search ul.dropdown-menu input {
-	width: 100%;
-}
-
-// CAS Menu Styles
-// --------------------------------------------------
-
-#navigation li#cas_menu {
-	height: @navbar-height;
-}
-
-#navigation li#cas_menu #caslinks {
-	display: inline-block;
-	height: 100%;
-}
-
-#navigation li#cas_menu #caslinks a {
-	display: inline-block;
-	line-height: @navbar-height;
-	padding-left: 10px;
-	padding-right: 10px;
-	cursor: pointer;
-}
-
-#navigation li#cas_menu #caslinks a.cas_login_selected {
-	background-color: @gray-dark;
-	border: none;
-}
-
-#navigation li#cas_menu #caslinks a.casHeaderLink:hover {
-	background-color: @gray-dark;
-}
-
-// User Dropdown Menu
-// --------------------------------------------------
-
-#navigation ul.dropdown-menu > li:hover a {
-	background-color: @gray;
-	color: #fff !important;
-}
-
-/* Footer
--------------------------------------------------- */
 
 #footer {
 	-webkit-border-radius: 4px;
@@ -303,56 +305,59 @@ button#request_btn:hover, button#notification_btn:hover {
 	padding: 10px 20px 28px 20px;
 	font-size: @font-size-small;
 	background-color: @gray-lighter;
-}
-
-#footer > ul.list-inline > li {
-	vertical-align: top;
-	padding: 0 10px;
-}
-
-#footer > ul.list-inline > li > a {
-	color: @gray-dark;
-	text-decoration: none;
-}
-
-#footer > ul.list-inline > li.divider-left {
-	margin-left: -2px; 
-	border-left: 2px groove @blue-light;
-	padding: 0 10px;
-}
-
-#footer a#copyright {
-	color: @gray;
-	text-decoration: none;
-	text-align: left;
-	padding-left: 0;
-}
-
-#footer .footer-sprite:before {
-	line-height: 20px;
-	width: 20px;
-	height: 20px;
-	vertical-align: middle;
-}
-
-#footer .icon-twitter:before {
-	background-color: @gray;
-	color: #fff;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-	font-size: 15px;
-}
-
-#footer .icon-twitter:hover:before {
-	background-color: #00aced;
-}
-
-#footer .icon-rss:before {
-	color: @gray;
-	font-size: 19px;
-}
-
-#footer .icon-rss:hover:before {
-	color: #ff6600;
+	
+	> ul.list-inline > li {
+    vertical-align: top;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  > ul.list-inline > li > a {
+    color: @gray-dark;
+    text-decoration: none;
+  }
+  
+  #footer_left li {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  
+  #footer_left li.divider-left {
+    margin-left: -2px; 
+    border-left: 2px groove @blue-light;
+  }
+  
+  a#copyright {
+    color: @gray;
+    text-decoration: none;
+  }
+  
+  .footer-sprite:before {
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+  }
+  
+  .icon-twitter:before {
+    background-color: @gray;
+    color: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: 15px;
+  }
+  
+  .icon-twitter:hover:before {
+    background-color: #00aced;
+  }
+  
+  .icon-rss:before {
+    color: @gray;
+    font-size: 19px;
+  }
+  
+  .icon-rss:hover:before {
+    color: #ff6600;
+  }
 }
