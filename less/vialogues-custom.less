@@ -248,6 +248,10 @@ html, body {
 	vertical-align: middle;
 }
 
+.comment-count {
+	position: absolute;
+}
+
 /* Vialogue Entry */
 
 .vialogue-entry  {
@@ -272,6 +276,7 @@ html, body {
 	.caption {
 		.condensed;
 		text-align: left;
+		padding: 0.2em;
 	}
 }
 
@@ -319,13 +324,13 @@ html, body {
 .vialogue-entry-block-sm {
 
 	.vialogue-entry-block;
-	width: 200px;
-	height: 200px;
-	padding: 0 24px 24px 0;
+	width: 210px;
+	height: 210px;
+	padding: 0 12px 12px 0;
 
 	> .vialogue-entry .thumbnail > img {
-		width: 167px;
-		height: 125px;
+		width: 180px;
+		height: 135px;
 	}
 	
 	.thumbnail-overlay {
@@ -454,6 +459,7 @@ html, body {
 	> .video-entry .thumbnail img {
 		width: 80px;
 		height: 60px;
+		cursor: pointer;
 	}
 	
 	.thumbnail-overlay {
@@ -503,5 +509,36 @@ html, body {
 		position: absolute;
 		top: 0;
 		left: 285px;
+	}
+	
+	.popover-content {
+		width: 220px;
+		min-height: 70px;
+		padding: 7px 5px;
+		font-size: @font-size-small;
+		position: relative;
+		
+		> ul {
+			margin: 5px auto 0 auto;
+		}
+		
+		li {
+			.comment-count {
+				line-height: 1.2em;
+				font-size: 1.2em;
+				
+				.icon-comment {
+					font-size: 1.2em;
+				}
+				
+				.text-over-icon {
+					margin-top: -1px;
+				}
+			}
+				
+			.truncate-1 > p {
+				padding-left: 2em;
+			}
+		}
 	}
 }
