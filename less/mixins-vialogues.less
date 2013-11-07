@@ -1,4 +1,9 @@
 .hspacer(@size: 20px) {
-	margin-top: @size;
-	.clearfix;
+  margin-top: @size;
+  .clearfix();
+}
+
+.bumper(@size: 60px) {
+  margin-bottom: @size; /* push next div down for better look */
+  .clearfix();
 }
