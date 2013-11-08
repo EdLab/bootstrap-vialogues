@@ -1,0 +1,118 @@
+#main_left {
+	overflow: visible;
+	position: relative;
+	
+	> #vialoguesplayer {
+		background-color: #000;
+		.box-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
+	}
+	
+	> #player_comment_box {
+		.box-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
+		width: 520px;
+		
+		#comment_form {
+			height: 78px;
+			overflow: hidden;
+			
+			.comment_input {
+				width: 759px;
+				height: 100%;
+				background-color: #fff;
+			}
+		}
+		
+		.prompt-text {
+			padding: 20px 0;
+			text-align: center;
+		}
+	}
+	
+	> #share_central {
+		.hspacer-20;
+		padding-left: 0;
+		padding-right: 0;
+		
+		#tab_selector {
+			padding: 0;
+			> li {
+				font-size: @font-size-xsmall;
+				
+				> a {
+					padding: 10px 7px;
+				}
+			}
+		}
+		
+		#share_bucket {
+			.bumper(60px);
+			.hspacer(10px);
+			padding: 0;
+			
+			.row {
+				margin: 0;
+			}
+			
+			.share-logo {
+				> span:before {
+					color: #fff;
+					background-color: @gray;
+					font-size: 20px;
+					line-height: 30px;
+					width: 30px;
+					display: inline-block;
+					text-align: center;
+					vertical-align: middle;
+				}
+				
+				.icon-facebook:before {
+					text-indent: 5px;
+				}
+				
+				.icon-facebook:hover:before {
+					background-color: #3a5897;
+				}
+				
+				
+				.icon-gplus:hover:before { 
+					background-color: #c03120;
+				}
+				
+				.icon-twitter:hover:before { 
+					background-color: #00aced;
+				}
+				
+				.icon-email:hover:before { 
+					background-color: #f36f21;
+				}
+			}
+			
+			#embed > textarea {
+				background-color: @gray-lighter;
+				margin-bottom: 10px;
+				width: 400px;
+				height: 50px;
+				font-size: @font-size-xsmall;
+				font-family: "Andale Mono", Courier, monospace;
+				word-break: break-all;
+			}
+		}
+		
+		#share_commands {
+			border-left: #ccc 1px solid;
+			font-size: @font-size-xsmall;
+			min-height: 300px;
+			padding: 5px 0;
+			
+			> li a {
+				padding: 0 5px;
+				line-height: 24px;
+				white-space: nowrap;
+			}
+		}
+	}
+}
+
+#main_right {
+
+}
