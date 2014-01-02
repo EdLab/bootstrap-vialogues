@@ -1,0 +1,193 @@
+
+h3 {
+	.pull-left;
+	margin-top: 0;
+}
+
+#manage_btns {
+	margin-left: 300px;
+}
+
+#manage_left, #manage_right > #privacy_settings {
+	.box-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
+	padding: 0;
+	border-radius: 4px;
+	min-height: 422px;
+}
+
+#manage_left {
+	> .col-md-6, > .col-xs-6 {
+		padding: 0;
+	}
+	
+	.thumbnail {
+		margin-right: 15px;
+		
+		.comment-count {
+			top: -10px;
+			right: 20px;
+			font-size: 30px;
+			
+			.text-over-icon {
+				height: 30px;
+			}
+		}
+	}
+	
+	#vialogue_meta {
+		
+		a[data-toggle="tab"] {
+			.hide;
+			float: right;
+			width: 65px;
+		}
+		
+		a[data-toggle="tab"].active {
+			.show;
+		}
+	
+		#vialogue_meta_view, #vialogue_meta_edit {
+			label {
+				.strong;
+				line-height: 30px;
+			}
+		}
+		
+		#vialogue_meta_edit {
+			textarea {
+				width: 100%;
+			}
+			
+			textarea#edit_title {
+				height: 80px;
+			}
+			
+			textarea#edit_description {
+				height: 200px;
+			}
+			
+			#vialogue_meta_save {
+				float: right;
+				margin-right: 10px;
+			}
+		}
+		
+		#vialogue_meta_view, #vialogue_meta_edit {
+			.vialogue-name {
+				min-height: 90px;
+			}
+			
+			.vialogue-description {
+				min-height: 210px;
+			}
+		}
+		
+		#char_count {
+			color: gray;
+		}
+	}
+}
+
+#manage_right {
+	.panel {
+		border: none;
+		
+		.panel-heading {
+			.strong;
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
+		}
+	}
+	
+	#privacy_settings {
+		margin-left: 10px;
+		
+		.manage-title {
+			.pull-left;
+			.strong;
+		}
+		
+		.save-panel {
+			.pull-right;
+			display: none;
+		}
+		
+		input#vialogue_secure_link {
+			width: 100%;
+		}
+		
+		.as-ui { /* autoSuggest UI */
+			ul.as-selections {
+				height: 95px
+			}
+		}
+		
+		#copy_ak_blurb {
+			display: none;
+			font-style: italic;
+			line-height: 1em;
+			font-size: small;
+			vertical-align: bottom;
+		}
+	}
+
+}
+
+#manage_bottom {
+	min-height: 300px;
+	border-left: solid 1px #ccc;
+	border-right: solid 1px #ccc;
+	border-bottom: solid 1px #ccc;
+	
+	.tab-pane {
+		position: relative;
+		padding: 10px;
+		.req-msg {
+			color: @warning-color;
+			padding: 20px;
+		}
+	}
+	
+	#manage_polls {
+		.poll-div {
+			padding: 10px 0;
+			line-height: 1.5em;
+			
+			.time-code {
+				float: left;
+				padding: 0 5px;
+				width: 70px;
+				overflow: hidden;
+				.strong;
+				cursor: pointer;
+				color: #4e68eb;
+			}
+			
+			.poll-body {
+				width: 500px;
+				float: left;
+				overflow: hidden;
+				
+				.comment-body {
+					.option-table {
+						tr {
+							display: block;
+							padding-left: 10px;
+							padding-right: 10px;
+						}
+					}
+				}
+			}
+			
+			.chart-container {
+				float: right;
+				.box-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
+				width: 300px;
+			}
+		}
+		
+		.poll-div:not(:first-child) {
+			.divider-top;
+		}
+	}
+}

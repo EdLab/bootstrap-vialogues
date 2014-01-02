@@ -2,6 +2,10 @@
 // Custom Vialogues Classes
 // --------------------------------------------------
 
+html, body {
+	word-wrap: break-word;
+}
+
 a, a:hover {
 	text-decoration: none;
 }
@@ -52,6 +56,10 @@ a, a:hover {
 .selected {
 	border: inset 3px @gray-light;
 	background-color: @gray-lighter;
+}
+
+.hspacer-10 {
+	.hspacer(10px);
 }
 
 .hspacer-20 {
@@ -443,14 +451,16 @@ html, body {
 	width: 300px;
 	padding: 15px 0;
 
-	> .video-entry .thumbnail {
+	.thumbnail {
+		float: left;
 		width: 90px;
 		height: 90px;
 		margin-top: 0;
 		margin-bottom: 0;
+		margin-right: 7px;
 	}
 	
-	> .video-entry .thumbnail img {
+	.thumbnail img {
 		width: 80px;
 		height: 60px;
 		cursor: pointer;
@@ -466,14 +476,9 @@ html, body {
 	
 	.caption {
 		.strong;
-		position: absolute;
-		top: 0;
-		left: 90px;
-		padding-top: 0;
-		width: 215px;
 	}
 	
-	.caption span:first-child {
+	.video-entry .caption span:first-child {
 		max-width: 125px;
 		display: inline-block;
 		vertical-align: middle;
@@ -485,24 +490,12 @@ html, body {
 	
 	.description {
 		.text-color;
-		position: absolute;
-		top: 23px;
-		left: 90px;
-		width: 200px;
-		padding-top: 0;
-		padding-left: 9px;
 	}
 	
 	.new {
-		position: absolute;
-		left: 95px;
-		bottom: 0;
 	}
 	
 	.icon-pencil {
-		position: absolute;
-		top: 0;
-		left: 285px;
 	}
 	
 	.popover-content {
