@@ -1,6 +1,7 @@
 #main_left {
 	overflow: visible;
 	position: relative;
+	min-height: 768px;
 	
 	> #vialoguesplayer {
 		background-color: #000;
@@ -220,7 +221,24 @@
 	}
 }
 
+#main_left.affix-top {
+	position: relative;
+}
+
+#main_left.affix {
+	position: fixed;
+	top: 0;
+	width: 560px;
+}
+
+#main_left.affix-bottom {
+	position: absolute;
+	width: 560px;
+}
+
 #main_right {
+  .pull-right;
+  
 	> #vialogue_title {
 		h3 {
 			display: inline-block;
@@ -279,7 +297,7 @@
 			.thread-main {
 				margin: 10px 0 10px 40px;
 				
-				> .comment-div {
+				.comment-div {
 					padding: 0 2px 5px 2px;
 					position: relative;
 					overflow: hidden;
@@ -289,11 +307,17 @@
 					}
 				}
 				
-				> .comment-div.child-comment {
+				.comment-div.comment-unseen {
+					.comment-foot {
+						background: url("/static/apps/vialogues/images/New-L.png") no-repeat 225px 0;
+					}
+				}
+				
+				.child-comment {
 					padding: 5px 2px 0 2px;
-					border-top: solid 1px @gray;
 					margin-left: 2em;
-					
+					border-top: solid 1px @gray;
+
 					form.comment-edit-form {
 						width: 270px;
 					}
@@ -303,6 +327,9 @@
 					background-color: @gray-lighter;
 					.edit-placeholder.active, .delete-placeholder {
 						.show();
+					}
+					.comment-body-text.truncate-2:after {
+						background-color: @gray-lighter;
 					}
 				}
 						
@@ -394,7 +421,7 @@
 				}
 				
 				.comment-foot {
-					
+				
 					.timeago {
 						font-style: italic;
 						color: @gray;

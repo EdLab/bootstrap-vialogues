@@ -1,0 +1,21 @@
+@media print {
+  #browser_warning, #navigation, #footer, #main_left {
+    .hide();
+  }
+  
+  #main_right {
+    width: 100%;
+    .comment-body {
+      width: 100% !important;
+      .comment-body-text {
+        height: auto;
+      }
+      .panel-collapse {
+        .show();
+      }
+      .toggle-comment-lbl, .toggle-thread-lbl, .comment-count, .truncate-2:after {
+        .hide();
+      }
+    }
+  }
+}

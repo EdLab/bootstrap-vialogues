@@ -154,15 +154,14 @@ a, a:hover {
 	text-align: right;
 	
 	background-size: 100% 100%;
+	background-color: #fff;
 	/* 1706x1 image, gradient for IE9. Transparent at 0% -> white at 15% -> white at 100%.*/  
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABqoAAAABCAMAAACRxg/eAAAABGdBTUEAALGPC/xhBQAAAwBQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wDWRdwAAAP90Uk5Tfet1sDrNWZIeSRDcocCFLWj1CbhSfuMl1EGoYJkYM8Zui/rwBk15FefYKrxGtKydZQzfIdDJNj1VpFyVcY6BBBwxw2yI/Pfy7RInQ09ie5B0eIMDD+kb5eEk2tbSMMs5QL66tkyyrqpYpl+fm5drAf0H+AoN8+4TFhkf3SIoKwDONDfHO8Q+wURHSlBTVlqiXWNmaZNvcox2iYZ/fAL+9vsFCPkL9A4R8e/sFOjqFxrm5B3i4CDeIybb2SnX1SzT0S/PMsw1yjjIxTzCP79CvbtFuUi3tUuzTrGvUa1Uq6lXp6Vbo16gYZ6cZJpnmJZqlG2RcI9zjYp6d4eChIAu7+D8pQAAASFJREFUOMtjqK+fG2y/UKVwkVDxEsOSZSFcyz3LV6tXrJOtXB/msImjaqtxzfZI8R1etbu16vbx/zsY63hYrvGoWdPxeJaWU+ZtZxIkz3l3XNTpvMzZdS1F9YZP922RnrsWvQ8y2PoeW014miX93HfiK4NJbwQmv89z/qgw9bPNtK8BTDN+Bqr98JvDIDr7r93voD98s365zPyuOP2b7Rf/T+xTPli/y30r8zrnpf6L7Gc8/U8sH2U+lLqffk/vTtot5pup13WvJl8RvpR0Qft84lne9tNOrSflm0+YHos7wtpwyORAzH6JvdF7NHdF7eSu3ma0JWKz2MbwDRprQtcyrvIoW6m8wr10qeB8t6LFSgtcC+b9HwWjYBSMglEw2AEA3ckkQdBniOMAAAAASUVORK5CYII=);
-	
-	
+	/* background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABqoAAAABCAMAAACRxg/eAAAABGdBTUEAALGPC/xhBQAAAwBQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wDWRdwAAAP90Uk5Tfet1sDrNWZIeSRDcocCFLWj1CbhSfuMl1EGoYJkYM8Zui/rwBk15FefYKrxGtKydZQzfIdDJNj1VpFyVcY6BBBwxw2yI/Pfy7RInQ09ie5B0eIMDD+kb5eEk2tbSMMs5QL66tkyyrqpYpl+fm5drAf0H+AoN8+4TFhkf3SIoKwDONDfHO8Q+wURHSlBTVlqiXWNmaZNvcox2iYZ/fAL+9vsFCPkL9A4R8e/sFOjqFxrm5B3i4CDeIybb2SnX1SzT0S/PMsw1yjjIxTzCP79CvbtFuUi3tUuzTrGvUa1Uq6lXp6Vbo16gYZ6cZJpnmJZqlG2RcI9zjYp6d4eChIAu7+D8pQAAASFJREFUOMtjqK+fG2y/UKVwkVDxEsOSZSFcyz3LV6tXrJOtXB/msImjaqtxzfZI8R1etbu16vbx/zsY63hYrvGoWdPxeJaWU+ZtZxIkz3l3XNTpvMzZdS1F9YZP922RnrsWvQ8y2PoeW014miX93HfiK4NJbwQmv89z/qgw9bPNtK8BTDN+Bqr98JvDIDr7r93voD98s365zPyuOP2b7Rf/T+xTPli/y30r8zrnpf6L7Gc8/U8sH2U+lLqffk/vTtot5pup13WvJl8RvpR0Qft84lne9tNOrSflm0+YHos7wtpwyORAzH6JvdF7NHdF7eSu3ma0JWKz2MbwDRprQtcyrvIoW6m8wr10qeB8t6LFSgtcC+b9HwWjYBSMglEw2AEA3ckkQdBniOMAAAAASUVORK5CYII=);
 	background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(white), color-stop(15%, white));
 	background: -moz-linear-gradient(to right, rgba(255, 255, 255, 0), white 15%, white);			
 	background: -o-linear-gradient(to right, rgba(255, 255, 255, 0), white 15%, white);
 	background: -ms-linear-gradient(to right, rgba(255, 255, 255, 0), white 15%, white);
-	background: linear-gradient(to right, rgba(255, 255, 255, 0), white 15%, white); 
+	background: linear-gradient(to right, rgba(255, 255, 255, 0), white 15%, white); */
 }
 
 .ellipsis i:before { content: "Read More";}
@@ -262,12 +261,6 @@ html, body {
 		margin-top: 22px;
 		.box-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
 	}
-
-	.thumbnail-underlay {
-		display: table;
-		float: none;
-		background-color: #000;
-	}
 	
 	.thumbnail-overlay {
 		text-shadow: @text-color 1px 1px 2px;
@@ -284,7 +277,7 @@ html, body {
 
 .vialogue-entry-block {
 	.pull-left;
-    position: relative;
+  position: relative;
 }
 
 /* Vialogue Entry Block MD */
@@ -361,7 +354,7 @@ html, body {
 .vialogue-entry-row {
 
 	.vialogue-entry-block;
-	width: 300px;
+	width: 100%;
 	padding: 15px 0;
 
 	> .vialogue-entry .thumbnail {
@@ -369,11 +362,10 @@ html, body {
 		height: 80px;
 		margin-top: 0;
 		margin-bottom: 0;
-	}
-	
-	> .vialogue-entry .thumbnail img {
-		width: 75px;
-		height: 56px;
+		img {
+      width: 75px;
+      height: 56px;
+    }
 	}
 	
 	.thumbnail-overlay {
@@ -387,15 +379,13 @@ html, body {
 		position: absolute;
 		right: 5%;
 		top: -5%;
-	}
-	
-	.comment-count .icon-comment {
-		font-size: @font-size-large;
-	}
-	
-	.comment-count .text-over-icon {
-		font-size: @font-size-xsmall;
-		margin-top: 1px;
+		.icon-comment {
+      font-size: @font-size-large;
+    }
+    .text-over-icon {
+      font-size: @font-size-xsmall;
+      margin-top: 1px;
+    }
 	}
 	
 	.caption {
@@ -418,116 +408,97 @@ html, body {
 
 /* Video Entry */
 
-.video-entry  {
-	
-	> .thumbnail {
-		position: relative;
-		margin-top: 22px;
-		.box-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
-	}
+.video-entry, .video-entry-full {
 
-	.thumbnail-underlay {
-		display: table;
-		float: none;
-		background-color: #000;
-	}
-	
-	.thumbnail-overlay {
-		text-shadow: @text-color 1px 1px 2px;
-	    color: #fff;
-	    position: absolute;
-	}
-	
-	.caption {
-		text-align: left;
-	}
+  position: relative;
+  
+  > .thumbnail {
+    color: #fff;
+    position: relative;
+    .box-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
+    width: 90px;
+    height: 90px;
+    margin: 0 10px 0 0;
+    float: left;
+
+    img {
+      width: 80px;
+      height: 60px;
+      cursor: pointer;
+    }
+    .thumbnail-overlay {
+      right: 7%;
+      color: @gray-dark;
+      font-size: @font-size-xsmall;
+      text-shadow: none;
+      padding-top: 5px;
+    }
+  }
+  
+  > .caption {
+    .strong;
+    text-align: left;
+    
+    .duration {
+      display: inline-block;
+    }
+  }
+  
+  > .description {
+      .text-color;
+  }
+  
+  .icon-pencil {
+    right: 0; 
+  }
+  
+  .popover-content {
+    width: 220px;
+    min-height: 70px;
+    padding: 7px 5px;
+    font-size: @font-size-small;
+    position: relative;
+      
+    > ul {
+      margin: 5px auto 0 auto;
+    }
+    
+    li {
+      .comment-count {
+        line-height: 1.2em;
+        font-size: 1.2em;
+        
+        .icon-comment {
+          font-size: 1.2em;
+        }
+        
+        .text-over-icon {
+          margin-top: -1px;
+        }
+      }
+        
+      .truncate-1 > p {
+        padding-left: 2em;
+      }
+    }
+  }
 }
 
-/* Video Entry Row */
+.video-entry {  
+  width: 100%;
+  padding: 15px 0;
+  .caption {
+    span:first-child {
+      max-width: 125px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
 
-.video-entry-row {
 
-	.vialogue-entry-block;
-	width: 300px;
-	padding: 15px 0;
-
-	.thumbnail {
-		float: left;
-		width: 90px;
-		height: 90px;
-		margin-top: 0;
-		margin-bottom: 0;
-		margin-right: 7px;
-	}
-	
-	.thumbnail img {
-		width: 80px;
-		height: 60px;
-		cursor: pointer;
-	}
-	
-	.thumbnail-overlay {
-	    right: 7%;
-	    color: @gray-dark;
-	    font-size: @font-size-xsmall;
-	    text-shadow: none;
-	    padding-top: 5px;
-	}
-	
-	.caption {
-		.strong;
-	}
-	
-	.video-entry .caption span:first-child {
-		max-width: 125px;
-		display: inline-block;
-		vertical-align: middle;
-	}
-	
-	.duration {
-		display: inline-block;
-	}
-	
-	.description {
-		.text-color;
-	}
-	
-	.new {
-	}
-	
-	.icon-pencil {
-	}
-	
-	.popover-content {
-		width: 220px;
-		min-height: 70px;
-		padding: 7px 5px;
-		font-size: @font-size-small;
-		position: relative;
-		
-		> ul {
-			margin: 5px auto 0 auto;
-		}
-		
-		li {
-			.comment-count {
-				line-height: 1.2em;
-				font-size: 1.2em;
-				
-				.icon-comment {
-					font-size: 1.2em;
-				}
-				
-				.text-over-icon {
-					margin-top: -1px;
-				}
-			}
-				
-			.truncate-1 > p {
-				padding-left: 2em;
-			}
-		}
-	}
+.video-entry-full {
+  
 }
 
 /* Favorite Star */
