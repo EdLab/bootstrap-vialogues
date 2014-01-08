@@ -1,0 +1,42 @@
+.tooltip {
+	.tooltip-inner {
+		background-color: #c00;
+	}
+}
+
+.tooltip.top, .tooltip.bottom {
+	.tooltip-arrow {
+		border-top-color: #c00;
+		border-bottom-color: #c00;
+	}
+}
+
+.tooltip.left, .tooltip.right {
+	.tooltip-arrow {
+		border-left-color: #c00;
+		border-right-color: #c00;
+	}
+}
+
+#manage_video {
+	#basic_info {
+		#basic_info_right {
+			label[for="video_thumb_input"] {
+				width: 360px;
+				img#video_thumb {
+					max-width: 360px;
+					max-height: 360px;
+				}
+			
+				img#video_thumb:hover {
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	
+	#manage_video_controls {
+		padding: 10px;
+		text-align: right;
+	}
+}
