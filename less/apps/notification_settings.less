@@ -1,0 +1,76 @@
+.tooltip {
+	.tooltip-inner {
+		background-color: @warning-color;
+	}
+}
+
+.tooltip.top, .tooltip.bottom {
+	.tooltip-arrow {
+		border-top-color: @warning-color;
+		border-bottom-color: @warning-color;
+	}
+}
+
+.tooltip.left, .tooltip.right {
+	.tooltip-arrow {
+		border-left-color: @warning-color;
+		border-right-color: @warning-color;
+	}
+}
+
+#general_settings_form {
+	#general_settings_left {
+		.hspacer(78px);
+		text-align: right;
+	}
+	
+	#general_settings_right {
+		.hspacer(20px);
+		position: relative;
+		display: block;
+		padding: 20px;
+		width: 435px;
+		max-width: 450px;
+		z-index: 100;
+		
+		.arrow {
+			top: 90px;
+		}
+		
+		label {
+			width: 6em;
+		}
+		
+		#password_form {
+			label { 
+				width: 13em;
+			}
+		}
+		
+		#save_general_settings {
+			margin-right: 20px;
+			margin-top: 10px;
+		}
+		
+		
+	}
+}
+
+#notifications_settings_form {
+	#notifications_settings_left {
+		.hspacer(78px);
+		text-align: right;
+	}
+	
+	#notifications_settings_right {
+		.hspacer(20px);
+		
+		ul.list-unstyled {
+			.hspacer-20;
+			.glyphicon, [class^="icon-"], [class*=" icon-"], input[type="checkbox"] {
+				width: 1.5em;
+				text-align: center;
+			}
+		}
+	}
+}

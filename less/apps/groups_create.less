@@ -9,6 +9,26 @@
 	margin-right: 1em;
 }
 
+.tooltip {
+	.tooltip-inner {
+		background-color: @warning-color;
+	}
+}
+
+.tooltip.top, .tooltip.bottom {
+	.tooltip-arrow {
+		border-top-color: @warning-color;
+		border-bottom-color: @warning-color;
+	}
+}
+
+.tooltip.left, .tooltip.right {
+	.tooltip-arrow {
+		border-left-color: @warning-color;
+		border-right-color: @warning-color;
+	}
+}
+
 #create_group_form {
 	.step-box {
 		.border-top-radius(4px);

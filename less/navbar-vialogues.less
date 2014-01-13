@@ -261,29 +261,34 @@
   // --------------------------------------------------
   
   li#cas_menu {
-    height: @navbar-height;
-  }
+  	height: @navbar-height;
+    #cas_login_dropdown {
+      a {
+	   	color: @link-color;
+	  }
+    }
   
-  li#cas_menu #caslinks {
-    display: inline-block;
-    height: 100%;
-  }
-  
-  li#cas_menu #caslinks a {
-    display: inline-block;
-    line-height: @navbar-height;
-    padding-left: 10px;
-    padding-right: 10px;
-    cursor: pointer;
-  }
-  
-  li#cas_menu #caslinks a.cas_login_selected {
-    background-color: @gray-dark;
-    border: none;
-  }
-  
-  li#cas_menu #caslinks a.casHeaderLink:hover {
-    background-color: @gray-dark;
+	  #caslinks {
+	    display: inline-block;
+	    height: 100%;
+	    
+	    a {
+		  display: inline-block;
+		  line-height: @navbar-height;
+		  padding-left: 10px;
+		  padding-right: 10px;
+		  cursor: pointer;
+		}
+		
+		a.cas_login_selected {
+		  background-color: @gray-dark;
+		  border: none;
+		}
+		a.casHeaderLink:hover {
+    	  background-color: @gray-dark;
+  		}
+	  }
+	  
   }
   
   // User Dropdown Menu
