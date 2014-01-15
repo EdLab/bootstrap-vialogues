@@ -1,303 +1,317 @@
-// Navigation Components
+// Full Width Navigation Background
+// --------------------------------------------------
+
+#navigation_background {
+	background-color: #353535;
+	border: #192124;
+}
+
+
+// Notification Popover (positioned relative to the body)
+// --------------------------------------------------
+
+.popover {
+	.popover-content {
+	   	padding: 0;
+	   	
+	   	ul.list-group {
+		    margin-bottom: 0;
+		    width: 250px;
+		    padding: 5px 0 0 0;
+		  
+			> li.list-group-item  {
+			    padding: 0 5px;
+			    border: none;
+			    font-size: @font-size-small;
+			    line-height: 1.2em;
+			    a {
+					color: @text-color;
+				}
+			}
+			
+			> li.list-group-item:hover {
+				a {
+				    display: block;
+				    width: 100%;
+				    color: #fff;
+				    background-color: @blue;
+				    text-decoration: none;
+				}
+			}
+			
+			> li.divider {
+			    width: 100%;
+			    height: 0;
+			    margin: 3px 0;
+			    list-style: none;
+			    border-bottom: solid 1px @gray;
+			}
+		}
+		  
+	}
+	 
+}
+
+// Navigation
 // --------------------------------------------------
 
 #navigation {
 	height: @navbar-height; 
 	width: @screen-md;
-	margin-bottom: @navbar-margin-bottom;
-	background: url(../assets/img/vialogues_sprites.png) no-repeat right top;
-	.box-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
+	  
+	> ul.list-inline {
+    	white-space: nowrap;
+    	margin: 0;
+    	
+    	button {
+    		background: none;
+    		border: none;
+    	}
+    
+		> li {
+		    vertical-align: middle;
+		    height: @navbar-height;
+		    padding: 0;
+		
+			> a {
+				color: #04b3fc; /* modified link color specifically to suit navbar bg color */
+	    		line-height: @navbar-height;
+	    		height: @navbar-height;
+	    		display: table-cell;
+	    		padding: 0 15px;
+			}
+			
+			> a.disabled {
+				color: @gray-light;
+			}
+	    }
+    
+	    > li:hover, > li:focus, > li:active {
+	    	background-color: #192124;
+	    	cursor: pointer;
+	    	
+	    	> a {
+	    		color: @blue-light;
+	    	}
+			
+			> a.disabled {
+				color: @gray-light;
+			}
+	    }
+  
+		.text-over-icon { /* TODO : this part remains to do once design doc is provided */
+	    	left: 22px;
+	    	bottom: 9px;
+	    	font-size: 11px;
+	    	width: 15px;
+		}
+	
+		.icon-notification-active {
+	    	position: relative;
+		}
+	  
+		.icon-notification-active:before {
+		    z-index: -1;
+		    font-size: 21px;
+		    
+		    color: @blue !important;
+		    opacity: 1 !important;  /* reset transparency */
+		}
+	  
+		.icon-notification-active:after {
+		    content: '\e80b';
+		    font-family: vialogues;
+		    font-style: normal;
+		    font-weight: normal;
+		    speak: none;
+		    display: inline-block;
+		    width: 12px;
+		    font-size: 12px;
+		    vertical-align: super;
+		    margin-left: -12px;
+		    z-index: 100;
+		  
+		    color: @brand-theme;
+		    opacity: 1 !important; /* reset transparency */
+		}
+	}
+  
+
+	// Navigation Components
+	// --------------------------------------------------
 	
 	#top_logo {
-    width: 160px;
-    height: 54px;
-    display: block;
-    background: url(../assets/img/vialogues_sprites.png) no-repeat -170px -49px;
-    margin-left: -5px;
-  }
+		padding: 0;
+		margin-left: 0;
+		
+		> a {
+			padding: 0;
+		}
+	}
+	
+	#top_logo:hover, #search:hover {
+		background-color: transparent;
+	}
+	
+	#search {
+		@search-input-height: 25px;
   
-  > ul.list-inline {
-    white-space: nowrap;
-  }
+		> form {
+		    padding-top: 13px;
+		    padding-right: 10px;
+		}
+	  
+		input#id_q {
+		    width: 230px;
+		    height: @search-input-height;
+		    border: 0;
+		    background-color: #ccc;
+		}
+	  
+		#advanced_search {
+	    	visibility: hidden;
+		}
+	  
+		#search_button {
+		    background-color: #ccc;
+		    width: 28px;
+		    height: @search-input-height;
+		    border: none;
+		    border-radius: 0;
+		    margin: 0 0 0 -1px;
+		    padding: 0;
+		}
+	  
+		#search_button .icon-search:before {
+		    color: @text-color;
+		    opacity: 1;
+		    line-height: @search-input-height; // for vertical align
+		}
+		  
+		#search_options {
+		    background-color: @gray-dark;
+		    color: #fff;
+		    position: relative;
+		    left: 120px;
+		}
+		  
+		#advanced_search ul.dropdown-menu {
+		    position: absolute;
+		    top: -2px;
+		    width: 230px;
+		    background-color: @gray-dark;
+		    color: #fff;
+		    font-size: x-small;
+		    padding: 5px 0;
+		    margin-left: 40px;
+		}
+		  
+		#advanced_search ul.dropdown-menu > li {
+		    padding: 0 5px;
+		}
+		  
+		#advanced_search ul.dropdown-menu > li > span {
+		    display: table-cell;
+		}
+		  
+		#advanced_search ul.dropdown-menu > li > span:nth-child(2) {
+		    width: 100%;
+		}
+		  
+		#advanced_search ul.dropdown-menu label {
+		    padding-right: 10px;
+		}
+		  
+		#advanced_search ul.dropdown-menu input {
+		    width: 1
+		}
+	}
+	  
+	#search:hover {
+		#advanced_search {
+    		visibility: visible;
+    	}
+	}
+	
   
-  > ul.list-inline > li {
-    vertical-align: top;
-    height: @navbar-height;
-    line-height: 100%;
-  }
-  
-  > ul.list-inline > li.divider-left:not([id="cas_menu"]):hover {
-    background-color: @gray-dark;
-  }
-  
-  > ul.list-inline > li.divider-left > a {
-    line-height: 36px;
-  }
-  
-  > ul.list-inline > li.divider-left a {
-    color: white;
-    text-decoration: none;
-    font-size: 125%;
-  }
-  
-  > ul.list-inline > li > button {
-    background-color: transparent;
-    border: none;
-    height: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    position: relative;
-  }
-  
-  > ul.list-inline > li > .button-delegate {
-    position: relative;
-    top: 40px;
-    left: 23px;
-    width: 0;
-    height: 0;
-  }
-  
-  [class^="icon-"]:before, [class*=" icon-"]:before {
-    color: @gray-light;
-    opacity: 0.7;
-  }
-  
-  [class^="icon-"]:hover:before, [class*=" icon-"]:hover:before {
-    opacity: 0.95;
-  }
-  
-  #user_menu #user_menu_ext {
-    top: 0;
-    color: @text-color;
-  }
-  
-  #user_menu #user_menu_ext a {
-    color: @link-color;
-  }
-  
-  ul.dropdown-menu > li.dropdown-header {
-    color: @text-color;
-    padding: 0 10px;
-  }
-  
-  ul.dropdown-menu > li.divider {
-    padding: 0;
-    margin: 5px 0;
-    color: @gray;
-  }
-  
-  .text-over-icon {
-    left: 22px;
-    bottom: 9px;
-    font-size: 11px;
-    width: 15px;
-  }
-
-  // Custom Buttons
-  // --------------------------------------------------
-  
-  .icon-notification-active {
-    position: relative;
-  }
-  
-  .icon-notification-active:before {
-    z-index: -1;
-    font-size: 21px;
-    
-    color: @blue-light !important;
-    opacity: 1 !important;  /* reset transparency */
-  }
-  
-  .icon-notification-active:after {
-    content: '\e80b';
-    font-family: vialogues;
-    font-style: normal;
-    font-weight: normal;
-    speak: none;
-    display: inline-block;
-    width: 12px;
-    font-size: 12px;
-    vertical-align: super;
-    margin-left: -12px;
-    z-index: 100;
-  
-    color: @brand-theme;
-    opacity: 1 !important; /* reset transparency */
-  }
-  
-  button#request_btn, button#notification_btn {
-    opacity: 0.8;
-  }
-  
-  button#request_btn:hover, button#notification_btn:hover {
-    opacity: 1;
-  }
-  
-  // Popover List
-  // --------------------------------------------------
-  
-  .popover-content {
-    padding: 0;
-  }
-  
-  .popover-content ul.list-group {
-    margin-bottom: 0;
-    width: 250px;
-    padding: 5px 0 0 0;
-  }
-  
-  .popover-content ul.list-group > li.list-group-item  {
-    padding: 0 5px;
-    border: none;
-    font-size: @font-size-small;
-    line-height: 1.2em;
-  }
-  
-  .popover-content ul.list-group > li.list-group-item:hover {
-    
-  }
-  
-  .popover-content ul.list-group > li.list-group-item a {
-    color: @text-color;
-  }
-  
-  .popover-content ul.list-group > li.list-group-item:hover a {
-    display: block;
-    width: 100%;
-    color: #fff;
-    background-color: @gray;
-    text-decoration: none;
-  }
-  
-  .popover-content ul.list-group > li.divider {
-    width: 100%;
-    height: 0;
-    margin: 3px 0;
-    list-style: none;
-    border-bottom: solid 1px @gray;
-  }
-  
-  // Search Form
-  // --------------------------------------------------
-  
-  @search-input-height: 25px;
-  
-  li#search > form {
-    padding-top: 7px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  
-  input#id_q {
-    width: 230px;
-    height: @search-input-height;
-    border: 0;
-    background-color: #ccc;
-  }
-  
-  #search div#advanced_search {
-    visibility: hidden;
-  }
-  
-  #search:hover div#advanced_search {
-    visibility: visible;
-  }
-  
-  #search_button {
-    background-color: #ccc;
-    width: 28px;
-    height: @search-input-height;
-    border: none;
-    border-radius: 0;
-    margin: 0 0 0 -1px;
-    padding: 0;
-  }
-  
-  #search_button .icon-search:before {
-    color: @text-color;
-    opacity: 1;
-    line-height: @search-input-height; // for vertical align
-  }
-  
-  #search_options {
-    background-color: @gray-dark;
-    color: #fff;
-    position: relative;
-    left: 120px;
-  }
-  
-  #advanced_search ul.dropdown-menu {
-    position: absolute;
-    top: -2px;
-    width: 230px;
-    background-color: @gray-dark;
-    color: #fff;
-    font-size: x-small;
-    padding: 5px 0;
-    margin-left: 40px;
-  }
-  
-  #advanced_search ul.dropdown-menu > li {
-    padding: 0 5px;
-  }
-  
-  #advanced_search ul.dropdown-menu > li > span {
-    display: table-cell;
-  }
-  
-  #advanced_search ul.dropdown-menu > li > span:nth-child(2) {
-    width: 100%;
-  }
-  
-  #advanced_search ul.dropdown-menu label {
-    padding-right: 10px;
-  }
-  
-  #advanced_search ul.dropdown-menu input {
-    width: 100%;
-  }
-  
-  // CAS Menu Styles
-  // --------------------------------------------------
-  
-  li#cas_menu {
-  	height: @navbar-height;
-    #cas_login_dropdown {
-      a {
-	   	color: @link-color;
-	  }
-    }
-  
-	  #caslinks {
-	    display: inline-block;
-	    height: 100%;
-	    
-	    a {
-		  display: inline-block;
-		  line-height: @navbar-height;
-		  padding-left: 10px;
-		  padding-right: 10px;
-		  cursor: pointer;
+	#user_menu {
+		
+		#user_arrow {
+			border-top-color:@link-color !important;
+			border-bottom-color:@link-color !important
 		}
 		
-		a.cas_login_selected {
-		  background-color: @gray-dark;
-		  border: none;
+		#user_arrow:hover {
+			border-top-color:@link-hover-color !important;
+			border-bottom-color:@link-hover-color !important
 		}
-		a.casHeaderLink:hover {
-    	  background-color: @gray-dark;
-  		}
-	  }
-	  
-  }
+		
+		#user_menu_ext {
+			top: 48px;
+			color: @text-color;
+			
+			a {
+				color: @link-color;
+			}
+		
+			
+			a:hover {
+				background-color: @blue;
+				color: #fff;
+			}
+				
+			> li.divider {
+			    padding: 0;
+			    margin: 5px 0;
+				color: @gray;
+			}
+			
+			> li.dropdown-header {
+			    color: @text-color;
+			    padding: 0 10px;
+			}
+		}
+	}
+	
+	// CAS Menu Styles
+	// --------------------------------------------------
   
-  // User Dropdown Menu
-  // --------------------------------------------------
-  
-  ul.dropdown-menu > li:hover a {
-    background-color: @gray;
-    color: #fff !important;
-  }
+	#cas_menu {
+        #caslinks {
+            display: inline-block;
+            height: 100%;
+            
+            > a.casHeaderLink {
+            	display: table-cell;
+            	line-height: @navbar-height;
+            	padding-left: 10px;
+            	padding-right: 10px;
+            }
+            
+            > a.casHeaderLink:hover {
+            	background-color: #192124;
+            }
+                
+            > a.cas_login_selected {
+            	background-color: #192124;
+            	border-color: #192124;
+            	border-bottom: none;
+            }
+            
+            #cas_divider {
+            	.hidden;
+            }
+        }
+	}
+	
+	#cas_menu:hover {
+		background-color: transparent;
+	}
+	
+	#cas_login_dropdown {
+		top: 50px !important;
+	}
+	
 }
 
 
@@ -306,66 +320,24 @@
 // --------------------------------------------------
 
 #footer {
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	padding: 10px 20px 28px 20px;
+	width: 100%;
 	font-size: @font-size-small;
 	background-color: @gray-lighter;
-	.box-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
 	
-	> ul.list-inline > li {
-    vertical-align: top;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+	
+	> ul.list-inline {
+		padding-left: 0;
+		padding-right: 0;
+		
+		> li {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
   
-  > ul.list-inline > li > a {
-    color: @gray-dark;
-    text-decoration: none;
-  }
-  
-  #footer_left li {
-    margin-top: 2px;
-    margin-bottom: 2px;
-  }
-  
-  #footer_left li.divider-left {
-    margin-left: -2px; 
-    border-left: 2px groove @blue-light;
-  }
-  
-  a#copyright {
-    color: @gray;
-    text-decoration: none;
-  }
-  
-  .footer-sprite:before {
-    line-height: 20px;
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-  }
-  
-  .icon-twitter:before {
-    background-color: @gray;
-    color: #fff;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    font-size: 15px;
-  }
-  
-  .icon-twitter:hover:before {
-    background-color: #00aced;
-  }
-  
-  .icon-rss:before {
-    color: @gray;
-    font-size: 19px;
-  }
-  
-  .icon-rss:hover:before {
-    color: #ff6600;
-  }
+	.footer-sprite:before {
+		line-height: 1em;
+		height: 1em;
+		vertical-align: top;
+	}
 }
