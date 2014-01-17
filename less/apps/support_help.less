@@ -1,0 +1,43 @@
+h3 {
+    padding-left: 15px;
+}
+
+#help_container {
+    padding: 20px 0;
+    
+    #help_content {
+        overflow-x: hidden;
+    }
+    
+    #help_topics {
+        
+        padding-right: 0;
+        
+        #accordion {
+            .panel {
+                border: none;
+                .box-shadow(none);
+                background-color: transparent;
+                margin-top: 0;
+                
+                > .panel-heading {
+                    .border-bottom-radius(0);
+                    .border-top-radius(0);
+                    .divider-top;
+                    background-color: transparent;
+                    padding-right: 0;
+                    padding-left: 0;
+                }
+                
+                ul.panel-body {
+                    margin-bottom: 0;
+                }
+                
+            }
+            
+            .panel:first-child > .panel-heading {
+                border-top: none;
+            }
+        }
+    }
+}
