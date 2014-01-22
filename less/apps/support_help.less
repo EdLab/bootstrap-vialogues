@@ -6,7 +6,45 @@ h3 {
     padding: 20px 0;
     
     #help_content {
-        overflow-x: hidden;
+        #show_help_topic {
+            min-height: 200px;
+            
+            img {
+                max-width: 100%;
+            }
+            
+            > ol, ul {
+                margin-left: 18px;
+                padding-left: 0;
+            }
+                
+            li:not(:last-child) {
+                margin-bottom: 1em;
+            }
+            
+            ol.stepped {
+                counter-reset: item;
+                list-style-type: none;
+                margin-left: 0;
+                
+                > li:before {
+                    content: 'Step ' counter(item, decimal) ': ';
+                    counter-increment: item;
+                }
+            }
+            
+            ul.hyphened {
+                list-style-type: none;
+                margin-left: 0;
+                > li:before {
+                    content: '- ';
+                }
+            }
+            
+            pre {
+                word-break: initial;
+            }
+        }
     }
     
     #help_topics {
@@ -31,6 +69,11 @@ h3 {
                 
                 ul.panel-body {
                     margin-bottom: 0;
+                    
+                    a.disabled {
+                        cursor: default;
+                        color: @text-color;
+                    }
                 }
                 
             }
