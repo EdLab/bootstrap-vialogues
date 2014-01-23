@@ -172,6 +172,28 @@ a, a:hover {
 	margin-left: -5px;
 }
 
+/*
+ * Custom list styles
+ */
+ol.stepped {
+    counter-reset: item;
+    list-style-type: none;
+    margin-left: 0;
+    
+    > li:before {
+        content: 'Step ' counter(item, decimal) ': ';
+        counter-increment: item;
+    }
+}
+
+ul.hyphened {
+    list-style-type: none;
+    margin-left: 0;
+    > li:before {
+        content: '- ';
+    }
+}
+
 /* Page Structuring
 -------------------------------------------------- */
 
