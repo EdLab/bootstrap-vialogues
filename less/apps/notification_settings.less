@@ -1,97 +1,97 @@
 .tooltip {
-	.tooltip-inner {
-		background-color: @warning-color;
-	}
+    .tooltip-inner {
+        background-color: @warning-color;
+    }
 }
 
 .tooltip.top, .tooltip.bottom {
-	.tooltip-arrow {
-		border-top-color: @warning-color;
-		border-bottom-color: @warning-color;
-	}
+    .tooltip-arrow {
+        border-top-color: @warning-color;
+        border-bottom-color: @warning-color;
+    }
 }
 
 .tooltip.left, .tooltip.right {
-	.tooltip-arrow {
-		border-left-color: @warning-color;
-		border-right-color: @warning-color;
-	}
+    .tooltip-arrow {
+        border-left-color: @warning-color;
+        border-right-color: @warning-color;
+    }
 }
 
 .tab-content {
-	.box-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
-	padding-bottom: 20px;
-	
-	#general_settings_form {
-		#general_settings_left {
-			.hspacer(78px);
-			text-align: right;
-		}
-		
-		#general_settings_right {
-			.hspacer(20px);
-			position: relative;
-			display: block;
-			padding: 20px;
-			width: 435px;
-			max-width: 450px;
-			z-index: 100;
-			background-color: #39434c;
-			color: #fff;
-			
-			.arrow {
-				top: 90px;
-			}
-			
-			.arrow:after {
-				border-right-color: #39434c;
-			}
-			
-			label {
-				width: 6em;
-			}
-			
-			#password_form {
-				label { 
-					width: 13em;
-				}
-			}
-			
-			#save_general_settings {
-				margin-right: 20px;
-				margin-top: 10px;
-			}
-			
-			
-		}
-	}
-	
-	#notifications_settings_form {
-		#notifications_settings_left {
-			.hspacer(78px);
-			text-align: right;
-		}
-		
-		#notifications_settings_right {
-			.hspacer(20px);
-			border-left: solid 1px #ccc;
-			
-			ul.list-unstyled {
-				.hspacer-20;
-				.glyphicon, [class^="icon-"], [class*=" icon-"], input[type="checkbox"] {
-					width: 1.5em;
-					text-align: center;
-					cursor: none;
-				}
-				
-				.glyphicon-user:before, .icon-email:before {
-					color: @blue-light;
-				}
-				
-				.icon-comment:before, .glyphicon-calendar:before {
-					color: @brand-theme;
-				}
-			}
-		}
-	}
+    .box-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
+    padding-bottom: 20px;
+    
+    #general_settings_form {
+        #general_settings_left {
+            .hspacer(78px);
+            text-align: right;
+        }
+        
+        #general_settings_right {
+            .hspacer(20px);
+            position: relative;
+            width: 50%; /* override ".popover" class def */
+            max-width: none; /* override ".popover" class def */
+            display: block;
+            padding: 20px;
+            z-index: 100;
+            background-color: #39434c;
+            color: #fff;
+            
+            .arrow {
+                top: 90px;
+            }
+            
+            .arrow:after {
+                border-right-color: #39434c;
+            }
+            
+            label {
+                width: 33.33333333333333%;
+            }
+            
+            #password_form {
+                label { 
+                    width: 50%;
+                }
+            }
+            
+            #save_general_settings {
+                margin-right: 20px;
+                margin-top: 10px;
+            }
+            
+            
+        }
+    }
+    
+    #notifications_settings_form {
+        #notifications_settings_left {
+            .hspacer(78px);
+            text-align: right;
+        }
+        
+        #notifications_settings_right {
+            .hspacer(20px);
+            border-left: solid 1px #ccc;
+            
+            ul.list-unstyled {
+                .hspacer-20;
+                .glyphicon, [class^="icon-"], [class*=" icon-"], input[type="checkbox"] {
+                    width: 1.5em;
+                    text-align: center;
+                    cursor: none;
+                }
+                
+                .glyphicon-user:before, .icon-email:before {
+                    color: @blue-light;
+                }
+                
+                .icon-comment:before, .glyphicon-calendar:before {
+                    color: @brand-theme;
+                }
+            }
+        }
+    }
 }

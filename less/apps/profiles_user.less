@@ -1,9 +1,16 @@
 #my_videos {
-  padding-right: 0;
-  > h3 {
-    margin-top: 0;
-    padding-top: 0;
-  }
+    padding-right: 0;
+    > h3 {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    #my_videos_contents {
+        padding-top: 8px;
+        .divider-top {
+            padding-top: 0;
+            margin-top: 8px;
+        }
+    }
 }
 
 #my_vialogues {
@@ -20,16 +27,17 @@
       height: 124px;
     }
     
-    > .comment-count {
+    .comment-count {
       height: 42px;
-      left: 150px;
+      left: 83px;
+      top: -3px;
       
-      > .icon-comment {
+      .icon-comment {
         font-size: 42px;
         color: #b3bdc3;
       }
       
-      > .text-over-icon {
+      .text-over-icon {
         font-size: 18px;
       }
     }
