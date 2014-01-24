@@ -1,317 +1,317 @@
 .icon-disc {
-	width: 2em; 
-	height: 2em;
-	text-align: center;
-	line-height: 2em;
-	vertical-align: middle; 
-	background-color: #CCC;
-	color: #FFF;
-	margin-right: 1em;
+    width: 2em; 
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    vertical-align: middle; 
+    background-color: #CCC;
+    color: #FFF;
+    margin-right: 1em;
 }
 
 .icon-cancel:before {
-	color: #FFF;
-	background-color: #a22424;
-	font-size: 10px;
-	line-height: 18px;
-	height: 18px;
-	width: 18px;
-	
+    color: #FFF;
+    background-color: #a22424;
+    font-size: 10px;
+    line-height: 18px;
+    height: 18px;
+    width: 18px;
+}
+
+.input-group {
+    .input-group-btn {
+        .btn {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    }
 }
 
 .tooltip {
-	.tooltip-inner {
-		background-color: @warning-color;
-	}
+    .tooltip-inner {
+        background-color: @warning-color;
+    }
 }
 
 .tooltip.top, .tooltip.bottom {
-	.tooltip-arrow {
-		border-top-color: @warning-color;
-		border-bottom-color: @warning-color;
-	}
+    .tooltip-arrow {
+        border-top-color: @warning-color;
+        border-bottom-color: @warning-color;
+    }
 }
 
 .tooltip.left, .tooltip.right {
-	.tooltip-arrow {
-		border-left-color: @warning-color;
-		border-right-color: @warning-color;
-	}
-}
-
-.nav-tabs, .tab-content {
-	padding: 0;
+    .tooltip-arrow {
+        border-left-color: @warning-color;
+        border-right-color: @warning-color;
+    }
 }
 
 .tab-content#create_form {
 
-	.step-box {
-		.border-top-radius(4px);
-		.border-bottom-radius(4px);
-		border: solid #E2E3E5 1px;
-		padding: 20px 10px;
-	}
-	
-	.tab-pane.step-box {
-		border-top: none;
-	}
-	
-	.required-notice {
-		font-size: 10px;
-		font-family: Helvetica, Arial, sans-serif;
-		color: @brand-primary;
-	}
-			
-	.success-border {
-		.border-top-radius(4px);
-		.border-bottom-radius(4px);
-		background-color: #E5F5FC;
-		border: solid 1px #00539F;
-		padding: 5px 10px;
-		
-		.uploaded-success-text {
-			color: #00539f;
-		}
-	}
-	
-	#upload_new {
-	
-		> .step-box {
-			.border-top-radius(0);
-			border-top: none;
-		}
-		
-		#upload_new_step1_left {
-			.border-top-radius(4px);
-			.border-bottom-radius(4px);
-			background-color: #E2E3E5;
-			padding-top: 20px;
-			padding-bottom: 20px;
-			height: 280px;
-			
-			#browse_video {
-				width: 130px;
-			}
-		}
-		
-		#upload_new_step1_right {
-			.tab-content {
-				min-height: 220px;
-			}
-			
-			#basic_info {
-				#video_char_counter {
-					padding-right: 5px;
-					padding-top: 5px;
-				}
-			}
-			
-			#closed_captions {
-				label[for="id_captions"] {
-					.hide;
-				}
-			}
-		}
-		
-	}
-	
-	#use_existing {
-		#use_existing_left, #use_existing_right {
-			margin-top: 10px;
-		}
-		
-		#use_existing_left {
-			#selected_vid_preview {
-				.box-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
-				width: 180px;
-				min-height: 112px;
-				background-image: url(../assets/img/selectedVidBg.png);
-				background-repeat: no-repeat;
-				position: relative;
-				
-				#remove_selected_vid {
-					position: absolute;
-					right: -8px;
-					top: -8px;
-					border-radius: 50%;
-					background-color: #fff;
-					width: 20px;
-					height: 20px;
-				}
-				
-				#remove_selected_vid:before {
-					line-height: 20px;
-					color: #999;
-				}
-				
-				img.selected-vid-icon {
-					width: 180px;
-					height: 112px;
-				}
-				
-				.selected-vid-dur {
-					position: absolute;
-					top: 88px;
-					right: 4px;
-					padding: 0 3px;
-					background-color: #000;
-					color: #FFF;
-				}
-				
-				.selected-vid-name {
-					.strong;
-				}
-				
-				.selected-vid-desc {
-					font-size: smaller;
-				}
-			}
-		}
-		
-		#use_existing_right {
-			border-left: solid 1px #CCC;
-			
-			#video_selector_controls {
-				margin: 5px 0 5px 20px;
-				display: inline-block;
-				
-				#vid_search_query {
-					width: 350px;
-					padding-right: 20px;
-					margin-right: -25px;
-				}
-			}
-			
-			#video_selector_content {
-				.divider-top;
-				min-height: 125px;
-				
-				#videos_container {
-					
-					padding-top: 5px;
-					
-					.pagination {
-						margin: 0;
-						width: 100%;
-						text-align: right;
-						
-						li {
-							display: inline-block;
-							margin: 0 -2px;
-						}
-					}
-				
-					#videos_house {
-						
-						.video-entry-row {
-							display: inline;
-							.video-entry {
-								width: 220px;
-								padding-right: 4px;
-								display: inline-table;
-								
-								.icon-pencil, .new, .thumbnail-overlay {
-									.hide;
-								}
-								
-								.caption, .description {
-									width: 115px;
-									float: right;
-									text-align: left;
-								}
-								
-								.duration {
-									position: absolute;
-									left: 30px;
-									top: 83px;
-								}
-								
-								.duration:before, .duration:after {
-									content: "";
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-	
-	#use_youtube, #use_vimeo {
-		
-		.use-remote-left, .use-remote-right {
-			margin-top: 10px;
-		}
-		
-		.use-remote-left {
-			border-right: solid 1px #CCC;
-			
-			.remote-vid-meta {
-				.hspacer-10;
-			}
-		}
-		
-		.use-remote-right {
-			
-			.remote-vid-preview {
-				.box-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
-				width: 380px;
-				min-height: 214px;
-				background-size: 380px 220px;
-				background-image: url(../assets/img/selectedVidBg.png);
-				background-repeat: no-repeat;
-				position: relative;
-				
-				img {
-					width: 380px;
-					height: 214px;
-				}
-			}
-		}
-	}
-	
-	#define_vialogue {
-	
-		.bumper-60;
-	
-		#define_vialogue_left, #define_vialogue_right {
-			.hspacer-20;
-		}
-		
-		#define_vialogue_left {
-			.border-top-radius(4px);
-			.border-bottom-radius(4px);
-			
-			background-color: #3D4852;
-			color: #FFF;
-			padding: 10px;
-			
-			input, textarea {
-				background-color: #E2E3E5;
-			}
-			
-			textarea {
-				height: 185px;
-			}
-			
-			#submit_button {
-				width: 50%;
-				margin: 20px 25% 0 25%;
-			}
-			
-			#vialogue_char_counter {
-				padding-top: 5px;
-				padding-right: 15px;
-			}
-		}
-		
-		#define_vialogue_right {
-			#tip1 {
-				padding-top: 30px;
-			}
-			#tip2 {
-				padding-top: 65px;
-			}
-		}
-	}
+    .step-box {
+        .border-top-radius(4px);
+        .border-bottom-radius(4px);
+        border: solid #E2E3E5 1px;
+        padding: 20px 15px;
+    }
+    
+    .tab-pane.step-box {
+        border-top: none;
+    }
+    
+    .required-notice {
+        font-size: 10px;
+        font-family: Helvetica, Arial, sans-serif;
+        color: @brand-primary;
+    }
+            
+    .success-border {
+        .border-top-radius(4px);
+        .border-bottom-radius(4px);
+        background-color: #E5F5FC;
+        border: solid 1px #00539F;
+        padding: 5px 10px;
+        
+        .uploaded-success-text {
+            color: #00539f;
+        }
+    }
+    
+    #upload_new, #use_existing, #use_youtube, #use_vimeo {
+        .border-top-radius(0);
+        border-top: none;
+    }
+    
+    #upload_new {
+        
+        #upload_new_step1_left {
+            .border-top-radius(4px);
+            .border-bottom-radius(4px);
+            background-color: #E2E3E5;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            height: 280px;
+            
+            #browse_video {
+                width: 130px;
+            }
+        }
+        
+        #upload_new_step1_right {
+            .tab-content {
+                min-height: 220px;
+            }
+            
+            #basic_info {
+                #video_char_counter {
+                    padding-right: 5px;
+                    padding-top: 5px;
+                }
+            }
+            
+            #closed_captions {
+                label[for="id_captions"] {
+                    .hide;
+                }
+            }
+        }
+        
+    }
+    
+    #use_existing {
+        #use_existing_left, #use_existing_right {
+            margin-top: 10px;
+        }
+        
+        #use_existing_left {
+            #selected_vid_preview {
+                .box-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
+                width: 180px;
+                min-height: 112px;
+                background-image: url(../assets/img/selectedVidBg.png);
+                background-repeat: no-repeat;
+                position: relative;
+                
+                #remove_selected_vid {
+                    position: absolute;
+                    right: -8px;
+                    top: -8px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    width: 20px;
+                    height: 20px;
+                }
+                
+                #remove_selected_vid:before {
+                    line-height: 20px;
+                    color: #999;
+                }
+                
+                img.selected-vid-icon {
+                    width: 180px;
+                    height: 112px;
+                }
+                
+                .selected-vid-dur {
+                    position: absolute;
+                    top: 88px;
+                    right: 4px;
+                    padding: 0 3px;
+                    background-color: #000;
+                    color: #FFF;
+                }
+                
+                .selected-vid-name {
+                    .strong;
+                }
+                
+                .selected-vid-desc {
+                    font-size: smaller;
+                }
+            }
+        }
+        
+        #use_existing_right {
+            border-left: solid 1px #CCC;
+            
+            #video_selector_controls {
+                margin-bottom: 10px;
+                
+                .input-group {
+                    max-width: 50%;
+                }
+            }
+            
+            #video_selector_content {
+                .divider-top;
+                min-height: 125px;
+                
+                #videos_container {
+                    
+                    padding-top: 5px;
+                    
+                    .pagination {
+                        margin: 0;
+                        width: 100%;
+                        text-align: right;
+                        
+                        li {
+                            display: inline-block;
+                            margin: 0 -2px;
+                        }
+                    }
+                
+                    #videos_house {
+                        
+                        .video-entry-row {
+                            display: inline;
+                            .video-entry {
+                                width: 220px;
+                                padding-right: 4px;
+                                display: inline-table;
+                                
+                                .icon-pencil, .new, .thumbnail-overlay {
+                                    .hide;
+                                }
+                                
+                                .caption, .description {
+                                    width: 115px;
+                                    float: right;
+                                    text-align: left;
+                                }
+                                
+                                .duration {
+                                    position: absolute;
+                                    left: 30px;
+                                    top: 83px;
+                                }
+                                
+                                .duration:before, .duration:after {
+                                    content: "";
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    #use_youtube, #use_vimeo {
+        
+        .use-remote-left, .use-remote-right {
+            margin-top: 10px;
+        }
+        
+        .use-remote-left {
+            .remote-vid-meta {
+                .hspacer-10;
+            }
+        }
+        
+        .use-remote-right {
+            border-left: solid 1px #CCC;
+            
+            .remote-vid-preview {
+                .box-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
+                width: 380px;
+                min-height: 214px;
+                background-size: 380px 220px;
+                background-image: url(../assets/img/selectedVidBg.png);
+                background-repeat: no-repeat;
+                position: relative;
+                
+                img {
+                    width: 380px;
+                    height: 214px;
+                }
+            }
+        }
+    }
+    
+    #define_vialogue {
+    
+        .bumper-60;
+    
+        #define_vialogue_left, #define_vialogue_right {
+            .hspacer-20;
+        }
+        
+        #define_vialogue_left {
+            .border-top-radius(4px);
+            .border-bottom-radius(4px);
+            
+            background-color: #3D4852;
+            color: #FFF;
+            padding: 10px;
+            
+            input, textarea {
+                background-color: #E2E3E5;
+            }
+            
+            textarea {
+                height: 185px;
+            }
+            
+            #submit_button {
+                width: 50%;
+                margin: 0 25%;
+            }
+            
+            #vialogue_char_counter {
+                padding-top: 5px;
+                padding-right: 15px;
+            }
+        }
+        
+        #define_vialogue_right {
+            #tip1 {
+                padding-top: 30px;
+            }
+            #tip2 {
+                padding-top: 65px;
+            }
+        }
+    }
 }
