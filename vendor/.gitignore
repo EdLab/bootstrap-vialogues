@@ -1,0 +1,7 @@
+*/.git*
+*/*.md
+*/*.json
+*/Gruntfile.js
+bootstrap-tagsinput/*
+!bootstrap-tagsinput/dist
+bootstrap-tagsinput/dist/old
