@@ -10,7 +10,7 @@
     padding-top: 15px;
 }
 
-#all_discussions, #recommended_discussions {
+#all_discussions, #recommended_discussions, #search_discussions {
     .pagination, .breadcrumb {
         display: block;
         position: absolute;
@@ -24,5 +24,9 @@
 
     .breadcrumb {
         top: 20px;
+
+        .active a {
+            color: @text-color;
+        }
     }
 }
