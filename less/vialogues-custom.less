@@ -606,3 +606,25 @@ html, body {
     display: block;
     text-align: right;
 }
+
+
+/* Override various plugin styles
+-------------------------------------------------- */
+
+.bootstrap-tagsinput {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    padding-left: 0;
+    padding-right: 0;
+
+    .twitter-typeahead {
+        width: 100%;
+
+        .tt-query, .tt-hint {
+            width: 100% !important;
+            border-radius: 0;
+            /* if we're really turning off all rounded corners, we should really create a custom-variables.less file (or something) where we set one global value for border-radius's to dereference in other files */
+        }
+    }
+}

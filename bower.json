@@ -1,11 +1,17 @@
 {
   "name": "bootstrap",
   "version": "3.0.0",
-  "main": ["./dist/js/bootstrap.js", "./dist/css/bootstrap.css", "./dist/fonts/*"],
+  "main": [
+    "./dist/js/bootstrap.js",
+    "./dist/css/bootstrap.css",
+    "./dist/fonts/*"
+  ],
   "ignore": [
-      "**/.*"
+    "**/.*",
+    "node_modules"
   ],
   "dependencies": {
-    "jquery": ">= 1.9.0"
+    "typeahead.js-bootstrap3.less": "git://github.com/hyspace/typeahead.js-bootstrap3.less.git#~0.1.4",
+    "bootstrap-tagsinput": "~0.3.9"
   }
 }
