@@ -3,15 +3,15 @@
 @gray-dark:              #353535;
 @gray:                   #999;
 @gray-light:             #ccc;
-@gray-lighter:			 #efefef;
+@gray-lighter:           #efefef;
 
-@blue-dark:              #0000bb; // need review
+@blue-dark:              #0000bb;
 @blue:                   #0096d5;
 @blue-light:             #16e8fb;
 
 
-@brand-primary:         #428bca;
-@brand-theme:			#cc0000;
+@brand-primary:         @blue; // vialogues blue for various components e.g. button bg
+@brand-theme:           #cc0000; // vialogues red
 @brand-success:         #5cb85c;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
@@ -19,14 +19,14 @@
 
 
 @body-bg:               #fff;
+@theme-bg:              @gray-dark; // black bg for nav, tabs, theme btns, etc
 @text-color:            @gray-dark;
-@warning-color:			#cc0000;
-
+@warning-color:         #cc0000;
 
 @link-color:            @blue;
 @link-hover-color:      @blue-light;
 
-@container-desktop:            960px;
+@container-desktop:     960px;
 
 
 // Custom Fonts
@@ -54,11 +54,11 @@
 
 @font-face {
   font-family: 'vialogues';
-  src: url('@{webfont-dir}/eot/vialogues.eot?82452476'),
-       url('@{webfont-dir}/eot/vialogues.eot?82452476#iefix') format('embedded-opentype'),
-       url('@{webfont-dir}/woff/vialogues.woff?82452476') format('woff'),
-       url('@{webfont-dir}/ttf/vialogues.ttf?82452476') format('truetype'),
-       url('@{webfont-dir}/svg/vialogues.svg?82452476#vialogues') format('svg');
+  src: url('@{webfont-dir}/vialogues.eot?82452476'),
+       url('@{webfont-dir}/vialogues.eot?82452476#iefix') format('embedded-opentype'),
+       url('@{webfont-dir}/vialogues.woff?82452476') format('woff'),
+       url('@{webfont-dir}/vialogues.ttf?82452476') format('truetype'),
+       url('@{webfont-dir}/vialogues.svg?82452476#vialogues') format('svg');
   font-weight: normal;
   font-style: normal;
 }

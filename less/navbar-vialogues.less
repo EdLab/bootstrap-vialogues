@@ -2,19 +2,20 @@
 // --------------------------------------------------
 
 #navigation_background {
-    background-color: #353535;
+    background-color: @theme-bg;
     border: #192124;
 }
 
-// Notification Popover (positioned relative to the body)
+// Notification Popover (positioned relative to the 
+// body to avoid being messed up by dynamic elements)
 // --------------------------------------------------
 
-.popover {
+body > .popover {
     .popover-content {
         padding: 0;
 
         a {
-            color: #0096d5;
+            color: @brand-primary;
         }
 
         ul.list-group {
@@ -30,15 +31,15 @@
                 a {
                     color: @text-color;
                 }
-            }
 
-            > li.list-group-item:hover {
-                a {
-                    display: block;
-                    width: 100%;
-                    color: #fff;
-                    background-color: @blue;
-                    text-decoration: none;
+                &:hover {
+                    a {
+                        display: block;
+                        width: 100%;
+                        color: #fff;
+                        background-color: @blue;
+                        text-decoration: none;
+                    }
                 }
             }
 
@@ -57,9 +58,9 @@
 // --------------------------------------------------
 
 #navigation {
-    @navbar-link-color: #04b3fc;
+    @navbar-link-color: #04b3fc; // slightly different from @blue specifically to suit the navbar bg
     height: @navbar-height; 
-    background-color: #353535;
+    background-color: @theme-bg;
     border-color: #192124;
 
     ul.nav {
@@ -88,13 +89,13 @@
                 display: table-cell;
                 padding: 0 15px;
             }
-        }
 
-        > li:hover, > li:focus, > li:active { /* hover effects */
-            background-color: #192124;
+            &:hover, &:focus, &:active { /* hover effects */
+                background-color: #192124;
 
-            > a, [class^="icon-"]:before, [class*=" icon-"]:before {
-                color: @blue-light;
+                > a, [class^="icon-"]:before, [class*=" icon-"]:before {
+                    color: @blue-light;
+                }
             }
         }
 
@@ -121,6 +122,10 @@
 
             color: @brand-theme;
         }*/
+    }
+
+    ul.navbar-right {
+        margin-right: -15px;
     }
 
 
@@ -233,11 +238,11 @@
                 left: 90px;
             }
         }
-    }
 
-    #search:hover {
-        #advanced_search {
-            visibility: visible;
+        &:hover {
+            #advanced_search {
+                visibility: visible;
+            }
         }
     }
 
@@ -260,12 +265,10 @@
 
             a {
                 color: @link-color;
-            }
-
-
-            a:hover {
-                background-color: @blue;
-                color: #fff;
+                &:hover {
+                    background-color: @blue;
+                    color: #fff;
+                }
             }
 
             > li.divider {

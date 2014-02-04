@@ -29,6 +29,10 @@ a, a:hover {
     color: @brand-info;
 }
 
+.gray-color {
+    color: @gray;
+}
+
 .condensed {
     font-stretch: condensed;
 }
@@ -70,8 +74,16 @@ a, a:hover {
     .hspacer(40px);
 }
 
+.bumper-40 {
+    .bumper(40px);
+}
+
 .bumper-60 {
   .bumper(60px);
+}
+
+.pad-top-30 {
+    .pad-top(30px);
 }
 
 .divider-top {
@@ -81,7 +93,7 @@ a, a:hover {
 }
 
 .divider-bottom {
-    border-bottom: 1px solid #999999;
+    border-bottom: 1px solid @gray;
     padding-bottom: 9px;
     margin-bottom: 15px;
 }
@@ -93,22 +105,6 @@ a, a:hover {
 
 .content-wrapper {
     padding-left: 15px;
-    padding-right: 15px;
-}
-
-.pad-bottom {
-    padding-bottom: 15px;
-}
-
-.pad-top {
-    padding-top: 15px;
-}
-
-.pad-left {
-    padding-left: 15px;
-}
-
-.pad-right {
     padding-right: 15px;
 }
 
@@ -199,7 +195,7 @@ a, a:hover {
     box-sizing: content-box;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
-    
+
     float: right;
     position: relative;
     top: -31px;
@@ -208,7 +204,7 @@ a, a:hover {
     margin-left: -1.5em;
     padding-right: 5px;
     text-align: right;
-    
+
     background-size: 100% 100%;
     background-color: #fff;
     /* 1706x1 image, gradient for IE9. Transparent at 0% -> white at 15% -> white at 100%.*/  
@@ -235,7 +231,7 @@ ol.stepped {
     counter-reset: item;
     list-style-type: none;
     margin-left: 0;
-    
+
     > li:before {
         content: 'Step ' counter(item, decimal) ': ';
         counter-increment: item;
@@ -320,14 +316,14 @@ html, body {
 }
 
 .ajax-loader {
-  background: #aedef4 url(../assets/img/ajax_loader.gif) no-repeat 50% 50%;
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; 
-  height: 100%;
-  min-height: 25px;
-  .opacity(0.7);
-  z-index: 999;
+    background: #aedef4 url(../assets/img/ajax_loader.gif) no-repeat 50% 50%;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; 
+    height: 100%;
+    min-height: 25px;
+    .opacity(0.7);
+    z-index: 999;
 }
 
 /* Vialogue Entry */
@@ -339,13 +335,13 @@ html, body {
         margin-top: 22px;
         .box-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
     }
-    
+
     .thumbnail-overlay {
         text-shadow: @text-color 1px 1px 2px;
         color: #fff;
         position: absolute;
     }
-    
+
     .caption {
         .condensed;
         text-align: left;
@@ -355,37 +351,36 @@ html, body {
 
 .vialogue-entry-block {
     .pull-left;
-  position: relative;
+    position: relative;
 }
 
 /* Vialogue Entry Block MD */
 
 .vialogue-entry-block-md {
-    
     .vialogue-entry-block;
     width: 320px;
     padding: 0 10px;
-    
+
     > .vialogue-entry .thumbnail > img {
         width: 290px;
         height: 218px;
     }
-    
+
     .thumbnail-overlay {
         top: 73%;
         right: 7%;
     }
-    
+
     .comment-count {
         position: absolute;
         right: 2%;
         top: -5%;
     }
-    
+
     .comment-count .icon-comment {
         font-size: 44px;
     }
-    
+
     .comment-count .text-over-icon {
         font-size: 22px;
         margin-top: 6px;
@@ -395,7 +390,6 @@ html, body {
 /* Vialogue Entry Block SM */
 
 .vialogue-entry-block-sm {
-
     .vialogue-entry-block;
     width: 210px;
     height: 210px;
@@ -405,22 +399,22 @@ html, body {
         width: 180px;
         height: 135px;
     }
-    
+
     .thumbnail-overlay {
         top: 61%;
         right: 7%;
     }
-    
+
     .comment-count {
         position: absolute;
         right: 2%;
         top: -5%;
     }
-    
+
     .comment-count .icon-comment {
         font-size: 35px;
     }
-    
+
     .comment-count .text-over-icon {
         font-size: @font-size-large;
         margin-top: 6px;
@@ -430,7 +424,6 @@ html, body {
 /* Vialogue Entry Row */
 
 .vialogue-entry-row {
-
     .vialogue-entry-block;
     width: 100%;
     padding: 15px 0;
@@ -441,31 +434,31 @@ html, body {
         margin-top: 0;
         margin-bottom: 0;
         img {
-      width: 75px;
-      height: 56px;
+            width: 75px;
+            height: 56px;
+        }
     }
-    }
-    
+
     .thumbnail-overlay {
         right: 7%;
         color: @gray-dark;
         font-size: @font-size-xsmall;
         text-shadow: none;
     }
-    
+
     .comment-count {
         position: absolute;
         right: 5%;
         top: -5%;
         .icon-comment {
-      font-size: @font-size-large;
+            font-size: @font-size-large;
+        }
+        .text-over-icon {
+          font-size: @font-size-xsmall;
+          margin-top: 1px;
+        }
     }
-    .text-over-icon {
-      font-size: @font-size-xsmall;
-      margin-top: 1px;
-    }
-    }
-    
+
     .caption {
         position: absolute;
         top: 0;
@@ -487,117 +480,112 @@ html, body {
 /* Video Entry */
 
 .video-entry, .video-entry-full {
-
-  position: relative;
-  
-  > .thumbnail {
-    color: #fff;
     position: relative;
-    .box-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
-    width: 90px;
-    height: 90px;
-    margin: 0 10px 0 0;
-    float: left;
 
-    img {
-      width: 80px;
-      height: 60px;
-      cursor: pointer;
-    }
-    .thumbnail-overlay {
-      right: 7%;
-      color: @gray-dark;
-      font-size: @font-size-xsmall;
-      text-shadow: none;
-      padding-top: 5px;
-    }
-  }
-  
-  > .caption {
-    .strong;
-    text-align: left;
-    
-    .duration {
-      display: inline-block;
-    }
-    
-    .duration:before {
-        content: "(";
-    }
-    
-    .duration:after {
-        content: ")";
-    }
-  }
-  
-  > .description {
-      .text-color;
-  }
-  
-  .icon-pencil {
-    right: 0; 
-  }
-  
-  .popover-content {
-    width: 220px;
-    min-height: 70px;
-    padding: 7px 5px;
-    font-size: @font-size-small;
-    position: relative;
-      
-    > ul {
-      margin: 5px auto 0 auto;
-    }
-    
-    li {
-      .comment-count {
-        line-height: 1.2em;
-        font-size: 1.2em;
-        
-        .icon-comment {
-          font-size: 1.2em;
+    > .thumbnail {
+        color: #fff;
+        position: relative;
+        .box-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
+        width: 90px;
+        height: 90px;
+        margin: 0 10px 0 0;
+        float: left;
+
+        img {
+          width: 80px;
+          height: 60px;
+          cursor: pointer;
         }
-        
-        .text-over-icon {
-          margin-top: -1px;
+        .thumbnail-overlay {
+          right: 7%;
+          color: @gray-dark;
+          font-size: @font-size-xsmall;
+          text-shadow: none;
+          padding-top: 5px;
         }
-      }
-        
-      .truncate-1 > p {
-        padding-left: 2em;
-      }
     }
-  }
+
+    > .caption {
+        .strong;
+        text-align: left;
+
+        .duration {
+          display: inline-block;
+        }
+
+        .duration:before {
+            content: "(";
+        }
+
+        .duration:after {
+            content: ")";
+        }
+    }
+
+    > .description {
+        .text-color;
+    }
+
+    .icon-pencil {
+        right: 0; 
+    }
+
+    .popover-content {
+        width: 220px;
+        min-height: 70px;
+        padding: 7px 5px;
+        font-size: @font-size-small;
+        position: relative;
+
+        > ul {
+            margin: 5px auto 0 auto;
+        }
+
+        li {
+            .comment-count {
+                line-height: 1.2em;
+                font-size: 1.2em;
+
+                .icon-comment {
+                    font-size: 1.2em;
+                }
+
+                .text-over-icon {
+                    margin-top: -1px;
+                }
+            }
+
+            .truncate-1 > p {
+                padding-left: 2em;
+            }
+        }
+    }
 }
 
 .video-entry {  
-  width: 100%;
-  padding: 15px 0;
-  .caption {
-    span:first-child {
-      max-width: 125px;
-      display: inline-block;
-      vertical-align: middle;
+    width: 100%;
+    padding: 15px 0;
+    .caption {
+        span:first-child {
+            max-width: 125px;
+            display: inline-block;
+            vertical-align: middle;
+        }
     }
-  }
 }
 
-
-.video-entry-full {
-  
-}
 
 /* Favorite Star */
 .star-container {
-  margin-right: 5px;
+    margin-right: 5px;
 
-  .icon-star.star-off:before {
-    color: #999;
-  }
-  
-  .icon-star.star-on:before {
-    color: #0096d5;
-  }
+    .icon-star.star-off:before {
+        color: @gray;
+    }
+
+    .icon-star.star-on:before {
+        color: @blue;
+    }
 }
 
 /* Char Counter */
