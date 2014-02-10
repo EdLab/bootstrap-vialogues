@@ -20,7 +20,7 @@
     "js/tests"
   ],
   "dependencies": {
-    "typeahead.js-bootstrap3.less": "git://github.com/hyspace/typeahead.js-bootstrap3.less.git#~0.1.4",
+    "typeahead.js-bootstrap3.less": "~0.1.5",
     "bootstrap-tagsinput": "~0.3.9"
   }
 }

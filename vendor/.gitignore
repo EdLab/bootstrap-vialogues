@@ -2,6 +2,8 @@
 */*.md
 */*.json
 */Gruntfile.js
+bootstrap/
 bootstrap-tagsinput/*
 !bootstrap-tagsinput/dist
 bootstrap-tagsinput/dist/old
+jquery/

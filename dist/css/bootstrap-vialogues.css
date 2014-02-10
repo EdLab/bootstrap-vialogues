@@ -6377,12 +6377,15 @@ body > .popover .popover-content ul.list-group > li.divider {
   padding-right: 3px;
 }
 /*
- * typehead.js-bootstrap3.less 0.1.4
- * https://github.com/hyspace/typehead.js-bootstrap3.less
+ * typehead.js-bootstrap3.less 0.1.5
+ * https://github.com/hyspace/typeahead.js-bootstrap3.less
  *
  * Licensed under the MIT license:
  * http://www.opensource.org/licenses/MIT
  */
+.input-group {
+  width: 100%;
+}
 .twitter-typeahead .tt-query,
 .twitter-typeahead .tt-hint {
   width: 100%;
@@ -6484,6 +6487,10 @@ select[multiple].input-group.input-group-sm .twitter-typeahead .tt-query,
 select[multiple].input-group.input-group-sm .twitter-typeahead .tt-hint {
   height: auto;
 }
+.input-group.input-group-sm .twitter-typeahead:not(:first-child):not(:last-child) .tt-query,
+.input-group.input-group-sm .twitter-typeahead:not(:first-child):not(:last-child) .tt-hint {
+  border-radius: 0;
+}
 .input-group.input-group-sm .twitter-typeahead:first-child .tt-query,
 .input-group.input-group-sm .twitter-typeahead:first-child .tt-hint {
   border-top-left-radius: 3px;
@@ -6521,6 +6528,10 @@ select[multiple].input-group.input-group-lg .twitter-typeahead .tt-query,
 select[multiple].input-group.input-group-lg .twitter-typeahead .tt-hint {
   height: auto;
 }
+.input-group.input-group-lg .twitter-typeahead:not(:first-child):not(:last-child) .tt-query,
+.input-group.input-group-lg .twitter-typeahead:not(:first-child):not(:last-child) .tt-hint {
+  border-radius: 0;
+}
 .input-group.input-group-lg .twitter-typeahead:first-child .tt-query,
 .input-group.input-group-lg .twitter-typeahead:first-child .tt-hint {
   border-top-left-radius: 6px;
@@ -6543,7 +6554,6 @@ select[multiple].input-group.input-group-lg .twitter-typeahead .tt-hint {
   width: 100%;
 }
 .twitter-typeahead .tt-hint {
-  z-index: 1;
   color: #ccc;
   border: 1px solid transparent;
 }
@@ -6587,12 +6597,14 @@ fieldset[disabled] .twitter-typeahead .tt-query {
   color: #353535;
   white-space: nowrap;
 }
+.tt-dropdown-menu .tt-suggestion.tt-cursor,
 .tt-dropdown-menu .tt-suggestion.tt-is-under-cursor {
   color: #fff;
   text-decoration: none;
   background-color: #0096d5;
   outline: 0;
 }
+.tt-dropdown-menu .tt-suggestion.tt-cursor a,
 .tt-dropdown-menu .tt-suggestion.tt-is-under-cursor a {
   color: #fff;
 }
