@@ -1,32 +1,62 @@
-#my_videos {
-    padding-right: 0;
-    > h3 {
-        margin-top: 18px;
-    }
-}
-
-#tab_selector {
-    .divider-top;
-    padding-top: 15px;
-}
-
-#all_discussions, #recommended_discussions, #search_discussions {
-    .pagination, .breadcrumb {
-        display: block;
-        position: absolute;
-        right: 25px;
-        white-space: nowrap;
+.nav-tabs > li {
+    > a {
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        text-transform: uppercase;
+        font-size:12px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
-    .pagination {
-        top: 45px;
-    }
-
-    .breadcrumb {
-        top: 20px;
-
-        .active a {
-            color: @text-color;
+    &.active {
+        > a,
+        > a:hover,
+        > a:focus {
+            color: #353535;
+            cursor: default;
+            background-color: #fff;
         }
     }
+}
+
+.nav > li >a:hover {
+    color: #16e8fb;
+    background-color: #192124;
+}
+
+.row {
+    &.explore_row {
+        padding-top: 20px;
+    }
+}
+
+.explore_video {
+    padding-bottom: 14px;
+    border-bottom: 1px dotted #ddd;
+
+    h6 {
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 1.3em;
+        color: #353535;
+        margin-bottom: 6px;
+        margin-top: 0px;
+        text-transform: capitalize;
+    }
+
+    .media-body {
+        color: #999;
+        line-height: 1.3em;
+    }
+}
+
+.seeall {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+.glyphicon.glyphicon-film {
+    color: #999;
 }

@@ -291,6 +291,43 @@ html, body {
 }
 
 
+/* Page Headers
+-------------------------------------------------- */
+h3 {
+    &.pageheader {
+        text-transform: capitalize;
+        margin-bottom: 24px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        color: #353535;
+    }
+}
+
+h4 {
+    &.pageheader {
+        text-transform: capitalize;
+        margin-bottom: 24px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        color: #353535;
+        padding-top:6px;
+    }
+
+    &.subhead_top {
+        text-transform: capitalize;
+        display: block;
+        margin-top: 6px;
+        margin-bottom: 18px;
+    }
+
+    &.subhead {
+        text-transform: capitalize;
+        display: block;
+        margin-top: 22px;
+        margin-bottom: 18px;
+    }
+}
+
 /* Components
 -------------------------------------------------- */
 
@@ -326,154 +363,65 @@ html, body {
     z-index: 999;
 }
 
+.sort_options_dropdown {
+    display: block;
+    position: absolute;
+    top: 84px;
+    right: 15px;
+}
+
+.pagination-sm>li:last-child>a, .pagination-sm>li:last-child>span, .pagination-sm>li:first-child>a, .pagination-sm>li:first-child>span {
+    .border-right-radius(2px);
+}
+
 /* Vialogue Entry */
 
-.vialogue-entry  {
-  
-    > .thumbnail {
-        position: relative;
-        margin-top: 22px;
-        .box-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
-    }
+.single_vialogue {
+    .thumbnail {
+        border: 0px;
+        margin-bottom: 14px;
+        padding: 0px;
 
-    .thumbnail-overlay {
-        text-shadow: @text-color 1px 1px 2px;
-        color: #fff;
-        position: absolute;
-    }
-
-    .caption {
-        .condensed;
-        text-align: left;
-        padding: 0.2em;
-    }
-}
-
-.vialogue-entry-block {
-    .pull-left;
-    position: relative;
-}
-
-/* Vialogue Entry Block MD */
-
-.vialogue-entry-block-md {
-    .vialogue-entry-block;
-    width: 320px;
-    padding: 0 10px;
-
-    > .vialogue-entry .thumbnail > img {
-        width: 290px;
-        height: 218px;
-    }
-
-    .thumbnail-overlay {
-        top: 73%;
-        right: 7%;
-    }
-
-    .comment-count {
-        position: absolute;
-        right: 2%;
-        top: -5%;
-    }
-
-    .comment-count .icon-comment {
-        font-size: 44px;
-    }
-
-    .comment-count .text-over-icon {
-        font-size: 22px;
-        margin-top: 6px;
-    }
-}
-
-/* Vialogue Entry Block SM */
-
-.vialogue-entry-block-sm {
-    .vialogue-entry-block;
-    width: 210px;
-    height: 210px;
-    padding: 0 12px 12px 0;
-
-    > .vialogue-entry .thumbnail > img {
-        width: 180px;
-        height: 135px;
-    }
-
-    .thumbnail-overlay {
-        top: 61%;
-        right: 7%;
-    }
-
-    .comment-count {
-        position: absolute;
-        right: 2%;
-        top: -5%;
-    }
-
-    .comment-count .icon-comment {
-        font-size: 35px;
-    }
-
-    .comment-count .text-over-icon {
-        font-size: @font-size-large;
-        margin-top: 6px;
-    }
-}
-
-/* Vialogue Entry Row */
-
-.vialogue-entry-row {
-    .vialogue-entry-block;
-    width: 100%;
-    padding: 15px 0;
-
-    > .vialogue-entry .thumbnail {
-        width: 85px;
-        height: 80px;
-        margin-top: 0;
-        margin-bottom: 0;
-        img {
-            width: 75px;
-            height: 56px;
-        }
-    }
-
-    .thumbnail-overlay {
-        right: 7%;
-        color: @gray-dark;
-        font-size: @font-size-xsmall;
-        text-shadow: none;
-    }
-
-    .comment-count {
-        position: absolute;
-        right: 5%;
-        top: -5%;
-        .icon-comment {
-            font-size: @font-size-large;
-        }
-        .text-over-icon {
-          font-size: @font-size-xsmall;
-          margin-top: 1px;
+        .img-responsive {
+            max-height: 107px;
+            margin-right: auto;
+            margin-left: auto;
         }
     }
 
     .caption {
-        position: absolute;
-        top: 0;
-        left: 90px;
-        width: 200px;
-        padding-top: 0;
+        border-bottom: 1px dotted #ddd;
+
+        p {
+            min-height: 36px;
+        }
     }
-    
-    .description {
-        .text-color;
-        position: absolute;
-        top: 36px;
-        left: 95px;
-        width: 200px;
-        padding-top: 0;
+
+    &.col-xs-4 {
+         .caption p {
+            text-transform: capitalize;
+        }
+    }
+
+    .badge {
+        &.comment_number {
+            color: #fff;
+            background-color: rgba(255, 0, 0, 0);
+            font-weight: 400;
+            font-size: 11px;
+            border-radius: 2px;
+            padding: 7px 9px;
+            letter-spacing: normal;
+            margin-left: 10px;
+            background-image: url(../assets/img/commentbubble-red.png);
+            background-repeat: no-repeat;
+            height: 32px;
+            width: 34px;
+            display: block; 
+            position: absolute; 
+            top: 6px;   
+            right: 21px;
+        }
     }
 }
 
@@ -485,7 +433,6 @@ html, body {
     > .thumbnail {
         color: #fff;
         position: relative;
-        .box-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
         width: 90px;
         height: 90px;
         margin: 0 10px 0 0;
@@ -602,7 +549,7 @@ html, body {
 .bootstrap-tagsinput {
     width: 100%;
     border: none;
-    box-shadow: none;
+    .box-shadow(none);
     padding-left: 0;
     padding-right: 0;
 
