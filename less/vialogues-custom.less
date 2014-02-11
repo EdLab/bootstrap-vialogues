@@ -135,25 +135,6 @@ a, a:hover {
     color: @text-color;
 }
 
-/* 
- * for displaying text over webfont icons 
- * should be a separate span immediately after the icon
- */
-.text-over-icon { 
-    color: #fff;
-    font-size: 50%;
-    display: inline-block;
-    position: absolute;
-    width: 100%;
-    height: 1em;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    text-align: center;
-}
-
 /*
  * truncate string to a single line in a container, showing "..." if texts overflow
  */
@@ -202,13 +183,6 @@ a, a:hover {
 
     background-size: 100% 100%;
     background-color: #fff;
-    /* 1706x1 image, gradient for IE9. Transparent at 0% -> white at 15% -> white at 100%.*/  
-    /* background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABqoAAAABCAMAAACRxg/eAAAABGdBTUEAALGPC/xhBQAAAwBQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wDWRdwAAAP90Uk5Tfet1sDrNWZIeSRDcocCFLWj1CbhSfuMl1EGoYJkYM8Zui/rwBk15FefYKrxGtKydZQzfIdDJNj1VpFyVcY6BBBwxw2yI/Pfy7RInQ09ie5B0eIMDD+kb5eEk2tbSMMs5QL66tkyyrqpYpl+fm5drAf0H+AoN8+4TFhkf3SIoKwDONDfHO8Q+wURHSlBTVlqiXWNmaZNvcox2iYZ/fAL+9vsFCPkL9A4R8e/sFOjqFxrm5B3i4CDeIybb2SnX1SzT0S/PMsw1yjjIxTzCP79CvbtFuUi3tUuzTrGvUa1Uq6lXp6Vbo16gYZ6cZJpnmJZqlG2RcI9zjYp6d4eChIAu7+D8pQAAASFJREFUOMtjqK+fG2y/UKVwkVDxEsOSZSFcyz3LV6tXrJOtXB/msImjaqtxzfZI8R1etbu16vbx/zsY63hYrvGoWdPxeJaWU+ZtZxIkz3l3XNTpvMzZdS1F9YZP922RnrsWvQ8y2PoeW014miX93HfiK4NJbwQmv89z/qgw9bPNtK8BTDN+Bqr98JvDIDr7r93voD98s365zPyuOP2b7Rf/T+xTPli/y30r8zrnpf6L7Gc8/U8sH2U+lLqffk/vTtot5pup13WvJl8RvpR0Qft84lne9tNOrSflm0+YHos7wtpwyORAzH6JvdF7NHdF7eSu3ma0JWKz2MbwDRprQtcyrvIoW6m8wr10qeB8t6LFSgtcC+b9HwWjYBSMglEw2AEA3ckkQdBniOMAAAAASUVORK5CYII=);
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(white), color-stop(15%, white));
-    background: -moz-linear-gradient(to right, rgba(255, 255, 255, 0), white 15%, white);            
-    background: -o-linear-gradient(to right, rgba(255, 255, 255, 0), white 15%, white);
-    background: -ms-linear-gradient(to right, rgba(255, 255, 255, 0), white 15%, white);
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), white 15%, white); */
 }
 
 .ellipsis i:before { content: "Read More";}
@@ -336,10 +310,6 @@ h4 {
     vertical-align: middle;
 }
 
-.comment-count {
-    position: absolute;
-}
-
 .ajax-loader {
     background: #aedef4 url(../assets/img/ajax_loader.gif) no-repeat 50% 50%;
     position: absolute;
@@ -369,7 +339,6 @@ h4 {
 
 
 /* Vialogue Entry */
-
 .single_vialogue {
     .thumbnail {
         border: 0px;
@@ -416,59 +385,43 @@ h4 {
 }
 
 /* Video Entry */
-
-.video-entry, .video-entry-full {
+.video-entry {  
+    border-bottom: solid 1px @gray-light;
+    padding-bottom: 10px;
     position: relative;
+    width: 100%;
 
-    > .thumbnail {
-        color: #fff;
-        position: relative;
-        width: 90px;
-        height: 90px;
+    .media-object {
         margin: 0 10px 0 0;
-        float: left;
-
-        img {
-          width: 80px;
-          height: 60px;
-          cursor: pointer;
-        }
-        .thumbnail-overlay {
-          right: 7%;
-          color: @gray-dark;
-          font-size: @font-size-xsmall;
-          text-shadow: none;
-          padding-top: 5px;
-        }
+        width: 100px;
+        height: 56px;
     }
 
-    > .caption {
-        .strong;
-        text-align: left;
-
+    .media-body {
         .duration {
-          display: inline-block;
+            color: @gray;
+            display: inline-block;
         }
-
-        .duration:before {
-            content: "(";
-        }
-
-        .duration:after {
-            content: ")";
+        .description {
+            color: @gray;
         }
     }
 
-    > .description {
-        .text-color;
+    .new, .popover-trigger {
+        width: 100px;
+        margin-top: 5px;
     }
 
-    .icon-pencil {
-        right: 0; 
+    .popover-trigger {
+        color: @gray;
+    }
+
+    .thumbnail-callout {
+        .hidden;
     }
 
     .popover-content {
-        width: 220px;
+        width: 180px;
         min-height: 70px;
         padding: 7px 5px;
         font-size: @font-size-small;
@@ -476,37 +429,19 @@ h4 {
 
         > ul {
             margin: 5px auto 0 auto;
-        }
 
-        li {
-            .comment-count {
-                line-height: 1.2em;
-                font-size: 1.2em;
-
-                .icon-comment {
-                    font-size: 1.2em;
+            li {
+                margin-bottom: 0.5em;
+                .comment-count {
+                    display: inline-block;
                 }
-
-                .text-over-icon {
-                    margin-top: -1px;
+                .truncate-1 > p {
+                    padding-left: 2em;
+                }
+                > p {
+                    display: inline;
                 }
             }
-
-            .truncate-1 > p {
-                padding-left: 2em;
-            }
-        }
-    }
-}
-
-.video-entry {  
-    width: 100%;
-    padding: 15px 0;
-    .caption {
-        span:first-child {
-            max-width: 125px;
-            display: inline-block;
-            vertical-align: middle;
         }
     }
 }
