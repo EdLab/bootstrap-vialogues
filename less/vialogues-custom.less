@@ -62,24 +62,19 @@ a, a:hover {
     background-color: @gray-lighter;
 }
 
-.hspacer-10 {
-    .hspacer(10px);
+.vertical-space-30 {
+    display: block;
+    height: 30px;
 }
 
-.hspacer-20 {
-    .hspacer(20px);
+.vertical-space-20 {
+    display: block;
+    height: 20px;
 }
 
-.hspacer-40 {
-    .hspacer(40px);
-}
-
-.bumper-40 {
-    .bumper(40px);
-}
-
-.bumper-60 {
-  .bumper(60px);
+.vertical-space-10 {
+    display: block;
+    height: 10px;
 }
 
 .pad-top-30 {
@@ -253,15 +248,6 @@ html, body {
     height: 100%;
 }
 
-#navigation_background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    z-index: 900;
-}
-
 #wrap {
     min-height: 100%;
     height: auto !important;
@@ -272,6 +258,7 @@ html, body {
     
     > .container {
         padding: 0;
+        margin-top: 20px;
     }
     
     > #navigation {
@@ -328,6 +315,7 @@ h4 {
     }
 }
 
+
 /* Components
 -------------------------------------------------- */
 
@@ -363,16 +351,22 @@ h4 {
     z-index: 999;
 }
 
-.sort_options_dropdown {
-    display: block;
-    position: absolute;
-    top: 84px;
-    right: 15px;
+#sort_options_dropdown {
+    position: relative;
+    top: 2px;
 }
 
-.pagination-sm>li:last-child>a, .pagination-sm>li:last-child>span, .pagination-sm>li:first-child>a, .pagination-sm>li:first-child>span {
-    .border-right-radius(2px);
+#video_seeall {
+    position: relative;
+    top: 12px;
 }
+
+.row {
+    &.explore_row {
+        padding-top: 20px;
+    }
+}
+
 
 /* Vialogue Entry */
 
@@ -390,11 +384,8 @@ h4 {
     }
 
     .caption {
-        border-bottom: 1px dotted #ddd;
-
-        p {
-            min-height: 36px;
-        }
+        border-bottom: 1px dotted @table-border-color;
+        height: 53px;
     }
 
     &.col-xs-4 {
@@ -408,16 +399,15 @@ h4 {
             color: #fff;
             background-color: rgba(255, 0, 0, 0);
             font-weight: 400;
-            font-size: 11px;
-            border-radius: 2px;
+            font-size: @font-size-xsmall;
+            border-radius: @border-radius-base;
             padding: 7px 9px;
             letter-spacing: normal;
-            margin-left: 10px;
             background-image: url(../assets/img/commentbubble-red.png);
             background-repeat: no-repeat;
             height: 32px;
             width: 34px;
-            display: block; 
+            display: block;
             position: absolute; 
             top: 6px;   
             right: 21px;

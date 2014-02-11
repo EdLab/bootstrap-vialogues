@@ -1,62 +1,46 @@
-.nav-tabs > li {
-    > a {
-        border-top-left-radius: 2px;
-        border-top-right-radius: 2px;
-        text-transform: uppercase;
-        font-size:12px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    &.active {
-        > a,
-        > a:hover,
-        > a:focus {
-            color: #353535;
-            cursor: default;
-            background-color: #fff;
-        }
-    }
+#sort_options_dropdown {
+    top: 4px;
 }
 
-.nav > li >a:hover {
-    color: #16e8fb;
-    background-color: #192124;
-}
-
-.row {
-    &.explore_row {
-        padding-top: 20px;
-    }
+#video_seeall {
+    top: 22px;
 }
 
 .explore_video {
     padding-bottom: 14px;
-    border-bottom: 1px dotted #ddd;
+    border-bottom: 1px dotted @table-border-color;
 
     h6 {
-        font-size: 13px;
+        font-size: @font-size-med;
         font-weight: normal;
         line-height: 1.3em;
-        color: #353535;
+        color: @gray-dark;
         margin-bottom: 6px;
         margin-top: 0px;
         text-transform: capitalize;
     }
 
     .media-body {
-        color: #999;
+        color: @gray;
         line-height: 1.3em;
     }
 }
 
-.seeall {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 15px;
+.btn-group.btn-group-sm.avideo {
+    padding-top: 8px;
+}
+
+.avideo .btn-default .badge {
+    color: @brand-theme;
+    font-size: @font-size-xsmall;
+}
+
+.btn-xs.avideo {
+    padding: 3px 9px;
+    margin-top: 4px;
+    font-size: @font-size-xsmall;
 }
 
 .glyphicon.glyphicon-film {
-    color: #999;
+    color: @gray;
 }
