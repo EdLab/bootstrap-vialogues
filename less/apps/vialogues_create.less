@@ -5,9 +5,6 @@
 }
 
 #create_form {
-    section {
-        .hspacer-10;
-    }
     
     .input-group-btn button {
         margin-left: 3px;
@@ -24,7 +21,11 @@
             }
             .media-body {
                 > .media-heading, p.in {
-                    display: inline-block;
+                    display: inline;
+                }
+                .view-video-description-btn {
+                    padding: 0;
+                    vertical-align: baseline;
                 }
             }
         }
@@ -33,29 +34,77 @@
         }
     }
     
-    #create_new {
-        #edit_captions {
-            #browse_cc {
-                position: relative;
-            }
-            
-            #caption_error_message {
-                h5 {
-                    color: @brand-danger;
+    #add_video {
+        border-right: solid 1px @gray-light;
+        margin-bottom: 15px;
+        
+        #create_new {
+            #edit_captions {
+                #browse_cc {
+                    position: relative;
+                }
+                
+                #cc_upload_status {
+                    &:not(:empty) {
+                        .alert;
+                        .alert-info;
+                    }
+                }
+                
+                #caption_error_message {
+                    &:not(:empty) {
+                        .alert;
+                        .alert-danger;
+                    }
                 }
             }
         }
+        
+        #create_existing {
+            #searchVideoBtn {
+                width: 31px;
+                height: 31px;
+                .icon-search:before {
+                    margin: 0;
+                }
+            }
+            
+            #video_search_results {
+                .hspacer-10;
+                .video-entry {
+                    padding-top: 10px;
+                    .media-body {
+                        > h5 {
+                            display: inline-block;
+                            margin-top: 0;
+                        }
+                        padding-right: 15px;
+                    }
+                    .video-entry-left {
+                        .pull-left;
+                    }
+                    .select-video-entry {
+                        .pull-right;
+                        font-size: 200%;
+                    }
+                }
+                .pagination {
+                    .pull-right;
+                }
+            }
+        }
+        
+        #attachExistingVialogue, #attachExternalVideo {
+            height: 31px;
+        }
     }
     
-    #attachExistingVialogue, #attachExternalVideo {
-        height: 31px;
-    }
-    
-    #searchVideoBtn {
-        width: 31px;
-        height: 31px;
-        .icon-search:before {
-            margin: 0;
+    #vialogue_privacy_settings_details {
+        .bootstrap-tagsinput {
+            background-color: transparent;
+            .twitter-typeahead {
+                background-color: #fff;
+            }
         }
     }
 }
