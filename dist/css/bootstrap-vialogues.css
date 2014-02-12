@@ -8168,14 +8168,14 @@ a:hover {
           box-sizing: content-box;
 }
 
-.ellipsis i:before {
-  content: "Read More";
-}
-
 .truncate-2 > *:first-child {
   float: right;
   width: 100%;
   margin-left: -5px;
+}
+
+.ellipsis i:before {
+  content: "Read More";
 }
 
 /*
@@ -8311,39 +8311,34 @@ h4.subhead {
   top: 2px;
 }
 
-#video_seeall {
-  position: relative;
-  top: 12px;
-}
-
 .row.explore_row {
   padding-top: 20px;
 }
 
 /* Vialogue Entry */
 
-.single_vialogue .thumbnail {
+.vialogue-entry .thumbnail {
   padding: 0;
   margin-bottom: 14px;
   border: 0;
 }
 
-.single_vialogue .thumbnail .img-responsive {
+.vialogue-entry .thumbnail .img-responsive {
   max-height: 107px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.single_vialogue .caption {
+.vialogue-entry .caption {
   height: 53px;
   border-bottom: 1px dotted #dddddd;
 }
 
-.single_vialogue.col-xs-4 .caption p {
+.vialogue-entry.col-xs-4 .caption p {
   text-transform: capitalize;
 }
 
-.single_vialogue .badge.comment_number {
+.vialogue-entry .badge.comment_number {
   position: absolute;
   top: 6px;
   right: 21px;
@@ -8364,31 +8359,86 @@ h4.subhead {
 /* Video Entry */
 
 .video-entry {
-  position: relative;
-  width: 100%;
-  padding-bottom: 10px;
-  border-bottom: solid 1px #cccccc;
+  padding-bottom: 14px;
+  border-bottom: 1px dotted #dddddd;
 }
 
-.video-entry .media-object {
-  width: 100px;
-  height: 56px;
-  margin: 0 10px 0 0;
+.video-entry:before,
+.video-entry:after {
+  display: table;
+  content: " ";
+}
+
+.video-entry:after {
+  clear: both;
+}
+
+.video-entry:before,
+.video-entry:after {
+  display: table;
+  content: " ";
+}
+
+.video-entry:after {
+  clear: both;
+}
+
+.video-entry .media-body {
+  font-size: 13px;
+  line-height: 1.3em;
+  color: #999999;
 }
 
 .video-entry .media-body .duration {
-  display: inline-block;
   color: #999999;
 }
 
 .video-entry .media-body .description {
+  height: 3.9em;
   color: #999999;
 }
 
-.video-entry .new,
-.video-entry .popover-trigger {
-  width: 100px;
-  margin-top: 5px;
+.video-entry .media-body .truncate-3 {
+  position: relative;
+  left: -5px;
+  height: 3em;
+  height: 3.8em;
+  overflow: hidden;
+  white-space: initial;
+}
+
+.video-entry .media-body .truncate-3:before {
+  float: left;
+  width: 5px;
+  height: 50px;
+  content: "";
+}
+
+.video-entry .media-body .truncate-3:after {
+  position: relative;
+  top: -31px;
+  left: 100%;
+  float: right;
+  width: 1.5em;
+  padding-right: 5px;
+  margin-left: -1.5em;
+  text-align: right;
+  background-color: #fff;
+  background-size: 100% 100%;
+  content: "...";
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.video-entry .media-body .truncate-3 > *:first-child {
+  float: right;
+  width: 100%;
+  margin-left: -5px;
+}
+
+.video-entry .media-body .truncate-3:after {
+  top: -18px;
 }
 
 .video-entry .popover-trigger {
@@ -8426,6 +8476,52 @@ h4.subhead {
 
 .video-entry .popover-content > ul li > p {
   display: inline;
+}
+
+.video-entry h6 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.3em;
+  color: #353535;
+  text-transform: capitalize;
+}
+
+.video-entry h6 .truncate-2 {
+  left: -5px;
+}
+
+.video-entry .btn-group.btn-group-sm.avideo {
+  padding-top: 8px;
+}
+
+.video-entry .avideo .btn-default .badge {
+  font-size: 11px;
+  color: #cc0000;
+}
+
+.video-entry .btn-xs.avideo {
+  width: 100%;
+  padding: 3px 9px;
+  margin-top: 4px;
+  font-size: 11px;
+}
+
+.video-entry.video-entry-full {
+  height: 130px;
+}
+
+.video-entry.video-entry-full .media-body {
+  max-height: 120px;
+}
+
+.video-entry-row {
+  margin-top: 15px;
+}
+
+.video-entry-row:first-child {
+  margin-top: 0;
 }
 
 /* Favorite Star */
@@ -8532,84 +8628,8 @@ h4.subhead {
   top: 22px;
 }
 
-#vialogues_browse .explore_video {
-  padding-bottom: 14px;
-  border-bottom: 1px dotted #dddddd;
-}
-
-#vialogues_browse .explore_video h6 {
-  margin-top: 0;
-  margin-bottom: 6px;
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 1.3em;
-  color: #353535;
-  text-transform: capitalize;
-}
-
-#vialogues_browse .explore_video .media-body {
-  line-height: 1.3em;
-  color: #999999;
-}
-
-#vialogues_browse .btn-group.btn-group-sm.avideo {
-  padding-top: 8px;
-}
-
-#vialogues_browse .avideo .btn-default .badge {
-  font-size: 11px;
-  color: #cc0000;
-}
-
-#vialogues_browse .btn-xs.avideo {
-  padding: 3px 9px;
-  margin-top: 4px;
-  font-size: 11px;
-}
-
 #vialogues_browse .glyphicon.glyphicon-film {
   color: #999999;
-}
-
-#vialogues_browse .video-entry {
-  height: 130px;
-  padding-bottom: 15px;
-  margin-top: 15px;
-}
-
-#vialogues_browse .video-entry:before,
-#vialogues_browse .video-entry:after {
-  display: table;
-  content: " ";
-}
-
-#vialogues_browse .video-entry:after {
-  clear: both;
-}
-
-#vialogues_browse .video-entry:before,
-#vialogues_browse .video-entry:after {
-  display: table;
-  content: " ";
-}
-
-#vialogues_browse .video-entry:after {
-  clear: both;
-}
-
-#vialogues_browse .video-entry .video-entry-left {
-  float: left !important;
-  width: 33.3333%;
-}
-
-#vialogues_browse .video-entry .media-body {
-  width: 66.6666%;
-  max-height: 120px;
-  padding-left: 10px;
-}
-
-#vialogues_browse .video-entry .media-body h5 {
-  display: inline-block;
 }
 
 #vialogues_browse_extended #vialogues_section #vialogues_house .row {
@@ -9706,59 +9726,7 @@ h4.subhead {
 }
 
 #videos_browse #video_vialogues {
-  position: relative;
-  padding-top: 15px;
-  margin-top: 1px;
   margin-bottom: 40px;
-  border-top: 1px solid #999999;
-}
-
-#videos_browse #video_vialogues .pagination {
-  position: absolute;
-  right: 0;
-}
-
-#videos_browse #video_vialogues #videos_house {
-  width: 100%;
-}
-
-#videos_browse #video_vialogues #videos_house .video-entry-row .video-entry-full {
-  height: 130px;
-}
-
-#videos_browse #video_vialogues #videos_house .video-entry-row .video-entry-full:before,
-#videos_browse #video_vialogues #videos_house .video-entry-row .video-entry-full:after {
-  display: table;
-  content: " ";
-}
-
-#videos_browse #video_vialogues #videos_house .video-entry-row .video-entry-full:after {
-  clear: both;
-}
-
-#videos_browse #video_vialogues #videos_house .video-entry-row .video-entry-full:before,
-#videos_browse #video_vialogues #videos_house .video-entry-row .video-entry-full:after {
-  display: table;
-  content: " ";
-}
-
-#videos_browse #video_vialogues #videos_house .video-entry-row .video-entry-full:after {
-  clear: both;
-}
-
-#videos_browse #video_vialogues #videos_house .video-entry-row .video-entry-full .video-entry-left {
-  float: left !important;
-  width: 33.3333%;
-}
-
-#videos_browse #video_vialogues #videos_house .video-entry-row .video-entry-full .media-body {
-  width: 66.6666%;
-  max-height: 120px;
-  padding-left: 10px;
-}
-
-#videos_browse #video_vialogues #videos_house .video-entry-row .video-entry-full .media-body h5 {
-  display: inline-block;
 }
 
 #videos_manage .tooltip .tooltip-inner {
@@ -9826,45 +9794,9 @@ h4.subhead {
   padding-top: 0;
 }
 
-#profiles_user .video-entry {
-  height: 130px;
-  padding-bottom: 15px;
-  margin-top: 15px;
-}
-
-#profiles_user .video-entry:before,
-#profiles_user .video-entry:after {
-  display: table;
-  content: " ";
-}
-
-#profiles_user .video-entry:after {
-  clear: both;
-}
-
-#profiles_user .video-entry:before,
-#profiles_user .video-entry:after {
-  display: table;
-  content: " ";
-}
-
-#profiles_user .video-entry:after {
-  clear: both;
-}
-
-#profiles_user .video-entry .video-entry-left {
-  float: left !important;
-  width: 33.3333%;
-}
-
-#profiles_user .video-entry .media-body {
-  width: 66.6666%;
-  max-height: 120px;
-  padding-left: 10px;
-}
-
-#profiles_user .video-entry .media-body h5 {
-  display: inline-block;
+#profiles_user #video_seeall {
+  position: relative;
+  top: 12px;
 }
 
 #groups_user #group_vialogues {
