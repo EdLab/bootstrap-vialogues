@@ -7676,16 +7676,12 @@ body > .popover .popover-content ul.list-group > li.divider {
 }
 
 /*
- * typehead.js-bootstrap3.less 0.1.5
- * https://github.com/hyspace/typeahead.js-bootstrap3.less
+ * typehead.js-bootstrap3.less 0.1.4
+ * https://github.com/hyspace/typehead.js-bootstrap3.less
  *
  * Licensed under the MIT license:
  * http://www.opensource.org/licenses/MIT
  */
-
-.input-group {
-  width: 100%;
-}
 
 .twitter-typeahead .tt-query,
 .twitter-typeahead .tt-hint {
@@ -7799,11 +7795,6 @@ textarea.input-group.input-group-sm .twitter-typeahead .tt-hint {
   height: auto;
 }
 
-.input-group.input-group-sm .twitter-typeahead:not(:first-child):not(:last-child) .tt-query,
-.input-group.input-group-sm .twitter-typeahead:not(:first-child):not(:last-child) .tt-hint {
-  border-radius: 0;
-}
-
 .input-group.input-group-sm .twitter-typeahead:first-child .tt-query,
 .input-group.input-group-sm .twitter-typeahead:first-child .tt-hint {
   border-top-right-radius: 0;
@@ -7845,11 +7836,6 @@ textarea.input-group.input-group-lg .twitter-typeahead .tt-hint {
   height: auto;
 }
 
-.input-group.input-group-lg .twitter-typeahead:not(:first-child):not(:last-child) .tt-query,
-.input-group.input-group-lg .twitter-typeahead:not(:first-child):not(:last-child) .tt-hint {
-  border-radius: 0;
-}
-
 .input-group.input-group-lg .twitter-typeahead:first-child .tt-query,
 .input-group.input-group-lg .twitter-typeahead:first-child .tt-hint {
   border-top-right-radius: 0;
@@ -7876,6 +7862,7 @@ textarea.input-group.input-group-lg .twitter-typeahead .tt-hint {
 }
 
 .twitter-typeahead .tt-hint {
+  z-index: 1;
   color: #cccccc;
   border: 1px solid transparent;
 }
@@ -7923,7 +7910,6 @@ fieldset[disabled] .twitter-typeahead .tt-query {
   white-space: nowrap;
 }
 
-.tt-dropdown-menu .tt-suggestion.tt-cursor,
 .tt-dropdown-menu .tt-suggestion.tt-is-under-cursor {
   color: #ffffff;
   text-decoration: none;
@@ -7931,7 +7917,6 @@ fieldset[disabled] .twitter-typeahead .tt-query {
   outline: 0;
 }
 
-.tt-dropdown-menu .tt-suggestion.tt-cursor a,
 .tt-dropdown-menu .tt-suggestion.tt-is-under-cursor a {
   color: #ffffff;
 }
@@ -9321,30 +9306,6 @@ h4.subhead {
   right: 15px;
 }
 
-#vialogues_create #create_form section {
-  margin-top: 10px;
-}
-
-#vialogues_create #create_form section:before,
-#vialogues_create #create_form section:after {
-  display: table;
-  content: " ";
-}
-
-#vialogues_create #create_form section:after {
-  clear: both;
-}
-
-#vialogues_create #create_form section:before,
-#vialogues_create #create_form section:after {
-  display: table;
-  content: " ";
-}
-
-#vialogues_create #create_form section:after {
-  clear: both;
-}
-
 #vialogues_create #create_form .input-group-btn button {
   margin-left: 3px;
 }
@@ -9361,7 +9322,12 @@ h4.subhead {
 
 #vialogues_create #create_form .video-preview .media .media-body > .media-heading,
 #vialogues_create #create_form .video-preview .media .media-body p.in {
-  display: inline-block;
+  display: inline;
+}
+
+#vialogues_create #create_form .video-preview .media .media-body .view-video-description-btn {
+  padding: 0;
+  vertical-align: baseline;
 }
 
 #vialogues_create #create_form .video-preview .remove-video-preview {
@@ -9388,26 +9354,157 @@ h4.subhead {
   clear: both;
 }
 
-#vialogues_create #create_form #create_new #edit_captions #browse_cc {
+#vialogues_create #create_form #add_video {
+  margin-bottom: 15px;
+  border-right: solid 1px #cccccc;
+}
+
+#vialogues_create #create_form #add_video #create_new #edit_captions #browse_cc {
   position: relative;
 }
 
-#vialogues_create #create_form #create_new #edit_captions #caption_error_message h5 {
-  color: #cc0000;
+#vialogues_create #create_form #add_video #create_new #edit_captions #cc_upload_status:not(:empty) {
+  padding: 15px;
+  margin-bottom: 20px;
+  color: #3a87ad;
+  background-color: #d9edf7;
+  border: 1px solid transparent;
+  border-color: #bce8f1;
+  border-radius: 2px;
 }
 
-#vialogues_create #create_form #attachExistingVialogue,
-#vialogues_create #create_form #attachExternalVideo {
-  height: 31px;
+#vialogues_create #create_form #add_video #create_new #edit_captions #cc_upload_status:not(:empty) h4 {
+  margin-top: 0;
+  color: inherit;
 }
 
-#vialogues_create #create_form #searchVideoBtn {
+#vialogues_create #create_form #add_video #create_new #edit_captions #cc_upload_status:not(:empty) .alert-link {
+  font-weight: bold;
+}
+
+#vialogues_create #create_form #add_video #create_new #edit_captions #cc_upload_status:not(:empty) > p,
+#vialogues_create #create_form #add_video #create_new #edit_captions #cc_upload_status:not(:empty) > ul {
+  margin-bottom: 0;
+}
+
+#vialogues_create #create_form #add_video #create_new #edit_captions #cc_upload_status:not(:empty) > p + p {
+  margin-top: 5px;
+}
+
+#vialogues_create #create_form #add_video #create_new #edit_captions #cc_upload_status:not(:empty) hr {
+  border-top-color: #a6e1ec;
+}
+
+#vialogues_create #create_form #add_video #create_new #edit_captions #cc_upload_status:not(:empty) .alert-link {
+  color: #2d6987;
+}
+
+#vialogues_create #create_form #add_video #create_new #edit_captions #caption_error_message:not(:empty) {
+  padding: 15px;
+  margin-bottom: 20px;
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid transparent;
+  border-color: #ebccd1;
+  border-radius: 2px;
+}
+
+#vialogues_create #create_form #add_video #create_new #edit_captions #caption_error_message:not(:empty) h4 {
+  margin-top: 0;
+  color: inherit;
+}
+
+#vialogues_create #create_form #add_video #create_new #edit_captions #caption_error_message:not(:empty) .alert-link {
+  font-weight: bold;
+}
+
+#vialogues_create #create_form #add_video #create_new #edit_captions #caption_error_message:not(:empty) > p,
+#vialogues_create #create_form #add_video #create_new #edit_captions #caption_error_message:not(:empty) > ul {
+  margin-bottom: 0;
+}
+
+#vialogues_create #create_form #add_video #create_new #edit_captions #caption_error_message:not(:empty) > p + p {
+  margin-top: 5px;
+}
+
+#vialogues_create #create_form #add_video #create_new #edit_captions #caption_error_message:not(:empty) hr {
+  border-top-color: #e4b9c0;
+}
+
+#vialogues_create #create_form #add_video #create_new #edit_captions #caption_error_message:not(:empty) .alert-link {
+  color: #953b39;
+}
+
+#vialogues_create #create_form #add_video #create_existing #searchVideoBtn {
   width: 31px;
   height: 31px;
 }
 
-#vialogues_create #create_form #searchVideoBtn .icon-search:before {
+#vialogues_create #create_form #add_video #create_existing #searchVideoBtn .icon-search:before {
   margin: 0;
+}
+
+#vialogues_create #create_form #add_video #create_existing #video_search_results {
+  margin-top: 10;
+}
+
+#vialogues_create #create_form #add_video #create_existing #video_search_results:before,
+#vialogues_create #create_form #add_video #create_existing #video_search_results:after {
+  display: table;
+  content: " ";
+}
+
+#vialogues_create #create_form #add_video #create_existing #video_search_results:after {
+  clear: both;
+}
+
+#vialogues_create #create_form #add_video #create_existing #video_search_results:before,
+#vialogues_create #create_form #add_video #create_existing #video_search_results:after {
+  display: table;
+  content: " ";
+}
+
+#vialogues_create #create_form #add_video #create_existing #video_search_results:after {
+  clear: both;
+}
+
+#vialogues_create #create_form #add_video #create_existing #video_search_results .video-entry {
+  padding-top: 10px;
+}
+
+#vialogues_create #create_form #add_video #create_existing #video_search_results .video-entry .media-body {
+  padding-right: 15px;
+}
+
+#vialogues_create #create_form #add_video #create_existing #video_search_results .video-entry .media-body > h5 {
+  display: inline-block;
+  margin-top: 0;
+}
+
+#vialogues_create #create_form #add_video #create_existing #video_search_results .video-entry .video-entry-left {
+  float: left !important;
+}
+
+#vialogues_create #create_form #add_video #create_existing #video_search_results .video-entry .select-video-entry {
+  float: right !important;
+  font-size: 200%;
+}
+
+#vialogues_create #create_form #add_video #create_existing #video_search_results .pagination {
+  float: right !important;
+}
+
+#vialogues_create #create_form #add_video #attachExistingVialogue,
+#vialogues_create #create_form #add_video #attachExternalVideo {
+  height: 31px;
+}
+
+#vialogues_create #create_form #vialogue_privacy_settings_details .bootstrap-tagsinput {
+  background-color: transparent;
+}
+
+#vialogues_create #create_form #vialogue_privacy_settings_details .bootstrap-tagsinput .twitter-typeahead {
+  background-color: #fff;
 }
 
 #vialogues_manage h3 {
