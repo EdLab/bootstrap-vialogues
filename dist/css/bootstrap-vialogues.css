@@ -8629,7 +8629,7 @@ body {
   top: 4px;
 }
 
-#vialogues_browse #video_seeall {
+#vialogues_browse #video_sort_dropdown {
   top: 22px;
 }
 
@@ -9799,7 +9799,7 @@ body {
   padding-top: 0;
 }
 
-#profiles_user #video_seeall {
+#profiles_user #video_sort_dropdown {
   position: relative;
   top: 12px;
 }
