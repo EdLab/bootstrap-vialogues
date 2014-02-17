@@ -34,10 +34,14 @@
     }
     
     #add_video {
-        border-right: solid 1px @gray-light;
         margin-bottom: 15px;
         
         #create_new {
+            #uploaded_files {
+                .view-video-description-btn {
+                    visibility: hidden;
+                }
+            }
             #edit_captions {
                 #browse_cc {
                     position: relative;
@@ -98,11 +102,20 @@
         }
     }
     
-    #vialogue_privacy_settings_details {
-        .bootstrap-tagsinput {
-            background-color: transparent;
-            .twitter-typeahead {
-                background-color: #fff;
+    #define_vialogue {
+        margin-bottom: 15px;
+        border-left: solid 1px @gray-light;
+        #vialogue_privacy_settings_details {
+            .bootstrap-tagsinput {
+                background-color: transparent;
+                .twitter-typeahead {
+                    background-color: #fff;
+                }
+                .tag.persistent {
+                    span[data-role="remove"] {
+                        .hidden; /* make sure user cannot remove a "persistent" user */
+                    }
+                }
             }
         }
     }

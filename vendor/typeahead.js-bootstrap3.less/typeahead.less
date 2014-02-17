@@ -1,6 +1,6 @@
 /*
- * typehead.js-bootstrap3.less 0.1.4
- * https://github.com/hyspace/typehead.js-bootstrap3.less
+ * typehead.js-bootstrap3.less 0.1.5
+ * https://github.com/hyspace/typeahead.js-bootstrap3.less
  *
  * Licensed under the MIT license:
  * http://www.opensource.org/licenses/MIT
@@ -17,6 +17,12 @@
   }
 }
 
+.input-group{
+  //fix input group width bug
+  width: 100%;
+}
+
+//main styles for control
 .tt-query,
 .tt-hint {
   .twitter-typeahead &{
@@ -57,6 +63,9 @@
   .input-group.input-group-sm .twitter-typeahead &{
     .input-size(@input-height-small; @padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
   }
+  .input-group.input-group-sm .twitter-typeahead:not(:first-child):not(:last-child) &{
+    border-radius: 0;
+  }
   .input-group.input-group-sm .twitter-typeahead:first-child &{
     .border-left-radius(@border-radius-small);
     .border-right-radius(0);
@@ -72,6 +81,9 @@
   //sizing - large:size and border
   .input-group.input-group-lg .twitter-typeahead &{
     .input-size(@input-height-large; @padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+  }
+  .input-group.input-group-lg .twitter-typeahead:not(:first-child):not(:last-child) &{
+    border-radius: 0;
   }
   .input-group.input-group-lg .twitter-typeahead:first-child &{
     .border-left-radius(@border-radius-large);
@@ -94,7 +106,6 @@
 //particular style for each other
 .twitter-typeahead .tt-hint {
   color: @text-muted;//color - hint
-  z-index: 1;
   border: 1px solid transparent;
 }
 .twitter-typeahead .tt-query {
@@ -109,7 +120,7 @@
   }
 }
 
-
+//dropdown styles
 .tt-dropdown-menu {
   //dropdown menu
   position: absolute;
@@ -141,6 +152,7 @@
     color: @dropdown-link-color;
     white-space: nowrap;
 
+    &.tt-cursor,
     &.tt-is-under-cursor {
       //item selected
       text-decoration: none;

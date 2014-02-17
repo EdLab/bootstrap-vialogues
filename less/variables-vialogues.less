@@ -28,14 +28,20 @@
 
 @container-desktop:     960px;
 
+// Corner radius
+// -------------------------
+
+@border-radius-base:             2px;
+@border-radius-large:            4px;
+@border-radius-small:            1px;
 
 // Custom Fonts
 // -------------------------
 @webfont-dir:             '../fonts';
 
-@font-size-xsmall:        ceil(@font-size-base * 0.75); // ~11px
+@font-size-xsmall:        ceil((@font-size-base * 0.75)); // ~11px
 @font-size-xlarge:        @font-size-large; // ~18px
-@font-size-med:           ceil(@font-size-base * 0.9); // ~13px
+@font-size-med:           ceil((@font-size-base * 0.9)); // ~13px
 
 
 // Components
