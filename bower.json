@@ -1,17 +1,26 @@
 {
-  "name": "bootstrap",
-  "version": "3.0.0",
+  "name": "bootstrap-vialogues",
+  "version": "3.1.1",
   "main": [
-    "./dist/js/bootstrap.js",
-    "./dist/css/bootstrap.css",
-    "./dist/fonts/*"
+    "./dist/css/bootstrap-vialogues.css",
+    "./dist/js/bootstrap-vialogues.js",
+    "./dist/fonts/glyphicons-halflings-regular.eot",
+    "./dist/fonts/glyphicons-halflings-regular.svg",
+    "./dist/fonts/glyphicons-halflings-regular.ttf",
+    "./dist/fonts/glyphicons-halflings-regular.woff"
   ],
   "ignore": [
     "**/.*",
-    "node_modules"
+    "node_modules",
+    "_config.yml",
+    "CNAME",
+    "composer.json",
+    "CONTRIBUTING.md",
+    "docs",
+    "js/tests"
   ],
   "dependencies": {
-    "typeahead.js-bootstrap3.less": "git://github.com/hyspace/typeahead.js-bootstrap3.less.git#~0.1.4",
+    "typeahead.js-bootstrap3.less": "~0.1.5",
     "bootstrap-tagsinput": "~0.3.9"
   }
 }
