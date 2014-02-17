@@ -1,10 +1,42 @@
+.nav {
+    > li {
+        > a:hover {
+            color: @blue-light;
+            background-color: @theme-alt;
+        }
+    }
+}
+
 .nav-tabs {
+    > li {
+        > a {
+            .border-top-radius(@border-radius-base);
+            text-transform: uppercase;
+            font-size: @font-size-small;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        &.active {
+            > a,
+            > a:hover,
+            > a:focus {
+                color: @gray-dark;
+                cursor: default;
+                background-color: @body-bg;
+            }
+        }
+    }
+
     li {
         font-size: @font-size-small;
-    }
-    li:not(.active):hover {
-        a {
-            background-color: @theme-bg;
+
+        &:not(.active) {
+            &:hover {
+                a {
+                    background-color: @theme-bg;
+                }
+            }
         }
     }
 }

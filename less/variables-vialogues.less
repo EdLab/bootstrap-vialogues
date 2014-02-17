@@ -9,17 +9,17 @@
 @blue:                   #0096d5;
 @blue-light:             #16e8fb;
 
-
 @brand-primary:         @blue; // vialogues blue for various components e.g. button bg
 @brand-theme:           #cc0000; // vialogues red
 @brand-success:         #5cb85c;
 @brand-warning:         #f0ad4e;
-@brand-danger:          #d9534f;
+@brand-danger:          @brand-theme;
 @brand-info:            #5bc0de;
-
 
 @body-bg:               #fff;
 @theme-bg:              @gray-dark; // black bg for nav, tabs, theme btns, etc
+@theme-alt:             #192124; // alternative dark color mostly used for borders
+
 @text-color:            @gray-dark;
 @warning-color:         #cc0000;
 
@@ -37,183 +37,34 @@
 
 // Custom Fonts
 // -------------------------
-
 @webfont-dir:             '../fonts';
 
-@font-size-base:          13px;
-@font-size-xsmall:        ceil((@font-size-base * 0.75)); // ~10px
-@font-size-small:         floor((@font-size-base * 0.95)); // ~12px
-@font-size-large:         ceil((@font-size-base * 1.15)); // ~15px
-@font-size-xlarge:        ceil((@font-size-base * 1.35)); // ~18px
+@font-size-xsmall:        ceil((@font-size-base * 0.75)); // ~11px
+@font-size-xlarge:        @font-size-large; // ~18px
+@font-size-med:           ceil((@font-size-base * 0.9)); // ~13px
 
-@font-size-h1:            floor((@font-size-base * 2.30)); // ~30px
-@font-size-h2:            floor((@font-size-base * 1.85)); // ~24px
-@font-size-h3:            ceil((@font-size-base * 1.35)); // ~18px
-@font-size-h4:            ceil((@font-size-base * 1.15)); // ~15px
-@font-size-h5:            @font-size-base; // 13px
-@font-size-h6:            ceil((@font-size-base * 0.75)); // ~10px
 
-@headings-font-family:    @font-family-base;
-
-// Fontello Styles
+// Components
 // -------------------------
+@border-radius-base:             2px;
+@border-radius-large:            4px;
+@border-radius-small:            1px;
 
-@font-face {
-  font-family: 'vialogues';
-  src: url('@{webfont-dir}/vialogues.eot?82452476'),
-       url('@{webfont-dir}/vialogues.eot?82452476#iefix') format('embedded-opentype'),
-       url('@{webfont-dir}/vialogues.woff?82452476') format('woff'),
-       url('@{webfont-dir}/vialogues.ttf?82452476') format('truetype'),
-       url('@{webfont-dir}/vialogues.svg?82452476#vialogues') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
- 
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "vialogues";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
- 
-  display: inline-block;
-  text-decoration: inherit;
-  margin-right: .2em;
-  text-align: center;
- 
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-     
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
- 
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
- 
-}
- 
-.icon-rss:before { content: '\e802'; } 
-.icon-facebook:before { content: '\e803'; }
-.icon-gplus:before { content: '\e801'; }
-.icon-twitter:before { content: '\e81b'; }
-.icon-email:before { content: '\e804'; }
-.icon-up:before { content: '\e815'; } 
-.icon-down:before { content: '\e814'; } 
-.icon-pencil:before { content: '\e808'; } 
-.icon-star:before { content: '\e80f'; } 
-.icon-left-open:before { content: '\e810'; } 
-.icon-right-open:before { content: '\e811'; } 
-.icon-cancel-circled:before { content: '\e800'; } 
-.icon-cancel:before { content: '\e805'; } 
-.icon-plus:before { content: '\e809'; } 
-.icon-minus:before { content: '\e80a'; } 
-.icon-plus-squared-small:before { content: '\e818'; } 
-.icon-minus-squared-small:before { content: '\e819'; } 
-.icon-check-empty:before { content: '\e807'; } 
-.icon-check:before { content: '\e806'; } 
-.icon-comment:before { content: '\e812'; }
-.icon-comment-1:before { content: '\e80b'; }
-.icon-cog:before { content: '\e816'; } 
-.icon-print:before { content: '\e80e'; } 
-.icon-spin:before { content: '\e813'; } 
-.icon-reply:before { content: '\e80d'; } 
-.icon-search:before { content: '\e80c'; }
-.icon-video-info:before { content: '\e817'; } 
-.icon-moderate:before { content: '\e81c'; }
-.icon-request:before { content: '\e81d'; }
+@margin-base-vertical:        15px;
+@margin-large-vertical:       20px;
+@margin-small-vertical:       10px;
 
-/* CSS Icons */
-.icon-disc { border-radius: 50%; display: inline-block; }
 
-/** Animation for spinners **/
-.animate-spin {
-  -moz-animation: spin 2s infinite linear;
-  -o-animation: spin 2s infinite linear;
-  -webkit-animation: spin 2s infinite linear;
-  animation: spin 2s infinite linear;
-  display: inline-block;
-}
-@-moz-keyframes spin {
-  0% {
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
+// Buttons
+// -------------------------
+@btn-default-color:              #353535;
+@btn-default-border:             @table-border-color;
 
-  100% {
-    -moz-transform: rotate(359deg);
-    -o-transform: rotate(359deg);
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
-}
-@-webkit-keyframes spin {
-  0% {
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
+@btn-primary-bg:                 @brand-primary;
 
-  100% {
-    -moz-transform: rotate(359deg);
-    -o-transform: rotate(359deg);
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
-}
-@-o-keyframes spin {
-  0% {
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -moz-transform: rotate(359deg);
-    -o-transform: rotate(359deg);
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
-}
-@-ms-keyframes spin {
-  0% {
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -moz-transform: rotate(359deg);
-    -o-transform: rotate(359deg);
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
-}
-@keyframes spin {
-  0% {
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -moz-transform: rotate(359deg);
-    -o-transform: rotate(359deg);
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
-}
 
 // Media queries breakpoints
 // --------------------------------------------------
-
-
 // Medium screen / desktop
 // Note: Deprecated @screen-md and @screen-desktop as of v3.0.1
 @screen-md:                  960px;
@@ -223,21 +74,12 @@
 
 // Navbar
 // -------------------------
-
 @navbar-height:                    50px;
 @navbar-margin-bottom:             50px;
 
 
-// Breadcrumbs
-// -------------------------
-@breadcrumb-bg:               transparent;
-@breadcrumb-color:            @gray;
-@breadcrumb-active-color:     @gray-dark;
-@breadcrumb-separator:        "|";
-
 // Panels
 // -------------------------
-
 @panel-danger-text: #fff;
 @panel-danger-heading-bg: #ce1a25;
 @panel-danger-border: #ce1a25;
@@ -245,3 +87,8 @@
 @panel-success-text: #fff;
 @panel-success-heading-bg: #52a759;
 @panel-success-border: #52a759;
+
+
+// Badges
+// -------------------------
+@badge-bg:                    @gray;

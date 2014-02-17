@@ -62,24 +62,19 @@ a, a:hover {
     background-color: @gray-lighter;
 }
 
-.hspacer-10 {
-    .hspacer(10px);
+.vertical-space-30 {
+    display: block;
+    height: 30px;
 }
 
-.hspacer-20 {
-    .hspacer(20px);
+.vertical-space-20 {
+    display: block;
+    height: 20px;
 }
 
-.hspacer-40 {
-    .hspacer(40px);
-}
-
-.bumper-40 {
-    .bumper(40px);
-}
-
-.bumper-60 {
-  .bumper(60px);
+.vertical-space-10 {
+    display: block;
+    height: 10px;
 }
 
 .pad-top-30 {
@@ -143,7 +138,6 @@ a, a:hover {
 /*
  * truncate string to a single line in a container, showing "..." if texts overflow
  */
-
 .truncate-1 > *:first-child {
     white-space: nowrap;
     overflow: hidden;
@@ -162,41 +156,41 @@ a, a:hover {
     overflow: hidden;
     height: 3em;
     position: relative;
-}
 
-.truncate-2:before {
-    content: "";
-    float: left;
-    width: 5px;
-    height: 50px;
-}
+    &:before {
+        content: "";
+        float: left;
+        width: 5px;
+        height: 50px;
+    }
 
-.truncate-2:after {
-    content: "...";
-    box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
+    &:after {
+        content: "...";
+        box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
 
-    float: right;
-    position: relative;
-    top: -31px;
-    left: 100%;
-    width: 1.5em;
-    margin-left: -1.5em;
-    padding-right: 5px;
-    text-align: right;
+        float: right;
+        position: relative;
+        top: -31px;
+        left: 100%;
+        width: 1.5em;
+        margin-left: -1.5em;
+        padding-right: 5px;
+        text-align: right;
 
-    background-size: 100% 100%;
-    background-color: #fff;
+        background-size: 100% 100%;
+        background-color: #fff;
+    }
+
+    > *:first-child {
+        float: right;
+        width: 100%;
+        margin-left: -5px;
+    }
 }
 
 .ellipsis i:before { content: "Read More";}
-
-.truncate-2 > *:first-child {
-    float: right;
-    width: 100%;
-    margin-left: -5px;
-}
 
 /*
  * Custom list styles
@@ -227,15 +221,6 @@ html, body {
     height: 100%;
 }
 
-#navigation_background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    z-index: 900;
-}
-
 #wrap {
     min-height: 100%;
     height: auto !important;
@@ -246,6 +231,7 @@ html, body {
     
     > .container {
         padding: 0;
+        margin-top: 20px;
     }
     
     > #navigation {
@@ -296,172 +282,95 @@ html, body {
     z-index: 999;
 }
 
-.comment-count {
+#sort_options_dropdown {
     position: relative;
-    width: 2.2em;
-    height: 1em;
-    z-index: 100;
-    .icon-comment {
-        font-size: @font-size-xlarge;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        &:before {
-            vertical-align: text-top;
-        }
-    }
-    /* 
-     * for displaying text over webfont icons 
-     * should be a separate span immediately after the icon
-     */
-    .text-over-icon {
-        font-size: @font-size-small;
-        display: block;
-        color: #FFF;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        vertical-align: middle;
+    top: 2px;
+}
+
+.row {
+    &.explore_row {
+        padding-top: 20px;
     }
 }
+
 
 /* Vialogue Entry */
+.vialogue-entry {
+    .thumbnail {
+        border: 0px;
+        margin-bottom: 14px;
+        padding: 0px;
 
-.vialogue-entry  {
-  
-    > .thumbnail {
-        position: relative;
-        margin-top: 22px;
-        .box-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
-    }
-
-    .thumbnail-overlay {
-        text-shadow: @text-color 1px 1px 2px;
-        color: #fff;
-        position: absolute;
-    }
-
-    .caption {
-        .condensed;
-        text-align: left;
-        padding: 0.2em;
-    }
-}
-
-.vialogue-entry-block {
-    .pull-left;
-    position: relative;
-}
-
-/* Vialogue Entry Block MD */
-
-.vialogue-entry-block-md {
-    .vialogue-entry-block;
-    width: 320px;
-    padding: 0 10px;
-
-    > .vialogue-entry .thumbnail > img {
-        width: 290px;
-        height: 218px;
-    }
-
-    .thumbnail-overlay {
-        top: 73%;
-        right: 7%;
-    }
-}
-
-/* Vialogue Entry Block SM */
-
-.vialogue-entry-block-sm {
-    .vialogue-entry-block;
-    width: 210px;
-    height: 210px;
-    padding: 0 12px 12px 0;
-
-    > .vialogue-entry .thumbnail > img {
-        width: 180px;
-        height: 135px;
-    }
-
-    .thumbnail-overlay {
-        top: 61%;
-        right: 7%;
-    }
-}
-
-/* Vialogue Entry Row */
-
-.vialogue-entry-row {
-    .vialogue-entry-block;
-    width: 100%;
-    padding: 15px 0;
-
-    > .vialogue-entry .thumbnail {
-        width: 85px;
-        height: 80px;
-        margin-top: 0;
-        margin-bottom: 0;
-        img {
-            width: 75px;
-            height: 56px;
+        .img-responsive {
+            max-height: 107px;
+            margin-right: auto;
+            margin-left: auto;
         }
     }
 
-    .thumbnail-overlay {
-        right: 7%;
-        color: @gray-dark;
-        font-size: @font-size-xsmall;
-        text-shadow: none;
+    .caption {
+        border-bottom: 1px dotted @table-border-color;
+        height: 53px;
     }
 
-    .caption {
-        position: absolute;
-        top: 0;
-        left: 90px;
-        width: 200px;
-        padding-top: 0;
+    &.col-xs-4 {
+         .caption p {
+            text-transform: capitalize;
+        }
     }
-    
-    .description {
-        .text-color;
-        position: absolute;
-        top: 36px;
-        left: 95px;
-        width: 200px;
-        padding-top: 0;
+
+    .badge {
+        &.comment_number {
+            color: #fff;
+            background-color: rgba(255, 0, 0, 0);
+            font-weight: 400;
+            font-size: @font-size-xsmall;
+            border-radius: @border-radius-base;
+            padding: 7px 9px;
+            letter-spacing: normal;
+            background-image: url(../assets/img/commentbubble-red.png);
+            background-repeat: no-repeat;
+            height: 32px;
+            width: 34px;
+            display: block;
+            position: absolute; 
+            top: 6px;   
+            right: 21px;
+        }
     }
 }
 
 /* Video Entry */
-.video-entry {  
-    border-bottom: solid 1px @gray-light;
-    padding-bottom: 10px;
-    position: relative;
-    width: 100%;
-
-    .media-object {
-        margin: 0 10px 0 0;
-        width: 100px;
-        height: 56px;
-    }
+.video-entry {
+    .clearfix;
+    padding-bottom: 14px;
+    border-bottom: 1px dotted @table-border-color;
 
     .media-body {
+        color: @gray;
+        font-size: @font-size-med;
+        line-height: 1.3em;
+
         .duration {
             color: @gray;
-            display: inline-block;
         }
+
         .description {
             color: @gray;
+            height: 3.9em;
         }
-    }
 
-    .new, .popover-trigger {
-        width: 100px;
-        margin-top: 5px;
+        .truncate-3 {
+            /* hack for now; I'd prefer to find a better way of doing this */
+            .truncate-2;
+            position: relative;
+            left: -5px;
+            height: 3.8em;
+
+            &:after {
+                top: -18px;
+            }
+        }
     }
 
     .popover-trigger {
@@ -496,6 +405,54 @@ html, body {
             }
         }
     }
+
+    h6 {
+        font-size: @font-size-med;
+        font-weight: normal;
+        line-height: 1.3em;
+        color: @gray-dark;
+        margin-bottom: 6px;
+        margin-top: 0px;
+        text-transform: capitalize;
+
+        .truncate-2 {
+            left: -5px;
+        }
+    }
+
+    .btn-group.btn-group-sm.avideo {
+        padding-top: 8px;
+    }
+
+    .avideo .btn-default .badge {
+        color: @brand-theme;
+        font-size: @font-size-xsmall;
+    }
+
+    .btn-xs {
+        &.avideo {
+            padding: 3px 9px;
+            margin-top: 4px;
+            font-size: @font-size-xsmall;
+            width: 100%;
+        }
+    }
+
+    &.video-entry-full {
+        height: 130px;
+
+        .media-body {
+            max-height: 120px;
+        }
+    }
+}
+
+.video-entry-row {
+    margin-top: 15px;
+
+    &:first-child {
+        margin-top: 0;
+    }
 }
 
 
@@ -526,7 +483,7 @@ html, body {
 .bootstrap-tagsinput {
     width: 100%;
     border: none;
-    box-shadow: none;
+    .box-shadow(none);
     padding-left: 0;
     padding-right: 0;
 

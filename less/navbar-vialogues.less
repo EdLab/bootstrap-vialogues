@@ -3,7 +3,7 @@
 
 #navigation_background {
     background-color: @theme-bg;
-    border: #192124;
+    border: @theme-alt;
 }
 
 // Notification Popover (positioned relative to the 
@@ -61,7 +61,7 @@ body > .popover {
     @navbar-link-color: #04b3fc; // slightly different from @blue specifically to suit the navbar bg
     height: @navbar-height; 
     background-color: @theme-bg;
-    border-color: #192124;
+    border-color: @theme-alt;
 
     ul.nav {
         button {
@@ -91,7 +91,7 @@ body > .popover {
             }
 
             &:hover, &:focus, &:active { /* hover effects */
-                background-color: #192124;
+                background-color: @theme-alt;
 
                 > a, [class^="icon-"]:before, [class*=" icon-"]:before {
                     color: @blue-light;
@@ -300,12 +300,12 @@ body > .popover {
             }
 
             > a.casHeaderLink:hover {
-                background-color: #192124;
+                background-color: @theme-alt;
             }
 
             > a.cas_login_selected {
-                background-color: #192124;
-                border-color: #192124;
+                background-color: @theme-alt;
+                border-color: @theme-alt;
                 border-bottom: none;
             }
 
