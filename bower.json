@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-vialogues",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "main": [
     "./dist/css/bootstrap-vialogues.css",
     "./dist/js/bootstrap-vialogues.js",
