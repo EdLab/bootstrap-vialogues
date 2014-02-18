@@ -340,11 +340,14 @@ html, body {
                 .comment-count {
                     display: inline-block;
                 }
-                .truncate-1 > p {
-                    padding-left: 2em;
-                }
-                > p {
-                    display: inline;
+                p.truncate-1 {
+                    display: inline-block;
+                    margin-bottom: 0;
+                    max-width: 80%;
+
+                    > *:first-child {
+                        display: block;
+                    }
                 }
             }
         }

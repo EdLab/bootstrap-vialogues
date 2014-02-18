@@ -6979,11 +6979,13 @@ body {
 .video-entry .popover-content > ul li .comment-count {
   display: inline-block;
 }
-.video-entry .popover-content > ul li .truncate-1 > p {
-  padding-left: 2em;
+.video-entry .popover-content > ul li p.truncate-1 {
+  display: inline-block;
+  max-width: 80%;
+  margin-bottom: 0;
 }
-.video-entry .popover-content > ul li > p {
-  display: inline;
+.video-entry .popover-content > ul li p.truncate-1 > *:first-child {
+  display: block;
 }
 .video-entry .popover-content .text-over-icon {
   position: relative;
