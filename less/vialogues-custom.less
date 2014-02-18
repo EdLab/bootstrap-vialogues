@@ -357,7 +357,6 @@ html, body {
 
         .description {
             color: @gray;
-            height: 3.9em;
         }
 
         .truncate-3 {
@@ -438,11 +437,15 @@ html, body {
         }
     }
 
-    &.video-entry-full {
+    &:not(.video-entry-full) {
         height: 130px;
 
         .media-body {
             max-height: 120px;
+
+            .description {
+                height: 3.9em;
+            }
         }
     }
 }
