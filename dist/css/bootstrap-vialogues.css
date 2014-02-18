@@ -6985,6 +6985,16 @@ body {
 .video-entry .popover-content > ul li > p {
   display: inline;
 }
+.video-entry .popover-content .text-over-icon {
+  position: relative;
+  top: -3px;
+  display: inline-block;
+  width: 13px;
+  margin-left: -18px;
+  font-size: 8px;
+  color: #fff;
+  text-align: center;
+}
 .video-entry h6 {
   margin-top: 0;
   margin-bottom: 6px;
