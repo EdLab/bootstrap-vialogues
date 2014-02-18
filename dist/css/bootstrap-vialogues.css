@@ -5787,6 +5787,17 @@ button.close {
     width: 960px;
   }
 }
+body {
+  font-size: 13px;
+}
+p {
+  margin-bottom: 16px;
+}
+.pheavy {
+  padding-bottom: 6px;
+  font-size: 14px;
+  line-height: 1.58em;
+}
 h3.pageheader {
   padding-bottom: 10px;
   margin-bottom: 24px;
@@ -6780,43 +6791,6 @@ a:hover {
   line-height: 1em;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-/* 
- * Multi-line Truncate Pure CSS Hack
- * http://codepen.io/romanrudenko/pen/bpeDF 
- */
-.truncate-2 {
-  position: relative;
-  height: 3em;
-  overflow: hidden;
-  white-space: initial;
-}
-.truncate-2:before {
-  float: left;
-  width: 5px;
-  height: 50px;
-  content: "";
-}
-.truncate-2:after {
-  position: relative;
-  top: -31px;
-  left: 100%;
-  float: right;
-  width: 1.5em;
-  -webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-          box-sizing: content-box;
-  padding-right: 5px;
-  margin-left: -1.5em;
-  text-align: right;
-  content: "...";
-  background-color: #fff;
-  background-size: 100% 100%;
-}
-.truncate-2 > *:first-child {
-  float: right;
-  width: 100%;
-  margin-left: -5px;
 }
 .ellipsis i:before {
   content: "Read More";

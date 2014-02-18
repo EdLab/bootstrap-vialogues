@@ -146,50 +146,6 @@ a, a:hover {
     height: 1em;
 }
 
-/* 
- * Multi-line Truncate Pure CSS Hack
- * http://codepen.io/romanrudenko/pen/bpeDF 
- */
-
-.truncate-2 {
-    white-space: initial;
-    overflow: hidden;
-    height: 3em;
-    position: relative;
-
-    &:before {
-        content: "";
-        float: left;
-        width: 5px;
-        height: 50px;
-    }
-
-    &:after {
-        content: "...";
-        box-sizing: content-box;
-        -webkit-box-sizing: content-box;
-        -moz-box-sizing: content-box;
-
-        float: right;
-        position: relative;
-        top: -31px;
-        left: 100%;
-        width: 1.5em;
-        margin-left: -1.5em;
-        padding-right: 5px;
-        text-align: right;
-
-        background-size: 100% 100%;
-        background-color: #fff;
-    }
-
-    > *:first-child {
-        float: right;
-        width: 100%;
-        margin-left: -5px;
-    }
-}
-
 .ellipsis i:before { content: "Read More";}
 
 /*

@@ -1,3 +1,17 @@
+body {
+    font-size: @font-size-med;
+}
+
+p {
+    margin-bottom: floor((@font-size-base * 1.2)); // ~16px
+}
+
+.pheavy {
+    font-size: @font-size-base;
+    line-height: 1.58em;
+    padding-bottom: 6px;
+}
+
 h3 {
     &.pageheader {
         text-transform: capitalize;
