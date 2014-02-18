@@ -7038,6 +7038,7 @@ body {
 }
 /* Favorite Star */
 .star-container {
+  float: left;
   margin-right: 5px;
 }
 .star-container .icon-star.star-off:before {
@@ -8010,18 +8011,6 @@ body {
 }
 #videos_manage #manage_video #basic_info #basic_info_right label[for="video_thumb_input"] img#video_thumb:hover {
   cursor: pointer;
-}
-#favorites_show #center_section h3 {
-  padding-bottom: 9px;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #999;
-}
-#favorites_show #center_section #favorite_discussions .favored-vialogue {
-  display: block;
-}
-#favorites_show #center_section #favorite_discussions .favored-vialogue > .star-container {
-  float: left;
-  padding-top: 20px;
 }
 #profiles_user .well {
   padding: 14px;
