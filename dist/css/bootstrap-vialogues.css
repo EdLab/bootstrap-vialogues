@@ -6919,6 +6919,7 @@ body {
 }
 .vialogue-entry .caption {
   height: 53px;
+  font-size: 13px;
   border-bottom: 1px dotted #ddd;
 }
 .vialogue-entry.col-xs-4 .caption p {
@@ -7038,8 +7039,10 @@ body {
 }
 /* Favorite Star */
 .star-container {
-  float: left;
-  margin-right: 5px;
+  margin-right: 8px;
+}
+.vialogue-entry .star-container {
+  margin-bottom: 40px;
 }
 .star-container .icon-star.star-off:before {
   color: #999;

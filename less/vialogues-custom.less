@@ -309,6 +309,7 @@ html, body {
     }
 
     .caption {
+        font-size: @font-size-med;
         border-bottom: 1px dotted @table-border-color;
         height: 53px;
     }
@@ -443,8 +444,11 @@ html, body {
 
 /* Favorite Star */
 .star-container {
-    float: left;
-    margin-right: 5px;
+    margin-right: 8px;
+
+    .vialogue-entry & {
+        margin-bottom: 40px;
+    }
 
     .icon-star.star-off:before {
         color: @gray;
