@@ -358,18 +358,6 @@ html, body {
         .description {
             color: @gray;
         }
-
-        .truncate-3 {
-            /* hack for now; I'd prefer to find a better way of doing this */
-            .truncate-2;
-            position: relative;
-            left: -5px;
-            height: 3.8em;
-
-            &:after {
-                top: -18px;
-            }
-        }
     }
 
     .popover-trigger {
@@ -413,10 +401,6 @@ html, body {
         margin-bottom: 6px;
         margin-top: 0px;
         text-transform: capitalize;
-
-        .truncate-2 {
-            left: -5px;
-        }
     }
 
     .btn-group.btn-group-sm.avideo {
@@ -438,13 +422,11 @@ html, body {
     }
 
     &:not(.video-entry-full) {
-        height: 130px;
-
         .media-body {
             max-height: 120px;
 
             .description {
-                height: 3.9em;
+                max-height: 3.9em;
             }
         }
     }

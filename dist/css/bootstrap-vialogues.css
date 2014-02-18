@@ -6971,47 +6971,7 @@ body {
   color: #999;
 }
 .video-entry .media-body .description {
-  height: 3.9em;
   color: #999;
-}
-.video-entry .media-body .truncate-3 {
-  position: relative;
-  left: -5px;
-  height: 3em;
-  height: 3.8em;
-  overflow: hidden;
-  /* hack for now; I'd prefer to find a better way of doing this */
-  white-space: initial;
-}
-.video-entry .media-body .truncate-3:before {
-  float: left;
-  width: 5px;
-  height: 50px;
-  content: "";
-}
-.video-entry .media-body .truncate-3:after {
-  position: relative;
-  top: -31px;
-  left: 100%;
-  float: right;
-  width: 1.5em;
-  -webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-          box-sizing: content-box;
-  padding-right: 5px;
-  margin-left: -1.5em;
-  text-align: right;
-  content: "...";
-  background-color: #fff;
-  background-size: 100% 100%;
-}
-.video-entry .media-body .truncate-3 > *:first-child {
-  float: right;
-  width: 100%;
-  margin-left: -5px;
-}
-.video-entry .media-body .truncate-3:after {
-  top: -18px;
 }
 .video-entry .popover-trigger {
   color: #999;
@@ -7051,9 +7011,6 @@ body {
   color: #353535;
   text-transform: capitalize;
 }
-.video-entry h6 .truncate-2 {
-  left: -5px;
-}
 .video-entry .btn-group.btn-group-sm.avideo {
   padding-top: 8px;
 }
@@ -7067,11 +7024,11 @@ body {
   margin-top: 4px;
   font-size: 11px;
 }
-.video-entry.video-entry-full {
-  height: 130px;
-}
-.video-entry.video-entry-full .media-body {
+.video-entry:not(.video-entry-full) .media-body {
   max-height: 120px;
+}
+.video-entry:not(.video-entry-full) .media-body .description {
+  max-height: 3.9em;
 }
 .video-entry-row {
   margin-top: 15px;
@@ -7162,12 +7119,8 @@ body {
 #vialogues_browse .glyphicon.glyphicon-film {
   color: #999;
 }
-#vialogues_browse_extended #vialogues_section #vialogues_house .row {
-  margin-right: 0;
-  margin-left: 0;
-}
 #vialogues_browse_extended #target_section {
-  margin-top: 5px;
+  margin-top: 20px;
 }
 #vialogues_browse_extended #target_section:before,
 #vialogues_browse_extended #target_section:after {
@@ -7185,40 +7138,8 @@ body {
 #vialogues_browse_extended #target_section:after {
   clear: both;
 }
-#vialogues_browse_extended #target_section .control-label {
-  padding-left: 0;
-  margin-left: 0;
-}
-#vialogues_browse_extended #target_section #target_title:before,
-#vialogues_browse_extended #target_section #target_title:after {
-  display: table;
-  content: " ";
-}
-#vialogues_browse_extended #target_section #target_title:after {
-  clear: both;
-}
-#vialogues_browse_extended #target_section #target_title:before,
-#vialogues_browse_extended #target_section #target_title:after {
-  display: table;
-  content: " ";
-}
-#vialogues_browse_extended #target_section #target_title:after {
-  clear: both;
-}
-#vialogues_browse_extended #target_section #target_title .vialogue-name {
-  display: inline-block;
-  width: 100%;
-  margin-top: 13px;
-  font-size: 18px;
-}
-#vialogues_browse_extended #target_section #target_title .comment-count {
-  display: inline-block;
-}
-#vialogues_browse_extended #target_section #target_title .comment-count .icon-comment {
-  font-size: 1.2em;
-}
-#vialogues_browse_extended #target_section #target_title .comment-count .text-over-icon {
-  height: 2em;
+#vialogues_browse_extended #sort_options_dropdown {
+  top: 10px;
 }
 #vialogues_play {
   position: relative;
@@ -8063,6 +7984,9 @@ body {
 }
 #videos_browse #video_vialogues {
   margin-bottom: 40px;
+}
+#videos_browse .video-entry {
+  height: 130px;
 }
 #videos_manage .tooltip .tooltip-inner {
   background-color: #c00;
