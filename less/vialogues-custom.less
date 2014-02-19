@@ -248,6 +248,10 @@ html, body {
 .row {
     &.vialogue-entry-row {
         padding-top: 20px;
+
+        &:first-of-type {
+            padding-top: 0;
+        }
     }
 }
 
@@ -423,7 +427,7 @@ html, body {
 .video-entry-row {
     margin-top: 15px;
 
-    &:first-child {
+    &:first-of-type {
         margin-top: 0;
     }
 }
