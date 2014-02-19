@@ -218,13 +218,15 @@ html, body {
     margin: 10px;
 }
 
-.icon-moderate:before {
+.moderator-icon:before {
+    content: 'M';
     background-color: @brand-theme;
     color: #fff;
-    font-size: xx-small;
-    line-height: 1em;
-    width: 1.3em;
-    vertical-align: middle;
+    padding-right: 2px;
+    padding-left: 2px;
+    font-size: @font-size-xxsmall;
+    border-radius: @border-radius-base;
+    margin-right: 4px;
 }
 
 .ajax-loader {
@@ -256,12 +258,27 @@ html, body {
         border: 0px;
         margin-bottom: 14px;
         padding: 0px;
+        background-color: #000;
+        border-radius: 0;
 
         .img-responsive {
             max-height: 107px;
             margin-right: auto;
             margin-left: auto;
         }
+    }
+
+    .timestamp {
+        display: block;
+        background: @gray-dark;
+        color: @table-border-color;
+        font-size: @font-size-xxsmall;
+        padding-right: 4px;
+        padding-left: 4px;
+        position: relative;
+        bottom: 19px;
+        right: 5px;
+        border-radius: @border-radius-base;
     }
 
     .caption {
@@ -354,7 +371,7 @@ html, body {
 
         .text-over-icon {
             color: #fff;
-            font-size: @font-size-xxsmall;
+            font-size: @font-size-xxxsmall;
             text-align: center;
             display: inline-block;
             width: 13px;
@@ -417,7 +434,7 @@ html, body {
     margin-right: 8px;
 
     .vialogue-entry & {
-        margin-bottom: 40px;
+        margin-bottom: 34px;
     }
 
     .icon-star.star-off:before {

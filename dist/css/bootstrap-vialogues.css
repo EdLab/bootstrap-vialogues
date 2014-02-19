@@ -6307,9 +6307,6 @@ body > .popover .popover-content ul.list-group > li.divider {
 .icon-video-info:before {
   content: '\e817';
 }
-.icon-moderate:before {
-  content: '\e81c';
-}
 .icon-request:before {
   content: '\e81d';
 }
@@ -6861,13 +6858,15 @@ body {
   margin: 10px;
   background: url(../assets/img/vialogues_sprites.png) no-repeat -340px -50px;
 }
-.icon-moderate:before {
-  width: 1.3em;
-  font-size: xx-small;
-  line-height: 1em;
+.moderator-icon:before {
+  padding-right: 2px;
+  padding-left: 2px;
+  margin-right: 4px;
+  font-size: 10px;
   color: #fff;
-  vertical-align: middle;
+  content: 'M';
   background-color: #c00;
+  border-radius: 2px;
 }
 .ajax-loader {
   position: absolute;
@@ -6892,12 +6891,26 @@ body {
 .vialogue-entry .thumbnail {
   padding: 0;
   margin-bottom: 14px;
+  background-color: #000;
   border: 0;
+  border-radius: 0;
 }
 .vialogue-entry .thumbnail .img-responsive {
   max-height: 107px;
   margin-right: auto;
   margin-left: auto;
+}
+.vialogue-entry .timestamp {
+  position: relative;
+  right: 5px;
+  bottom: 19px;
+  display: block;
+  padding-right: 4px;
+  padding-left: 4px;
+  font-size: 10px;
+  color: #ddd;
+  background: #353535;
+  border-radius: 2px;
 }
 .vialogue-entry .caption {
   height: 53px;
@@ -7036,7 +7049,7 @@ body {
   margin-right: 8px;
 }
 .vialogue-entry .star-container {
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 .star-container .icon-star.star-off:before {
   color: #999;
