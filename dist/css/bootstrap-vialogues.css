@@ -6884,7 +6884,7 @@ body {
   position: relative;
   top: 2px;
 }
-.row.explore_row {
+.row.vialogue-entry-row {
   padding-top: 20px;
 }
 /* Vialogue Entry */
@@ -7952,7 +7952,7 @@ body {
 #profiles_user .nav-pills > li > a {
   border-radius: 2px;
 }
-#profiles_user .row.explore_row:first-child {
+#profiles_user .row.vialogue-entry-row:first-child {
   padding-top: 0;
 }
 #profiles_user #video_sort_dropdown {
