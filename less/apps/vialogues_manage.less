@@ -5,11 +5,18 @@
 }
 
 #manage_left {
-    padding: 0;
+    padding: 0 15px 15px 0;
+    .bumper(15px);
 
     .vialogue-entry {
         .thumbnail {
             margin: 0 15px 0 0;
+            img {
+                max-height: 100%;
+            }
+        }
+        .caption {
+            .hidden;
         }
     }
 
@@ -61,6 +68,8 @@
 
 #manage_right {
     border-left: solid 1px @gray-light;
+    padding: 0 0 15px 15px;
+    .bumper(15px);
 
     #vialogue_privacy_settings_details {
         .bootstrap-tagsinput {
