@@ -7832,137 +7832,35 @@ body {
   visibility: hidden !important;
   /* make sure user cannot remove a "persistent" user */
 }
-#vialogues_manage h3 {
-  float: none;
-  margin-top: 18px;
-}
-#vialogues_manage #manage_btns {
-  margin-top: 15px;
-}
-#vialogues_manage #manage_left,
-#vialogues_manage #manage_right > #privacy_settings {
-  min-height: 422px;
-  padding: 0;
-  border-radius: 4px;
-  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
-          box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
-}
-#vialogues_manage #manage_left > .col-md-6,
-#vialogues_manage #manage_left > .col-xs-6 {
-  padding: 0;
-}
-#vialogues_manage #manage_left .thumbnail {
-  margin-right: 15px;
-}
-#vialogues_manage #manage_left .thumbnail .comment-count {
-  top: -10px;
-  right: 20px;
-  font-size: 30px;
-}
-#vialogues_manage #manage_left .thumbnail .comment-count .text-over-icon {
-  height: 30px;
-}
-#vialogues_manage #manage_left #vialogue_meta {
-  padding: 0 15px;
-}
-#vialogues_manage #manage_left #vialogue_meta a[data-toggle="tab"] {
-  display: none !important;
-  float: right;
-  width: 65px;
-}
-#vialogues_manage #manage_left #vialogue_meta a[data-toggle="tab"].active {
-  display: block !important;
-  display: inherit !important;
-  visibility: visible !important;
-}
-#vialogues_manage #manage_left #vialogue_meta #vialogue_meta_view label,
-#vialogues_manage #manage_left #vialogue_meta #vialogue_meta_edit label {
-  font-weight: bold;
-  line-height: inherit;
-}
-#vialogues_manage #manage_left #vialogue_meta #vialogue_meta_edit textarea {
-  width: 100%;
-}
-#vialogues_manage #manage_left #vialogue_meta #vialogue_meta_edit #edit_title {
-  min-height: 80px;
-}
-#vialogues_manage #manage_left #vialogue_meta #vialogue_meta_edit #edit_description {
-  min-height: 180px;
-}
-#vialogues_manage #manage_left #vialogue_meta #vialogue_meta_edit #vialogue_meta_save {
-  margin-right: 10px;
-}
-#vialogues_manage #manage_left #vialogue_meta #vialogue_meta_edit #vialogue_meta_edit_controls {
+#vialogues_manage #required {
   position: absolute;
-  top: 5px;
-  right: 30px;
-  width: 100%;
+  top: 25px;
+  right: 15px;
 }
-#vialogues_manage #manage_left #vialogue_meta #vialogue_meta_view .vialogue-name,
-#vialogues_manage #manage_left #vialogue_meta #vialogue_meta_edit .vialogue-name {
-  min-height: 90px;
+#vialogues_manage #manage_left {
+  padding: 0;
 }
-#vialogues_manage #manage_left #vialogue_meta #vialogue_meta_view .vialogue-description,
-#vialogues_manage #manage_left #vialogue_meta #vialogue_meta_edit .vialogue-description {
-  min-height: 210px;
+#vialogues_manage #manage_left .vialogue-entry .thumbnail {
+  margin: 0 15px 0 0;
 }
-#vialogues_manage #manage_left #vialogue_meta #char_count {
-  color: gray;
-}
-#vialogues_manage #manage_right .panel {
-  border: none;
-}
-#vialogues_manage #manage_right .panel .panel-heading {
-  font-weight: bold;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-}
-#vialogues_manage #manage_right #privacy_settings {
-  margin-left: 10px;
-}
-#vialogues_manage #manage_right #privacy_settings .manage-title {
-  float: left !important;
-  font-weight: bold;
-}
-#vialogues_manage #manage_right #privacy_settings .save-panel {
-  display: none;
-  float: right !important;
-}
-#vialogues_manage #manage_right #privacy_settings input#vialogue_secure_link {
-  width: 100%;
-}
-#vialogues_manage #manage_right #privacy_settings .as-ui {
-  /* autoSuggest UI */
-}
-#vialogues_manage #manage_right #privacy_settings .as-ui ul.as-selections {
-  height: 95px;
-}
-#vialogues_manage #manage_right #privacy_settings #copy_ak_blurb {
-  display: none;
-  font-size: small;
-  font-style: italic;
-  line-height: 1em;
-  vertical-align: bottom;
-}
-#vialogues_manage #manage_bottom {
+#vialogues_manage #manage_left .tab-content {
   min-height: 300px;
-  border-right: solid 1px #ccc;
-  border-bottom: solid 1px #ccc;
-  border-left: solid 1px #ccc;
 }
-#vialogues_manage #manage_bottom .tab-pane {
+#vialogues_manage #manage_left .tab-content .tab-pane {
   position: relative;
-  padding: 10px;
+  padding: 15px;
 }
-#vialogues_manage #manage_bottom .tab-pane .req-msg {
-  padding: 20px;
+#vialogues_manage #manage_left .tab-content .tab-pane h3 {
+  margin-top: 0;
+}
+#vialogues_manage #manage_left .tab-content .tab-pane .req-msg {
   color: #c00;
 }
-#vialogues_manage #manage_bottom #manage_polls .poll-div {
+#vialogues_manage #manage_left .tab-content #manage_polls .poll-div {
   padding: 10px 0;
   line-height: 1.5em;
 }
-#vialogues_manage #manage_bottom #manage_polls .poll-div .time-code {
+#vialogues_manage #manage_left .tab-content #manage_polls .poll-div .time-code {
   float: left;
   width: 70px;
   padding: 0 5px;
@@ -7971,27 +7869,45 @@ body {
   color: #4e68eb;
   cursor: pointer;
 }
-#vialogues_manage #manage_bottom #manage_polls .poll-div .poll-body {
+#vialogues_manage #manage_left .tab-content #manage_polls .poll-div .poll-body {
   float: left;
   width: 500px;
   overflow: hidden;
 }
-#vialogues_manage #manage_bottom #manage_polls .poll-div .poll-body .comment-body .option-table tr {
+#vialogues_manage #manage_left .tab-content #manage_polls .poll-div .poll-body .comment-body .option-table tr {
   display: block;
   padding-right: 10px;
   padding-left: 10px;
 }
-#vialogues_manage #manage_bottom #manage_polls .poll-div .chart-container {
+#vialogues_manage #manage_left .tab-content #manage_polls .poll-div .chart-container {
   float: right;
   width: 300px;
   -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
           box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
 }
-#vialogues_manage #manage_bottom #manage_polls .poll-div:not(:first-child) {
+#vialogues_manage #manage_left .tab-content #manage_polls .poll-div:not(:first-child) {
   padding-top: 15px;
   margin-top: 1px;
   border-top: 1px solid #999;
   /* not sure about this style Nara added */
+}
+#vialogues_manage #manage_right {
+  border-left: solid 1px #ccc;
+}
+#vialogues_manage #manage_right #vialogue_privacy_settings_details .bootstrap-tagsinput {
+  background-color: transparent;
+}
+#vialogues_manage #manage_right #vialogue_privacy_settings_details .bootstrap-tagsinput .twitter-typeahead {
+  background-color: #fff;
+}
+#vialogues_manage #manage_right #vialogue_privacy_settings_details .bootstrap-tagsinput .tag.persistent span[data-role="remove"] {
+  display: none !important;
+  visibility: hidden !important;
+  /* make sure user cannot remove a "persistent" user */
+}
+#vialogues_manage #manage_right #vialogue_privacy_settings_details #vialogue_secure_link {
+  height: auto;
+  word-break: break-all;
 }
 #videos_browse #video_vialogues {
   margin-bottom: 40px;
