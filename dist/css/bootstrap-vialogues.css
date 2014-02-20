@@ -7064,7 +7064,7 @@ body {
   margin-top: 4px;
   font-size: 11px;
 }
-.video-left .video-entry .btn-xs.avideo {
+.video-entry .video-left .btn-xs.avideo {
   width: 100%;
 }
 .video-entry:not(.video-entry-full) .media-body {
