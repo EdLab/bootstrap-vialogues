@@ -112,23 +112,12 @@ a, a:hover {
 }
 
 .form-control {
-    border-radius: 0;
-    color: #000;
-    padding-left: 6px;
-    padding-right: 6px;
-}
-
-
-[contenteditable].form-control {
-    height: auto;
-    max-height: 270px;
-    overflow-y: auto;
-}
-
-[contenteditable="false"].form-control {
-    border: 0;
-    padding: 0;
-    cursor: default;
+    border-radius: @border-radius-base;
+    color: @gray-dark;
+    border: 1px solid @table-border-color;
+    font-size: @font-size-med;
+    padding: 6px 10px;
+    height: 30px;
 }
 
 .text-color, .text-color a, .text-color:hover, .text-color a:hover {

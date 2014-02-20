@@ -6789,20 +6789,12 @@ a:hover {
   padding-left: 0;
 }
 .form-control {
-  padding-right: 6px;
-  padding-left: 6px;
-  color: #000;
-  border-radius: 0;
-}
-[contenteditable].form-control {
-  height: auto;
-  max-height: 270px;
-  overflow-y: auto;
-}
-[contenteditable="false"].form-control {
-  padding: 0;
-  cursor: default;
-  border: 0;
+  height: 30px;
+  padding: 6px 10px;
+  font-size: 13px;
+  color: #353535;
+  border: 1px solid #ddd;
+  border-radius: 2px;
 }
 .text-color,
 .text-color a,
@@ -8548,150 +8540,41 @@ body {
   border-right-color: #c00;
   border-left-color: #c00;
 }
+#notification_settings #tab_selector {
+  padding-top: 20px;
+  margin-top: 18px;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-top: 1px dotted #ddd;
+}
+#notification_settings h3.id {
+  margin-top: 0;
+}
 #notification_settings .tab-content {
-  padding-bottom: 20px;
-  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
-          box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+  margin-bottom: 40px;
+  /* push next div down for better look */
 }
-#notification_settings .tab-content #general_settings_form #general_settings_left {
-  margin-top: 78px;
-  text-align: right;
-}
-#notification_settings .tab-content #general_settings_form #general_settings_left:before,
-#notification_settings .tab-content #general_settings_form #general_settings_left:after {
+#notification_settings .tab-content:before,
+#notification_settings .tab-content:after {
   display: table;
   content: " ";
 }
-#notification_settings .tab-content #general_settings_form #general_settings_left:after {
+#notification_settings .tab-content:after {
   clear: both;
 }
-#notification_settings .tab-content #general_settings_form #general_settings_left:before,
-#notification_settings .tab-content #general_settings_form #general_settings_left:after {
+#notification_settings .tab-content:before,
+#notification_settings .tab-content:after {
   display: table;
   content: " ";
 }
-#notification_settings .tab-content #general_settings_form #general_settings_left:after {
+#notification_settings .tab-content:after {
   clear: both;
 }
-#notification_settings .tab-content #general_settings_form #general_settings_right {
-  position: relative;
-  z-index: 100;
-  /* override ".popover" class def */
+#notification_settings .final_save {
   display: block;
-  width: 50%;
-  /* override ".popover" class def */
-  max-width: none;
-  padding: 20px;
+  padding-top: 15px;
   margin-top: 20px;
-  color: #fff;
-  background-color: #39434c;
-}
-#notification_settings .tab-content #general_settings_form #general_settings_right:before,
-#notification_settings .tab-content #general_settings_form #general_settings_right:after {
-  display: table;
-  content: " ";
-}
-#notification_settings .tab-content #general_settings_form #general_settings_right:after {
-  clear: both;
-}
-#notification_settings .tab-content #general_settings_form #general_settings_right:before,
-#notification_settings .tab-content #general_settings_form #general_settings_right:after {
-  display: table;
-  content: " ";
-}
-#notification_settings .tab-content #general_settings_form #general_settings_right:after {
-  clear: both;
-}
-#notification_settings .tab-content #general_settings_form #general_settings_right .arrow {
-  top: 90px;
-}
-#notification_settings .tab-content #general_settings_form #general_settings_right .arrow:after {
-  border-right-color: #39434c;
-}
-#notification_settings .tab-content #general_settings_form #general_settings_right label {
-  width: 33.33333333333333%;
-}
-#notification_settings .tab-content #general_settings_form #general_settings_right #password_form label {
-  width: 50%;
-}
-#notification_settings .tab-content #general_settings_form #general_settings_right #save_general_settings {
-  margin-top: 10px;
-  margin-right: 20px;
-}
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_left {
-  margin-top: 78px;
-  text-align: right;
-}
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_left:before,
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_left:after {
-  display: table;
-  content: " ";
-}
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_left:after {
-  clear: both;
-}
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_left:before,
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_left:after {
-  display: table;
-  content: " ";
-}
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_left:after {
-  clear: both;
-}
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_right {
-  margin-top: 20px;
-  border-left: solid 1px #ccc;
-}
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_right:before,
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_right:after {
-  display: table;
-  content: " ";
-}
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_right:after {
-  clear: both;
-}
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_right:before,
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_right:after {
-  display: table;
-  content: " ";
-}
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_right:after {
-  clear: both;
-}
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_right ul.list-unstyled {
-  margin-top: 20px;
-}
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_right ul.list-unstyled:before,
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_right ul.list-unstyled:after {
-  display: table;
-  content: " ";
-}
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_right ul.list-unstyled:after {
-  clear: both;
-}
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_right ul.list-unstyled:before,
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_right ul.list-unstyled:after {
-  display: table;
-  content: " ";
-}
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_right ul.list-unstyled:after {
-  clear: both;
-}
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_right ul.list-unstyled .glyphicon,
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_right ul.list-unstyled [class^="icon-"],
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_right ul.list-unstyled [class*=" icon-"],
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_right ul.list-unstyled input[type="checkbox"] {
-  width: 1.5em;
-  text-align: center;
-  cursor: none;
-}
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_right ul.list-unstyled .glyphicon-user:before,
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_right ul.list-unstyled .icon-email:before {
-  color: #16e8fb;
-}
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_right ul.list-unstyled .icon-comment:before,
-#notification_settings .tab-content #notifications_settings_form #notifications_settings_right ul.list-unstyled .glyphicon-calendar:before {
-  color: #c00;
+  border-top: 1px dotted #ddd;
 }
 #search_results #search_discussions {
   /* these styles need be tested on a web server. my local dev instance can't handle search */
