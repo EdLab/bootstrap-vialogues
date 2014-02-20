@@ -7001,8 +7001,11 @@ body {
 .video-entry .media-body .description {
   color: #999;
 }
-.video-entry .media-body .uploader {
-  margin-bottom: 16px;
+.video-entry .media-body .description,
+.video-entry .media-body .uploader,
+.video-entry .media-body .provider,
+.video-entry .media-body p {
+  margin-bottom: 4px;
 }
 .video-entry .media-body .provider {
   text-transform: capitalize;
@@ -7065,10 +7068,12 @@ body {
   color: #c00;
 }
 .video-entry .btn-xs.avideo {
-  width: 100%;
   padding: 3px 9px;
   margin-top: 4px;
   font-size: 11px;
+}
+.video-left .video-entry .btn-xs.avideo {
+  width: 100%;
 }
 .video-entry:not(.video-entry-full) .media-body {
   max-height: 120px;
