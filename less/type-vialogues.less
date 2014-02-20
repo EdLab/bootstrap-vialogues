@@ -56,3 +56,28 @@ h6 {
         font-weight: normal;
     }
 }
+
+
+// List options
+
+.list-comma-separated {
+    .list-inline;
+    display: inline;
+    margin-left: 0;
+
+    > li {
+        display: inline;
+        margin: 0;
+        padding: 0;
+
+        &:before {
+            content: ", ";
+        }
+
+        &:first-child {
+            &:before {
+                content: "";
+            }
+        }
+    }
+}

@@ -5832,6 +5832,29 @@ h6 .muted {
   font-weight: normal;
   color: #999;
 }
+.list-comma-separated {
+  display: inline;
+  padding-left: 0;
+  margin-left: -5px;
+  margin-left: 0;
+  list-style: none;
+}
+.list-comma-separated > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.list-comma-separated > li {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+.list-comma-separated > li:before {
+  content: ", ";
+}
+.list-comma-separated > li:first-child:before {
+  content: "";
+}
 .btn {
   border-radius: 2px;
 }
@@ -6977,6 +7000,12 @@ body {
 }
 .video-entry .media-body .description {
   color: #999;
+}
+.video-entry .media-body .uploader {
+  margin-bottom: 16px;
+}
+.video-entry .media-body .provider {
+  text-transform: capitalize;
 }
 .video-entry .popover-trigger {
   color: #999;
