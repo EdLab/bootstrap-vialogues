@@ -7711,13 +7711,35 @@ body {
 #vialogues_create #create_form #add_video {
   margin-bottom: 15px;
 }
-#vialogues_create #create_form #add_video #create_new #uploaded_files .view-video-description-btn {
+#vialogues_create #create_form #add_video #tab_selector {
+  text-align: center;
+}
+#vialogues_create #create_form #add_video .tab-content {
+  margin-top: 20px;
+}
+#vialogues_create #create_form #add_video .tab-content:before,
+#vialogues_create #create_form #add_video .tab-content:after {
+  display: table;
+  content: " ";
+}
+#vialogues_create #create_form #add_video .tab-content:after {
+  clear: both;
+}
+#vialogues_create #create_form #add_video .tab-content:before,
+#vialogues_create #create_form #add_video .tab-content:after {
+  display: table;
+  content: " ";
+}
+#vialogues_create #create_form #add_video .tab-content:after {
+  clear: both;
+}
+#vialogues_create #create_form #add_video .tab-content #create_new #uploaded_files .view-video-description-btn {
   visibility: hidden;
 }
-#vialogues_create #create_form #add_video #create_new #edit_captions #browse_cc {
+#vialogues_create #create_form #add_video .tab-content #create_new #edit_captions #browse_cc {
   position: relative;
 }
-#vialogues_create #create_form #add_video #create_new #edit_captions #cc_upload_status:not(:empty) {
+#vialogues_create #create_form #add_video .tab-content #create_new #edit_captions #cc_upload_status:not(:empty) {
   padding: 15px;
   margin-bottom: 20px;
   color: #31708f;
@@ -7726,27 +7748,27 @@ body {
   border-color: #bce8f1;
   border-radius: 2px;
 }
-#vialogues_create #create_form #add_video #create_new #edit_captions #cc_upload_status:not(:empty) h4 {
+#vialogues_create #create_form #add_video .tab-content #create_new #edit_captions #cc_upload_status:not(:empty) h4 {
   margin-top: 0;
   color: inherit;
 }
-#vialogues_create #create_form #add_video #create_new #edit_captions #cc_upload_status:not(:empty) .alert-link {
+#vialogues_create #create_form #add_video .tab-content #create_new #edit_captions #cc_upload_status:not(:empty) .alert-link {
   font-weight: bold;
 }
-#vialogues_create #create_form #add_video #create_new #edit_captions #cc_upload_status:not(:empty) > p,
-#vialogues_create #create_form #add_video #create_new #edit_captions #cc_upload_status:not(:empty) > ul {
+#vialogues_create #create_form #add_video .tab-content #create_new #edit_captions #cc_upload_status:not(:empty) > p,
+#vialogues_create #create_form #add_video .tab-content #create_new #edit_captions #cc_upload_status:not(:empty) > ul {
   margin-bottom: 0;
 }
-#vialogues_create #create_form #add_video #create_new #edit_captions #cc_upload_status:not(:empty) > p + p {
+#vialogues_create #create_form #add_video .tab-content #create_new #edit_captions #cc_upload_status:not(:empty) > p + p {
   margin-top: 5px;
 }
-#vialogues_create #create_form #add_video #create_new #edit_captions #cc_upload_status:not(:empty) hr {
+#vialogues_create #create_form #add_video .tab-content #create_new #edit_captions #cc_upload_status:not(:empty) hr {
   border-top-color: #a6e1ec;
 }
-#vialogues_create #create_form #add_video #create_new #edit_captions #cc_upload_status:not(:empty) .alert-link {
+#vialogues_create #create_form #add_video .tab-content #create_new #edit_captions #cc_upload_status:not(:empty) .alert-link {
   color: #245269;
 }
-#vialogues_create #create_form #add_video #create_new #edit_captions #caption_error_message:not(:empty) {
+#vialogues_create #create_form #add_video .tab-content #create_new #edit_captions #caption_error_message:not(:empty) {
   padding: 15px;
   margin-bottom: 20px;
   color: #a94442;
@@ -7755,74 +7777,78 @@ body {
   border-color: #ebccd1;
   border-radius: 2px;
 }
-#vialogues_create #create_form #add_video #create_new #edit_captions #caption_error_message:not(:empty) h4 {
+#vialogues_create #create_form #add_video .tab-content #create_new #edit_captions #caption_error_message:not(:empty) h4 {
   margin-top: 0;
   color: inherit;
 }
-#vialogues_create #create_form #add_video #create_new #edit_captions #caption_error_message:not(:empty) .alert-link {
+#vialogues_create #create_form #add_video .tab-content #create_new #edit_captions #caption_error_message:not(:empty) .alert-link {
   font-weight: bold;
 }
-#vialogues_create #create_form #add_video #create_new #edit_captions #caption_error_message:not(:empty) > p,
-#vialogues_create #create_form #add_video #create_new #edit_captions #caption_error_message:not(:empty) > ul {
+#vialogues_create #create_form #add_video .tab-content #create_new #edit_captions #caption_error_message:not(:empty) > p,
+#vialogues_create #create_form #add_video .tab-content #create_new #edit_captions #caption_error_message:not(:empty) > ul {
   margin-bottom: 0;
 }
-#vialogues_create #create_form #add_video #create_new #edit_captions #caption_error_message:not(:empty) > p + p {
+#vialogues_create #create_form #add_video .tab-content #create_new #edit_captions #caption_error_message:not(:empty) > p + p {
   margin-top: 5px;
 }
-#vialogues_create #create_form #add_video #create_new #edit_captions #caption_error_message:not(:empty) hr {
+#vialogues_create #create_form #add_video .tab-content #create_new #edit_captions #caption_error_message:not(:empty) hr {
   border-top-color: #e4b9c0;
 }
-#vialogues_create #create_form #add_video #create_new #edit_captions #caption_error_message:not(:empty) .alert-link {
+#vialogues_create #create_form #add_video .tab-content #create_new #edit_captions #caption_error_message:not(:empty) .alert-link {
   color: #843534;
 }
-#vialogues_create #create_form #add_video #create_existing #searchVideoBtn {
+#vialogues_create #create_form #add_video .tab-content #create_existing #searchVideoBtn {
   width: 31px;
   height: 31px;
+  padding: 0;
 }
-#vialogues_create #create_form #add_video #create_existing #searchVideoBtn .icon-search:before {
+#vialogues_create #create_form #add_video .tab-content #create_existing #searchVideoBtn .icon-search:before {
   margin: 0;
 }
-#vialogues_create #create_form #add_video #create_existing #video_search_results {
+#vialogues_create #create_form #add_video .tab-content #create_existing #video_search {
   margin-top: 10;
 }
-#vialogues_create #create_form #add_video #create_existing #video_search_results:before,
-#vialogues_create #create_form #add_video #create_existing #video_search_results:after {
+#vialogues_create #create_form #add_video .tab-content #create_existing #video_search:before,
+#vialogues_create #create_form #add_video .tab-content #create_existing #video_search:after {
   display: table;
   content: " ";
 }
-#vialogues_create #create_form #add_video #create_existing #video_search_results:after {
+#vialogues_create #create_form #add_video .tab-content #create_existing #video_search:after {
   clear: both;
 }
-#vialogues_create #create_form #add_video #create_existing #video_search_results:before,
-#vialogues_create #create_form #add_video #create_existing #video_search_results:after {
+#vialogues_create #create_form #add_video .tab-content #create_existing #video_search:before,
+#vialogues_create #create_form #add_video .tab-content #create_existing #video_search:after {
   display: table;
   content: " ";
 }
-#vialogues_create #create_form #add_video #create_existing #video_search_results:after {
+#vialogues_create #create_form #add_video .tab-content #create_existing #video_search:after {
   clear: both;
 }
-#vialogues_create #create_form #add_video #create_existing #video_search_results .video-entry {
+#vialogues_create #create_form #add_video .tab-content #create_existing #video_search .video-entry {
+  position: relative;
   padding-top: 10px;
 }
-#vialogues_create #create_form #add_video #create_existing #video_search_results .video-entry .media-body {
+#vialogues_create #create_form #add_video .tab-content #create_existing #video_search .video-entry .media-body {
   padding-right: 15px;
 }
-#vialogues_create #create_form #add_video #create_existing #video_search_results .video-entry .media-body > h5 {
+#vialogues_create #create_form #add_video .tab-content #create_existing #video_search .video-entry .media-body > h5 {
   display: inline-block;
   margin-top: 0;
 }
-#vialogues_create #create_form #add_video #create_existing #video_search_results .video-entry .video-entry-left {
-  float: left !important;
+#vialogues_create #create_form #add_video .tab-content #create_existing #video_search .video-entry .select-video-entry {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  margin: auto;
 }
-#vialogues_create #create_form #add_video #create_existing #video_search_results .video-entry .select-video-entry {
+#vialogues_create #create_form #add_video .tab-content #create_existing #video_search .pagination {
   float: right !important;
-  font-size: 200%;
 }
-#vialogues_create #create_form #add_video #create_existing #video_search_results .pagination {
-  float: right !important;
-}
-#vialogues_create #create_form #add_video #attachExistingVialogue,
-#vialogues_create #create_form #add_video #attachExternalVideo {
+#vialogues_create #create_form #add_video .tab-content #attachExistingVialogue,
+#vialogues_create #create_form #add_video .tab-content #attachExternalVideo {
   height: 31px;
 }
 #vialogues_create #create_form #define_vialogue {
