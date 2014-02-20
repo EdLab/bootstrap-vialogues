@@ -6942,6 +6942,10 @@ body {
   background-repeat: no-repeat;
   border-radius: 2px;
 }
+.vialogue-entry.vialogue-entry-full .caption {
+  height: auto;
+  color: #999;
+}
 /* Video Entry */
 .video-entry {
   padding-bottom: 14px;
