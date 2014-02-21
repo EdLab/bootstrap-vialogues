@@ -7939,15 +7939,11 @@ body {
 #vialogues_manage #manage_left:after {
   clear: both;
 }
-#vialogues_manage #manage_left .vialogue-entry .thumbnail {
-  margin: 0 15px 0 0;
+#vialogues_manage #manage_left .vialogue-entry {
+  margin-right: 15px;
 }
-#vialogues_manage #manage_left .vialogue-entry .thumbnail img {
-  max-height: 100%;
-}
-#vialogues_manage #manage_left .vialogue-entry .caption {
-  display: none !important;
-  visibility: hidden !important;
+#vialogues_manage #manage_left .vialogue-entry .thumbnail .img-responsive {
+  max-height: 127px;
 }
 #vialogues_manage #manage_left #tab_selector > li {
   text-align: center;
