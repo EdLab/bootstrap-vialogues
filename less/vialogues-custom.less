@@ -431,13 +431,42 @@ html, body {
         }
     }
 
-    &:not(.video-entry-full) {
-        .media-body {
-            max-height: 120px;
-
-            .description {
-                max-height: 3.9em;
+    &:not(.video-entry-condensed) {
+        h6 {
+            .title {
+                display: block;
             }
+        }
+
+        &:not(.video-entry-full) {
+            h6 {
+                .title {
+                    max-height: 32px;
+                    overflow: hidden;
+                }
+            }
+
+            .media-body {
+                max-height: 100px;
+                overflow: hidden;
+
+                .description {
+                    max-height: 48px;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+
+    &.video-entry-condensed {
+        h6 {
+            max-height: 16px;
+            overflow: hidden;
+        }
+
+        .description {
+            max-height: 32px;
+            overflow: hidden;
         }
     }
 }

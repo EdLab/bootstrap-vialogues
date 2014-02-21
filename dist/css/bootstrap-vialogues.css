@@ -7067,11 +7067,28 @@ body {
 .video-entry .video-left .btn-xs.avideo {
   width: 100%;
 }
-.video-entry:not(.video-entry-full) .media-body {
-  max-height: 120px;
+.video-entry:not(.video-entry-condensed) h6 .title {
+  display: block;
 }
-.video-entry:not(.video-entry-full) .media-body .description {
-  max-height: 3.9em;
+.video-entry:not(.video-entry-condensed):not(.video-entry-full) h6 .title {
+  max-height: 32px;
+  overflow: hidden;
+}
+.video-entry:not(.video-entry-condensed):not(.video-entry-full) .media-body {
+  max-height: 100px;
+  overflow: hidden;
+}
+.video-entry:not(.video-entry-condensed):not(.video-entry-full) .media-body .description {
+  max-height: 48px;
+  overflow: hidden;
+}
+.video-entry.video-entry-condensed h6 {
+  max-height: 16px;
+  overflow: hidden;
+}
+.video-entry.video-entry-condensed .description {
+  max-height: 32px;
+  overflow: hidden;
 }
 .video-entry-row {
   margin-top: 15px;
