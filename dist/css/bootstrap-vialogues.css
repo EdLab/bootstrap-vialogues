@@ -8184,293 +8184,152 @@ body {
 #groups_user #group_vialogues:after {
   clear: both;
 }
-#groups_create .icon-disc,
-#groups_manage .icon-disc {
-  width: 2em;
-  height: 2em;
-  margin-right: 1em;
-  line-height: 2em;
-  color: #fff;
-  text-align: center;
-  vertical-align: middle;
-  background-color: #ccc;
+#groups_create #required,
+#groups_manage #required {
+  position: absolute;
+  top: 25px;
+  right: 15px;
 }
-#groups_create .tooltip .tooltip-inner,
-#groups_manage .tooltip .tooltip-inner {
-  background-color: #c00;
+#groups_create #create_group_form #create_left,
+#groups_manage #create_group_form #create_left {
+  border-right: solid 1px #ccc;
 }
-#groups_create .tooltip.top .tooltip-arrow,
-#groups_manage .tooltip.top .tooltip-arrow,
-#groups_create .tooltip.bottom .tooltip-arrow,
-#groups_manage .tooltip.bottom .tooltip-arrow {
-  border-top-color: #c00;
-  border-bottom-color: #c00;
+#groups_create #create_group_form #create_left .bootstrap-tagsinput,
+#groups_manage #create_group_form #create_left .bootstrap-tagsinput {
+  background-color: transparent;
 }
-#groups_create .tooltip.left .tooltip-arrow,
-#groups_manage .tooltip.left .tooltip-arrow,
-#groups_create .tooltip.right .tooltip-arrow,
-#groups_manage .tooltip.right .tooltip-arrow {
-  border-right-color: #c00;
-  border-left-color: #c00;
+#groups_create #create_group_form #create_left .bootstrap-tagsinput .twitter-typeahead,
+#groups_manage #create_group_form #create_left .bootstrap-tagsinput .twitter-typeahead {
+  background-color: #fff;
 }
-#groups_create #create_group_form .step-box,
-#groups_manage #create_group_form .step-box {
-  padding-top: 10px;
-  padding-bottom: 15px;
-  margin-bottom: 20px;
-  /* push next div down for better look */
-  border: solid #e2e3e5 1px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px;
+#groups_create #create_group_form #create_left #secure_link #group_secure_link,
+#groups_manage #create_group_form #create_left #secure_link #group_secure_link {
+  height: auto;
+  word-break: break-all;
 }
-#groups_create #create_group_form .step-box:before,
-#groups_manage #create_group_form .step-box:before,
-#groups_create #create_group_form .step-box:after,
-#groups_manage #create_group_form .step-box:after {
+#groups_create #create_group_form #create_left #secure_link .btn-group,
+#groups_manage #create_group_form #create_left #secure_link .btn-group {
+  margin-top: 15px;
+}
+#groups_create #create_group_form #create_left #secure_link .btn-group:before,
+#groups_manage #create_group_form #create_left #secure_link .btn-group:before,
+#groups_create #create_group_form #create_left #secure_link .btn-group:after,
+#groups_manage #create_group_form #create_left #secure_link .btn-group:after {
   display: table;
   content: " ";
 }
-#groups_create #create_group_form .step-box:after,
-#groups_manage #create_group_form .step-box:after {
+#groups_create #create_group_form #create_left #secure_link .btn-group:after,
+#groups_manage #create_group_form #create_left #secure_link .btn-group:after {
   clear: both;
 }
-#groups_create #create_group_form .step-box:before,
-#groups_manage #create_group_form .step-box:before,
-#groups_create #create_group_form .step-box:after,
-#groups_manage #create_group_form .step-box:after {
+#groups_create #create_group_form #create_left #secure_link .btn-group:before,
+#groups_manage #create_group_form #create_left #secure_link .btn-group:before,
+#groups_create #create_group_form #create_left #secure_link .btn-group:after,
+#groups_manage #create_group_form #create_left #secure_link .btn-group:after {
   display: table;
   content: " ";
 }
-#groups_create #create_group_form .step-box:after,
-#groups_manage #create_group_form .step-box:after {
+#groups_create #create_group_form #create_left #secure_link .btn-group:after,
+#groups_manage #create_group_form #create_left #secure_link .btn-group:after {
   clear: both;
 }
-#groups_create #create_group_form #step_1 #step_1_left,
-#groups_manage #create_group_form #step_1 #step_1_left,
-#groups_create #create_group_form #step_1 #step_1_right,
-#groups_manage #create_group_form #step_1 #step_1_right {
-  margin-top: 20px;
-}
-#groups_create #create_group_form #step_1 #step_1_left:before,
-#groups_manage #create_group_form #step_1 #step_1_left:before,
-#groups_create #create_group_form #step_1 #step_1_right:before,
-#groups_manage #create_group_form #step_1 #step_1_right:before,
-#groups_create #create_group_form #step_1 #step_1_left:after,
-#groups_manage #create_group_form #step_1 #step_1_left:after,
-#groups_create #create_group_form #step_1 #step_1_right:after,
-#groups_manage #create_group_form #step_1 #step_1_right:after {
-  display: table;
-  content: " ";
-}
-#groups_create #create_group_form #step_1 #step_1_left:after,
-#groups_manage #create_group_form #step_1 #step_1_left:after,
-#groups_create #create_group_form #step_1 #step_1_right:after,
-#groups_manage #create_group_form #step_1 #step_1_right:after {
-  clear: both;
-}
-#groups_create #create_group_form #step_1 #step_1_left:before,
-#groups_manage #create_group_form #step_1 #step_1_left:before,
-#groups_create #create_group_form #step_1 #step_1_right:before,
-#groups_manage #create_group_form #step_1 #step_1_right:before,
-#groups_create #create_group_form #step_1 #step_1_left:after,
-#groups_manage #create_group_form #step_1 #step_1_left:after,
-#groups_create #create_group_form #step_1 #step_1_right:after,
-#groups_manage #create_group_form #step_1 #step_1_right:after {
-  display: table;
-  content: " ";
-}
-#groups_create #create_group_form #step_1 #step_1_left:after,
-#groups_manage #create_group_form #step_1 #step_1_left:after,
-#groups_create #create_group_form #step_1 #step_1_right:after,
-#groups_manage #create_group_form #step_1 #step_1_right:after {
-  clear: both;
-}
-#groups_create #create_group_form #step_1 #step_1_left,
-#groups_manage #create_group_form #step_1 #step_1_left {
-  padding: 10px;
-  color: #fff;
-  background-color: #3d4852;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-}
-#groups_create #create_group_form #step_1 #step_1_left input,
-#groups_manage #create_group_form #step_1 #step_1_left input,
-#groups_create #create_group_form #step_1 #step_1_left textarea,
-#groups_manage #create_group_form #step_1 #step_1_left textarea {
-  background-color: #e2e3e5;
-}
-#groups_create #create_group_form #step_1 #step_1_left textarea,
-#groups_manage #create_group_form #step_1 #step_1_left textarea {
-  height: 185px;
-}
-#groups_create #create_group_form #step_1 #step_1_right .as-ui ul.as-selections,
-#groups_manage #create_group_form #step_1 #step_1_right .as-ui ul.as-selections {
-  height: 95px;
-}
-#groups_create #create_group_form #step_1 #step_1_right .manage-title,
-#groups_manage #create_group_form #step_1 #step_1_right .manage-title {
-  float: left !important;
-  font-weight: bold;
-}
-#groups_create #create_group_form #step_1 #step_1_right #reset_link_controls #copy_ak_blurb,
-#groups_manage #create_group_form #step_1 #step_1_right #reset_link_controls #copy_ak_blurb {
-  display: none;
-  font-size: small;
-  font-style: italic;
-  line-height: 1em;
-  vertical-align: bottom;
-}
-#groups_create #create_group_form #step_1 #step_1_right #group_secure_link,
-#groups_manage #create_group_form #step_1 #step_1_right #group_secure_link {
-  width: 100%;
-}
-#groups_create #create_group_form #step_2,
-#groups_manage #create_group_form #step_2 {
-  margin-top: 20px;
-}
-#groups_create #create_group_form #step_2:before,
-#groups_manage #create_group_form #step_2:before,
-#groups_create #create_group_form #step_2:after,
-#groups_manage #create_group_form #step_2:after {
-  display: table;
-  content: " ";
-}
-#groups_create #create_group_form #step_2:after,
-#groups_manage #create_group_form #step_2:after {
-  clear: both;
-}
-#groups_create #create_group_form #step_2:before,
-#groups_manage #create_group_form #step_2:before,
-#groups_create #create_group_form #step_2:after,
-#groups_manage #create_group_form #step_2:after {
-  display: table;
-  content: " ";
-}
-#groups_create #create_group_form #step_2:after,
-#groups_manage #create_group_form #step_2:after {
-  clear: both;
-}
-#groups_create #create_group_form #step_2 #step_2_left,
-#groups_manage #create_group_form #step_2 #step_2_left,
-#groups_create #create_group_form #step_2 #step_2_right,
-#groups_manage #create_group_form #step_2 #step_2_right {
-  margin-top: 10px;
-}
-#groups_create #create_group_form #step_2 #step_2_left:before,
-#groups_manage #create_group_form #step_2 #step_2_left:before,
-#groups_create #create_group_form #step_2 #step_2_right:before,
-#groups_manage #create_group_form #step_2 #step_2_right:before,
-#groups_create #create_group_form #step_2 #step_2_left:after,
-#groups_manage #create_group_form #step_2 #step_2_left:after,
-#groups_create #create_group_form #step_2 #step_2_right:after,
-#groups_manage #create_group_form #step_2 #step_2_right:after {
-  display: table;
-  content: " ";
-}
-#groups_create #create_group_form #step_2 #step_2_left:after,
-#groups_manage #create_group_form #step_2 #step_2_left:after,
-#groups_create #create_group_form #step_2 #step_2_right:after,
-#groups_manage #create_group_form #step_2 #step_2_right:after {
-  clear: both;
-}
-#groups_create #create_group_form #step_2 #step_2_left:before,
-#groups_manage #create_group_form #step_2 #step_2_left:before,
-#groups_create #create_group_form #step_2 #step_2_right:before,
-#groups_manage #create_group_form #step_2 #step_2_right:before,
-#groups_create #create_group_form #step_2 #step_2_left:after,
-#groups_manage #create_group_form #step_2 #step_2_left:after,
-#groups_create #create_group_form #step_2 #step_2_right:after,
-#groups_manage #create_group_form #step_2 #step_2_right:after {
-  display: table;
-  content: " ";
-}
-#groups_create #create_group_form #step_2 #step_2_left:after,
-#groups_manage #create_group_form #step_2 #step_2_left:after,
-#groups_create #create_group_form #step_2 #step_2_right:after,
-#groups_manage #create_group_form #step_2 #step_2_right:after {
-  clear: both;
-}
-#groups_create #create_group_form #step_2 #step_2_left,
-#groups_manage #create_group_form #step_2 #step_2_left {
-  height: 710px;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-#groups_create #create_group_form #step_2 #step_2_left #selected_discussions_display,
-#groups_manage #create_group_form #step_2 #step_2_left #selected_discussions_display {
+#groups_create #create_group_form #create_right,
+#groups_manage #create_group_form #create_right {
   position: relative;
 }
-#groups_create #create_group_form #step_2 #step_2_left #selected_discussions_display .vsnap img,
-#groups_manage #create_group_form #step_2 #step_2_left #selected_discussions_display .vsnap img {
-  width: 200px;
+#groups_create #create_group_form #create_right .badge,
+#groups_manage #create_group_form #create_right .badge {
+  background-color: #c00;
 }
-#groups_create #create_group_form #step_2 #step_2_left #selected_discussions_display .vsnap .remove-vsnap,
-#groups_manage #create_group_form #step_2 #step_2_left #selected_discussions_display .vsnap .remove-vsnap {
+#groups_create #create_group_form #create_right .vialogue-entry,
+#groups_manage #create_group_form #create_right .vialogue-entry {
+  position: relative;
+  padding: 10px 0;
+  border-bottom: solid 1px #ccc;
+}
+#groups_create #create_group_form #create_right .vialogue-entry > a[data-role="thumbnail"] img,
+#groups_manage #create_group_form #create_right .vialogue-entry > a[data-role="thumbnail"] img {
+  width: 82px;
+  margin-right: 5px;
+}
+#groups_create #create_group_form #create_right .vialogue-entry > a[data-role="name"],
+#groups_manage #create_group_form #create_right .vialogue-entry > a[data-role="name"] {
+  padding-right: 25px;
+  vertical-align: top;
+}
+#groups_create #create_group_form #create_right .vialogue-entry > .select-vialogue-entry,
+#groups_manage #create_group_form #create_right .vialogue-entry > .select-vialogue-entry,
+#groups_create #create_group_form #create_right .vialogue-entry > .remove-vialogue-entry,
+#groups_manage #create_group_form #create_right .vialogue-entry > .remove-vialogue-entry {
   position: absolute;
-  right: -8px;
-  width: 20px;
-  height: 20px;
-  margin-top: -8px;
-  background-color: #fff;
-  border-radius: 50%;
+  right: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  margin: auto;
 }
-#groups_create #create_group_form #step_2 #step_2_left #selected_discussions_display .vsnap .remove-vsnap:before,
-#groups_manage #create_group_form #step_2 #step_2_left #selected_discussions_display .vsnap .remove-vsnap:before {
-  line-height: 20px;
-  color: #999;
+#groups_create #create_group_form #create_right #selected_discussions #selected_discussions_display,
+#groups_manage #create_group_form #create_right #selected_discussions #selected_discussions_display {
+  margin-bottom: none;
 }
-#groups_create #create_group_form #step_2 #step_2_right,
-#groups_manage #create_group_form #step_2 #step_2_right {
-  min-height: 710px;
-  border-left: solid 1px #ccc;
+#groups_create #create_group_form #create_right #search_discussions #searched_vialogues,
+#groups_manage #create_group_form #create_right #search_discussions #searched_vialogues {
+  margin-top: 15px;
 }
-#groups_create #create_group_form #step_2 #step_2_right #my_discussions .pagination,
-#groups_manage #create_group_form #step_2 #step_2_right #my_discussions .pagination {
-  width: 100%;
-  margin: 0;
-  text-align: right;
+#groups_create #create_group_form #create_right #search_discussions #searched_vialogues:before,
+#groups_manage #create_group_form #create_right #search_discussions #searched_vialogues:before,
+#groups_create #create_group_form #create_right #search_discussions #searched_vialogues:after,
+#groups_manage #create_group_form #create_right #search_discussions #searched_vialogues:after {
+  display: table;
+  content: " ";
 }
-#groups_create #create_group_form #step_2 #step_2_right #my_discussions .pagination > li,
-#groups_manage #create_group_form #step_2 #step_2_right #my_discussions .pagination > li {
-  display: inline-block;
+#groups_create #create_group_form #create_right #search_discussions #searched_vialogues:after,
+#groups_manage #create_group_form #create_right #search_discussions #searched_vialogues:after {
+  clear: both;
 }
-#groups_create #create_group_form #step_2 #step_2_right #my_discussions .row,
-#groups_manage #create_group_form #step_2 #step_2_right #my_discussions .row {
-  margin: 0 15px;
+#groups_create #create_group_form #create_right #search_discussions #searched_vialogues:before,
+#groups_manage #create_group_form #create_right #search_discussions #searched_vialogues:before,
+#groups_create #create_group_form #create_right #search_discussions #searched_vialogues:after,
+#groups_manage #create_group_form #create_right #search_discussions #searched_vialogues:after {
+  display: table;
+  content: " ";
+}
+#groups_create #create_group_form #create_right #search_discussions #searched_vialogues:after,
+#groups_manage #create_group_form #create_right #search_discussions #searched_vialogues:after {
+  clear: both;
+}
+#groups_create #create_group_form #create_right #search_discussions label[for="searchExistingVialogues"],
+#groups_manage #create_group_form #create_right #search_discussions label[for="searchExistingVialogues"] {
+  margin-top: 15px;
+}
+#groups_create #create_group_form #create_right #search_discussions label[for="searchExistingVialogues"]:before,
+#groups_manage #create_group_form #create_right #search_discussions label[for="searchExistingVialogues"]:before,
+#groups_create #create_group_form #create_right #search_discussions label[for="searchExistingVialogues"]:after,
+#groups_manage #create_group_form #create_right #search_discussions label[for="searchExistingVialogues"]:after {
+  display: table;
+  content: " ";
+}
+#groups_create #create_group_form #create_right #search_discussions label[for="searchExistingVialogues"]:after,
+#groups_manage #create_group_form #create_right #search_discussions label[for="searchExistingVialogues"]:after {
+  clear: both;
+}
+#groups_create #create_group_form #create_right #search_discussions label[for="searchExistingVialogues"]:before,
+#groups_manage #create_group_form #create_right #search_discussions label[for="searchExistingVialogues"]:before,
+#groups_create #create_group_form #create_right #search_discussions label[for="searchExistingVialogues"]:after,
+#groups_manage #create_group_form #create_right #search_discussions label[for="searchExistingVialogues"]:after {
+  display: table;
+  content: " ";
+}
+#groups_create #create_group_form #create_right #search_discussions label[for="searchExistingVialogues"]:after,
+#groups_manage #create_group_form #create_right #search_discussions label[for="searchExistingVialogues"]:after {
+  clear: both;
 }
 #groups_create #create_group_form #form_controls,
 #groups_manage #create_group_form #form_controls {
+  float: right !important;
+  margin-bottom: 30px;
   /* push next div down for better look */
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: right;
-}
-#groups_create #create_group_form #form_controls:before,
-#groups_manage #create_group_form #form_controls:before,
-#groups_create #create_group_form #form_controls:after,
-#groups_manage #create_group_form #form_controls:after {
-  display: table;
-  content: " ";
-}
-#groups_create #create_group_form #form_controls:after,
-#groups_manage #create_group_form #form_controls:after {
-  clear: both;
-}
-#groups_create #create_group_form #form_controls:before,
-#groups_manage #create_group_form #form_controls:before,
-#groups_create #create_group_form #form_controls:after,
-#groups_manage #create_group_form #form_controls:after {
-  display: table;
-  content: " ";
-}
-#groups_create #create_group_form #form_controls:after,
-#groups_manage #create_group_form #form_controls:after {
-  clear: both;
 }
 #groups_create #create_group_form #form_controls:before,
 #groups_manage #create_group_form #form_controls:before,
