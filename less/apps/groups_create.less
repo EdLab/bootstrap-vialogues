@@ -1,155 +1,71 @@
-.icon-disc {
-    width: 2em; 
-    height: 2em;
-    text-align: center;
-    line-height: 2em;
-    vertical-align: middle; 
-    background-color: #CCC;
-    color: #FFF;
-    margin-right: 1em;
-}
-
-.tooltip {
-    .tooltip-inner {
-        background-color: @warning-color;
-    }
-}
-
-.tooltip.top, .tooltip.bottom {
-    .tooltip-arrow {
-        border-top-color: @warning-color;
-        border-bottom-color: @warning-color;
-    }
-}
-
-.tooltip.left, .tooltip.right {
-    .tooltip-arrow {
-        border-left-color: @warning-color;
-        border-right-color: @warning-color;
-    }
+#required {
+    position: absolute;
+    right: 15px;
+    top: 25px;
 }
 
 #create_group_form {
-    .step-box {
-        .rounded-corner();
-        .bumper(20px);
-        border: solid #E2E3E5 1px;
-        padding-top: 10px;
-        padding-bottom: 15px;
-    }
-    
-    #step_1 {
-        #step_1_left, #step_1_right {
-            .hspacer(20px);
-        }
-        
-        #step_1_left {
-            .rounded-corner();
-            
-            background-color: #3D4852;
-            color: #FFF;
-            padding: 10px;
-            
-            input, textarea {
-                background-color: #E2E3E5;
-            }
-            
-            textarea {
-                height: 185px;
+    #create_left {
+        border-right: solid 1px @gray-light;
+        .bootstrap-tagsinput {
+            background-color: transparent;
+            .twitter-typeahead {
+                background-color: #fff;
             }
         }
-        
-        #step_1_right {
-            .as-ui ul.as-selections {
-                height: 95px;
-            }
-            
-            .manage-title {
-                .strong;
-                .pull-left;
-            }
-            
-            #reset_link_controls {
-                #copy_ak_blurb {
-                    display: none;
-                    font-style: italic;
-                    line-height: 1em;
-                    font-size: small;
-                    vertical-align: bottom;
-                }
-            }
-            
+        #secure_link {
             #group_secure_link {
-                width: 100%;
+                height: auto;
+                word-break: break-all;
+            }
+            .btn-group {
+                .hspacer(15px);
             }
         }
     }
-    
-    #step_2 {
-        .hspacer(20px);
-        
-        #step_2_left, #step_2_right {
-            .hspacer(10px);
+    #create_right {
+        position: relative;
+        .badge {
+            background-color: @brand-danger;
         }
-        
-        #step_2_left {
-            height: 710px;
-            overflow-x: hidden;
-            overflow-y: auto;
-            
+        .vialogue-entry {
+            position: relative;
+            padding: 10px 0;
+            border-bottom: solid 1px @gray-light;
+            > a[data-role="thumbnail"] img {
+                width: 82px;
+                margin-right: 5px;
+            }
+            > a[data-role="name"] {
+                vertical-align: top;
+                padding-right: 25px;
+            }
+            > .select-vialogue-entry, > .remove-vialogue-entry {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                padding: 0;
+                height: 25px;
+                width: 25px;
+            }
+        }
+        #selected_discussions {
             #selected_discussions_display {
-                position: relative;
-                
-                .vsnap {
-                    img {
-                        width: 200px;
-                    }
-                    
-                    .remove-vsnap {
-                        position: absolute;
-                        right: -8px;
-                        margin-top: -8px;
-                        border-radius: 50%;
-                        background-color: #FFF;
-                        width: 20px;
-                        height: 20px;
-                    }
-                    
-                    .remove-vsnap:before {
-                        line-height: 20px;
-                        color: #999;
-                    }
-                }
+                margin-bottom: none;
             }
         }
-        
-        #step_2_right {
-            min-height: 710px;
-            border-left: solid 1px #CCC;
-            
-            #my_discussions {
-                
-                .pagination {
-                    width: 100%;
-                    text-align: right;
-                    margin: 0;
-                    
-                    >li {
-                        display: inline-block;
-                    }
-                }
-                
-                .row {
-                    margin: 0 15px;
-                }
+        #search_discussions {
+            #searched_vialogues {
+                .hspacer(15px);
+            }
+            label[for="searchExistingVialogues"] {
+                .hspacer(15px);
             }
         }
     }
-    
     #form_controls {
-        .hspacer(20px);
-        .bumper(20px);
-        width: 100%;
-        text-align: right;
+        .pull-right;
+        .bumper(30px);
     }
 }
