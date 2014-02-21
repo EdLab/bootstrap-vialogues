@@ -18,80 +18,25 @@
     }
 }
 
+#tab_selector {
+    text-transform: uppercase;
+    font-size: @font-size-small;
+    border-top: 1px dotted @table-border-color;
+    padding-top: 20px;
+    margin-top: 18px;
+}
+
+h3.id {
+    margin-top: 0px;
+}
+
 .tab-content {
-    .box-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
-    padding-bottom: 20px;
-    
-    #general_settings_form {
-        #general_settings_left {
-            .hspacer(78px);
-            text-align: right;
-        }
-        
-        #general_settings_right {
-            .hspacer(20px);
-            position: relative;
-            width: 50%; /* override ".popover" class def */
-            max-width: none; /* override ".popover" class def */
-            display: block;
-            padding: 20px;
-            z-index: 100;
-            background-color: #39434c;
-            color: #fff;
-            
-            .arrow {
-                top: 90px;
-            }
-            
-            .arrow:after {
-                border-right-color: #39434c;
-            }
-            
-            label {
-                width: 33.33333333333333%;
-            }
-            
-            #password_form {
-                label { 
-                    width: 50%;
-                }
-            }
-            
-            #save_general_settings {
-                margin-right: 20px;
-                margin-top: 10px;
-            }
-            
-            
-        }
-    }
-    
-    #notifications_settings_form {
-        #notifications_settings_left {
-            .hspacer(78px);
-            text-align: right;
-        }
-        
-        #notifications_settings_right {
-            .hspacer(20px);
-            border-left: solid 1px #ccc;
-            
-            ul.list-unstyled {
-                .hspacer(20px);
-                .glyphicon, [class^="icon-"], [class*=" icon-"], input[type="checkbox"] {
-                    width: 1.5em;
-                    text-align: center;
-                    cursor: none;
-                }
-                
-                .glyphicon-user:before, .icon-email:before {
-                    color: @blue-light;
-                }
-                
-                .icon-comment:before, .glyphicon-calendar:before {
-                    color: @brand-theme;
-                }
-            }
-        }
-    }
+    .bumper(40px);
+}
+
+.final_save {
+    display: block;
+    border-top: 1px dotted @table-border-color;
+    padding-top: 15px;
+    margin-top: 20px;
 }
