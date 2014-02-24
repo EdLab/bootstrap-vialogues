@@ -1,38 +1,20 @@
-#center_section { 
-    h3 {
-        .divider-bottom;
-    }
-    
-    .admin-notice-icon {
-        color: @blue-light;
-    }
-    
-    .comment-notice-icon {
-        color: @brand-theme;
+.date {
+    font-weight: bold;
+    text-align: right;
+}
+
+.notification {
+    .btn-group {
+        margin-top: -10px;
     }
 
-    .list-group {
-        .list-group-item {
-            border: none;
-            .divider-top;
-            
-            .dismiss-notice {
-                float: right;
-                .icon-cancel:before {
-                    color: @gray;
-                    font-size: 80%;
-                }
-            }
-            
-            .accept-request {
-                float: right;
-                margin-right: 10px;
-            }
-        }
-    }
-    
+    .notification-icon,
     time {
-        font-size: 80%;
         color: @gray;
+        font-weight: normal;
+    }
+
+    .dismiss-notice {
+        color: @link-color;
     }
 }

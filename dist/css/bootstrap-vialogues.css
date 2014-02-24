@@ -8436,38 +8436,20 @@ body {
 #groups_manage #create_group_form #form_controls:after {
   clear: both;
 }
-#notification_notices #center_section h3 {
-  padding-bottom: 9px;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #999;
+#notification_notices .date {
+  font-weight: bold;
+  text-align: right;
 }
-#notification_notices #center_section .admin-notice-icon {
-  color: #16e8fb;
+#notification_notices .notification .btn-group {
+  margin-top: -10px;
 }
-#notification_notices #center_section .comment-notice-icon {
-  color: #c00;
-}
-#notification_notices #center_section .list-group .list-group-item {
-  padding-top: 15px;
-  margin-top: 1px;
-  border: none;
-  border-top: 1px solid #999;
-  /* not sure about this style Nara added */
-}
-#notification_notices #center_section .list-group .list-group-item .dismiss-notice {
-  float: right;
-}
-#notification_notices #center_section .list-group .list-group-item .dismiss-notice .icon-cancel:before {
-  font-size: 80%;
+#notification_notices .notification .notification-icon,
+#notification_notices .notification time {
+  font-weight: normal;
   color: #999;
 }
-#notification_notices #center_section .list-group .list-group-item .accept-request {
-  float: right;
-  margin-right: 10px;
-}
-#notification_notices #center_section time {
-  font-size: 80%;
-  color: #999;
+#notification_notices .notification .dismiss-notice {
+  color: #0096d5;
 }
 #notification_settings .tooltip .tooltip-inner {
   background-color: #c00;
