@@ -8250,14 +8250,9 @@ body {
   border-bottom: none;
 }
 #groups_user #group_vialogues {
+  /* push next div down for better look */
   min-height: 600px;
   margin-bottom: 20px;
-  border: solid #e2e3e5 1px;
-  border-top-left-radius: 2px;
-  /* push next div down for better look */
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px;
 }
 #groups_user #group_vialogues:before,
 #groups_user #group_vialogues:after {
@@ -8274,6 +8269,35 @@ body {
 }
 #groups_user #group_vialogues:after {
   clear: both;
+}
+#groups_user #groups_list .panel-group {
+  margin-top: 20px;
+  border-top: solid 1px #ccc;
+}
+#groups_user #groups_list .panel-group:before,
+#groups_user #groups_list .panel-group:after {
+  display: table;
+  content: " ";
+}
+#groups_user #groups_list .panel-group:after {
+  clear: both;
+}
+#groups_user #groups_list .panel-group:before,
+#groups_user #groups_list .panel-group:after {
+  display: table;
+  content: " ";
+}
+#groups_user #groups_list .panel-group:after {
+  clear: both;
+}
+#groups_user #groups_list .panel-group .panel {
+  border-top: none;
+  border-right: none;
+  border-bottom: solid 1px #ccc;
+  border-left: none;
+}
+#groups_user #groups_list .panel-group .panel .panel-heading {
+  background-color: transparent;
 }
 #groups_create #required,
 #groups_manage #required {
