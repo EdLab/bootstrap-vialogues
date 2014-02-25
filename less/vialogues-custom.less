@@ -81,21 +81,17 @@ a, a:hover {
     .pad-top(30px);
 }
 
+.horizontal-rule {
+    display: block;
+    clear: both;
+    border-top: 1px solid @table-border-color;
+    padding-top: 15px;
+}
+
 .divider-top {
-    margin-top: 1px;
-    border-top: 1px solid @gray;
-    padding-top: 15px; /* not sure about this style Nara added */
-}
-
-.divider-bottom {
-    border-bottom: 1px solid @gray;
-    padding-bottom: 9px;
-    margin-bottom: 15px;
-}
-
-.divider-left {
-    margin-left: -2px; 
-    border-left: 2px groove @gray-dark;
+    // @TODO: Deprecate
+    border-top: 1px solid @table-border-color;
+    padding: 15px;
 }
 
 .content-wrapper {
@@ -120,9 +116,20 @@ a, a:hover {
     height: 30px;
 }
 
+ul.errorlist {
+    // For styling Django's form errors
+    .alert;
+    .alert-danger;
+}
+
 .text-color, .text-color a, .text-color:hover, .text-color a:hover {
     color: @text-color;
 }
+
+.text-to-upper {
+    text-transform: uppercase;
+}
+
 
 /*
  * truncate string to a single line in a container, showing "..." if texts overflow

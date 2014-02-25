@@ -5813,17 +5813,14 @@ h4.pageheader {
   text-transform: capitalize;
   border-bottom: 1px solid #ddd;
 }
-h4.subhead_top {
-  display: block;
-  margin-top: 6px;
-  margin-bottom: 18px;
-  text-transform: capitalize;
-}
 h4.subhead {
   display: block;
   margin-top: 22px;
   margin-bottom: 18px;
   text-transform: capitalize;
+}
+h4.subhead.smaller-top {
+  margin-top: 6px;
 }
 h3 .muted,
 h4 .muted,
@@ -6763,20 +6760,15 @@ a:hover {
 .pad-top-30 {
   padding-top: 30px;
 }
-.divider-top {
+.horizontal-rule {
+  display: block;
   padding-top: 15px;
-  margin-top: 1px;
-  border-top: 1px solid #999;
-  /* not sure about this style Nara added */
+  clear: both;
+  border-top: 1px solid #ddd;
 }
-.divider-bottom {
-  padding-bottom: 9px;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #999;
-}
-.divider-left {
-  margin-left: -2px;
-  border-left: 2px groove #353535;
+.divider-top {
+  padding: 15px;
+  border-top: 1px solid #ddd;
 }
 .content-wrapper {
   padding-right: 15px;
@@ -6796,11 +6788,43 @@ a:hover {
   border: 1px solid #ddd;
   border-radius: 2px;
 }
+ul.errorlist {
+  padding: 15px;
+  margin-bottom: 20px;
+  color: #a94442;
+  background-color: #f2dede;
+  border: 1px solid transparent;
+  border-color: #ebccd1;
+  border-radius: 2px;
+}
+ul.errorlist h4 {
+  margin-top: 0;
+  color: inherit;
+}
+ul.errorlist .alert-link {
+  font-weight: bold;
+}
+ul.errorlist > p,
+ul.errorlist > ul {
+  margin-bottom: 0;
+}
+ul.errorlist > p + p {
+  margin-top: 5px;
+}
+ul.errorlist hr {
+  border-top-color: #e4b9c0;
+}
+ul.errorlist .alert-link {
+  color: #843534;
+}
 .text-color,
 .text-color a,
 .text-color:hover,
 .text-color a:hover {
   color: #353535;
+}
+.text-to-upper {
+  text-transform: uppercase;
 }
 /*
  * truncate string to a single line in a container, showing "..." if texts overflow
@@ -7552,10 +7576,8 @@ body {
   font-size: 12px;
 }
 #vialogues_play #main_right > #view_discussions .thread-div {
-  padding-top: 15px;
-  margin-top: 1px;
-  border-top: 1px solid #999;
-  /* not sure about this style Nara added */
+  padding: 15px;
+  border-top: 1px solid #ddd;
 }
 #vialogues_play #main_right > #view_discussions .thread-div .time-code {
   float: left !important;
@@ -7726,9 +7748,32 @@ body {
   }
 }
 #vialogues_create #required {
-  position: absolute;
-  top: 25px;
-  right: 15px;
+  position: relative;
+  top: 10px;
+}
+#vialogues_create #create_form {
+  margin-bottom: 30px;
+  /* push next div down for better look */
+}
+#vialogues_create #create_form:before,
+#vialogues_create #create_form:after {
+  display: table;
+  content: " ";
+}
+#vialogues_create #create_form:after {
+  clear: both;
+}
+#vialogues_create #create_form:before,
+#vialogues_create #create_form:after {
+  display: table;
+  content: " ";
+}
+#vialogues_create #create_form:after {
+  clear: both;
+}
+#vialogues_create #create_form .btn-default:not(.btn-xs) {
+  padding: 8px 24px;
+  margin-bottom: 15px;
 }
 #vialogues_create #create_form .input-group-btn button {
   margin-left: 3px;
@@ -7750,7 +7795,9 @@ body {
   vertical-align: baseline;
 }
 #vialogues_create #create_form .video-preview .remove-video-preview {
+  width: 100%;
   margin-top: 10px;
+  margin-bottom: 0;
 }
 #vialogues_create #create_form .video-preview .remove-video-preview:before,
 #vialogues_create #create_form .video-preview .remove-video-preview:after {
@@ -7770,9 +7817,6 @@ body {
 }
 #vialogues_create #create_form #add_video {
   margin-bottom: 15px;
-}
-#vialogues_create #create_form #add_video #tab_selector {
-  text-align: center;
 }
 #vialogues_create #create_form #add_video .tab-content {
   margin-top: 20px;
@@ -7886,7 +7930,6 @@ body {
 }
 #vialogues_create #create_form #add_video .tab-content #create_existing #video_search .video-entry {
   position: relative;
-  padding-top: 10px;
 }
 #vialogues_create #create_form #add_video .tab-content #create_existing #video_search .video-entry .media-body {
   padding-right: 15px;
@@ -7904,16 +7947,9 @@ body {
   padding: 0;
   margin: auto;
 }
-#vialogues_create #create_form #add_video .tab-content #create_existing #video_search .pagination {
-  float: right !important;
-}
-#vialogues_create #create_form #add_video .tab-content #attachExistingVialogue,
-#vialogues_create #create_form #add_video .tab-content #attachExternalVideo {
-  height: 31px;
-}
 #vialogues_create #create_form #define_vialogue {
   margin-bottom: 15px;
-  border-left: solid 1px #ccc;
+  border-left: 1px dotted #ddd;
 }
 #vialogues_create #create_form #define_vialogue #vialogue_privacy_settings_details .bootstrap-tagsinput {
   background-color: transparent;
@@ -7925,6 +7961,35 @@ body {
   display: none !important;
   visibility: hidden !important;
   /* make sure user cannot remove a "persistent" user */
+}
+#vialogues_create #create_form .sub-form + .sub-form {
+  padding-top: 20px;
+  margin-top: 11px;
+  clear: left;
+  border-top: 1px dotted #ddd;
+}
+#vialogues_create #browse_video {
+  display: block;
+  margin-top: 11px;
+}
+#vialogues_create .checkbox-group,
+#vialogues_create .radio-group {
+  margin-bottom: 15px;
+}
+#vialogues_create .checkbox-group strong,
+#vialogues_create .radio-group strong {
+  display: block;
+  margin-bottom: 5px;
+}
+#vialogues_create .checkbox-group .checkbox:first-of-type {
+  margin-top: 0;
+}
+#vialogues_create .radio-group .radio:first-of-type {
+  margin-top: 0;
+}
+#vialogues_create #create_vialogue {
+  padding: 12px 20px;
+  text-transform: uppercase;
 }
 #vialogues_manage #required {
   position: absolute;
@@ -8497,11 +8562,6 @@ body {
 #support_help #help_container #help_content #show_help_topic {
   min-height: 200px;
 }
-#support_help #help_container #help_content #show_help_topic h3 {
-  padding-bottom: 9px;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #999;
-}
 #support_help #help_container #help_content #show_help_topic img {
   max-width: 100%;
 }
@@ -8527,13 +8587,11 @@ body {
           box-shadow: none;
 }
 #support_help #help_container #help_topics #accordion .panel > .panel-heading {
-  padding-top: 15px;
+  padding: 15px;
   padding-right: 0;
   padding-left: 0;
-  margin-top: 1px;
-  /* not sure about this style Nara added */
   background-color: transparent;
-  border-top: 1px solid #999;
+  border-top: 1px solid #ddd;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
