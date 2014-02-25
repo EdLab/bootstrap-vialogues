@@ -116,15 +116,19 @@
 
         #vialogue_privacy_settings_details {
             .bootstrap-tagsinput {
-                background-color: transparent;
-                .twitter-typeahead {
-                    background-color: #fff;
-                }
                 .tag.persistent {
                     span[data-role="remove"] {
                         .hidden; /* make sure user cannot remove a "persistent" user */
                     }
                 }
+            }
+
+            .form-group {
+                margin-bottom: 0;
+            }
+
+            #moderate_participants {
+                margin-top: 15px;
             }
         }
     }

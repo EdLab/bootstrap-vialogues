@@ -6219,6 +6219,13 @@ body > .popover .popover-content ul.list-group > li.divider {
 .popover.right {
   margin-left: 14px;
 }
+.well {
+  padding: 14px;
+  border-color: #ddd;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 @font-face {
   font-family: 'vialogues';
   font-style: normal;
@@ -7156,20 +7163,24 @@ body {
 -------------------------------------------------- */
 .bootstrap-tagsinput {
   width: 100%;
+  padding-top: 0;
   padding-right: 0;
   padding-left: 0;
+  margin-bottom: 0;
+  background-color: transparent;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 .bootstrap-tagsinput .twitter-typeahead {
   width: 100%;
+  margin-top: 5px;
+  background-color: #fff;
 }
 .bootstrap-tagsinput .twitter-typeahead .tt-query,
 .bootstrap-tagsinput .twitter-typeahead .tt-hint {
   width: 100% !important;
-  border-radius: 0;
-  /* if we're really turning off all rounded corners, we should really create a custom-variables.less file (or something) where we set one global value for border-radius's to dereference in other files */
+  border-radius: 2px;
 }
 #home_loggedout .container {
   width: 1040px;
@@ -7951,16 +7962,16 @@ body {
   margin-bottom: 15px;
   border-left: 1px dotted #ddd;
 }
-#vialogues_create #create_form #define_vialogue #vialogue_privacy_settings_details .bootstrap-tagsinput {
-  background-color: transparent;
-}
-#vialogues_create #create_form #define_vialogue #vialogue_privacy_settings_details .bootstrap-tagsinput .twitter-typeahead {
-  background-color: #fff;
-}
 #vialogues_create #create_form #define_vialogue #vialogue_privacy_settings_details .bootstrap-tagsinput .tag.persistent span[data-role="remove"] {
   display: none !important;
   visibility: hidden !important;
   /* make sure user cannot remove a "persistent" user */
+}
+#vialogues_create #create_form #define_vialogue #vialogue_privacy_settings_details .form-group {
+  margin-bottom: 0;
+}
+#vialogues_create #create_form #define_vialogue #vialogue_privacy_settings_details #moderate_participants {
+  margin-top: 15px;
 }
 #vialogues_create #create_form .sub-form + .sub-form {
   padding-top: 20px;
@@ -7992,12 +8003,11 @@ body {
   text-transform: uppercase;
 }
 #vialogues_manage #required {
-  position: absolute;
-  top: 25px;
-  right: 15px;
+  position: relative;
+  top: 10px;
 }
 #vialogues_manage #manage_left {
-  padding: 0 15px 15px 0;
+  padding-bottom: 15px;
   margin-bottom: 15px;
   /* push next div down for better look */
 }
@@ -8017,21 +8027,22 @@ body {
 #vialogues_manage #manage_left:after {
   clear: both;
 }
+#vialogues_manage #manage_left h5 {
+  font-size: 13px;
+  font-weight: bold;
+}
 #vialogues_manage #manage_left .vialogue-entry {
   margin-right: 15px;
 }
 #vialogues_manage #manage_left .vialogue-entry .thumbnail .img-responsive {
   max-height: 127px;
 }
-#vialogues_manage #manage_left #tab_selector > li {
-  text-align: center;
-}
 #vialogues_manage #manage_left .tab-content {
   min-height: 300px;
 }
 #vialogues_manage #manage_left .tab-content .tab-pane {
   position: relative;
-  padding: 15px;
+  padding-top: 15px;
 }
 #vialogues_manage #manage_left .tab-content .tab-pane h3 {
   margin-top: 0;
@@ -8061,9 +8072,9 @@ body {
   border: solid 1px #353535;
 }
 #vialogues_manage #manage_right {
-  padding: 0 0 15px 15px;
+  padding-bottom: 15px;
   margin-bottom: 15px;
-  border-left: solid 1px #ccc;
+  border-left: 1px dotted #ddd;
   /* push next div down for better look */
 }
 #vialogues_manage #manage_right:before,
@@ -8082,12 +8093,6 @@ body {
 #vialogues_manage #manage_right:after {
   clear: both;
 }
-#vialogues_manage #manage_right #vialogue_privacy_settings_details .bootstrap-tagsinput {
-  background-color: transparent;
-}
-#vialogues_manage #manage_right #vialogue_privacy_settings_details .bootstrap-tagsinput .twitter-typeahead {
-  background-color: #fff;
-}
 #vialogues_manage #manage_right #vialogue_privacy_settings_details .bootstrap-tagsinput .tag.persistent span[data-role="remove"] {
   display: none !important;
   visibility: hidden !important;
@@ -8095,7 +8100,40 @@ body {
 }
 #vialogues_manage #manage_right #vialogue_privacy_settings_details #vialogue_secure_link {
   height: auto;
+  margin-bottom: 8px;
   word-break: break-all;
+}
+#vialogues_manage #manage_right #vialogue_privacy_settings_details .form-group {
+  margin-bottom: 0;
+}
+#vialogues_manage #manage_right #vialogue_privacy_settings_details #private_vialogue_only .form-group {
+  margin-top: 15px;
+}
+#vialogues_manage .sub-form {
+  margin-bottom: 20px;
+}
+#vialogues_manage .sub-form p {
+  margin-bottom: 8px;
+}
+#vialogues_manage .sub-form + .sub-form {
+  padding-top: 10px;
+  clear: left;
+  border-top: 1px dotted #ddd;
+}
+#vialogues_manage .checkbox-group,
+#vialogues_manage .radio-group {
+  margin-bottom: 15px;
+}
+#vialogues_manage .checkbox-group strong,
+#vialogues_manage .radio-group strong {
+  display: block;
+  margin-bottom: 5px;
+}
+#vialogues_manage .checkbox-group .checkbox:first-of-type {
+  margin-top: 0;
+}
+#vialogues_manage .radio-group .radio:first-of-type {
+  margin-top: 0;
 }
 #videos_browse .video-entry {
   height: 117px;
@@ -8124,12 +8162,7 @@ body {
   cursor: pointer;
 }
 #profiles_user .well {
-  padding: 14px;
   margin-top: 20px;
-  border-color: #ddd;
-  border-radius: 2px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 #profiles_user .well .name_id h3 {
   margin-top: 0;
