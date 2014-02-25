@@ -542,11 +542,15 @@ html, body {
     .twitter-typeahead {
         width: 100%;
         background-color: #fff;
-        margin-top: 5px;
+        margin-top: 0;
 
         .tt-query, .tt-hint {
             width: 100% !important;
             border-radius: @border-radius-base;
         }
+    }
+
+    .tag + .twitter-typeahead {
+        margin-top: 5px;
     }
 }

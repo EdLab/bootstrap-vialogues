@@ -7174,13 +7174,16 @@ body {
 }
 .bootstrap-tagsinput .twitter-typeahead {
   width: 100%;
-  margin-top: 5px;
+  margin-top: 0;
   background-color: #fff;
 }
 .bootstrap-tagsinput .twitter-typeahead .tt-query,
 .bootstrap-tagsinput .twitter-typeahead .tt-hint {
   width: 100% !important;
   border-radius: 2px;
+}
+.bootstrap-tagsinput .tag + .twitter-typeahead {
+  margin-top: 5px;
 }
 #home_loggedout .container {
   width: 1040px;
