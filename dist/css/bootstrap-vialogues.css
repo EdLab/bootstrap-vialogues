@@ -8713,10 +8713,14 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 #support_help #help_container #help_content #show_help_topic img {
   max-width: 100%;
 }
-#support_help #help_container #help_content #show_help_topic > ol,
-#support_help #help_container #help_content #show_help_topic ul {
+#support_help #help_container #help_content #show_help_topic > ul,
+#support_help #help_container #help_content #show_help_topic ol {
   padding-left: 0;
-  margin-left: 18px;
+  margin-left: 0;
+}
+#support_help #help_container #help_content #show_help_topic > ol:not(.stepped) {
+  padding-left: 20px;
+  margin-left: 0;
 }
 #support_help #help_container #help_content #show_help_topic li:not(:last-child) {
   margin-bottom: 1em;
@@ -8724,36 +8728,39 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 #support_help #help_container #help_content #show_help_topic pre {
   word-break: initial;
 }
-#support_help #help_container #help_topics {
-  padding-right: 0;
-}
 #support_help #help_container #help_topics #accordion .panel {
   margin-top: 0;
   background-color: transparent;
   border: none;
+  border-radius: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-#support_help #help_container #help_topics #accordion .panel > .panel-heading {
-  padding: 15px;
+#support_help #help_container #help_topics #accordion .panel-heading {
   padding-right: 0;
   padding-left: 0;
   background-color: transparent;
   border-top: 1px solid #ddd;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+  border-radius: 0;
 }
-#support_help #help_container #help_topics #accordion .panel ul.panel-body {
+#support_help #help_container #help_topics #accordion .panel-title {
+  font-size: 13px;
+  line-height: 1.4em;
+  color: #353535;
+  text-transform: capitalize;
+}
+#support_help #help_container #help_topics #accordion .panel-body {
+  padding-bottom: 10px;
   margin-bottom: 0;
 }
-#support_help #help_container #help_topics #accordion .panel ul.panel-body a.disabled {
+#support_help #help_container #help_topics #accordion .panel-body a.disabled {
   color: #353535;
   cursor: default;
 }
-#support_help #help_container #help_topics #accordion .panel:first-child > .panel-heading {
-  padding-top: 0;
-  border-top: none;
+#support_help #help_container #help_topics #accordion .panel-body li {
+  padding-bottom: 4px;
+}
+#support_help #help_container #help_topics #accordion .panel-heading + .panel-collapse .panel-body {
+  border-top: 1px dotted #ddd;
 }
 /*# sourceMappingURL=bootstrap-vialogues.css.map */
