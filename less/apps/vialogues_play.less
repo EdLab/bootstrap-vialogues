@@ -288,6 +288,7 @@ position: relative;
         > #vialogue_info_outer {
             background-color: #fff;
             border: solid 1px @gray-light;
+            margin-right: 0;
 
             #vialogue_info_toggle {
                 .hspacer(5px);
@@ -331,9 +332,21 @@ position: relative;
         }
 
         > #view_discussions {
+            .hspacer(15px);
+            margin-right: 0;
+            border: solid 1px @gray-light;
+            background-color: #fff;
 
-            .thread-div {
-                .divider-top;
+            p {
+                margin-bottom: 0;
+            }
+
+            .horizontal-rule {
+                margin-left: 40px;
+                padding-top: 0;
+            }
+
+            .thread-div  {
 
                 .time-code {
                     .pull-left;
@@ -369,16 +382,6 @@ position: relative;
                         }
                     }
 
-                    > .comment-div:hover {
-                        background-color: @gray-lighter;
-                        .edit-placeholder.active, .delete-placeholder {
-                            .show();
-                        }
-                        .comment-body-text.truncate-2:after {
-                            background-color: @gray-lighter;
-                        }
-                    }
-
                     .btn-survey-form {
                         font-size: @font-size-small;
                         border-radius: 0;
@@ -407,7 +410,6 @@ position: relative;
                     }
 
                     .comment-body {
-                        padding-bottom: 10px;
                         width: 300px;
 
                         .survey-form {
