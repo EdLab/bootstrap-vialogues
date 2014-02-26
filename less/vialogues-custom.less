@@ -114,6 +114,7 @@ a, a:hover {
     font-size: @font-size-med;
     padding: 6px 10px;
     height: 30px;
+    .box-shadow(none);
 }
 
 ul.errorlist {
@@ -144,27 +145,6 @@ ul.errorlist {
 
 .ellipsis i:before { content: "Read More";}
 
-/*
- * Custom list styles
- */
-ol.stepped {
-    counter-reset: item;
-    list-style-type: none;
-    margin-left: 0;
-
-    > li:before {
-        content: 'Step ' counter(item, decimal) ': ';
-        counter-increment: item;
-    }
-}
-
-ul.hyphened {
-    list-style-type: none;
-    margin-left: 0;
-    > li:before {
-        content: '- ';
-    }
-}
 
 /* Page Structuring
 -------------------------------------------------- */
@@ -543,8 +523,12 @@ html, body {
         margin-top: 0;
 
         .tt-query, .tt-hint {
+            .form-control;
             width: 100% !important;
-            border-radius: @border-radius-base;
+        }
+
+        .tt-dropdown-menu {
+            font-size: @font-size-med;
         }
     }
 
