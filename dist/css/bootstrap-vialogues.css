@@ -8290,9 +8290,6 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 #videos_manage #manage_video #basic_info_right .video-left .thumbnail .media-object {
   height: 46px;
 }
-#videos_manage #manage_video .checkbox {
-  margin-bottom: 15px;
-}
 #videos_manage #controls {
   padding-top: 15px;
   margin-top: 20px;
@@ -8300,6 +8297,16 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 }
 #videos_manage #controls .btn {
   text-transform: uppercase;
+}
+#videos_manage .checkbox-group {
+  margin-bottom: 15px;
+}
+#videos_manage .checkbox-group strong {
+  display: block;
+  margin-bottom: 5px;
+}
+#videos_manage .checkbox-group .checkbox:first-of-type {
+  margin-top: 0;
 }
 #profiles_user .well {
   margin-top: 20px;

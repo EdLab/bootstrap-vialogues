@@ -45,10 +45,6 @@
             }
         }
     }
-
-    .checkbox {
-        margin-bottom: 15px;
-    }
 }
 
 #controls {
@@ -58,5 +54,20 @@
 
     .btn {
         text-transform: uppercase;
+    }
+}
+
+.checkbox-group {
+    margin-bottom: 15px;
+
+    strong {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .checkbox {
+        &:first-of-type {
+            margin-top: 0;
+        }
     }
 }
