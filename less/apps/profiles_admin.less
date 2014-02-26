@@ -1,47 +1,11 @@
-#myFormsets .col-xs-2 input[type=text], #myFormsets .col-xs-4 input[type=text] {
-    width: 100%;
-}
-#myFormsets .checkbox input[type="checkbox"] {
-    float: none;
-    margin-left: 0;
-}
-#myFormsets .form-group button.btn-link {
-    padding-left: 0;
-    padding-right: 0;
-    outline: 0 !important;
-    height: 34px;
-}
-#myFormsets .form-group button.btn-link:hover {
-    box-shadow: none;
-    -webkit-box-shadow: none;
-}
-#myFormsets .form-header-row {
-    background-color: #EFEFEF;
-    margin: 0 0 20px 0 !important;
-    text-align: center;
-}
-#myFormsets .form-header-row div {
-    margin: 0.8em 0;
-}
-#myFormsets .form-header-row div:first-child {
-    margin-left: -8px;
-}
-#myFormsets .form-footer-row {
-    margin-top: -8px;
-}
-#myFormsets legend {
-    margin-bottom: 0;
-}
-#myFormsets fieldset {
-    margin-bottom: 30px;
+fieldset {
+    div.row {
+        margin-bottom: 25px;
+    }
 }
 
-textarea#body {
-    min-height: 200px;
-    overflow: scroll;
-    overflow-y: scroll; 
-    overflow-x: scroll; 
-    overflow:-moz-scrollbars-vertical;
+legend {
+    border-bottom: none;
 }
 
 .tab-content {
@@ -62,37 +26,91 @@ textarea#body {
     min-height: 415px;
 }
 
+#myFormsets {
+    .col-xs-2 input[type=text],
+    .col-xs-4 input[type=text] {
+        width: 100%;
+    }
+
+    .checkbox input[type="checkbox"] {
+        float: none;
+        margin-left: 0;
+    }
+
+    .form-group {
+        button.btn-link {
+            padding-left: 0;
+            padding-right: 0;
+            outline: 0 !important;
+            height: 34px;
+
+            &:hover {
+                box-shadow: none;
+                -webkit-box-shadow: none;
+            }
+        }
+    }
+
+    .form-header-row {
+        background-color: @gray-lighter;
+        margin: 0 0 20px 0 !important;
+        text-align: center;
+
+        div {
+            margin: 0.8em 0;
+
+            &:first-child {
+                margin-left: -8px;
+            }
+        }
+    }
+
+    .form-footer-row {
+        margin-top: -8px;
+    }
+
+    legend {
+        margin-bottom: 0;
+    }
+
+    fieldset {
+        margin-bottom: 30px;
+    }
+}
+
+textarea#body {
+    min-height: 200px;
+    overflow: scroll;
+    overflow-y: scroll; 
+    overflow-x: scroll; 
+    overflow:-moz-scrollbars-vertical;
+}
+
 #step_two, #delete_step_two {
     display: none;
 }
 
-div.spinner {
-    display: none;
-    position: absolute;
-    top: 20px;
-    left: 25%;
-    background-color: #aedef4;
-    filter:alpha(opacity=70);
-    opacity:.7;
+#vialogues_info {
+    .list-unstyled {
+        li {
+            margin-top: 0.8em;
+            margin-bottom: 0.8em;
+        }
+    }
 }
 
-fieldset div.row {
-    margin-bottom: 25px;
+#video_switcharoo {
+    legend {
+        cursor: pointer;
+    }
 }
 
-#vialogues_info ul.list-unstyled li {
-    margin-top: 0.8em;
-    margin-bottom: 0.8em;
+.btn-lg {
+    text-transform: uppercase;
 }
 
-#video_switcharoo h4, #delete_vialogue h4 {
-    margin-bottom: 0;
-}
-
-#video_switcharoo legend {
-    cursor: pointer;
-}
-
-legend {
-    border-bottom: none;
+.vialogue-entry {
+    .comment_number {
+        top: 49px;
+    }    
 }

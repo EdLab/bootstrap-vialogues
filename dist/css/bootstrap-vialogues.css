@@ -8325,6 +8325,45 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   position: relative;
   top: 12px;
 }
+#profiles_admin fieldset div.row {
+  margin-bottom: 25px;
+}
+#profiles_admin legend {
+  border-bottom: none;
+}
+#profiles_admin .tab-content {
+  margin-bottom: 40px;
+  /* push next div down for better look */
+}
+#profiles_admin .tab-content:before,
+#profiles_admin .tab-content:after {
+  display: table;
+  content: " ";
+}
+#profiles_admin .tab-content:after {
+  clear: both;
+}
+#profiles_admin .tab-content:before,
+#profiles_admin .tab-content:after {
+  display: table;
+  content: " ";
+}
+#profiles_admin .tab-content:after {
+  clear: both;
+}
+#profiles_admin .tab-pane {
+  min-height: 415px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 25px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: none;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
 #profiles_admin #myFormsets .col-xs-2 input[type=text],
 #profiles_admin #myFormsets .col-xs-4 input[type=text] {
   width: 100%;
@@ -8370,68 +8409,22 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   overflow-x: scroll;
   overflow-y: scroll;
 }
-#profiles_admin .tab-content {
-  margin-bottom: 40px;
-  /* push next div down for better look */
-}
-#profiles_admin .tab-content:before,
-#profiles_admin .tab-content:after {
-  display: table;
-  content: " ";
-}
-#profiles_admin .tab-content:after {
-  clear: both;
-}
-#profiles_admin .tab-content:before,
-#profiles_admin .tab-content:after {
-  display: table;
-  content: " ";
-}
-#profiles_admin .tab-content:after {
-  clear: both;
-}
-#profiles_admin .tab-pane {
-  min-height: 415px;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 25px;
-  background-color: #fff;
-  border: 1px solid #d9d9d9;
-  border-top: none;
-  border-radius: 4px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
 #profiles_admin #step_two,
 #profiles_admin #delete_step_two {
   display: none;
 }
-#profiles_admin div.spinner {
-  position: absolute;
-  top: 20px;
-  left: 25%;
-  display: none;
-  background-color: #aedef4;
-  filter: alpha(opacity=70);
-  opacity: .7;
-}
-#profiles_admin fieldset div.row {
-  margin-bottom: 25px;
-}
-#profiles_admin #vialogues_info ul.list-unstyled li {
+#profiles_admin #vialogues_info .list-unstyled li {
   margin-top: .8em;
   margin-bottom: .8em;
-}
-#profiles_admin #video_switcharoo h4,
-#profiles_admin #delete_vialogue h4 {
-  margin-bottom: 0;
 }
 #profiles_admin #video_switcharoo legend {
   cursor: pointer;
 }
-#profiles_admin legend {
-  border-bottom: none;
+#profiles_admin .btn-lg {
+  text-transform: uppercase;
+}
+#profiles_admin .vialogue-entry .comment_number {
+  top: 49px;
 }
 #groups_user #group_vialogues {
   /* push next div down for better look */
