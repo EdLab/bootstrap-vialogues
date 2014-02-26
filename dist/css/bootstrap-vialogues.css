@@ -8298,6 +8298,9 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   margin-top: 20px;
   border-top: 1px solid #ddd;
 }
+#videos_manage #controls .btn {
+  text-transform: uppercase;
+}
 #profiles_user .well {
   margin-top: 20px;
 }
