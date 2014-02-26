@@ -5852,6 +5852,25 @@ h6 .muted {
 .list-comma-separated > li:first-child:before {
   content: "";
 }
+/*
+ * Custom list styles
+ */
+ol.stepped {
+  margin-left: 0;
+  list-style-type: none;
+  counter-reset: item;
+}
+ol.stepped > li:before {
+  content: 'Step ' counter(item, decimal) ': ';
+  counter-increment: item;
+}
+ul.hyphened {
+  margin-left: 0;
+  list-style-type: none;
+}
+ul.hyphened > li:before {
+  content: '- ';
+}
 .btn {
   border-radius: 2px;
 }
@@ -6794,6 +6813,8 @@ a:hover {
   color: #353535;
   border: 1px solid #ddd;
   border-radius: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 ul.errorlist {
   padding: 15px;
@@ -6845,25 +6866,6 @@ ul.errorlist .alert-link {
 }
 .ellipsis i:before {
   content: "Read More";
-}
-/*
- * Custom list styles
- */
-ol.stepped {
-  margin-left: 0;
-  list-style-type: none;
-  counter-reset: item;
-}
-ol.stepped > li:before {
-  content: 'Step ' counter(item, decimal) ': ';
-  counter-increment: item;
-}
-ul.hyphened {
-  margin-left: 0;
-  list-style-type: none;
-}
-ul.hyphened > li:before {
-  content: '- ';
 }
 /* Page Structuring
 -------------------------------------------------- */
@@ -7179,8 +7181,66 @@ body {
 }
 .bootstrap-tagsinput .twitter-typeahead .tt-query,
 .bootstrap-tagsinput .twitter-typeahead .tt-hint {
+  display: block;
+  width: 100%;
   width: 100% !important;
+  height: 34px;
+  height: 30px;
+  padding: 6px 12px;
+  padding: 6px 10px;
+  font-size: 14px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #999;
+  color: #353535;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   border-radius: 2px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-box-shadow: none;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: none;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.bootstrap-tagsinput .twitter-typeahead .tt-query:focus,
+.bootstrap-tagsinput .twitter-typeahead .tt-hint:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.bootstrap-tagsinput .twitter-typeahead .tt-query::-moz-placeholder,
+.bootstrap-tagsinput .twitter-typeahead .tt-hint::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+.bootstrap-tagsinput .twitter-typeahead .tt-query:-ms-input-placeholder,
+.bootstrap-tagsinput .twitter-typeahead .tt-hint:-ms-input-placeholder {
+  color: #ccc;
+}
+.bootstrap-tagsinput .twitter-typeahead .tt-query::-webkit-input-placeholder,
+.bootstrap-tagsinput .twitter-typeahead .tt-hint::-webkit-input-placeholder {
+  color: #ccc;
+}
+.bootstrap-tagsinput .twitter-typeahead .tt-query[disabled],
+.bootstrap-tagsinput .twitter-typeahead .tt-hint[disabled],
+.bootstrap-tagsinput .twitter-typeahead .tt-query[readonly],
+.bootstrap-tagsinput .twitter-typeahead .tt-hint[readonly],
+fieldset[disabled] .bootstrap-tagsinput .twitter-typeahead .tt-query,
+fieldset[disabled] .bootstrap-tagsinput .twitter-typeahead .tt-hint {
+  cursor: not-allowed;
+  background-color: #efefef;
+  opacity: 1;
+}
+textarea.bootstrap-tagsinput .twitter-typeahead .tt-query,
+textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
+  height: auto;
+}
+.bootstrap-tagsinput .twitter-typeahead .tt-dropdown-menu {
+  font-size: 13px;
 }
 .bootstrap-tagsinput .tag + .twitter-typeahead {
   margin-top: 5px;
@@ -7916,8 +7976,8 @@ body {
   color: #843534;
 }
 #vialogues_create #create_form #add_video .tab-content #create_existing #searchVideoBtn {
-  width: 31px;
-  height: 31px;
+  width: 30px;
+  height: 30px;
   padding: 0;
 }
 #vialogues_create #create_form #add_video .tab-content #create_existing #searchVideoBtn .icon-search:before {
@@ -8031,6 +8091,7 @@ body {
   clear: both;
 }
 #vialogues_manage #manage_left h5 {
+  margin-bottom: 6px;
   font-size: 13px;
   font-weight: bold;
 }
