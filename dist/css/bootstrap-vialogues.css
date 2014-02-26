@@ -8277,14 +8277,17 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 #videos_manage #manage_video #basic_info_left {
   border-right: 1px dotted #ddd;
 }
-#videos_manage #manage_video #basic_info_right .thumbnail {
+#videos_manage #manage_video #basic_info_right .video-left {
+  width: 82px;
+}
+#videos_manage #manage_video #basic_info_right .video-left .thumbnail {
   padding: 0;
   margin: 0;
   background-color: #000;
   border: none;
   border-radius: 0;
 }
-#videos_manage #manage_video #basic_info_right .thumbnail .media-object {
+#videos_manage #manage_video #basic_info_right .video-left .thumbnail .media-object {
   height: 46px;
 }
 #videos_manage #manage_video .checkbox {
