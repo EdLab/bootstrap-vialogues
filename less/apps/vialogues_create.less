@@ -1,10 +1,16 @@
 #required {
-    position: absolute;
-    right: 15px;
-    top: 25px;
+    position: relative;
+    top: 10px;
 }
 
 #create_form {
+    .bumper(30px);
+
+    .btn-default:not(.btn-xs) {
+        padding: 8px 24px;
+        margin-bottom: 15px;
+    }
+
     .input-group-btn button {
         margin-left: 3px;
     }
@@ -30,15 +36,13 @@
         }
         .remove-video-preview {
             .hspacer(10px);
+            margin-bottom: 0;
+            width: 100%;
         }
     }
 
     #add_video {
         margin-bottom: 15px;
-
-        #tab_selector {
-            text-align: center;
-        }
 
         .tab-content {
             .hspacer(20px);
@@ -83,7 +87,6 @@
                 #video_search {
                     .hspacer(10);
                     .video-entry {
-                        padding-top: 10px;
                         position: relative;
                         .media-body {
                             > h5 {
@@ -102,33 +105,73 @@
                             width: 25px;
                         }
                     }
-                    .pagination {
-                        .pull-right;
-                    }
                 }
-            }
-
-            #attachExistingVialogue, #attachExternalVideo {
-                height: 31px;
             }
         }
     }
 
     #define_vialogue {
         margin-bottom: 15px;
-        border-left: solid 1px @gray-light;
+        border-left: 1px dotted @table-border-color;
+
         #vialogue_privacy_settings_details {
             .bootstrap-tagsinput {
-                background-color: transparent;
-                .twitter-typeahead {
-                    background-color: #fff;
-                }
                 .tag.persistent {
                     span[data-role="remove"] {
                         .hidden; /* make sure user cannot remove a "persistent" user */
                     }
                 }
             }
+
+            .form-group {
+                margin-bottom: 0;
+            }
+
+            #moderate_participants {
+                margin-top: 15px;
+            }
         }
     }
+
+    .sub-form + .sub-form {
+        clear: left;
+        border-top: 1px dotted @table-border-color;
+        padding-top: 20px;
+        margin-top: 11px;
+    }
+}
+
+#browse_video {
+    display: block;
+    margin-top: 11px;
+}
+
+.checkbox-group, .radio-group {
+    margin-bottom: 15px;
+
+    strong {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+.checkbox-group {
+    .checkbox {
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+}
+
+.radio-group {
+    .radio {
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+}
+
+#create_vialogue {
+    padding: 12px 20px;
+    text-transform: uppercase;
 }

@@ -81,21 +81,17 @@ a, a:hover {
     .pad-top(30px);
 }
 
+.horizontal-rule {
+    display: block;
+    clear: both;
+    border-top: 1px solid @table-border-color;
+    padding-top: 15px;
+}
+
 .divider-top {
-    margin-top: 1px;
-    border-top: 1px solid @gray;
-    padding-top: 15px; /* not sure about this style Nara added */
-}
-
-.divider-bottom {
-    border-bottom: 1px solid @gray;
-    padding-bottom: 9px;
-    margin-bottom: 15px;
-}
-
-.divider-left {
-    margin-left: -2px; 
-    border-left: 2px groove @gray-dark;
+    // @TODO: Deprecate
+    border-top: 1px solid @table-border-color;
+    padding: 15px;
 }
 
 .content-wrapper {
@@ -120,9 +116,20 @@ a, a:hover {
     height: 30px;
 }
 
+ul.errorlist {
+    // For styling Django's form errors
+    .alert;
+    .alert-danger;
+}
+
 .text-color, .text-color a, .text-color:hover, .text-color a:hover {
     color: @text-color;
 }
+
+.text-to-upper {
+    text-transform: uppercase;
+}
+
 
 /*
  * truncate string to a single line in a container, showing "..." if texts overflow
@@ -522,18 +529,26 @@ html, body {
 
 .bootstrap-tagsinput {
     width: 100%;
+    background-color: transparent;
     border: none;
     .box-shadow(none);
     padding-left: 0;
     padding-right: 0;
+    padding-top: 0;
+    margin-bottom: 0;
 
     .twitter-typeahead {
         width: 100%;
+        background-color: #fff;
+        margin-top: 0;
 
         .tt-query, .tt-hint {
             width: 100% !important;
-            border-radius: 0;
-            /* if we're really turning off all rounded corners, we should really create a custom-variables.less file (or something) where we set one global value for border-radius's to dereference in other files */
+            border-radius: @border-radius-base;
         }
+    }
+
+    .tag + .twitter-typeahead {
+        margin-top: 5px;
     }
 }

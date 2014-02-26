@@ -1,12 +1,16 @@
 #required {
-    position: absolute;
-    right: 15px;
-    top: 25px;
+    position: relative;
+    top: 10px;
 }
 
 #manage_left {
-    padding: 0 15px 15px 0;
+    padding-bottom: 15px;
     .bumper(15px);
+
+    h5 {
+        font-size: @font-size-med;
+        font-weight: bold;
+    }
 
     .vialogue-entry {
         margin-right: 15px;
@@ -18,18 +22,13 @@
         }
     }
 
-    #tab_selector {
-        > li {
-            text-align: center;
-        }
-    }
-
     .tab-content {
         min-height: 300px;
 
         .tab-pane {
             position: relative;
-            padding: 15px;
+            padding-top: 15px;
+
             h3 {
                 margin-top: 0;
             }
@@ -65,25 +64,72 @@
 }
 
 #manage_right {
-    border-left: solid 1px @gray-light;
-    padding: 0 0 15px 15px;
+    border-left: 1px dotted @table-border-color;
+    padding-bottom: 15px;
     .bumper(15px);
 
     #vialogue_privacy_settings_details {
         .bootstrap-tagsinput {
-            background-color: transparent;
-            .twitter-typeahead {
-                background-color: #fff;
-            }
             .tag.persistent {
                 span[data-role="remove"] {
                     .hidden; /* make sure user cannot remove a "persistent" user */
                 }
             }
         }
+
         #vialogue_secure_link {
             height: auto;
             word-break: break-all;
+            margin-bottom: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 0;
+        }
+
+        #private_vialogue_only {
+            .form-group {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+.sub-form {
+    margin-bottom: 20px;
+
+    p {
+        margin-bottom: 8px;
+    }
+}
+
+.sub-form + .sub-form {
+    clear: left;
+    border-top: 1px dotted @table-border-color;
+    padding-top: 10px;
+}
+
+.checkbox-group, .radio-group {
+    margin-bottom: 15px;
+
+    strong {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+.checkbox-group {
+    .checkbox {
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+}
+
+.radio-group {
+    .radio {
+        &:first-of-type {
+            margin-top: 0;
         }
     }
 }
