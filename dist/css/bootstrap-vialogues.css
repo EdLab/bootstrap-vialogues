@@ -8270,15 +8270,20 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   border-right-color: #c00;
   border-left-color: #c00;
 }
-#videos_manage #manage_video #basic_info #basic_info_right label[for="video_thumb_input"] {
-  width: 360px;
+#videos_manage #required {
+  position: relative;
+  top: 10px;
 }
-#videos_manage #manage_video #basic_info #basic_info_right label[for="video_thumb_input"] img#video_thumb {
-  max-width: 360px;
-  max-height: 360px;
+#videos_manage #manage_video #basic_info_left {
+  border-right: 1px dotted #ddd;
 }
-#videos_manage #manage_video #basic_info #basic_info_right label[for="video_thumb_input"] img#video_thumb:hover {
-  cursor: pointer;
+#videos_manage #manage_video #basic_info_right #video_thumb {
+  max-height: 55px;
+}
+#videos_manage #controls {
+  padding-top: 15px;
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
 }
 #profiles_user .well {
   margin-top: 20px;
