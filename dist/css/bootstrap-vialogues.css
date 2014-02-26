@@ -8398,52 +8398,22 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 }
 #groups_create #required,
 #groups_manage #required {
-  position: absolute;
-  top: 25px;
-  right: 15px;
+  position: relative;
+  top: 10px;
 }
 #groups_create #create_group_form #create_left,
 #groups_manage #create_group_form #create_left {
-  border-right: solid 1px #ccc;
-}
-#groups_create #create_group_form #create_left .bootstrap-tagsinput,
-#groups_manage #create_group_form #create_left .bootstrap-tagsinput {
-  background-color: transparent;
-}
-#groups_create #create_group_form #create_left .bootstrap-tagsinput .twitter-typeahead,
-#groups_manage #create_group_form #create_left .bootstrap-tagsinput .twitter-typeahead {
-  background-color: #fff;
+  border-right: 1px dotted #ddd;
 }
 #groups_create #create_group_form #create_left #secure_link #group_secure_link,
 #groups_manage #create_group_form #create_left #secure_link #group_secure_link {
   height: auto;
+  margin-bottom: 8px;
   word-break: break-all;
 }
-#groups_create #create_group_form #create_left #secure_link .btn-group,
-#groups_manage #create_group_form #create_left #secure_link .btn-group {
-  margin-top: 15px;
-}
-#groups_create #create_group_form #create_left #secure_link .btn-group:before,
-#groups_manage #create_group_form #create_left #secure_link .btn-group:before,
-#groups_create #create_group_form #create_left #secure_link .btn-group:after,
-#groups_manage #create_group_form #create_left #secure_link .btn-group:after {
-  display: table;
-  content: " ";
-}
-#groups_create #create_group_form #create_left #secure_link .btn-group:after,
-#groups_manage #create_group_form #create_left #secure_link .btn-group:after {
-  clear: both;
-}
-#groups_create #create_group_form #create_left #secure_link .btn-group:before,
-#groups_manage #create_group_form #create_left #secure_link .btn-group:before,
-#groups_create #create_group_form #create_left #secure_link .btn-group:after,
-#groups_manage #create_group_form #create_left #secure_link .btn-group:after {
-  display: table;
-  content: " ";
-}
-#groups_create #create_group_form #create_left #secure_link .btn-group:after,
-#groups_manage #create_group_form #create_left #secure_link .btn-group:after {
-  clear: both;
+#groups_create #create_group_form #create_left #privacy_settings .form-group:last-child,
+#groups_manage #create_group_form #create_left #privacy_settings .form-group:last-child {
+  margin-bottom: 0;
 }
 #groups_create #create_group_form #create_right,
 #groups_manage #create_group_form #create_right {
