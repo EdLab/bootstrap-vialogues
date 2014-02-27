@@ -1,11 +1,63 @@
-.pagination-sm {
-    > li {
-        &:last-child,
-        &:first-child {
-            > a,
-            > span {
-                .border-right-radius(@border-radius-base);
+.pagination {
+
+    &.pagination-sm {
+        > li {
+            &:last-child,
+            &:first-child {
+                > a,
+                > span {
+                    .border-right-radius(@border-radius-base);
+                }
             }
+        }
+
+        .left-double-arrow,
+        .left-arrow,
+        .right-arrow,
+        .right-double-arrow {
+            &:before {
+                line-height: @font-size-small;
+                position: relative;
+                top: 2px;
+            }
+        }
+    }
+
+    .left-double-arrow,
+    .left-arrow,
+    .right-arrow,
+    .right-double-arrow {
+        text-align: center;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1em;
+    }
+
+    .left-double-arrow {
+        &:before {
+            content: '\00ab';
+            font-size: @font-size-large;
+        }
+    }
+
+    .left-arrow {
+        &:before {
+            content: '\2039';
+            font-size: @font-size-large;
+        }
+    }
+
+    .right-arrow {
+        &:before {
+            content: '\203a';
+            font-size: @font-size-large;
+        }
+    }
+
+    .right-double-arrow {
+        &:before {
+            content: '\00bb';
+            font-size: @font-size-large;
         }
     }
 }
