@@ -36,6 +36,7 @@ position: relative;
                 z-index: 100;
 
                 #comment_input {
+                    .bumper(5px);
                     height: 100%;
                     width: 100%;
 
@@ -65,82 +66,57 @@ position: relative;
 
             #survey_form {
                 position: absolute;
-                bottom: 0;
-                width: 430px;
-                background-color: #fff;
-                z-index: 50;
-                padding: 5px;
+                bottom: -18px;
                 left: 0;
+                width: 485px;
+                padding: 10px 15px;
                 display: none;
+                background-color: #fff;
+                border: solid 2px @brand-primary;
+                border-left: none;
+                z-index: 100;
 
-                > textarea {
-                    width: 330px;
+                .form-group {
+                    margin-bottom: 5px;
+                }
+
+                #survey_options_list {
+                    list-style-type: upper-alpha;
+                    padding-left: 20px;
+                    
+                    > li {
+                        > input, > label {
+                            width: 400px;
+                        }
+                    }
+
+                    #survey_option_last_item {
+                    }
+
+                    .add-survey-option, .remove-survey-option {
+                        display: block;
+                        .pull-right;
+                        .glyphicon {
+                            .vialogues-primary-color;
+                        }
+                    }
+                }
+
+                #survey_type_group {
+                    > label {
+                        margin-right: 10px;
+                    }
+                }
+
+                #survey_textarea {
                     height: 75px;
                     resize: none;
                     margin-bottom: 5px;
                 }
 
-                .survey-options-list {
-                    .list-unstyled;
-                    display: inline-block;
-                    margin-right: 5px;
-
-                    input[type="text"] {
-                        width: 240px;
-                    }
-
-                    li {
-                        white-space: nowrap;
-                    }
-                }
-
-                .glyphicon {
-                    color: @gray;
-                }
-
-                > #survey_form_controls {
-                    background-color: #3E4953;
-                    position: absolute;
-                    width: 60px;
-                    height: 100%;
-                    bottom: 0;
-                    right: 0;
+                #survey_form_controls {
                     text-align: right;
-
-                    .btn {
-                        padding: 4px;
-                    }
-
-                    .glyphicon-remove-circle {
-                        color: #fff;
-                    }
-
-                    #post_survey_button {
-                        position: absolute;
-                        bottom: 0;
-                    }
                 }
-            }
-
-            .post-comment-btn {
-                display: block;
-                height: 44px;
-                line-height: 44px;
-                width: 60px;
-                text-align: center;
-                font-size: @font-size-large;
-                color: #fff;
-
-                #gradient .vertical(#76c7e8, #0096d5);
-            }
-
-            .post-comment-btn:hover {
-                #gradient .vertical(#abd4ed, #59a4d1);
-            }
-
-            .prompt-text {
-                padding: 20px 0;
-                text-align: center;
             }
         }
 
@@ -357,7 +333,7 @@ position: relative;
                     margin: 10px 0 10px 40px;
 
                     .comment-div {
-                        padding: 0 2px 5px 2px;
+                        padding: 0 2px;
                         position: relative;
                         overflow: hidden;
 
@@ -470,7 +446,6 @@ position: relative;
 
                     .comment-foot {
                         .timeago {
-                            font-style: italic;
                             color: @gray;
                             line-height: 2em;
                         }
@@ -495,10 +470,6 @@ position: relative;
                             > .reply-btns {
                                 text-align: right;
                             }
-                        }
-
-                        a:not(.collapsed) .icon-reply {
-                            .selected;
                         }
                     }
                 }
