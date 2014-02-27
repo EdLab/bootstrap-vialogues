@@ -7352,6 +7352,26 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 #vialogues_browse_extended #sort_options_dropdown {
   top: 10px;
 }
+#vialogues_browse_extended #center_section {
+  margin-bottom: 30px;
+  /* push next div down for better look */
+}
+#vialogues_browse_extended #center_section:before,
+#vialogues_browse_extended #center_section:after {
+  display: table;
+  content: " ";
+}
+#vialogues_browse_extended #center_section:after {
+  clear: both;
+}
+#vialogues_browse_extended #center_section:before,
+#vialogues_browse_extended #center_section:after {
+  display: table;
+  content: " ";
+}
+#vialogues_browse_extended #center_section:after {
+  clear: both;
+}
 #vialogues_play {
   position: relative;
 }
