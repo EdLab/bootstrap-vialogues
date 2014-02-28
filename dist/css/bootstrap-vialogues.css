@@ -8329,7 +8329,7 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   width: 80px;
 }
 #videos_manage #manage_video #basic_info_right .video-left .thumbnail {
-  max-height: 45px;
+  height: 45px;
   padding: 0;
   margin: 0;
   background-color: #000;
@@ -8337,7 +8337,7 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   border-radius: 0;
 }
 #videos_manage #manage_video #basic_info_right .video-left .thumbnail .media-object {
-  height: 45px;
+  max-height: 45px;
 }
 #videos_manage #controls {
   padding-top: 15px;
