@@ -7440,7 +7440,25 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 }
 #vialogues_play #play_main #main_left > #player_comment_box #comment_form #comment_input {
   width: 100%;
+  /* push next div down for better look */
   height: 100%;
+  margin-bottom: 5px;
+}
+#vialogues_play #play_main #main_left > #player_comment_box #comment_form #comment_input:before,
+#vialogues_play #play_main #main_left > #player_comment_box #comment_form #comment_input:after {
+  display: table;
+  content: " ";
+}
+#vialogues_play #play_main #main_left > #player_comment_box #comment_form #comment_input:after {
+  clear: both;
+}
+#vialogues_play #play_main #main_left > #player_comment_box #comment_form #comment_input:before,
+#vialogues_play #play_main #main_left > #player_comment_box #comment_form #comment_input:after {
+  display: table;
+  content: " ";
+}
+#vialogues_play #play_main #main_left > #player_comment_box #comment_form #comment_input:after {
+  clear: both;
 }
 #vialogues_play #play_main #main_left > #player_comment_box #comment_form #comment_input #comment_textarea {
   width: 100%;
@@ -7466,76 +7484,46 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 }
 #vialogues_play #play_main #main_left > #player_comment_box #survey_form {
   position: absolute;
-  bottom: 0;
+  bottom: -18px;
   left: 0;
-  z-index: 50;
+  z-index: 100;
   display: none;
-  width: 430px;
-  padding: 5px;
+  width: 485px;
+  padding: 10px 15px;
   background-color: #fff;
+  border: solid 2px #0096d5;
+  border-left: none;
 }
-#vialogues_play #play_main #main_left > #player_comment_box #survey_form > textarea {
-  width: 330px;
+#vialogues_play #play_main #main_left > #player_comment_box #survey_form .form-group {
+  margin-bottom: 5px;
+}
+#vialogues_play #play_main #main_left > #player_comment_box #survey_form #survey_options_list {
+  padding-left: 20px;
+  list-style-type: upper-alpha;
+}
+#vialogues_play #play_main #main_left > #player_comment_box #survey_form #survey_options_list > li > input,
+#vialogues_play #play_main #main_left > #player_comment_box #survey_form #survey_options_list > li > label {
+  width: 400px;
+}
+#vialogues_play #play_main #main_left > #player_comment_box #survey_form #survey_options_list .add-survey-option,
+#vialogues_play #play_main #main_left > #player_comment_box #survey_form #survey_options_list .remove-survey-option {
+  display: block;
+  float: right !important;
+}
+#vialogues_play #play_main #main_left > #player_comment_box #survey_form #survey_options_list .add-survey-option .glyphicon,
+#vialogues_play #play_main #main_left > #player_comment_box #survey_form #survey_options_list .remove-survey-option .glyphicon {
+  color: #0096d5;
+}
+#vialogues_play #play_main #main_left > #player_comment_box #survey_form #survey_type_group > label {
+  margin-right: 10px;
+}
+#vialogues_play #play_main #main_left > #player_comment_box #survey_form #survey_textarea {
   height: 75px;
   margin-bottom: 5px;
   resize: none;
 }
-#vialogues_play #play_main #main_left > #player_comment_box #survey_form .survey-options-list {
-  display: inline-block;
-  padding-left: 0;
-  margin-right: 5px;
-  list-style: none;
-}
-#vialogues_play #play_main #main_left > #player_comment_box #survey_form .survey-options-list input[type="text"] {
-  width: 240px;
-}
-#vialogues_play #play_main #main_left > #player_comment_box #survey_form .survey-options-list li {
-  white-space: nowrap;
-}
-#vialogues_play #play_main #main_left > #player_comment_box #survey_form .glyphicon {
-  color: #999;
-}
-#vialogues_play #play_main #main_left > #player_comment_box #survey_form > #survey_form_controls {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 60px;
-  height: 100%;
+#vialogues_play #play_main #main_left > #player_comment_box #survey_form #survey_form_controls {
   text-align: right;
-  background-color: #3e4953;
-}
-#vialogues_play #play_main #main_left > #player_comment_box #survey_form > #survey_form_controls .btn {
-  padding: 4px;
-}
-#vialogues_play #play_main #main_left > #player_comment_box #survey_form > #survey_form_controls .glyphicon-remove-circle {
-  color: #fff;
-}
-#vialogues_play #play_main #main_left > #player_comment_box #survey_form > #survey_form_controls #post_survey_button {
-  position: absolute;
-  bottom: 0;
-}
-#vialogues_play #play_main #main_left > #player_comment_box .post-comment-btn {
-  display: block;
-  width: 60px;
-  height: 44px;
-  font-size: 18px;
-  line-height: 44px;
-  color: #fff;
-  text-align: center;
-  background-image: -webkit-linear-gradient(top, #76c7e8 0%, #0096d5 100%);
-  background-image:         linear-gradient(to bottom, #76c7e8 0%, #0096d5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff76c7e8', endColorstr='#ff0096d5', GradientType=0);
-  background-repeat: repeat-x;
-}
-#vialogues_play #play_main #main_left > #player_comment_box .post-comment-btn:hover {
-  background-image: -webkit-linear-gradient(top, #abd4ed 0%, #59a4d1 100%);
-  background-image:         linear-gradient(to bottom, #abd4ed 0%, #59a4d1 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffabd4ed', endColorstr='#ff59a4d1', GradientType=0);
-  background-repeat: repeat-x;
-}
-#vialogues_play #play_main #main_left > #player_comment_box .prompt-text {
-  padding: 20px 0;
-  text-align: center;
 }
 #vialogues_play #play_main #main_left > #share_central {
   position: relative;
@@ -7787,7 +7775,7 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div {
   position: relative;
-  padding: 0 2px 5px 2px;
+  padding: 0 2px;
   overflow: hidden;
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div form.comment-edit-form {
@@ -7879,7 +7867,6 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   color: #999;
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-foot .timeago {
-  font-style: italic;
   line-height: 2em;
   color: #999;
 }
@@ -7900,10 +7887,6 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-foot .post-reply > .reply-btns {
   text-align: right;
-}
-#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-foot a:not(.collapsed) .icon-reply {
-  background-color: #efefef;
-  border: inset 3px #ccc;
 }
 @media print {
   #vialogues_play #browser_warning,
