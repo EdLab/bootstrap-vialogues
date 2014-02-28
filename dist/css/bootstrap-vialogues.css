@@ -6987,6 +6987,9 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+.vialogue-entry.col-xs-4 .thumbnail {
+  height: 107px;
+}
 .vialogue-entry.col-xs-4 .thumbnail .img-responsive {
   max-height: 107px;
 }
@@ -7135,9 +7138,10 @@ body {
   font-size: 11px;
 }
 .video-entry .video-left {
-  width: 82px;
+  width: 80px;
 }
 .video-entry .video-left .thumbnail {
+  height: 45px;
   padding: 0;
   margin: 0;
   background-color: #000;
@@ -7145,7 +7149,7 @@ body {
   border-radius: 0;
 }
 .video-entry .video-left .thumbnail .media-object {
-  height: 46px;
+  max-height: 45px;
 }
 .video-entry .video-left .btn-xs.avideo {
   width: 100%;
@@ -8322,9 +8326,10 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   border-right: 1px dotted #ddd;
 }
 #videos_manage #manage_video #basic_info_right .video-left {
-  width: 82px;
+  width: 80px;
 }
 #videos_manage #manage_video #basic_info_right .video-left .thumbnail {
+  height: 45px;
   padding: 0;
   margin: 0;
   background-color: #000;
@@ -8332,7 +8337,7 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   border-radius: 0;
 }
 #videos_manage #manage_video #basic_info_right .video-left .thumbnail .media-object {
-  height: 46px;
+  max-height: 45px;
 }
 #videos_manage #controls {
   padding-top: 15px;
