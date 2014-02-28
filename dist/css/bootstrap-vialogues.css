@@ -6987,8 +6987,11 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-.vialogue-entry.col-xs-4 .thumbnail .img-responsive {
+.vialogue-entry.col-xs-4 .thumbnail {
   height: 107px;
+}
+.vialogue-entry.col-xs-4 .thumbnail .img-responsive {
+  max-height: 107px;
 }
 .vialogue-entry .timestamp {
   position: relative;
