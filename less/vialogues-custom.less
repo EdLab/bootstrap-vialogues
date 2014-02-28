@@ -503,6 +503,31 @@ html, body {
     text-align: right;
 }
 
+/* Closed Captions form */
+#edit_captions {
+    #cc_upload_box {
+        margin-bottom: 10px;
+    }
+
+    #browse_cc {
+        position: relative;
+    }
+
+    #cc_upload_status {
+        &:not(:empty) {
+            .alert;
+            .alert-info;
+        }
+    }
+
+    #caption_error_message {
+        &:not(:empty) {
+            .alert;
+            .alert-danger;
+        }
+    }
+}
+
 
 /* Override various plugin styles
 -------------------------------------------------- */
