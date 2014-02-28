@@ -6988,7 +6988,7 @@ body {
   margin-left: auto;
 }
 .vialogue-entry.col-xs-4 .thumbnail .img-responsive {
-  max-height: 107px;
+  height: 107px;
 }
 .vialogue-entry .timestamp {
   position: relative;
