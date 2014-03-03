@@ -18,6 +18,7 @@ position: relative;
 
     #main_left {
         overflow: visible;
+        position: relative;
 
         #player_placeholder {
             background-color: #000;
@@ -85,7 +86,7 @@ position: relative;
                 #survey_options_list {
                     list-style-type: upper-alpha;
                     padding-left: 20px;
-                    
+
                     > li {
                         > input, > label {
                             width: 400px;
@@ -248,15 +249,20 @@ position: relative;
                 }
             }
         }
-    }
-
-    #main_left.affix-top {
-        position: relative;
-    }
-
-    #main_left.affix {
-        width: 560px;
-        top: 30px;
+        &.affix {
+            width: inherit;
+            top: 50px;
+            position: fixed;
+        }
+        &.affix-top {
+            position: relative;
+        }
+        &.affix-bottom {
+            position: absolute;
+            width: inherit;
+            top: auto;
+            bottom: 60px;
+        }
     }
 
     #main_right {
