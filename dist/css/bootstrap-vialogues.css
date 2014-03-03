@@ -5915,6 +5915,12 @@ ul.hyphened > li:before {
   color: #16e8fb;
   background-color: #192124;
 }
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #192124;
+  border-color: transparent;
+}
 .nav-tabs > li > a {
   padding-right: 20px;
   padding-left: 20px;
@@ -5935,10 +5941,6 @@ ul.hyphened > li:before {
 }
 .nav-tabs li:not(.active):hover a {
   background-color: #353535;
-}
-#navigation_background {
-  background-color: #353535;
-  border: #192124;
 }
 body > .popover .popover-content {
   padding: 0;
@@ -5975,61 +5977,35 @@ body > .popover .popover-content ul.list-group > li.divider {
   border-bottom: solid 1px #e5e5e5;
 }
 #navigation {
-  height: 50px;
+  font-size: 13px;
   background-color: #353535;
   border-color: #192124;
-}
-#navigation ul.nav {
-  /* TODO : this part remains to do once design doc is provided */
-  /*.text-over-icon { 
-            left: 22px;
-            bottom: 9px;
-            font-size: 11px;
-            width: 15px;
-        }
-
-        .icon-notification-active:after {
-            content: '\e80b';
-            font-family: vialogues;
-            font-style: normal;
-            font-weight: normal;
-            speak: none;
-            display: inline-block;
-            width: 12px;
-            font-size: 12px;
-            vertical-align: super;
-            margin-left: -12px;
-            z-index: 100;
-
-            color: @brand-theme;
-        }*/
-}
-#navigation ul.nav button {
-  background: none;
-  border: none;
+  border-bottom: 0;
 }
 #navigation ul.nav > li {
   height: 50px;
   padding: 0;
+  font-size: 13px;
   vertical-align: middle;
   cursor: pointer;
 }
 #navigation ul.nav > li > a,
-#navigation ul.nav > li [class^="icon-"]:before,
-#navigation ul.nav > li [class*=" icon-"]:before {
+#navigation ul.nav > li [class^="glyphicon"]:before,
+#navigation ul.nav > li [class*=" glyphicon"]:before {
+  font-size: 13px;
   /* active menu and notification buttons */
   color: #04b3fc;
 }
 #navigation ul.nav > li > a.disabled,
-#navigation ul.nav > li > a.disabled [class^="icon-"]:before,
-#navigation ul.nav > li > a.disabled [class*=" icon-"]:before {
+#navigation ul.nav > li > a.disabled [class^="glyphicon"]:before,
+#navigation ul.nav > li > a.disabled [class*=" glyphicon"]:before {
   /* disabled menu and notification buttons */
   color: #ccc;
 }
 #navigation ul.nav > li > a {
   display: table-cell;
   height: 50px;
-  padding: 0 15px;
+  padding: 0 24px;
   line-height: 50px;
 }
 #navigation ul.nav > li:hover,
@@ -6041,16 +6017,27 @@ body > .popover .popover-content ul.list-group > li.divider {
 #navigation ul.nav > li:hover > a,
 #navigation ul.nav > li:focus > a,
 #navigation ul.nav > li:active > a,
-#navigation ul.nav > li:hover [class^="icon-"]:before,
-#navigation ul.nav > li:focus [class^="icon-"]:before,
-#navigation ul.nav > li:active [class^="icon-"]:before,
-#navigation ul.nav > li:hover [class*=" icon-"]:before,
-#navigation ul.nav > li:focus [class*=" icon-"]:before,
-#navigation ul.nav > li:active [class*=" icon-"]:before {
+#navigation ul.nav > li:hover [class^="glyphicon"]:before,
+#navigation ul.nav > li:focus [class^="glyphicon"]:before,
+#navigation ul.nav > li:active [class^="glyphicon"]:before,
+#navigation ul.nav > li:hover [class*=" glyphicon"]:before,
+#navigation ul.nav > li:focus [class*=" glyphicon"]:before,
+#navigation ul.nav > li:active [class*=" glyphicon"]:before {
   color: #16e8fb;
 }
-#navigation ul.navbar-right {
-  margin-right: -15px;
+#navigation ul.nav .btn.dropdown-toggle {
+  border: 0;
+}
+#navigation .badge {
+  font-size: 10px;
+  background-color: #c00;
+}
+#navigation #request_btn .badge,
+#navigation #notification_btn .badge {
+  position: absolute;
+  top: 10px;
+  left: 34px;
+  display: block;
 }
 #navigation .navbar-nav li button:hover,
 #navigation .navbar-nav li .btn:hover,
@@ -6071,13 +6058,12 @@ body > .popover .popover-content ul.list-group > li.divider {
   background-color: transparent;
 }
 #navigation #search {
-  max-width: 240px;
+  max-width: 230px;
   margin-right: 10px;
 }
 #navigation #search > form {
   z-index: 100;
-  padding-top: 13px;
-  padding-right: 10px;
+  padding-top: 10px;
 }
 #navigation #search > form input#id_q {
   width: 100%;
@@ -6097,7 +6083,7 @@ body > .popover .popover-content ul.list-group > li.divider {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
 }
-#navigation #search > form #search_button .icon-search:before {
+#navigation #search > form #search_button .glyphiconsearch:before {
   line-height: 28px;
   color: #04b3fc;
 }
@@ -6122,28 +6108,21 @@ body > .popover .popover-content ul.list-group > li.divider {
 #navigation #search #advanced_search .dropdown-menu label {
   padding-right: 10px;
 }
-#navigation #search #advanced_search .dropdown-menu input,
-#navigation #search #advanced_search .dropdown-menu .btn {
+#navigation #search #advanced_search .dropdown-menu input {
   height: 24px;
   font-size: 12px;
   /* 12px */
-}
-#navigation #search #advanced_search .dropdown-menu input {
   border-color: #515b67;
 }
-#navigation #search #advanced_search .dropdown-menu .btn {
-  padding-right: 8px;
-  padding-left: 8px;
-}
 #navigation #search #advanced_search .dropdown-menu .divider {
-  bakground-color: #515b67;
+  background-color: #515b67;
 }
 #navigation #search #advanced_search .dropdown-menu > li {
   padding: 0 5px;
 }
 #navigation #search #advanced_search #search_options {
-  position: relative;
-  left: 90px;
+  float: right;
+  font-size: 13px;
   color: #fff;
   background-color: #353535;
 }
@@ -6159,13 +6138,12 @@ body > .popover .popover-content ul.list-group > li.divider {
   border-bottom-color: #16e8fb !important;
 }
 #navigation #user_menu #user_menu_ext {
-  top: 48px;
   color: #353535;
 }
-#navigation #user_menu #user_menu_ext a {
+#navigation #user_menu #user_menu_ext li:not(.disabled) a {
   color: #0096d5;
 }
-#navigation #user_menu #user_menu_ext a:hover {
+#navigation #user_menu #user_menu_ext li:not(.disabled) a:hover {
   color: #fff;
   background-color: #0096d5;
 }
@@ -6173,10 +6151,6 @@ body > .popover .popover-content ul.list-group > li.divider {
   padding: 0;
   margin: 5px 0;
   color: #999;
-}
-#navigation #user_menu #user_menu_ext > li.dropdown-header {
-  padding: 0 10px;
-  color: #353535;
 }
 #navigation #cas_menu #caslinks {
   display: inline-block;
@@ -6210,14 +6184,6 @@ body > .popover .popover-content ul.list-group > li.divider {
   width: 100%;
   font-size: 12px;
   background-color: #efefef;
-}
-#footer > ul.list-inline {
-  padding-right: 0;
-  padding-left: 0;
-}
-#footer > ul.list-inline > li {
-  padding-right: 0;
-  padding-left: 0;
 }
 #footer .footer-sprite:before {
   height: 1em;
