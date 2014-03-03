@@ -5,8 +5,6 @@
 
 #create_group_form {
     #create_left {
-        border-right: 1px dotted @table-border-color;
-
         #secure_link {
             #group_secure_link {
                 height: auto;
@@ -25,7 +23,8 @@
     }
 
     #create_right {
-        position: relative;
+        border-left: 1px dotted @table-border-color;
+        min-height: 420px;
 
         .badge {
             background-color: @brand-danger;
@@ -33,46 +32,64 @@
 
         .vialogue-entry {
             position: relative;
+            clear: both;
             padding: 10px 0;
-            border-bottom: solid 1px @gray-light;
+            border-bottom: 1px dotted @table-border-color;
 
-            > a[data-role="thumbnail"] img {
-                width: 82px;
-                margin-right: 5px;
-            }
-
-            > a[data-role="name"] {
-                vertical-align: top;
-                padding-right: 25px;
-            }
-
-            > button, > .selected-sign {
-                position: absolute;
+            .vialogue-left {
                 display: block;
-                text-align: center;
-                right: 0;
-                bottom: 0;
-                margin: auto;
-                padding: 0;
-                height: 25px;
-                width: 25px;
-                color: @blue;
+                float: left;
+                width: 80px;
+                margin-right: 10px;
+
+                .thumbnail {
+                    background-color: #000;
+                    padding: 0;
+                    margin: 0;
+                    border-radius: 0;
+                    border: none;
+                    height: 45px;
+
+                    img {
+                        max-height: 45px;
+                    }
+                }
+            }
+
+            .vialogue-right {
+                a[data-role="name"] {
+                    vertical-align: top;
+                    padding-right: 25px;
+                }
+
+                > button, > .selected-sign {
+                    position: absolute;
+                    display: block;
+                    text-align: center;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    padding: 0;
+                    height: 25px;
+                    width: 25px;
+                    color: @blue;
+                }
             }
 
             &.remove-entry {
-                > a[data-role="thumbnail"], > button[data-role="add"], > .selected-sign {
+                a[data-role="thumbnail"], button[data-role="add"], .selected-sign {
                     display: none;
                 }
             }
 
             &.add-entry {
-                > button[data-role="remove"], > .selected-sign {
+                button[data-role="remove"], .selected-sign {
                     display: none;
                 }
             }
 
             &.selected-entry {
-                > button[data-role="add"], > button[data-role="remove"] {
+                button[data-role="add"], button[data-role="remove"] {
                     display: none;
                 }
             }
@@ -103,6 +120,10 @@
 
             #searched_vialogues {
                 .hspacer(15px);
+            }
+
+            .vialogue-right {
+                height: 45px;
             }
         }
     }

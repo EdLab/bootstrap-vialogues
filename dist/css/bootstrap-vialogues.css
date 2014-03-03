@@ -8529,10 +8529,6 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   position: relative;
   top: 10px;
 }
-#groups_create #create_group_form #create_left,
-#groups_manage #create_group_form #create_left {
-  border-right: 1px dotted #ddd;
-}
 #groups_create #create_group_form #create_left #secure_link #group_secure_link,
 #groups_manage #create_group_form #create_left #secure_link #group_secure_link {
   height: auto;
@@ -8545,7 +8541,8 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 }
 #groups_create #create_group_form #create_right,
 #groups_manage #create_group_form #create_right {
-  position: relative;
+  min-height: 420px;
+  border-left: 1px dotted #ddd;
 }
 #groups_create #create_group_form #create_right .badge,
 #groups_manage #create_group_form #create_right .badge {
@@ -8555,22 +8552,38 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 #groups_manage #create_group_form #create_right .vialogue-entry {
   position: relative;
   padding: 10px 0;
-  border-bottom: solid 1px #ccc;
+  clear: both;
+  border-bottom: 1px dotted #ddd;
 }
-#groups_create #create_group_form #create_right .vialogue-entry > a[data-role="thumbnail"] img,
-#groups_manage #create_group_form #create_right .vialogue-entry > a[data-role="thumbnail"] img {
-  width: 82px;
-  margin-right: 5px;
+#groups_create #create_group_form #create_right .vialogue-entry .vialogue-left,
+#groups_manage #create_group_form #create_right .vialogue-entry .vialogue-left {
+  display: block;
+  float: left;
+  width: 80px;
+  margin-right: 10px;
 }
-#groups_create #create_group_form #create_right .vialogue-entry > a[data-role="name"],
-#groups_manage #create_group_form #create_right .vialogue-entry > a[data-role="name"] {
+#groups_create #create_group_form #create_right .vialogue-entry .vialogue-left .thumbnail,
+#groups_manage #create_group_form #create_right .vialogue-entry .vialogue-left .thumbnail {
+  height: 45px;
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+  border: none;
+  border-radius: 0;
+}
+#groups_create #create_group_form #create_right .vialogue-entry .vialogue-left .thumbnail img,
+#groups_manage #create_group_form #create_right .vialogue-entry .vialogue-left .thumbnail img {
+  max-height: 45px;
+}
+#groups_create #create_group_form #create_right .vialogue-entry .vialogue-right a[data-role="name"],
+#groups_manage #create_group_form #create_right .vialogue-entry .vialogue-right a[data-role="name"] {
   padding-right: 25px;
   vertical-align: top;
 }
-#groups_create #create_group_form #create_right .vialogue-entry > button,
-#groups_manage #create_group_form #create_right .vialogue-entry > button,
-#groups_create #create_group_form #create_right .vialogue-entry > .selected-sign,
-#groups_manage #create_group_form #create_right .vialogue-entry > .selected-sign {
+#groups_create #create_group_form #create_right .vialogue-entry .vialogue-right > button,
+#groups_manage #create_group_form #create_right .vialogue-entry .vialogue-right > button,
+#groups_create #create_group_form #create_right .vialogue-entry .vialogue-right > .selected-sign,
+#groups_manage #create_group_form #create_right .vialogue-entry .vialogue-right > .selected-sign {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -8582,24 +8595,24 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   color: #0096d5;
   text-align: center;
 }
-#groups_create #create_group_form #create_right .vialogue-entry.remove-entry > a[data-role="thumbnail"],
-#groups_manage #create_group_form #create_right .vialogue-entry.remove-entry > a[data-role="thumbnail"],
-#groups_create #create_group_form #create_right .vialogue-entry.remove-entry > button[data-role="add"],
-#groups_manage #create_group_form #create_right .vialogue-entry.remove-entry > button[data-role="add"],
-#groups_create #create_group_form #create_right .vialogue-entry.remove-entry > .selected-sign,
-#groups_manage #create_group_form #create_right .vialogue-entry.remove-entry > .selected-sign {
+#groups_create #create_group_form #create_right .vialogue-entry.remove-entry a[data-role="thumbnail"],
+#groups_manage #create_group_form #create_right .vialogue-entry.remove-entry a[data-role="thumbnail"],
+#groups_create #create_group_form #create_right .vialogue-entry.remove-entry button[data-role="add"],
+#groups_manage #create_group_form #create_right .vialogue-entry.remove-entry button[data-role="add"],
+#groups_create #create_group_form #create_right .vialogue-entry.remove-entry .selected-sign,
+#groups_manage #create_group_form #create_right .vialogue-entry.remove-entry .selected-sign {
   display: none;
 }
-#groups_create #create_group_form #create_right .vialogue-entry.add-entry > button[data-role="remove"],
-#groups_manage #create_group_form #create_right .vialogue-entry.add-entry > button[data-role="remove"],
-#groups_create #create_group_form #create_right .vialogue-entry.add-entry > .selected-sign,
-#groups_manage #create_group_form #create_right .vialogue-entry.add-entry > .selected-sign {
+#groups_create #create_group_form #create_right .vialogue-entry.add-entry button[data-role="remove"],
+#groups_manage #create_group_form #create_right .vialogue-entry.add-entry button[data-role="remove"],
+#groups_create #create_group_form #create_right .vialogue-entry.add-entry .selected-sign,
+#groups_manage #create_group_form #create_right .vialogue-entry.add-entry .selected-sign {
   display: none;
 }
-#groups_create #create_group_form #create_right .vialogue-entry.selected-entry > button[data-role="add"],
-#groups_manage #create_group_form #create_right .vialogue-entry.selected-entry > button[data-role="add"],
-#groups_create #create_group_form #create_right .vialogue-entry.selected-entry > button[data-role="remove"],
-#groups_manage #create_group_form #create_right .vialogue-entry.selected-entry > button[data-role="remove"] {
+#groups_create #create_group_form #create_right .vialogue-entry.selected-entry button[data-role="add"],
+#groups_manage #create_group_form #create_right .vialogue-entry.selected-entry button[data-role="add"],
+#groups_create #create_group_form #create_right .vialogue-entry.selected-entry button[data-role="remove"],
+#groups_manage #create_group_form #create_right .vialogue-entry.selected-entry button[data-role="remove"] {
   display: none;
 }
 #groups_create #create_group_form #create_right #selected_discussions #selected_discussions_display,
@@ -8669,6 +8682,10 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 #groups_create #create_group_form #create_right #search_discussions #searched_vialogues:after,
 #groups_manage #create_group_form #create_right #search_discussions #searched_vialogues:after {
   clear: both;
+}
+#groups_create #create_group_form #create_right #search_discussions .vialogue-right,
+#groups_manage #create_group_form #create_right #search_discussions .vialogue-right {
+  height: 45px;
 }
 #groups_create #create_group_form #form_controls,
 #groups_manage #create_group_form #form_controls {
