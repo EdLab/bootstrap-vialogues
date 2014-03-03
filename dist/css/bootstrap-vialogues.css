@@ -7492,70 +7492,73 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 #vialogues_play #play_main #main_left {
   overflow: visible;
 }
-#vialogues_play #play_main #main_left > #vialoguesplayer {
+#vialogues_play #play_main #main_left #player_placeholder {
   position: relative;
+  /* import for player to stay on top of other elements */
   z-index: 999;
   background-color: #000;
 }
-#vialogues_play #play_main #main_left > #player_comment_box {
+#vialogues_play #play_main #main_left #player_comment_box {
   position: relative;
   width: 530px;
 }
-#vialogues_play #play_main #main_left > #player_comment_box #comment_form {
+#vialogues_play #play_main #main_left #player_comment_box #comment_form {
   position: relative;
   z-index: 100;
   width: 100%;
+  padding-bottom: 15px;
   overflow: hidden;
+  background-color: #efefef;
 }
-#vialogues_play #play_main #main_left > #player_comment_box #comment_form #comment_input {
+#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_input {
   width: 100%;
   /* push next div down for better look */
   height: 100%;
   margin-bottom: 5px;
 }
-#vialogues_play #play_main #main_left > #player_comment_box #comment_form #comment_input:before,
-#vialogues_play #play_main #main_left > #player_comment_box #comment_form #comment_input:after {
+#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_input:before,
+#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_input:after {
   display: table;
   content: " ";
 }
-#vialogues_play #play_main #main_left > #player_comment_box #comment_form #comment_input:after {
+#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_input:after {
   clear: both;
 }
-#vialogues_play #play_main #main_left > #player_comment_box #comment_form #comment_input:before,
-#vialogues_play #play_main #main_left > #player_comment_box #comment_form #comment_input:after {
+#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_input:before,
+#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_input:after {
   display: table;
   content: " ";
 }
-#vialogues_play #play_main #main_left > #player_comment_box #comment_form #comment_input:after {
+#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_input:after {
   clear: both;
 }
-#vialogues_play #play_main #main_left > #player_comment_box #comment_form #comment_input #comment_textarea {
+#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_input #comment_textarea {
   width: 100%;
   height: 100%;
   resize: none;
   border: solid 1px #ccc;
 }
-#vialogues_play #play_main #main_left > #player_comment_box #comment_form #comment_buttons {
+#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_buttons {
   height: 100%;
 }
-#vialogues_play #play_main #main_left > #player_comment_box #comment_form #comment_buttons #comment_buttons_left,
-#vialogues_play #play_main #main_left > #player_comment_box #comment_form #comment_buttons #comment_buttons_right {
+#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_buttons #comment_buttons_left,
+#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_buttons #comment_buttons_right {
   white-space: nowrap;
 }
-#vialogues_play #play_main #main_left > #player_comment_box #comment_form #comment_buttons #comment_buttons_left .btn,
-#vialogues_play #play_main #main_left > #player_comment_box #comment_form #comment_buttons #comment_buttons_right .btn {
+#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_buttons #comment_buttons_left .btn,
+#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_buttons #comment_buttons_right .btn {
   display: inline-block;
   color: #0096d5;
 }
-#vialogues_play #play_main #main_left > #player_comment_box #comment_form #comment_buttons #comment_buttons_left #post_comment_button,
-#vialogues_play #play_main #main_left > #player_comment_box #comment_form #comment_buttons #comment_buttons_right #post_comment_button {
+#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_buttons #comment_buttons_left #post_comment_button,
+#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_buttons #comment_buttons_right #post_comment_button {
   color: #fff;
 }
-#vialogues_play #play_main #main_left > #player_comment_box #survey_form {
+#vialogues_play #play_main #main_left #player_comment_box #survey_form {
   position: absolute;
-  bottom: -18px;
+  bottom: 0;
   left: 0;
-  z-index: 100;
+  z-index: 50;
   display: none;
   width: 485px;
   padding: 10px 15px;
@@ -7563,40 +7566,39 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   border: solid 2px #0096d5;
   border-left: none;
 }
-#vialogues_play #play_main #main_left > #player_comment_box #survey_form .form-group {
+#vialogues_play #play_main #main_left #player_comment_box #survey_form .form-group {
   margin-bottom: 5px;
 }
-#vialogues_play #play_main #main_left > #player_comment_box #survey_form #survey_options_list {
+#vialogues_play #play_main #main_left #player_comment_box #survey_form #survey_options_list {
   padding-left: 20px;
   list-style-type: upper-alpha;
 }
-#vialogues_play #play_main #main_left > #player_comment_box #survey_form #survey_options_list > li > input,
-#vialogues_play #play_main #main_left > #player_comment_box #survey_form #survey_options_list > li > label {
+#vialogues_play #play_main #main_left #player_comment_box #survey_form #survey_options_list > li > input,
+#vialogues_play #play_main #main_left #player_comment_box #survey_form #survey_options_list > li > label {
   width: 400px;
 }
-#vialogues_play #play_main #main_left > #player_comment_box #survey_form #survey_options_list .add-survey-option,
-#vialogues_play #play_main #main_left > #player_comment_box #survey_form #survey_options_list .remove-survey-option {
+#vialogues_play #play_main #main_left #player_comment_box #survey_form #survey_options_list .add-survey-option,
+#vialogues_play #play_main #main_left #player_comment_box #survey_form #survey_options_list .remove-survey-option {
   display: block;
   float: right !important;
 }
-#vialogues_play #play_main #main_left > #player_comment_box #survey_form #survey_options_list .add-survey-option .glyphicon,
-#vialogues_play #play_main #main_left > #player_comment_box #survey_form #survey_options_list .remove-survey-option .glyphicon {
+#vialogues_play #play_main #main_left #player_comment_box #survey_form #survey_options_list .add-survey-option .glyphicon,
+#vialogues_play #play_main #main_left #player_comment_box #survey_form #survey_options_list .remove-survey-option .glyphicon {
   color: #0096d5;
 }
-#vialogues_play #play_main #main_left > #player_comment_box #survey_form #survey_type_group > label {
+#vialogues_play #play_main #main_left #player_comment_box #survey_form #survey_type_group > label {
   margin-right: 10px;
 }
-#vialogues_play #play_main #main_left > #player_comment_box #survey_form #survey_textarea {
+#vialogues_play #play_main #main_left #player_comment_box #survey_form #survey_textarea {
   height: 75px;
   margin-bottom: 5px;
   resize: none;
 }
-#vialogues_play #play_main #main_left > #player_comment_box #survey_form #survey_form_controls {
+#vialogues_play #play_main #main_left #player_comment_box #survey_form #survey_form_controls {
   text-align: right;
 }
 #vialogues_play #play_main #main_left > #share_central {
   position: relative;
-  margin-top: 15px;
   margin-right: 0;
   margin-left: 0;
   border-top: solid 4px #ccc;
@@ -7768,7 +7770,8 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   display: inline;
 }
 #vialogues_play #play_main #main_right > #vialogue_info_outer #vialogue_info_toggle .glyphicon {
-  vertical-align: super;
+  float: right;
+  margin-top: 10px;
 }
 #vialogues_play #play_main #main_right > #vialogue_info_outer #vialogue_info_toggle .glyphicon-collapse-down {
   display: none;
@@ -7892,12 +7895,12 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   position: relative;
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-body .survey-form .option-key {
-  float: left;
-  line-height: 20px;
+  display: none !important;
+  visibility: hidden !important;
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-body .survey-form .radio,
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-body .survey-form .checkbox {
-  padding-left: 30px;
+  padding-left: 20px;
   margin-top: 0;
   margin-bottom: 0;
 }
