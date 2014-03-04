@@ -6983,6 +6983,9 @@ body {
   font-size: 13px;
   border-bottom: 1px dotted #ddd;
 }
+.vialogue-entry .caption .meta {
+  margin-bottom: 16px;
+}
 .vialogue-entry.col-xs-4 .caption p {
   text-transform: capitalize;
 }
@@ -7390,6 +7393,12 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 }
 #vialogues_browse_extended #target_section:after {
   clear: both;
+}
+#vialogues_browse_extended #target_section .vialogue-entry .thumbnail {
+  height: 169px;
+}
+#vialogues_browse_extended #target_section .vialogue-entry .thumbnail .img-responsive {
+  max-height: 169px;
 }
 #vialogues_browse_extended #sort_options_dropdown {
   top: 10px;
