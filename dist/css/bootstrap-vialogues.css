@@ -5988,6 +5988,7 @@ body > .popover .popover-content ul.list-group > li.divider {
   font-size: 13px;
   vertical-align: middle;
   cursor: pointer;
+  /* hover effects */
 }
 #navigation ul.nav > li > a,
 #navigation ul.nav > li [class^="glyphicon"]:before,
@@ -6008,12 +6009,6 @@ body > .popover .popover-content ul.list-group > li.divider {
   padding: 0 24px;
   line-height: 50px;
 }
-#navigation ul.nav > li:hover,
-#navigation ul.nav > li:focus,
-#navigation ul.nav > li:active {
-  /* hover effects */
-  background-color: #192124;
-}
 #navigation ul.nav > li:hover > a,
 #navigation ul.nav > li:focus > a,
 #navigation ul.nav > li:active > a,
@@ -6024,6 +6019,16 @@ body > .popover .popover-content ul.list-group > li.divider {
 #navigation ul.nav > li:focus [class*=" glyphicon"]:before,
 #navigation ul.nav > li:active [class*=" glyphicon"]:before {
   color: #16e8fb;
+}
+#navigation ul.nav > li:not(.no-hover):hover,
+#navigation ul.nav > li:not(.no-hover):focus,
+#navigation ul.nav > li:not(.no-hover):active {
+  background-color: #192124;
+}
+#navigation ul.nav > li.no-hover:hover,
+#navigation ul.nav > li.no-hover:focus,
+#navigation ul.nav > li.no-hover:active {
+  background-color: transparent;
 }
 #navigation ul.nav .btn.dropdown-toggle {
   border: 0;
@@ -6973,6 +6978,9 @@ ul.errorlist .alert-link {
   font-size: 13px;
   border-bottom: 1px dotted #ddd;
 }
+.vialogue-entry .caption .meta {
+  margin-bottom: 16px;
+}
 .vialogue-entry.col-xs-4 .caption p {
   text-transform: capitalize;
 }
@@ -7380,6 +7388,12 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 }
 #vialogues_browse_extended #target_section:after {
   clear: both;
+}
+#vialogues_browse_extended #target_section .vialogue-entry .thumbnail {
+  height: 169px;
+}
+#vialogues_browse_extended #target_section .vialogue-entry .thumbnail .img-responsive {
+  max-height: 169px;
 }
 #vialogues_browse_extended #sort_options_dropdown {
   top: 10px;

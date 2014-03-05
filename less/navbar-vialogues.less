@@ -82,11 +82,22 @@ body > .popover {
                 padding: 0 24px;
             }
 
-            &:hover, &:focus, &:active { /* hover effects */
-                background-color: @theme-alt;
-
+            /* hover effects */
+            &:hover, &:focus, &:active {
                 > a, [class^="glyphicon"]:before, [class*=" glyphicon"]:before {
                     color: @blue-light;
+                }
+            }
+
+            &:not(.no-hover) {
+                &:hover, &:focus, &:active {
+                    background-color: @theme-alt;
+                }
+            }
+
+            &.no-hover {
+                &:hover, &:focus, &:active {
+                    background-color: transparent;
                 }
             }
         }
@@ -113,7 +124,10 @@ body > .popover {
     // Navigation Components
     // --------------------------------------------------
 
-    .navbar-nav li button:hover, .navbar-nav li .btn:hover, #search_options, #search #search_button {
+    .navbar-nav li button:hover,
+    .navbar-nav li .btn:hover,
+    #search_options,
+    #search #search_button {
         .box-shadow(none);
     }
 
