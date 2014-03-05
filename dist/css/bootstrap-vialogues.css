@@ -6724,6 +6724,8 @@ fieldset[disabled] .twitter-typeahead .tt-query {
 }
 html,
 body {
+  position: relative;
+  height: 100%;
   word-wrap: break-word;
 }
 a,
@@ -6872,12 +6874,7 @@ ul.errorlist .alert-link {
 }
 /* Page Structuring
 -------------------------------------------------- */
-html,
-body {
-  height: 100%;
-}
 #wrap {
-  position: relative;
   height: auto !important;
   height: 100%;
   min-height: 100%;
@@ -7456,6 +7453,7 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   clear: both;
 }
 #vialogues_play #play_main #main_left {
+  position: relative;
   overflow: visible;
 }
 #vialogues_play #play_main #main_left #player_placeholder {
@@ -7587,6 +7585,7 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 #vialogues_play #play_main #main_left > #share_central #share_bucket {
   /* push next div down for better look */
   width: 530px;
+  height: 250px;
   padding: 15px;
   margin-bottom: 15px;
   color: #777;
@@ -7680,12 +7679,19 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   line-height: 24px;
   white-space: nowrap;
 }
+#vialogues_play #play_main #main_left.affix {
+  position: fixed;
+  top: 50px;
+  width: inherit;
+}
 #vialogues_play #play_main #main_left.affix-top {
   position: relative;
 }
-#vialogues_play #play_main #main_left.affix {
-  top: 30px;
-  width: 560px;
+#vialogues_play #play_main #main_left.affix-bottom {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  width: inherit;
 }
 #vialogues_play #play_main #main_right {
   float: right !important;
