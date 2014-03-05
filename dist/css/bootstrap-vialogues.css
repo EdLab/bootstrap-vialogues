@@ -6052,7 +6052,7 @@ body > .popover .popover-content ul.list-group > li.divider {
           box-shadow: none;
 }
 #navigation #top_logo {
-  padding: 0;
+  padding: 0 10px 0 0;
   margin-left: 0;
 }
 #navigation #top_logo > a {
