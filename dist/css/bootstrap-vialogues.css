@@ -7441,6 +7441,14 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 #vialogues_play .play-warning:after {
   clear: both;
 }
+#vialogues_play .play-warning .btn-link {
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  vertical-align: baseline;
+  border: none;
+  border-radius: 0;
+}
 #vialogues_play #play_main {
   /* push next div down for better look */
   padding-top: 15px;
