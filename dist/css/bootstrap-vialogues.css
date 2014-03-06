@@ -8875,4 +8875,89 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 #support_help #help_container #help_topics #accordion .panel-heading + .panel-collapse .panel-body {
   border-top: 1px dotted #ddd;
 }
+#error_403 #logo-box,
+#error_404 #logo-box,
+#error_500 #logo-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: 150px;
+}
+#error_403 #logo-box:before,
+#error_404 #logo-box:before,
+#error_500 #logo-box:before,
+#error_403 #logo-box:after,
+#error_404 #logo-box:after,
+#error_500 #logo-box:after {
+  display: table;
+  content: " ";
+}
+#error_403 #logo-box:after,
+#error_404 #logo-box:after,
+#error_500 #logo-box:after {
+  clear: both;
+}
+#error_403 #logo-box:before,
+#error_404 #logo-box:before,
+#error_500 #logo-box:before,
+#error_403 #logo-box:after,
+#error_404 #logo-box:after,
+#error_500 #logo-box:after {
+  display: table;
+  content: " ";
+}
+#error_403 #logo-box:after,
+#error_404 #logo-box:after,
+#error_500 #logo-box:after {
+  clear: both;
+}
+#error_403 #container,
+#error_404 #container,
+#error_500 #container {
+  position: relative;
+  margin: 40px 20%;
+}
+#error_403 #container .row,
+#error_404 #container .row,
+#error_500 #container .row {
+  margin-top: 40px;
+}
+#error_403 #container .row:before,
+#error_404 #container .row:before,
+#error_500 #container .row:before,
+#error_403 #container .row:after,
+#error_404 #container .row:after,
+#error_500 #container .row:after {
+  display: table;
+  content: " ";
+}
+#error_403 #container .row:after,
+#error_404 #container .row:after,
+#error_500 #container .row:after {
+  clear: both;
+}
+#error_403 #container .row:before,
+#error_404 #container .row:before,
+#error_500 #container .row:before,
+#error_403 #container .row:after,
+#error_404 #container .row:after,
+#error_500 #container .row:after {
+  display: table;
+  content: " ";
+}
+#error_403 #container .row:after,
+#error_404 #container .row:after,
+#error_500 #container .row:after {
+  clear: both;
+}
+#error_403 #container .row blockquote,
+#error_404 #container .row blockquote,
+#error_500 #container .row blockquote {
+  border-left: none;
+}
+#error_403 #container .row blockquote footer,
+#error_404 #container .row blockquote footer,
+#error_500 #container .row blockquote footer {
+  color: #353535;
+}
 /*# sourceMappingURL=bootstrap-vialogues.css.map */
