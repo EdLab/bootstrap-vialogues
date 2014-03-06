@@ -5942,11 +5942,21 @@ ul.hyphened > li:before {
 .nav-tabs li:not(.active):hover a {
   background-color: #353535;
 }
+body > .popover .popover-title {
+  padding: 8px 10px;
+  font-weight: bold;
+}
+body > .popover .popover-title .btn-xs {
+  font-size: 11px;
+}
 body > .popover .popover-content {
   padding: 0;
 }
 body > .popover .popover-content a {
   color: #0096d5;
+}
+body > .popover .popover-content p {
+  margin-bottom: 3px;
 }
 body > .popover .popover-content ul.list-group {
   width: 250px;
@@ -5954,20 +5964,38 @@ body > .popover .popover-content ul.list-group {
   margin-bottom: 0;
 }
 body > .popover .popover-content ul.list-group > li.list-group-item {
-  padding: 2px 5px;
+  padding: 5px 10px;
   font-size: 12px;
   line-height: 1.2em;
   border: none;
 }
 body > .popover .popover-content ul.list-group > li.list-group-item a {
-  color: #353535;
-}
-body > .popover .popover-content ul.list-group > li.list-group-item:hover a {
   display: block;
   width: 100%;
-  color: #fff;
-  text-decoration: none;
+  color: #353535;
+}
+body > .popover .popover-content ul.list-group > li.list-group-item:not(.disabled):hover {
   background-color: #0096d5;
+}
+body > .popover .popover-content ul.list-group > li.list-group-item:not(.disabled):hover a {
+  color: #ccc;
+  text-decoration: none;
+}
+body > .popover .popover-content ul.list-group > li.list-group-item:not(.disabled):hover a .text-primary {
+  color: #fff;
+}
+body > .popover .popover-content ul.list-group > li.list-group-item.disabled {
+  cursor: default;
+}
+body > .popover .popover-content ul.list-group > li.list-group-item:last-of-type {
+  font-size: 13px;
+  font-weight: bold;
+}
+body > .popover .popover-content ul.list-group > li.list-group-item:last-of-type a {
+  color: #0096d5;
+}
+body > .popover .popover-content ul.list-group > li.list-group-item:last-of-type:hover a {
+  color: #fff;
 }
 body > .popover .popover-content ul.list-group > li.divider {
   width: 100%;
