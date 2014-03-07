@@ -279,13 +279,11 @@ position: relative;
         .pull-right;
 
         > #vialogue_info_outer {
-            background-color: #fff;
-            border: solid 1px @gray-light;
+
             margin-right: 0;
 
             #vialogue_info_toggle {
                 .hspacer(5px);
-                .bumper(5px);
 
                 > h3 {
                     display: inline;
@@ -293,7 +291,6 @@ position: relative;
 
                 .glyphicon {
                     float: right;
-                    margin-top: 10px;
                 }
 
                 .glyphicon-collapse-down {
@@ -313,10 +310,14 @@ position: relative;
 
             #vialogue_info {
                 .hspacer(5px);
-                padding-top: 10px;
-                border-top: solid 1px @gray-light;
+                padding: 15px;
+                border: solid 1px @gray-light;
+                background-color: #f7f7f7;
                 p {
-                    margin-bottom: 10px;
+                    margin: 0;
+                    &+p {
+                        margin-top: 10px;
+                    }
                 }
 
                 label {
@@ -327,6 +328,7 @@ position: relative;
 
         > #view_discussions {
             .hspacer(15px);
+            padding-bottom: 15px;
             margin-right: 0;
             border: solid 1px @gray-light;
             background-color: #fff;
@@ -353,139 +355,154 @@ position: relative;
                     .comment-div {
                         padding: 0 2px;
                         position: relative;
-                        overflow: hidden;
 
                         form.comment-edit-form {
                             width: 290px;
                         }
-                    }
 
-                    .comment-div.comment-unseen {
-                        .comment-foot {
-                            background: url("/static/apps/vialogues/images/New-L.png") no-repeat 225px 0;
-                        }
-                    }
-
-                    .child-comment {
-                        padding: 5px 2px 0 2px;
-                        margin-left: 2em;
-                        border-top: solid 1px @gray;
-
-                        form.comment-edit-form {
-                            width: 270px;
-                        }
-                    }
-
-                    .btn-survey-form {
-                        font-size: @font-size-small;
-                        border-radius: 0;
-                        padding: 0 5px;
-                    }
-
-                    .comment-head {
-                        .pull-right;
-
-                        .edit-placeholder, .delete-placeholder {
-                            display: inline-block;
-                            width: 2em;
-                            height: 2em;
-                            line-height: 2em;
-                            text-align: center;
-                            .hidden();
+                        .btn-survey-form {
+                            font-size: @font-size-small;
+                            border-radius: 0;
+                            padding: 0 5px;
                         }
 
-                        .edit-placeholder {
-                            .vialogues-primary-color;
-                        }
+                        .comment-head {
+                            position: absolute;
 
-                        .delete-placeholder {
-                            .vialogues-theme-color;
-                        }
-                    }
-
-                    .comment-body {
-                        width: 300px;
-
-                        .survey-form {
-                            position: relative;
-
-                            .option-key {
-                                .hidden;
+                            .new-placeholder {
+                                position: relative;
+                                left: -35px;
+                                top: 20px;
                             }
 
-                            .radio, .checkbox {
-                                margin-bottom: 0;
-                                margin-top: 0;
-                                padding-left: 20px;
-                            }
-
-                            .already-responded {
-                                font-style: italic;
-                                color: #970a07;
-                            }
-
-                            .btn-survey-form {
-                                position: absolute;
-                                right: 25px;
-                                bottom: -25px;
-                            }
-                        }
-
-                        .comment-edit-form {
-                            > textarea {
-                                width: 100%;
-                                min-height: 50px;
-                                max-height: 250px;
-                                margin-bottom: 5px;
-                            }
-                            .edit-btns {
-                                text-align: right;
-                                width: 100%;
-                            }
-                            .survey-options-list {
-                                .list-unstyled;
+                            .edit-placeholder, .delete-placeholder {
                                 display: inline-block;
-                                margin-right: 5px;
-
-                                input[type="text"] {
-                                    width: 240px;
-                                }
-
-                                li {
-                                    white-space: nowrap;
-                                }
+                                width: 2em;
+                                height: 2em;
+                                line-height: 2em;
+                                text-align: center;
+                                .hidden();
                             }
-                            .glyphicon {
-                                color: @gray;
+
+                            .edit-placeholder {
+                                .vialogues-primary-color;
+                            }
+
+                            .delete-placeholder {
+                                .vialogues-theme-color;
                             }
                         }
-                    }
 
-                    .comment-foot {
-                        .timeago {
-                            color: @gray;
-                            line-height: 2em;
-                        }
-
-                        .icon-reply {
-                            .vialogues-theme-color;
-                            display: inline-block;
-                            width: 2em;
-                            height: 2em;
-                            line-height: 2em;
-                            text-align: center;
-                        }
-
-                        .post-reply {
+                        .comment-body {
+                            width: 320px;
+                            padding-right: 20px;
                             position: relative;
 
-                            > textarea {
-                                width: 100%;
-                                margin-bottom: 5px;
+                            .survey-form {
+                                position: relative;
+
+                                .option-key {
+                                    .hidden;
+                                }
+
+                                .radio, .checkbox {
+                                    margin-bottom: 0;
+                                    margin-top: 0;
+                                    padding-left: 20px;
+                                }
+
+                                .already-responded {
+                                    font-style: italic;
+                                    color: #970a07;
+                                }
+
+                                .btn-survey-form {
+                                    position: absolute;
+                                    right: 25px;
+                                    bottom: -25px;
+                                }
                             }
 
-                            > .reply-btns {
-                                text-align: right;
+                            .comment-edit-form {
+                                > textarea {
+                                    width: 100%;
+                                    min-height: 50px;
+                                    max-height: 250px;
+                                    margin-bottom: 5px;
+                                }
+                                .edit-btns {
+                                    text-align: right;
+                                    width: 100%;
+                                }
+                                .survey-options-list {
+                                    .list-unstyled;
+                                    display: inline-block;
+                                    margin-right: 5px;
+
+                                    input[type="text"] {
+                                        width: 240px;
+                                    }
+
+                                    li {
+                                        white-space: nowrap;
+                                    }
+                                }
+                                .glyphicon {
+                                    color: @gray;
+                                }
+                            }
+
+                            .reply-btn {
+                                position: absolute;
+                                margin-top: -18px;
+                                right: 0;
+                                .icon-reply {
+                                    .vialogues-theme-color;
+                                    display: inline-block;
+                                    width: 2em;
+                                    height: 2em;
+                                    line-height: 2em;
+                                    text-align: center;
+                                }
+                            }
+                        }
+
+                        .comment-foot {
+                            .bumper(5px);
+
+                            .timeago {
+                                color: @gray;
+                                line-height: 2em;
+                            }
+
+                            .post-reply {
+                                position: relative;
+
+                                > textarea {
+                                    width: 100%;
+                                    margin-bottom: 5px;
+                                }
+
+                                .reply-btns {
+                                    .pull-right;
+                                }
+                            }
+                        }
+
+                        &.child-comment {
+                            padding: 5px 2px 0 2px;
+                            margin-left: 2em;
+                            border-top: solid 1px @gray;
+                            .comment-body {
+                                width: 305px;
+                            }
+
+                            form.comment-edit-form {
+                                width: 270px;
+                            }
+
+                            .new-placeholder {
+                                top: 0;
                             }
                         }
                     }

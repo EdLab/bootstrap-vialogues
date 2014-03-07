@@ -191,8 +191,7 @@ ul.errorlist {
     margin: 10px;
 }
 
-.moderator-icon:before {
-    content: 'M';
+.new-icon:before, .moderator-icon:before {
     background-color: @brand-theme;
     color: #fff;
     padding-right: 2px;
@@ -200,6 +199,15 @@ ul.errorlist {
     font-size: @font-size-xxsmall;
     border-radius: @border-radius-base;
     margin-right: 4px;
+}
+
+.moderator-icon:before {
+    content: 'M';
+}
+
+.new-icon:before {
+    content: 'new';
+    text-transform: uppercase;
 }
 
 .ajax-loader {
