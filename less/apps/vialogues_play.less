@@ -347,10 +347,11 @@ position: relative;
                 .time-code {
                     .pull-left;
                     .strong;
+                    padding: 0;
                 }
 
                 .thread-main {
-                    margin: 10px 0 10px 40px;
+                    margin: 10px 0 0 40px;
 
                     .comment-div {
                         padding: 0 2px;
@@ -398,6 +399,11 @@ position: relative;
                             padding-right: 20px;
                             position: relative;
 
+                            .timeago {
+                                color: @gray;
+                                line-height: 2em;
+                            }
+
                             .survey-form {
                                 position: relative;
 
@@ -414,12 +420,6 @@ position: relative;
                                 .already-responded {
                                     font-style: italic;
                                     color: #970a07;
-                                }
-
-                                .btn-survey-form {
-                                    position: absolute;
-                                    right: 25px;
-                                    bottom: -25px;
                                 }
                             }
 
@@ -469,11 +469,7 @@ position: relative;
 
                         .comment-foot {
                             .bumper(5px);
-
-                            .timeago {
-                                color: @gray;
-                                line-height: 2em;
-                            }
+                            .hspacer(5px);
 
                             .post-reply {
                                 position: relative;
@@ -490,17 +486,18 @@ position: relative;
                         }
 
                         &.child-comment {
-                            padding: 5px 2px 0 2px;
+                            /*padding: 5px 2px 0 2px;
                             margin-left: 2em;
-                            border-top: solid 1px @gray;
                             .comment-body {
                                 width: 305px;
                             }
 
                             form.comment-edit-form {
                                 width: 270px;
-                            }
+                            }*/
 
+                            border-top: solid 1px @gray;
+                            padding-top: 5px;
                             .new-placeholder {
                                 top: 0;
                             }
