@@ -8752,6 +8752,9 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 #notification_notices .notification .dismiss-notice {
   color: #0096d5;
 }
+#notification_notices #notifications {
+  min-height: 200px;
+}
 #notification_settings .tooltip .tooltip-inner {
   background-color: #c00;
 }
