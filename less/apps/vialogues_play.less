@@ -365,7 +365,6 @@ position: relative;
             }
 
             .thread-div  {
-
                 .time-code {
                     position: absolute;
                     .strong;
@@ -376,9 +375,23 @@ position: relative;
 
                 .thread-main {
                     z-index: 100;
+                    padding-top: 10px;
+
+                    .collapsible {
+                        .collapse-trigger {
+                            display: block;
+                            background-color: @gray-lighter;
+                            text-transform: uppercase;
+                            margin-left: 40px;
+                            padding: 5px;
+                            > .glyphicon {
+                                float: right;
+                            }
+                        }
+                    }
 
                     .comment-div {
-                        padding: 10px 35px 0 55px;
+                        padding: 0 30px 0 55px;
                         position: relative;
                         margin-left: -15px;
                         margin-right: -15px;
@@ -394,9 +407,6 @@ position: relative;
                         }
                         &.hilite-new {
                             background-color: #d9edf7;
-                        }
-
-                        form.comment-edit-form {
                         }
 
                         .btn-survey-form {
@@ -436,9 +446,42 @@ position: relative;
                         .comment-body {
                             position: relative;
 
+                            .comment-body-text {
+                                padding-right: 10px;
+
+                                &.truncate-4 {
+                                    position: relative;
+                                    max-height: 72px;
+                                    overflow-y: hidden;
+                                    -moz-transition: max-height 0.4s;
+                                    -ms-transition: max-height 0.4s;
+                                    -o-transition: max-height 0.4s;
+                                    -webkit-transition: max-height 0.4s;
+                                    transition: max-height 0.4s;
+                                    &:after {
+                                        content: "...";
+                                        position: absolute;
+                                        text-align: right;
+                                        width: 2em;
+                                        bottom: 0;
+                                        right: 0;
+                                    }
+                                }
+                                &.expand {
+                                    max-height: 9999px;
+                                    &:after {
+                                        .hide;
+                                    }
+                                }
+                            }
+
                             .timeago {
                                 color: @gray;
                                 line-height: 2em;
+                            }
+
+                            .toggle-comment-lbl {
+                                float: right;
                             }
 
                             .controls-placeholder {
@@ -508,9 +551,9 @@ position: relative;
                             }
 
                             .reply-btn {
-                                position: absolute;
+                                .pull-right;
                                 margin-top: -24px;
-                                right: -30px;
+                                margin-right: -29px;
                                 .icon-reply {
                                     .vialogues-theme-color;
                                     display: inline-block;
@@ -530,7 +573,7 @@ position: relative;
                         .comment-foot {
                             .bumper(5px);
                             .hspacer(5px);
-                            border-bottom: solid 1px @gray-light;
+                            border-bottom: solid 1px @gray-light; /* FIX-NEEDED: only the last-of-type needs border but this is messed up by collapsible */
 
                             .post-reply {
                                 position: relative;
@@ -539,10 +582,6 @@ position: relative;
                                     width: 100%;
                                     margin-bottom: 5px;
                                 }
-
-                                .reply-btns {
-                                    .pull-right;
-                                }
                             }
                         }
 
@@ -550,6 +589,8 @@ position: relative;
                             .edit-comment-content {
                                 border: solid 1px @gray;
                                 margin-bottom: 5px;
+                                width: 100%;
+                                height: 45px;
                             }
 
                             .survey-options-list {
@@ -560,6 +601,10 @@ position: relative;
                                         width: 200px;
                                     }
                                 }
+                            }
+
+                            .form-group {
+                                margin-bottom: 0;
                             }
 
                             .btn-group {

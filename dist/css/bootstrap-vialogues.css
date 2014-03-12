@@ -7885,10 +7885,21 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main {
   z-index: 100;
+  padding-top: 10px;
+}
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .collapsible .collapse-trigger {
+  display: block;
+  padding: 5px;
+  margin-left: 40px;
+  text-transform: uppercase;
+  background-color: #efefef;
+}
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .collapsible .collapse-trigger > .glyphicon {
+  float: right;
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div {
   position: relative;
-  padding: 10px 35px 0 55px;
+  padding: 0 30px 0 55px;
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -7953,9 +7964,39 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-body {
   position: relative;
 }
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-body .comment-body-text {
+  padding-right: 10px;
+}
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-body .comment-body-text.truncate-4 {
+  position: relative;
+  max-height: 72px;
+  overflow-y: hidden;
+  -webkit-transition: max-height .4s;
+     -moz-transition: max-height .4s;
+      -ms-transition: max-height .4s;
+       -o-transition: max-height .4s;
+          transition: max-height .4s;
+}
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-body .comment-body-text.truncate-4:after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 2em;
+  text-align: right;
+  content: "...";
+}
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-body .comment-body-text.expand {
+  max-height: 9999px;
+}
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-body .comment-body-text.expand:after {
+  display: none !important;
+}
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-body .timeago {
   line-height: 2em;
   color: #999;
+}
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-body .toggle-comment-lbl {
+  float: right;
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-body .controls-placeholder {
   visibility: hidden;
@@ -8090,9 +8131,9 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
   color: #999;
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-body .reply-btn {
-  position: absolute;
-  right: -30px;
+  float: right !important;
   margin-top: -24px;
+  margin-right: -29px;
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-body .reply-btn .icon-reply {
   display: inline-block;
@@ -8111,6 +8152,7 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
   margin-top: 5px;
   margin-bottom: 5px;
   border-bottom: solid 1px #ccc;
+  /* FIX-NEEDED: only the last-of-type needs border but this is messed up by collapsible */
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot:before,
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot:after {
@@ -8151,10 +8193,9 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
   width: 100%;
   margin-bottom: 5px;
 }
-#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot .post-reply .reply-btns {
-  float: right !important;
-}
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .edit-comment .edit-comment-content {
+  width: 100%;
+  height: 45px;
   margin-bottom: 5px;
   border: solid 1px #999;
 }
@@ -8164,6 +8205,9 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .edit-comment .survey-options-list > .survey-option-last-item > input {
   width: 200px;
+}
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .edit-comment .form-group {
+  margin-bottom: 0;
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .edit-comment .btn-group {
   float: right !important;
