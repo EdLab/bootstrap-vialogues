@@ -7780,6 +7780,33 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 #vialogues_play #play_main #main_right > #vialogue_info_outer #vialogue_info_toggle > h3 {
   display: inline;
 }
+#vialogues_play #play_main #main_right > #vialogue_info_outer #vialogue_info_toggle .icon-comment-1 {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  margin: 0 10px;
+  color: #fff;
+  vertical-align: text-bottom;
+}
+#vialogues_play #play_main #main_right > #vialogue_info_outer #vialogue_info_toggle .icon-comment-1:before {
+  z-index: -1;
+  width: 30px;
+  height: 18px;
+  margin-left: -5px;
+  font-size: 18px;
+  color: #c00;
+}
+#vialogues_play #play_main #main_right > #vialogue_info_outer #vialogue_info_toggle .icon-comment-1 .text-over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  display: block;
+  width: 100%;
+  margin: 0;
+  font-size: 10px;
+  text-align: center;
+}
 #vialogues_play #play_main #main_right > #vialogue_info_outer #vialogue_info_toggle .glyphicon {
   float: right;
 }
@@ -8130,6 +8157,13 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .edit-comment .edit-comment-content {
   margin-bottom: 5px;
   border: solid 1px #999;
+}
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .edit-comment .survey-options-list {
+  padding-left: 20px;
+  list-style-type: upper-alpha;
+}
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .edit-comment .survey-options-list > .survey-option-last-item > input {
+  width: 200px;
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .edit-comment .btn-group {
   float: right !important;

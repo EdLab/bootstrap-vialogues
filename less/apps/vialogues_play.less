@@ -103,9 +103,6 @@ position: relative;
                         }
                     }
 
-                    #survey_option_last_item {
-                    }
-
                     .add-survey-option, .remove-survey-option {
                         display: block;
                         .pull-right;
@@ -289,6 +286,34 @@ position: relative;
 
                 > h3 {
                     display: inline;
+                }
+
+                .icon-comment-1 {
+                    color: #fff;
+                    width: 25px;
+                    vertical-align: text-bottom;
+                    display: inline-block;
+                    position: relative;
+                    margin: 0 10px;
+                    &:before {
+                        font-size: @font-size-large;
+                        color: @brand-theme;
+                        z-index: -1;
+                        width: 30px;
+                        height: 18px;
+                        margin-left: -5px;
+                    }
+                    .text-over {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        text-align: center;
+                        display: block;
+                        z-index: 200;
+                        font-size: @font-size-xxsmall;
+                        margin: 0;
+                    }
                 }
 
                 .glyphicon {
@@ -526,6 +551,17 @@ position: relative;
                                 border: solid 1px @gray;
                                 margin-bottom: 5px;
                             }
+
+                            .survey-options-list {
+                                list-style-type: upper-alpha;
+                                padding-left: 20px;
+                                > .survey-option-last-item {
+                                    > input {
+                                        width: 200px;
+                                    }
+                                }
+                            }
+
                             .btn-group {
                                 .pull-right;
                                 margin-bottom: 5px;
