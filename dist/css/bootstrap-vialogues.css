@@ -7969,7 +7969,7 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-body .comment-body-text.truncate-4 {
   position: relative;
-  max-height: 72px;
+  max-height: 80px;
   overflow-y: hidden;
   -webkit-transition: max-height .4s;
      -moz-transition: max-height .4s;
