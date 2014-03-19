@@ -3,20 +3,6 @@
 
 position: relative;
 
-.play-warning {
-    .hspacer(40px);
-    .vialogues-danger-color;
-
-    .btn-link {
-        padding: 0;
-        margin: 0;
-        border: none;
-        border-radius: 0;
-        font-size: @font-size-med;
-        vertical-align: baseline;
-    }
-}
-
 #play_main {
     background-color: @gray-lighter;
     margin-left: 0;
@@ -29,6 +15,16 @@ position: relative;
         overflow: visible;
         position: relative;
         z-index: 200;
+        
+        .alert {
+            .strong;
+            &.alert-danger {
+                .vialogues-danger-color;
+            }
+            &.alert-warning {
+                .vialogues-info-color;
+            }
+        }
 
         #player_placeholder {
             background-color: #000;
