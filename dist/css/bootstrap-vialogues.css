@@ -5899,6 +5899,11 @@ ul.hyphened > li:before {
   color: #fff;
   background-color: #c00;
 }
+.btn-xl {
+  padding: 7px 20px;
+  font-size: 24px;
+  line-height: 1.50;
+}
 .dropdown-menu {
   font-size: 13px;
 }
@@ -7024,9 +7029,8 @@ ul.errorlist .alert-link {
   top: 6px;
   right: 21px;
   display: block;
-  width: 34px;
-  height: 32px;
-  padding: 7px 9px;
+  min-width: 34px;
+  padding: 6px 0 12px 0;
   font-size: 11px;
   font-weight: 400;
   color: #fff;
@@ -7354,82 +7358,55 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 .bootstrap-tagsinput .tag + .twitter-typeahead {
   margin-top: 5px;
 }
-#home_loggedout .container {
-  width: 1040px;
-}
-#home_loggedout #wrap #navigation {
-  margin: 0;
-}
-#home_loggedout #wrap #center_section {
-  width: 100%;
-}
-#home_loggedout #wrap #center_section #featured .comment-count {
-  top: 235px;
-  left: 430px;
-  padding-top: 12px;
-  /* adjust .text-over-icon */
-  font-size: 2em;
-}
-#home_loggedout #wrap #center_section #featured .comment-count .icon-comment {
-  font-size: 24px;
-}
-#home_loggedout #wrap #center_section #getting_started_sign_up_background {
-  background: url("../assets/img/background_white_blue.png") repeat-y scroll 0 0 transparent;
-}
-#home_loggedout #wrap #center_section #getting_started_sign_up_background #getting_started {
-  width: 720px;
-  padding: 30px 40px;
-}
-#home_loggedout #wrap #center_section #getting_started_sign_up_background #getting_started h1:first-of-type {
-  padding-top: 0;
+#home #wrap > .container {
   margin-top: 0;
 }
-#home_loggedout #wrap #center_section #getting_started_sign_up_background #getting_started > ul.list-inline > li {
-  padding: 5px 0;
+#home #featured .badge.comment_number {
+  position: absolute;
+  top: 64%;
+  left: 42%;
+  min-width: 34px;
+  padding: 3px 0 12px 0;
+  font-size: 18px;
+  font-weight: 800;
+  background-color: transparent;
+  background-image: url(../assets/img/commentbubble-red.png);
+  background-repeat: no-repeat;
+  border-radius: 2px;
 }
-#home_loggedout #wrap #center_section #getting_started_sign_up_background #sign_up {
-  width: 300px;
-  padding: 30px 0;
-  text-align: center;
-  vertical-align: top;
-}
-#home_loggedin {
-  /**
- * Carousel
- */
-}
-#home_loggedin .carousel-inner {
-  width: 100%;
-  overflow: hidden;
-  text-align: center;
-}
-#home_loggedin .carousel-inner > .item {
-  margin: auto;
-  white-space: nowrap;
-}
-#home_loggedin .carousel-inner .active.left {
-  left: -320px;
-}
-#home_loggedin .carousel-inner .active.right {
-  left: 320px;
-}
-#home_loggedin .carousel-inner .next {
-  left: 320px;
-}
-#home_loggedin .carousel-inner .prev {
-  left: -320px;
-}
-#home_loggedin #recent_vialogues,
-#home_loggedin #recent_comments,
-#home_loggedin #most_active {
+#home #recent_vialogues,
+#home #my_vialogues,
+#home #most_active {
   position: relative;
 }
-#home_loggedin #recent_vialogues .see-all,
-#home_loggedin #recent_comments .see-all,
-#home_loggedin #most_active .see-all {
+#home #recent_vialogues .see-all,
+#home #my_vialogues .see-all,
+#home #most_active .see-all {
   position: absolute;
   top: 0;
   right: 0;
+  padding-top: 6px;
+  padding-bottom: 10px;
+}
+#home #sign_up {
+  margin-top: 40px;
+  border-left: solid 1px #ccc;
+}
+#home #sign_up:before,
+#home #sign_up:after {
+  display: table;
+  content: " ";
+}
+#home #sign_up:after {
+  clear: both;
+}
+#home #sign_up:before,
+#home #sign_up:after {
+  display: table;
+  content: " ";
+}
+#home #sign_up:after {
+  clear: both;
 }
 #vialogues_browse #sort_options_dropdown {
   top: 4px;

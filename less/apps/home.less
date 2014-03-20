@@ -1,0 +1,35 @@
+#wrap > .container {
+    margin-top: 0;
+}
+
+#featured {
+    .badge.comment_number {
+        position: absolute;
+        top: 64%;
+        left: 42%;
+        background-image: url(../assets/img/commentbubble-red.png);
+        background-repeat: no-repeat;
+        background-color: transparent;
+        padding: 3px 0 12px 0;
+        min-width: 34px;
+        border-radius: @border-radius-base;
+        font-weight: 800;
+        font-size: @font-size-large;
+    }
+}
+
+#recent_vialogues, #my_vialogues, #most_active {
+    position: relative;
+    .see-all {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-top: 6px;
+        padding-bottom: 10px;
+    }
+}
+
+#sign_up {
+    border-left: solid 1px @gray-light;
+    .hspacer(40px);
+}
