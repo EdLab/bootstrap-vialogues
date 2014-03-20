@@ -7393,6 +7393,44 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   text-align: center;
   vertical-align: top;
 }
+#home_loggedin {
+  /**
+ * Carousel
+ */
+}
+#home_loggedin .carousel-inner {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+#home_loggedin .carousel-inner > .item {
+  margin: auto;
+  white-space: nowrap;
+}
+#home_loggedin .carousel-inner .active.left {
+  left: -320px;
+}
+#home_loggedin .carousel-inner .active.right {
+  left: 320px;
+}
+#home_loggedin .carousel-inner .next {
+  left: 320px;
+}
+#home_loggedin .carousel-inner .prev {
+  left: -320px;
+}
+#home_loggedin #recent_vialogues,
+#home_loggedin #recent_comments,
+#home_loggedin #most_active {
+  position: relative;
+}
+#home_loggedin #recent_vialogues .see-all,
+#home_loggedin #recent_comments .see-all,
+#home_loggedin #most_active .see-all {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 #vialogues_browse #sort_options_dropdown {
   top: 4px;
 }
