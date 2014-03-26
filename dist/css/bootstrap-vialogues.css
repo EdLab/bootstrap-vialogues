@@ -7573,6 +7573,15 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 #vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_buttons #comment_buttons_right #post_comment_button {
   color: #fff;
 }
+#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_buttons #comment_buttons_left #fav_button,
+#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_buttons #comment_buttons_right #fav_button {
+  padding: 0;
+}
+#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_buttons #comment_buttons_left #fav_button .star-container,
+#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_buttons #comment_buttons_right #fav_button .star-container {
+  display: block;
+  padding: 6px 9px;
+}
 #vialogues_play #play_main #main_left #player_comment_box #survey_form {
   position: absolute;
   bottom: 0;
