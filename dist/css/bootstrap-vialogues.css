@@ -6142,6 +6142,7 @@ body > .popover .popover-content ul.list-group > li.divider {
   font-size: x-small;
   color: #fff;
   background-color: #353535;
+  transition: visibility 5s;
 }
 #navigation #search #advanced_search .dropdown-menu label {
   padding-right: 10px;
@@ -8361,7 +8362,7 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
   position: relative;
 }
 #vialogues_create #create_form #add_video .tab-content #create_existing #video_search .video-entry .media-body {
-  padding-right: 15px;
+  padding-right: 20px;
 }
 #vialogues_create #create_form #add_video .tab-content #create_existing #video_search .video-entry .media-body > h5 {
   display: inline-block;
