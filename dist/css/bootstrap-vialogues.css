@@ -7521,6 +7521,9 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   position: relative;
   width: 530px;
 }
+#vialogues_play #play_main #main_left #player_comment_box .prompt-text {
+  margin-top: 15px;
+}
 #vialogues_play #play_main #main_left #player_comment_box #comment_form {
   position: relative;
   z-index: 100;
@@ -8767,6 +8770,9 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
 }
 #groups_user #group_vialogues:after {
   clear: both;
+}
+#groups_user #group_vialogues h4 {
+  margin-top: 0;
 }
 #groups_user #groups_list .panel-group {
   margin-top: 20px;
