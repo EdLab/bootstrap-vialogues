@@ -8229,21 +8229,35 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
   #vialogues_play #main_right {
     width: 100%;
   }
+  #vialogues_play #main_right a[href]:after {
+    content: none !important;
+  }
+  #vialogues_play #main_right .icon-comment-1:before {
+    color: #fff !important;
+  }
+  #vialogues_play #main_right .icon-comment-1 .text-over {
+    color: #000;
+  }
   #vialogues_play #main_right .comment-body {
     width: 100% !important;
   }
-  #vialogues_play #main_right .comment-body .comment-body-text {
+  #vialogues_play #main_right .comment-body .comment-body-text.truncate-4 {
     height: auto;
+    max-height: none !important;
   }
-  #vialogues_play #main_right .comment-body .panel-collapse {
+  #vialogues_play #main_right .comment-body .comment-body-text.truncate-4:after {
+    display: none !important;
+  }
+  #vialogues_play #main_right .comment-body .toggle-comment-lbl {
+    display: none !important;
+  }
+  #vialogues_play #main_right .collapsible .panel-collapse {
     display: block !important;
     display: inherit !important;
+    height: auto !important;
     visibility: visible !important;
   }
-  #vialogues_play #main_right .comment-body .toggle-comment-lbl,
-  #vialogues_play #main_right .comment-body .toggle-thread-lbl,
-  #vialogues_play #main_right .comment-body .comment-count,
-  #vialogues_play #main_right .comment-body .truncate-2:after {
+  #vialogues_play #main_right .collapsible .collapse-trigger {
     display: none !important;
   }
 }
