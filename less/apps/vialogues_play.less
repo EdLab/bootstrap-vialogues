@@ -170,9 +170,6 @@ position: relative;
                 background-color: #f7f7f7;
                 color: #777;
 
-                h5 {
-                    margin-bottom: 0;
-                }
                 .tab-pane {
                     height: 100%;
                 }
@@ -238,8 +235,7 @@ position: relative;
                     #embed_code {
                         .gray-color;
                         background-color: #fff;
-                        margin-bottom: 10px;
-                        height: 54px;
+                        height: 72px;
                         font-size: @font-size-xsmall;
                         font-family: "Andale Mono", Courier, monospace;
                         word-break: break-all;
@@ -578,10 +574,12 @@ position: relative;
 
                             .post-reply {
                                 position: relative;
+                                .bumper(5px);
 
                                 > textarea {
                                     width: 100%;
                                     margin-bottom: 5px;
+                                    resize: none;
                                 }
                             }
                         }

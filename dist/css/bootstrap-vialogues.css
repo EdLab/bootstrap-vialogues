@@ -5892,8 +5892,13 @@ ul.hyphened > li:before {
   background-color: #efefef;
   border-color: #ddd;
 }
+.btn-primary {
+  color: #fff;
+  border-color: #357ebd;
+}
 .btn-primary:hover {
-  background-color: #353535;
+  background-color: #3276b1;
+  border-color: #285e8e;
 }
 .btn-theme {
   color: #fff;
@@ -7674,8 +7679,8 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 #vialogues_play #play_main #main_left > #share_central #share_bucket:after {
   clear: both;
 }
-#vialogues_play #play_main #main_left > #share_central #share_bucket h5 {
-  margin-bottom: 0;
+#vialogues_play #play_main #main_left > #share_central #share_bucket .tab-pane {
+  height: 100%;
 }
 #vialogues_play #play_main #main_left > #share_central #share_bucket #video_info p {
   margin-top: 10px;
@@ -7720,8 +7725,7 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   background-color: #f36f21;
 }
 #vialogues_play #play_main #main_left > #share_central #share_bucket #embed #embed_code {
-  height: 54px;
-  margin-bottom: 10px;
+  height: 72px;
   font-family: "Andale Mono", Courier, monospace;
   font-size: 11px;
   color: #999;
@@ -8188,10 +8192,29 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot .post-reply {
   position: relative;
+  margin-bottom: 5px;
+  /* push next div down for better look */
+}
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot .post-reply:before,
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot .post-reply:after {
+  display: table;
+  content: " ";
+}
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot .post-reply:after {
+  clear: both;
+}
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot .post-reply:before,
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot .post-reply:after {
+  display: table;
+  content: " ";
+}
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot .post-reply:after {
+  clear: both;
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot .post-reply > textarea {
   width: 100%;
   margin-bottom: 5px;
+  resize: none;
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .edit-comment .edit-comment-content {
   width: 100%;
