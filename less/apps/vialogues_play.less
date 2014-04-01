@@ -1,5 +1,5 @@
 // Had to use a specific pixel width to ensure video player has the correct aspect ratio
-@fixed-player-width: 530px; 
+@fixed-player-width: 450px; 
 
 position: relative;
 
@@ -377,10 +377,9 @@ position: relative;
 
                 .time-code {
                     position: absolute;
-                    .strong;
                     z-index: 999;
                     left: 8px;
-                    top: 8px;
+                    top: 10px;
                 }
 
                 .thread-main {
@@ -409,7 +408,6 @@ position: relative;
                         .btn-survey-form {
                             font-size: @font-size-small;
                             border-radius: 0;
-                            padding: 0 5px;
                             .hspacer(5px);
                         }
 
@@ -445,10 +443,15 @@ position: relative;
 
                             .comment-body-text {
                                 padding-right: 10px;
+                                line-height: 3ex;
+
+                                .commentor-placeholder {
+                                    .strong;
+                                }
 
                                 &.truncate-4 {
                                     position: relative;
-                                    max-height: 80px;
+                                    max-height: 12ex;
                                     overflow-y: hidden;
                                     -moz-transition: max-height 0.4s;
                                     -ms-transition: max-height 0.4s;
@@ -475,6 +478,7 @@ position: relative;
                             .timeago {
                                 color: @gray;
                                 line-height: 2em;
+                                font-size: @font-size-xxsmall;
                             }
 
                             .toggle-comment-lbl {
@@ -515,6 +519,10 @@ position: relative;
                                 .already-responded {
                                     font-style: italic;
                                     color: #970a07;
+                                }
+
+                                .btn-survey-form {
+                                    padding: 1px 5px;
                                 }
                             }
 
@@ -570,7 +578,6 @@ position: relative;
                         .comment-foot {
                             .bumper(5px);
                             .hspacer(5px);
-                            border-bottom: solid 1px @gray-light; /* FIX-NEEDED: only the last-of-type needs border but this is messed up by collapsible */
 
                             .post-reply {
                                 position: relative;
@@ -581,6 +588,10 @@ position: relative;
                                     margin-bottom: 5px;
                                     resize: none;
                                 }
+                            }
+
+                            .btn-group {
+                                .pull-right;
                             }
                         }
 
@@ -620,6 +631,11 @@ position: relative;
                         }
                         &.hilite-new {
                             background-color: #d9edf7;
+                        }
+                        &:last-of-type {
+                          .comment-foot {
+                             border-bottom: solid 1px @gray-light;
+                          }
                         }
                     }
                 }
