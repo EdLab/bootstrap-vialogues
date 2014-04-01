@@ -8287,6 +8287,109 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
     display: none !important;
   }
 }
+#vialogues_play_embed #wrap.embed {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+#vialogues_play_embed #wrap.embed #navigation {
+  height: 32px;
+  min-height: initial;
+  margin-bottom: 15px;
+}
+#vialogues_play_embed #wrap.embed #navigation ul.nav {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#vialogues_play_embed #wrap.embed #navigation ul.nav li {
+  height: 32px;
+  line-height: 32px;
+}
+#vialogues_play_embed #wrap.embed #navigation ul.nav.navbar-right {
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+#vialogues_play_embed #wrap.embed #navigation #top_logo img {
+  width: auto;
+  height: 38px;
+}
+#vialogues_play_embed #wrap.embed #navigation #cas_menu a.casHeaderLink {
+  line-height: 32px;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_name {
+  position: relative;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_name h4 {
+  display: inline;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_name .icon-comment-1 {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  margin: 0 10px;
+  color: #fff;
+  vertical-align: text-bottom;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_name .icon-comment-1:before {
+  z-index: -1;
+  width: 30px;
+  height: 18px;
+  margin-left: -5px;
+  font-size: 18px;
+  color: #c00;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_name .icon-comment-1 .text-over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  display: block;
+  width: 100%;
+  margin: 0;
+  font-size: 10px;
+  text-align: center;
+}
+#vialogues_play_embed #wrap.embed #center_section .vialogue-info {
+  margin-bottom: 10px;
+}
+#vialogues_play_embed #wrap.embed #center_section #player_placeholder {
+  position: relative;
+  z-index: 999;
+  background-color: #000;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions {
+  height: 200px;
+  padding: 0;
+  margin-top: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions {
+  border-top: solid 1px #ccc;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div {
+  padding-top: 10px;
+  padding-left: 0;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .btn.time-code {
+  float: left;
+  width: 10%;
+  margin-left: 10px;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main {
+  display: inline-block;
+  width: 88%;
+  padding-right: 45px;
+  border-bottom: solid 1px #ccc;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .timeago {
+  line-height: 2em;
+  color: #999;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div:last-child {
+  padding-bottom: 10px;
+}
 #vialogues_create #required {
   position: relative;
   top: 10px;

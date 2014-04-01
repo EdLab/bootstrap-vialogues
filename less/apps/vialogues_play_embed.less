@@ -1,0 +1,131 @@
+#wrap.embed {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+    @navbar-height: 32px;
+
+    #navigation {
+        height: @navbar-height;
+        min-height: initial;
+        margin-bottom: 15px;
+
+        ul.nav {
+            margin-top: 0;
+            margin-bottom: 0;
+            li {
+                height: @navbar-height;
+                line-height: @navbar-height;
+            }
+
+            &.navbar-right {
+                position: absolute;
+                right: 15px;
+                top: 0;
+            }
+        }
+
+        #top_logo {
+            img {
+                height: 38px;
+                width: auto;
+            }
+        }
+
+        #cas_menu {
+            a.casHeaderLink {
+                line-height: @navbar-height;
+            }
+        }
+    }
+
+    #center_section {
+
+        #vialogue_name {
+            position: relative;
+
+            h4 {
+                display: inline;
+            }
+
+            .icon-comment-1 {
+                color: #fff;
+                width: 25px;
+                vertical-align: text-bottom;
+                display: inline-block;
+                position: relative;
+                margin: 0 10px;
+
+                &:before {
+                    font-size: @font-size-large;
+                    color: @brand-theme;
+                    z-index: -1;
+                    width: 30px;
+                    height: 18px;
+                    margin-left: -5px;
+                }
+
+                .text-over {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    text-align: center;
+                    display: block;
+                    z-index: 200;
+                    font-size: @font-size-xxsmall;
+                    margin: 0;
+                }
+            }
+        }
+
+        .vialogue-info {
+            margin-bottom: 10px;
+        }
+
+        #player_placeholder {
+            background-color: #000;
+            position: relative;
+            z-index: 999
+        }
+
+        #vialogue_discussions {
+            margin-top: 10px;
+            padding: 0;
+            height: 200px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            
+            #view_discussions {
+                border-top: solid 1px @gray-light;
+                .thread-div {
+                    padding-left: 0;
+                    padding-top: 10px;
+                    
+                    .btn.time-code {
+                        float: left;
+                        width: 10%;
+                        margin-left: 10px;
+                    }
+                    
+                    .thread-main {
+                        width: 88%;
+                        display: inline-block;
+                        padding-right: 45px;
+                        border-bottom: solid 1px @gray-light;
+                        
+                        .comment-div {
+                            .timeago {
+                                color: @gray;
+                                line-height: 2em;
+                            }
+                            &:last-child {
+                                padding-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
