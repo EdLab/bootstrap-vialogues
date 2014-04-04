@@ -99,9 +99,15 @@
 
         #vialogue_name {
             position: relative;
+            margin-top: -10px;
+            margin-bottom: -10px;
 
             h4 {
-                display: inline;
+                display: inline-block;
+                white-space: nowrap;
+                max-width: 490px;
+                text-overflow: ellipsis;
+                overflow: hidden;
             }
 
             .icon-comment-1 {
@@ -110,7 +116,7 @@
                 vertical-align: text-bottom;
                 display: inline-block;
                 position: relative;
-                margin: 0 10px;
+                margin: 12px 10px;
 
                 &:before {
                     font-size: @font-size-large;
@@ -133,6 +139,14 @@
                     margin: 0;
                 }
             }
+        }
+
+        #vialogue_info p {
+            white-space: nowrap;
+            max-width: 540px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            margin-bottom: 10px;
         }
 
         #player_placeholder {
@@ -182,7 +196,12 @@
                             }
 
                             .comment-head {
-                                
+                                position: absolute;
+                                .new-placeholder {
+                                    position: relative;
+                                    left: -40px;
+                                    top: 25px;
+                                }
                             }
 
                             .comment-body {
@@ -209,6 +228,7 @@
                                         padding: 1px 5px;
                                     }
                                 }
+
                                 .comment-body-text {
                                     line-height: 3ex;
                                     margin-bottom: 0.5em;
@@ -242,16 +262,43 @@
                                 }
                             }
 
+                            .controls-placeholder {
+                                visibility: hidden;
+                                button {
+                                    .btn;
+                                    .btn-xs;
+                                    .btn-link;
+                                    &.delete-comment-btn {
+                                        .vialogues-theme-color;
+                                    }
+                                }
+                            }
 
+                            &.child-comment {
+                                .new-placeholder {
+                                    top: 2px;
+                                }
+                            }
                             &:last-child {
-                                padding-bottom: 10px;
+                                //padding-bottom: 10px;
+                            }
+                            &:hover {
+                                .controls-placeholder {
+                                    visibility: visible;
+                                }
                             }
                         }
-                        
+
                         .collapsible {
-                            margin: 0.5em 0;
-                            .glyphicon {
-                                padding: 0.3em;
+                            .collapse-trigger {
+                                display: block;
+                                background-color: @gray-lighter;
+                                text-transform: uppercase;
+                                padding: 5px;
+                                margin-bottom: 5px;
+                                > .glyphicon {
+                                    float: right;
+                                }
                             }
                         }
                     }
