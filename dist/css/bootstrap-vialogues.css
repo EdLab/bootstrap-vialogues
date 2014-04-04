@@ -474,7 +474,7 @@ p {
   font-weight: 200;
   line-height: 1.4;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .lead {
     font-size: 21px;
   }
@@ -606,7 +606,7 @@ dt {
 dd {
   margin-left: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -739,17 +739,17 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .container {
     width: 750px;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 400px) {
   .container {
     width: 960px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 400px) {
   .container {
     width: 1170px;
   }
@@ -926,7 +926,7 @@ pre code {
 .col-xs-offset-0 {
   margin-left: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
   }
@@ -1084,7 +1084,7 @@ pre code {
     margin-left: 0;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 400px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
@@ -1242,7 +1242,7 @@ pre code {
     margin-left: 0;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 400px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
   }
@@ -1582,7 +1582,7 @@ table th[class*="col-"] {
 .table-hover > tbody > tr.danger:hover > th {
   background-color: #ebcccc;
 }
-@media (max-width: 767px) {
+@media (max-width: 399px) {
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
@@ -1926,7 +1926,7 @@ select[multiple].input-lg {
   margin-bottom: 10px;
   color: #757575;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .form-inline .form-group {
     display: inline-block;
     margin-bottom: 0;
@@ -1981,7 +1981,7 @@ select[multiple].input-lg {
 .form-horizontal .form-control-static {
   padding-top: 7px;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .form-horizontal .control-label {
     text-align: right;
   }
@@ -3118,7 +3118,7 @@ input[type="button"].btn-block {
   bottom: 100%;
   margin-bottom: 1px;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .navbar-right .dropdown-menu {
     right: 0;
     left: auto;
@@ -3531,7 +3531,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   top: auto;
   left: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .nav-tabs.nav-justified > li {
     display: table-cell;
     width: 1%;
@@ -3549,7 +3549,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs.nav-justified > .active > a:focus {
   border: 1px solid #ddd;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .nav-tabs.nav-justified > li > a {
     border-bottom: 1px solid #ddd;
     border-radius: 2px 2px 0 0;
@@ -3596,7 +3596,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   top: auto;
   left: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .nav-justified > li {
     display: table-cell;
     width: 1%;
@@ -3617,7 +3617,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs-justified > .active > a:focus {
   border: 1px solid #ddd;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .nav-tabs-justified > li > a {
     border-bottom: 1px solid #ddd;
     border-radius: 2px 2px 0 0;
@@ -3645,12 +3645,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 50px;
   border: 1px solid transparent;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .navbar {
     border-radius: 2px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .navbar-header {
     float: left;
   }
@@ -3667,7 +3667,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-collapse.in {
   overflow-y: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .navbar-collapse {
     width: auto;
     border-top: 0;
@@ -3696,7 +3696,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-right: -15px;
   margin-left: -15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .container > .navbar-header,
   .container-fluid > .navbar-header,
   .container > .navbar-collapse,
@@ -3709,7 +3709,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   z-index: 1000;
   border-width: 0 0 1px;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .navbar-static-top {
     border-radius: 0;
   }
@@ -3721,7 +3721,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   left: 0;
   z-index: 1030;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     border-radius: 0;
@@ -3747,7 +3747,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand:focus {
   text-decoration: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
@@ -3777,7 +3777,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .navbar-toggle {
     display: none;
   }
@@ -3790,7 +3790,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-bottom: 10px;
   line-height: 20px;
 }
-@media (max-width: 767px) {
+@media (max-width: 399px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
@@ -3812,7 +3812,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     background-image: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .navbar-nav {
     float: left;
     margin: 0;
@@ -3828,7 +3828,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-right: -15px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .navbar-left {
     float: left !important;
   }
@@ -3847,7 +3847,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .navbar-form .form-group {
     display: inline-block;
     margin-bottom: 0;
@@ -3882,12 +3882,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     top: 0;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 399px) {
   .navbar-form .form-group {
     margin-bottom: 5px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .navbar-form {
     width: auto;
     padding-top: 0;
@@ -3927,7 +3927,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .navbar-text {
     float: left;
     margin-right: 15px;
@@ -3992,7 +3992,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #555;
   background-color: #e7e7e7;
 }
-@media (max-width: 767px) {
+@media (max-width: 399px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #777;
   }
@@ -4075,7 +4075,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #fff;
   background-color: #080808;
 }
-@media (max-width: 767px) {
+@media (max-width: 399px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
     border-color: #080808;
   }
@@ -4385,7 +4385,7 @@ a.list-group-item.active > .badge,
 .jumbotron .container {
   max-width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 400px) {
   .jumbotron {
     padding-top: 48px;
     padding-bottom: 48px;
@@ -5176,7 +5176,7 @@ button.close {
 .modal-footer .btn-block + .btn-block {
   margin-left: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .modal-dialog {
     width: 600px;
     margin: 30px auto;
@@ -5189,7 +5189,7 @@ button.close {
     width: 300px;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 400px) {
   .modal-lg {
     width: 900px;
   }
@@ -5569,7 +5569,7 @@ button.close {
 .carousel-caption .btn {
   text-shadow: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 400px) {
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,
@@ -5679,7 +5679,7 @@ button.close {
 .visible-lg {
   display: none !important;
 }
-@media (max-width: 767px) {
+@media (max-width: 399px) {
   .visible-xs {
     display: block !important;
   }
@@ -5694,7 +5694,7 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (min-width: 768px) and (max-width: 959px) {
+@media (min-width: 400px) and (max-width: 399px) {
   .visible-sm {
     display: block !important;
   }
@@ -5709,7 +5709,7 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (min-width: 960px) and (max-width: 1199px) {
+@media (min-width: 400px) and (max-width: 399px) {
   .visible-md {
     display: block !important;
   }
@@ -5724,7 +5724,7 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 400px) {
   .visible-lg {
     display: block !important;
   }
@@ -5739,22 +5739,22 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 399px) {
   .hidden-xs {
     display: none !important;
   }
 }
-@media (min-width: 768px) and (max-width: 959px) {
+@media (min-width: 400px) and (max-width: 399px) {
   .hidden-sm {
     display: none !important;
   }
 }
-@media (min-width: 960px) and (max-width: 1199px) {
+@media (min-width: 400px) and (max-width: 399px) {
   .hidden-md {
     display: none !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 400px) {
   .hidden-lg {
     display: none !important;
   }
@@ -5782,7 +5782,22 @@ button.close {
     display: none !important;
   }
 }
-@media (min-width: 768px) {
+.scroll-y-visible {
+  overflow-y: scroll;
+}
+.scroll-y-visible::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.scroll-y-visible::-webkit-scrollbar:vertical {
+  width: 12px;
+}
+.scroll-y-visible::-webkit-scrollbar-thumb {
+  /* should match background, can't be transparent */
+  background-color: rgba(0, 0, 0, .5);
+  border: 2px solid #fff;
+  border-radius: 8px;
+}
+@media (min-width: 400px) {
   .container {
     width: 960px;
   }
@@ -5897,8 +5912,8 @@ ul.hyphened > li:before {
   border-color: #357ebd;
 }
 .btn-primary:hover {
-  background-color: #3276b1;
-  border-color: #285e8e;
+  background-color: #3276b1 !important;
+  border-color: #285e8e !important;
 }
 .btn-theme {
   color: #fff;
@@ -5908,6 +5923,9 @@ ul.hyphened > li:before {
   padding: 7px 20px;
   font-size: 24px;
   line-height: 1.50;
+}
+.btn-link:hover {
+  text-decoration: none;
 }
 .dropdown-menu {
   font-size: 13px;
@@ -6832,6 +6850,9 @@ a:hover {
   display: block;
   height: 10px;
 }
+.pad-top-20 {
+  padding-top: 20px;
+}
 .pad-top-30 {
   padding-top: 30px;
 }
@@ -6916,6 +6937,9 @@ ul.errorlist .alert-link {
 .ellipsis i:before {
   content: "Read More";
 }
+.noscroll {
+  overflow: hidden;
+}
 /* Page Structuring
 -------------------------------------------------- */
 #wrap {
@@ -6991,6 +7015,7 @@ ul.errorlist .alert-link {
 }
 /* Vialogue Entry */
 .vialogue-entry .thumbnail {
+  position: relative;
   padding: 0;
   margin-bottom: 14px;
   background-color: #000;
@@ -7033,7 +7058,7 @@ ul.errorlist .alert-link {
 .vialogue-entry .badge.comment_number {
   position: absolute;
   top: 6px;
-  right: 21px;
+  right: 6px;
   display: block;
   min-width: 34px;
   padding: 6px 0 12px 0;
@@ -7413,6 +7438,11 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 }
 #home #sign_up:after {
   clear: both;
+}
+#home .vialogue-entry {
+  padding-right: 29px;
+  /* fixing video thumbnail size difference with Browse page */
+  padding-left: 29px;
 }
 #vialogues_browse #sort_options_dropdown {
   top: 4px;
@@ -7894,10 +7924,9 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .time-code {
   position: absolute;
-  top: 8px;
+  top: 10px;
   left: 8px;
   z-index: 999;
-  font-weight: bold;
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main {
   z-index: 100;
@@ -7920,7 +7949,6 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   margin-left: -15px;
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .btn-survey-form {
-  padding: 0 5px;
   margin-top: 5px;
   font-size: 12px;
   border-radius: 0;
@@ -7970,10 +7998,14 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-body .comment-body-text {
   padding-right: 10px;
+  line-height: 3ex;
+}
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-body .comment-body-text .commentor-placeholder {
+  font-weight: bold;
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-body .comment-body-text.truncate-4 {
   position: relative;
-  max-height: 80px;
+  max-height: 12ex;
   overflow-y: hidden;
   -webkit-transition: max-height .4s;
      -moz-transition: max-height .4s;
@@ -7996,6 +8028,7 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   display: none !important;
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-body .timeago {
+  font-size: 10px;
   line-height: 2em;
   color: #999;
 }
@@ -8109,6 +8142,9 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
   font-style: italic;
   color: #970a07;
 }
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-body .survey-form .btn-survey-form {
+  padding: 1px 5px;
+}
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-body .comment-edit-form > textarea {
   width: 100%;
   min-height: 50px;
@@ -8155,8 +8191,6 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
   /* push next div down for better look */
   margin-top: 5px;
   margin-bottom: 5px;
-  border-bottom: solid 1px #ccc;
-  /* FIX-NEEDED: only the last-of-type needs border but this is messed up by collapsible */
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot:before,
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot:after {
@@ -8216,6 +8250,9 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
   margin-bottom: 5px;
   resize: none;
 }
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot .btn-group {
+  float: right !important;
+}
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .edit-comment .edit-comment-content {
   width: 100%;
   height: 45px;
@@ -8244,6 +8281,9 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div.hilite-new {
   background-color: #d9edf7;
+}
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div:last-of-type .comment-foot {
+  border-bottom: solid 1px #ccc;
 }
 @media print {
   #vialogues_play #browser_warning,
@@ -8292,30 +8332,79 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
   margin: 0;
   overflow-x: hidden;
 }
-#vialogues_play_embed #wrap.embed #navigation {
+#vialogues_play_embed #wrap.embed #navigation_embed {
   height: 32px;
   min-height: initial;
   margin-bottom: 15px;
 }
-#vialogues_play_embed #wrap.embed #navigation ul.nav {
+#vialogues_play_embed #wrap.embed #navigation_embed .navbar-brand {
+  padding: 0;
+}
+#vialogues_play_embed #wrap.embed #navigation_embed ul.nav {
   margin-top: 0;
   margin-bottom: 0;
 }
-#vialogues_play_embed #wrap.embed #navigation ul.nav li {
+#vialogues_play_embed #wrap.embed #navigation_embed ul.nav > li {
   height: 32px;
+  margin: 0 .5em;
   line-height: 32px;
+  color: #fff;
 }
-#vialogues_play_embed #wrap.embed #navigation ul.nav.navbar-right {
-  position: absolute;
-  top: 0;
-  right: 15px;
+#vialogues_play_embed #wrap.embed #navigation_embed ul.nav > li > .btn {
+  color: #fff;
 }
-#vialogues_play_embed #wrap.embed #navigation #top_logo img {
+#vialogues_play_embed #wrap.embed #navigation_embed ul.nav > li > .btn.btn-xs {
+  padding: 1px 5px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+#vialogues_play_embed #wrap.embed #navigation_embed ul.nav > li > a:not(.btn) {
+  display: inline;
+  padding: 0;
+  color: #0096d5;
+}
+#vialogues_play_embed #wrap.embed #navigation_embed ul.nav > li > a:not(.btn):hover {
+  color: #16e8fb;
+}
+#vialogues_play_embed #wrap.embed #navigation_embed #top_logo img {
   width: auto;
   height: 38px;
 }
-#vialogues_play_embed #wrap.embed #navigation #cas_menu a.casHeaderLink {
+#vialogues_play_embed #wrap.embed #navigation_embed #cas_menu a.casHeaderLink {
   line-height: 32px;
+}
+#vialogues_play_embed #wrap.embed #login_overlay {
+  position: absolute;
+  top: 32px;
+  z-index: 901;
+  width: 100%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .75);
+}
+#vialogues_play_embed #wrap.embed #login_overlay .panel-body {
+  height: 325px;
+  margin: 35px 20px;
+}
+#vialogues_play_embed #wrap.embed #login_overlay #login_panel {
+  height: 100%;
+  border-right: solid #fff 2px;
+}
+#vialogues_play_embed #wrap.embed #login_overlay #login_panel .form-controls input {
+  width: 100%;
+  margin: 10px 0 16px;
+  color: #353535;
+}
+#vialogues_play_embed #wrap.embed #login_overlay #login_panel #login_error {
+  height: 20px;
+  margin-bottom: 15px;
+  color: #d20009;
+}
+#vialogues_play_embed #wrap.embed #login_overlay #signup_panel {
+  margin-top: 36px;
+  line-height: 1.5em;
+}
+#vialogues_play_embed #wrap.embed #center_section .pad-bottom-5 {
+  padding-bottom: 5px;
 }
 #vialogues_play_embed #wrap.embed #center_section #vialogue_name {
   position: relative;
@@ -8350,9 +8439,6 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
   font-size: 10px;
   text-align: center;
 }
-#vialogues_play_embed #wrap.embed #center_section .vialogue-info {
-  margin-bottom: 10px;
-}
 #vialogues_play_embed #wrap.embed #center_section #player_placeholder {
   position: relative;
   z-index: 999;
@@ -8360,17 +8446,30 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
 }
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions {
   height: 200px;
-  padding: 0;
   margin-top: 10px;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions::-webkit-scrollbar:vertical {
+  width: 12px;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions::-webkit-scrollbar-thumb {
+  /* should match background, can't be transparent */
+  background-color: rgba(0, 0, 0, .5);
+  border: 2px solid #fff;
+  border-radius: 8px;
 }
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions {
+  line-height: 1.2em;
   border-top: solid 1px #ccc;
 }
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div {
   padding-top: 10px;
   padding-left: 0;
+  border-bottom: solid 1px #ccc;
 }
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .btn.time-code {
   float: left;
@@ -8380,15 +8479,107 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main {
   display: inline-block;
   width: 88%;
-  padding-right: 45px;
-  border-bottom: solid 1px #ccc;
+  padding-right: 25px;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .alert {
+  margin: 1em 0;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div {
+  margin-bottom: .5em;
 }
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .timeago {
-  line-height: 2em;
   color: #999;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .toggle-comment-lbl {
+  float: right;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body {
+  position: relative;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .reply-btn {
+  position: absolute;
+  top: 0;
+  right: -25px;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .reply-btn .icon-reply:before {
+  color: #c00;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .survey-form {
+  margin-top: .5em;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .survey-form .option-key {
+  display: none !important;
+  visibility: hidden !important;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .survey-form .checkbox,
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .survey-form .radio {
+  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .survey-form .btn-survey-form {
+  padding: 1px 5px;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .comment-body-text {
+  margin-bottom: .5em;
+  line-height: 3ex;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .comment-body-text p {
+  margin-bottom: .5em;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .comment-body-text.truncate-4 {
+  position: relative;
+  max-height: 12ex;
+  overflow-y: hidden;
+  -webkit-transition: max-height .4s;
+     -moz-transition: max-height .4s;
+      -ms-transition: max-height .4s;
+       -o-transition: max-height .4s;
+          transition: max-height .4s;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .comment-body-text.truncate-4:after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 2em;
+  text-align: right;
+  content: "...";
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .comment-body-text.expand {
+  max-height: 9999px;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .comment-body-text.expand:after {
+  display: none !important;
 }
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div:last-child {
   padding-bottom: 10px;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .collapsible {
+  margin: .5em 0;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .collapsible .glyphicon {
+  padding: .3em;
+}
+#vialogues_play_embed #wrap.embed #center_section #player_comment_box {
+  width: 100%;
+  height: auto;
+  margin-top: 5px;
+}
+#vialogues_play_embed #wrap.embed #center_section #player_comment_box #comment_form {
+  position: relative;
+}
+#vialogues_play_embed #wrap.embed #center_section #player_comment_box #comment_form #comment_input {
+  width: 100%;
+  padding-right: 70px;
+}
+#vialogues_play_embed #wrap.embed #center_section #player_comment_box #comment_form #comment_input #comment_textarea {
+  width: 100%;
+  height: 55px;
+}
+#vialogues_play_embed #wrap.embed #center_section #player_comment_box #comment_form #comment_buttons {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 #vialogues_create #required {
   position: relative;

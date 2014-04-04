@@ -30,11 +30,26 @@
 }
 
 .hidden() {
-	visibility: hidden !important;
-	display: none !important;
+    visibility: hidden !important;
+    display: none !important;
 }
 
 .show() {
-	visibility: visible !important;
-	display: inherit !important;
+    visibility: visible !important;
+    display: inherit !important;
+}
+
+.scroll-y-visible {
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+    &::-webkit-scrollbar:vertical {
+        width: 12px;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        border: 2px solid #fff; /* should match background, can't be transparent */
+        background-color: rgba(0, 0, 0, .5);
+    }
 }
