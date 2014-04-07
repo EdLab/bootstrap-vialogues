@@ -165,9 +165,11 @@
                 border-top: solid 1px @gray-light;
                 line-height: 1.2em;
                 .thread-div {
+                    .animate-transition(background-color);
                     padding-left: 0;
                     padding-top: 10px;
                     border-bottom: solid 1px @gray-light;
+
 
                     .btn.time-code {
                         float: left;
@@ -185,6 +187,7 @@
                         }
 
                         .comment-div {
+                            .animate-transition(background-color);
                             margin-bottom: 0.5em;
 
                             .timeago {
@@ -239,11 +242,7 @@
                                         position: relative;
                                         max-height: 12ex;
                                         overflow-y: hidden;
-                                        -moz-transition: max-height 0.4s;
-                                        -ms-transition: max-height 0.4s;
-                                        -o-transition: max-height 0.4s;
-                                        -webkit-transition: max-height 0.4s;
-                                        transition: max-height 0.4s;
+                                        .animate-transition(max-height, 0.4s);
                                         &:after {
                                             content: "...";
                                             position: absolute;
@@ -279,8 +278,9 @@
                                     top: 2px;
                                 }
                             }
-                            &:last-child {
-                                //padding-bottom: 10px;
+                            &.hilite-new {
+                                background-color: #d9edf7;
+                                .animate-transition(background-color, 1000ms);
                             }
                             &:hover {
                                 .controls-placeholder {
@@ -302,6 +302,12 @@
                             }
                         }
                     }
+
+                    &.hilite-time {
+                        background-color: #fde6e6;
+                        .animate-transition(background-color, 0ms);
+                    }
+
                 }
             }
         }

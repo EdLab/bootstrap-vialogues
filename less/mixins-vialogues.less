@@ -53,3 +53,11 @@
         background-color: rgba(0, 0, 0, .5);
     }
 }
+
+.animate-transition(@property, @length: 1000ms, @function: linear) { // use 0ms as length to remove transition
+    -webkit-transition: @property @length @function;
+    -moz-transition: @property @length @function;
+    -o-transition: @property @length @function;
+    -ms-transition: @property @length @function;
+    transition: @property @length @function;
+}

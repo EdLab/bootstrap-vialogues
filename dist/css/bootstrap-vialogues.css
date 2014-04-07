@@ -7919,8 +7919,12 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 #vialogues_play #play_main #main_right > #view_discussions p {
   margin-bottom: 0;
 }
-#vialogues_play #play_main #main_right > #view_discussions .thread-div.hilite-time {
-  background-color: #fde6e6;
+#vialogues_play #play_main #main_right > #view_discussions .thread-div {
+  -webkit-transition: background-color 1000ms linear;
+     -moz-transition: background-color 1000ms linear;
+      -ms-transition: background-color 1000ms linear;
+       -o-transition: background-color 1000ms linear;
+          transition: background-color 1000ms linear;
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .time-code {
   position: absolute;
@@ -7947,6 +7951,11 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   padding: 0 30px 0 55px;
   margin-right: -15px;
   margin-left: -15px;
+  -webkit-transition: background-color 1000ms linear;
+     -moz-transition: background-color 1000ms linear;
+      -ms-transition: background-color 1000ms linear;
+       -o-transition: background-color 1000ms linear;
+          transition: background-color 1000ms linear;
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .btn-survey-form {
   margin-top: 5px;
@@ -8265,9 +8274,22 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div.hilite-new {
   background-color: #d9edf7;
+  -webkit-transition: background-color 0ms linear;
+     -moz-transition: background-color 0ms linear;
+      -ms-transition: background-color 0ms linear;
+       -o-transition: background-color 0ms linear;
+          transition: background-color 0ms linear;
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div:last-of-type .comment-foot {
   border-bottom: solid 1px #ccc;
+}
+#vialogues_play #play_main #main_right > #view_discussions .thread-div.hilite-time {
+  background-color: #fde6e6;
+  -webkit-transition: background-color 0ms linear;
+     -moz-transition: background-color 0ms linear;
+      -ms-transition: background-color 0ms linear;
+       -o-transition: background-color 0ms linear;
+          transition: background-color 0ms linear;
 }
 @media print {
   #vialogues_play #browser_warning,
@@ -8467,6 +8489,11 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
   padding-top: 10px;
   padding-left: 0;
   border-bottom: solid 1px #ccc;
+  -webkit-transition: background-color 1000ms linear;
+     -moz-transition: background-color 1000ms linear;
+      -ms-transition: background-color 1000ms linear;
+       -o-transition: background-color 1000ms linear;
+          transition: background-color 1000ms linear;
 }
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .btn.time-code {
   float: left;
@@ -8483,6 +8510,11 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
 }
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div {
   margin-bottom: .5em;
+  -webkit-transition: background-color 1000ms linear;
+     -moz-transition: background-color 1000ms linear;
+      -ms-transition: background-color 1000ms linear;
+       -o-transition: background-color 1000ms linear;
+          transition: background-color 1000ms linear;
 }
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .timeago {
   color: #999;
@@ -8536,11 +8568,11 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
   position: relative;
   max-height: 12ex;
   overflow-y: hidden;
-  -webkit-transition: max-height .4s;
-     -moz-transition: max-height .4s;
-      -ms-transition: max-height .4s;
-       -o-transition: max-height .4s;
-          transition: max-height .4s;
+  -webkit-transition: max-height .4s linear;
+     -moz-transition: max-height .4s linear;
+      -ms-transition: max-height .4s linear;
+       -o-transition: max-height .4s linear;
+          transition: max-height .4s linear;
 }
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .comment-body-text.truncate-4:after {
   position: absolute;
@@ -8646,6 +8678,14 @@ fieldset[disabled] #vialogues_play_embed #wrap.embed #center_section #vialogue_d
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div.child-comment .new-placeholder {
   top: 2px;
 }
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div.hilite-new {
+  background-color: #d9edf7;
+  -webkit-transition: background-color 1000ms linear;
+     -moz-transition: background-color 1000ms linear;
+      -ms-transition: background-color 1000ms linear;
+       -o-transition: background-color 1000ms linear;
+          transition: background-color 1000ms linear;
+}
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div:hover .controls-placeholder {
   visibility: visible;
 }
@@ -8658,6 +8698,14 @@ fieldset[disabled] #vialogues_play_embed #wrap.embed #center_section #vialogue_d
 }
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .collapsible .collapse-trigger > .glyphicon {
   float: right;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div.hilite-time {
+  background-color: #fde6e6;
+  -webkit-transition: background-color 0ms linear;
+     -moz-transition: background-color 0ms linear;
+      -ms-transition: background-color 0ms linear;
+       -o-transition: background-color 0ms linear;
+          transition: background-color 0ms linear;
 }
 #vialogues_play_embed #wrap.embed #center_section #player_comment_box {
   width: 100%;

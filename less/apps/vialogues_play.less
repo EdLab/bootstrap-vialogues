@@ -371,10 +371,7 @@ position: relative;
             }
 
             .thread-div  {
-                &.hilite-time {
-                    background-color: #fde6e6;
-                }
-
+                .animate-transition(background-color);
                 .time-code {
                     position: absolute;
                     z-index: 999;
@@ -400,6 +397,7 @@ position: relative;
                     }
 
                     .comment-div {
+                        .animate-transition(background-color);
                         padding: 0 30px 0 55px;
                         position: relative;
                         margin-left: -15px;
@@ -614,14 +612,21 @@ position: relative;
                         }
                         &.hilite-new {
                             background-color: #d9edf7;
+                            .animate-transition(background-color, 0ms);
                         }
                         &:last-of-type {
-                          .comment-foot {
-                             border-bottom: solid 1px @gray-light;
-                          }
+                            .comment-foot {
+                                border-bottom: solid 1px @gray-light;
+                            }
                         }
                     }
                 }
+
+                &.hilite-time {
+                    background-color: #fde6e6;
+                    .animate-transition(background-color, 0ms);
+                }
+
             }
         }
     }
