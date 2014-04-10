@@ -6886,6 +6886,16 @@ a:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+.form-control::-webkit-input-placeholder {
+  color: #999;
+}
+.form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #999;
+}
 ul.errorlist {
   padding: 15px;
   margin-bottom: 20px;
@@ -7383,6 +7393,19 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-query,
 textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   height: auto;
 }
+.bootstrap-tagsinput .twitter-typeahead .tt-query::-webkit-input-placeholder,
+.bootstrap-tagsinput .twitter-typeahead .tt-hint::-webkit-input-placeholder {
+  color: #999;
+}
+.bootstrap-tagsinput .twitter-typeahead .tt-query::-moz-placeholder,
+.bootstrap-tagsinput .twitter-typeahead .tt-hint::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.bootstrap-tagsinput .twitter-typeahead .tt-query:-ms-input-placeholder,
+.bootstrap-tagsinput .twitter-typeahead .tt-hint:-ms-input-placeholder {
+  color: #999;
+}
 .bootstrap-tagsinput .twitter-typeahead .tt-dropdown-menu {
   font-size: 13px;
 }
@@ -7866,7 +7889,7 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   padding: 15px;
   margin-top: 5px;
   background-color: #f7f7f7;
-  border: solid 1px #ccc;
+  border-top: solid 1px #ccc;
 }
 #vialogues_play #play_main #main_right > #vialogue_info_outer #vialogue_info:before,
 #vialogues_play #play_main #main_right > #vialogue_info_outer #vialogue_info:after {
@@ -7898,7 +7921,6 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   margin-top: 15px;
   margin-right: 0;
   background-color: #fff;
-  border: solid 1px #ccc;
 }
 #vialogues_play #play_main #main_right > #view_discussions:before,
 #vialogues_play #play_main #main_right > #view_discussions:after {
@@ -7928,18 +7950,24 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .time-code {
   position: absolute;
-  top: 4px;
+  top: 11px;
   left: 0;
   z-index: 999;
+  width: 65px;
+  padding: 0;
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main {
   z-index: 100;
   padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 50px;
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .collapsible .collapse-trigger {
   display: block;
   padding: 5px;
-  margin-left: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-transform: uppercase;
   background-color: #efefef;
 }
@@ -7948,9 +7976,6 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div {
   position: relative;
-  padding: 0 30px 0 55px;
-  margin-right: -15px;
-  margin-left: -15px;
   -webkit-transition: background-color 1000ms linear;
      -moz-transition: background-color 1000ms linear;
       -ms-transition: background-color 1000ms linear;
@@ -7983,8 +8008,8 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-head .new-placeholder {
   position: relative;
-  top: 20px;
-  left: -35px;
+  top: 25px;
+  left: -42px;
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-body {
   position: relative;
@@ -8165,7 +8190,7 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-body .reply-btn {
   float: right !important;
-  margin-top: -24px;
+  margin-top: -29px;
   margin-right: -29px;
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-body .reply-btn .icon-reply {
@@ -8178,49 +8203,30 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-body .alert {
   padding: 8px;
-  margin-bottom: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot {
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot .post-reply {
+  position: relative;
   /* push next div down for better look */
   margin-top: 5px;
   margin-bottom: 5px;
 }
-#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot:before,
-#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot:after {
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot .post-reply:before,
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot .post-reply:after {
   display: table;
   content: " ";
 }
-#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot:after {
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot .post-reply:after {
   clear: both;
 }
-#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot:before,
-#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot:after {
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot .post-reply:before,
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot .post-reply:after {
   display: table;
   content: " ";
 }
-#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot:after {
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot .post-reply:after {
   clear: both;
-}
-#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot:before,
-#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot:after {
-  display: table;
-  content: " ";
-}
-#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot:after {
-  clear: both;
-}
-#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot:before,
-#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot:after {
-  display: table;
-  content: " ";
-}
-#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot:after {
-  clear: both;
-}
-#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot .post-reply {
-  position: relative;
-  margin-bottom: 5px;
-  /* push next div down for better look */
 }
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot .post-reply:before,
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div .comment-foot .post-reply:after {
@@ -8269,9 +8275,6 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
   float: right !important;
   margin-bottom: 5px;
 }
-#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div.child-comment {
-  padding-top: 5px;
-}
 #vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div.child-comment .new-placeholder {
   top: 0;
 }
@@ -8283,16 +8286,16 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
        -o-transition: background-color 0ms linear;
           transition: background-color 0ms linear;
 }
-#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main .comment-div:last-of-type .comment-foot {
-  border-bottom: solid 1px #ccc;
-}
-#vialogues_play #play_main #main_right > #view_discussions .thread-div.hilite-time {
+#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main.hilite-time {
   background-color: #fde6e6;
   -webkit-transition: background-color 0ms linear;
      -moz-transition: background-color 0ms linear;
       -ms-transition: background-color 0ms linear;
        -o-transition: background-color 0ms linear;
           transition: background-color 0ms linear;
+}
+#vialogues_play #play_main #main_right > #view_discussions .thread-div:not(:last-child) .thread-main {
+  border-bottom: solid 1px #ccc;
 }
 @media print {
   #vialogues_play #browser_warning,
@@ -8422,7 +8425,7 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
 }
 #vialogues_play_embed #wrap.embed #center_section #vialogue_name h4 {
   display: inline-block;
-  max-width: 490px;
+  max-width: 460px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -8499,7 +8502,7 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
 }
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .btn.time-code {
   position: absolute;
-  padding: 1px 0;
+  padding: 0;
 }
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main {
   display: block;
@@ -8518,6 +8521,7 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
           transition: background-color 1000ms linear;
 }
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .timeago {
+  font-size: 10px;
   color: #999;
 }
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .toggle-comment-lbl {
@@ -8543,7 +8547,8 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
   color: #c00;
 }
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .survey-form {
-  margin-top: .5em;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .survey-form .option-key {
   display: none !important;
@@ -8558,12 +8563,34 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .survey-form .btn-survey-form {
   padding: 1px 5px;
 }
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .survey-form .btn {
+  margin-top: 5px;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .survey-form .btn:before,
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .survey-form .btn:after {
+  display: table;
+  content: " ";
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .survey-form .btn:after {
+  clear: both;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .survey-form .btn:before,
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .survey-form .btn:after {
+  display: table;
+  content: " ";
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .survey-form .btn:after {
+  clear: both;
+}
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .comment-body-text {
   margin-bottom: .5em;
   line-height: 3ex;
 }
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .comment-body-text p {
   margin-bottom: .5em;
+}
+#vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .comment-body-text .commentor-placeholder {
+  font-weight: bold;
 }
 #vialogues_play_embed #wrap.embed #center_section #vialogue_discussions #view_discussions .thread-div .thread-main .comment-div .comment-body .comment-body-text.truncate-4 {
   position: relative;

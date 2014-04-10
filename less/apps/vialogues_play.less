@@ -344,7 +344,7 @@ position: relative;
             #vialogue_info {
                 .hspacer(5px);
                 padding: 15px;
-                border: solid 1px @gray-light;
+                border-top: solid 1px @gray-light;
                 background-color: #f7f7f7;
                 p {
                     margin: 0;
@@ -363,7 +363,6 @@ position: relative;
             .hspacer(15px);
             padding-bottom: 15px;
             margin-right: 0;
-            border: solid 1px @gray-light;
             background-color: #fff;
 
             p {
@@ -372,24 +371,31 @@ position: relative;
 
             .thread-div  {
                 .animate-transition(background-color);
+
                 .time-code {
                     position: absolute;
                     z-index: 999;
                     left: 0;
-                    top: 4px;
+                    top: 11px;
+                    padding: 0;
+                    width: 65px;
                 }
 
                 .thread-main {
                     z-index: 100;
                     padding-top: 10px;
+                    padding-bottom: 10px;
+                    margin-left: 50px;
+                    margin-right: 20px;
 
                     .collapsible {
                         .collapse-trigger {
                             display: block;
                             background-color: @gray-lighter;
                             text-transform: uppercase;
-                            margin-left: 40px;
                             padding: 5px;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
                             > .glyphicon {
                                 float: right;
                             }
@@ -398,10 +404,7 @@ position: relative;
 
                     .comment-div {
                         .animate-transition(background-color);
-                        padding: 0 30px 0 55px;
                         position: relative;
-                        margin-left: -15px;
-                        margin-right: -15px;
 
                         .btn-survey-form {
                             font-size: @font-size-small;
@@ -538,7 +541,7 @@ position: relative;
 
                             .reply-btn {
                                 .pull-right;
-                                margin-top: -24px;
+                                margin-top: -29px;
                                 margin-right: -29px;
                                 .icon-reply {
                                     .vialogues-theme-color;
@@ -552,17 +555,17 @@ position: relative;
 
                             .alert {
                                 padding: 8px;
-                                margin-bottom: 0;
+                                margin-top: 10px;
+                                margin-bottom: 10px;
                             }
                         }
 
                         .comment-foot {
-                            .bumper(5px);
-                            .hspacer(5px);
 
                             .post-reply {
                                 position: relative;
                                 .bumper(5px);
+                                .hspacer(5px);
 
                                 > textarea {
                                     width: 100%;
@@ -610,7 +613,6 @@ position: relative;
                         }
 
                         &.child-comment {
-                            padding-top: 5px;
                             .new-placeholder {
                                 top: 0;
                             }
@@ -619,17 +621,16 @@ position: relative;
                             background-color: #d9edf7;
                             .animate-transition(background-color, 0ms);
                         }
-                        &:last-of-type {
-                            .comment-foot {
-                                border-bottom: solid 1px @gray-light;
-                            }
-                        }
+                    }
+
+                    &.hilite-time {
+                        background-color: #fde6e6;
+                        .animate-transition(background-color, 0ms);
                     }
                 }
 
-                &.hilite-time {
-                    background-color: #fde6e6;
-                    .animate-transition(background-color, 0ms);
+                &:not(:last-child) .thread-main {
+                    border-bottom: solid 1px @gray-light;
                 }
 
             }
