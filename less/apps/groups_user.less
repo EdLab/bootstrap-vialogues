@@ -4,6 +4,10 @@
     h4 {
         margin-top: 0;
     }
+    .vialogue-entry {
+        padding-left: 29px;
+        padding-right: 29px;
+    }
 }
 
 #groups_list {
@@ -17,6 +21,19 @@
             border-bottom: solid 1px @gray-light;
             .panel-heading {
                 background-color: transparent;
+                a {
+                    color: @link-color;
+                }
+                &:hover {
+                    background-color: @blue;
+
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                        display: block;
+                        width: 100%;
+                    }
+                }
             }
         }
     }

@@ -9280,6 +9280,10 @@ fieldset[disabled] #vialogues_play_embed #wrap.embed #center_section #vialogue_d
 #groups_user #group_vialogues h4 {
   margin-top: 0;
 }
+#groups_user #group_vialogues .vialogue-entry {
+  padding-right: 29px;
+  padding-left: 29px;
+}
 #groups_user #groups_list .panel-group {
   margin-top: 20px;
   border-top: solid 1px #ccc;
@@ -9309,6 +9313,18 @@ fieldset[disabled] #vialogues_play_embed #wrap.embed #center_section #vialogue_d
 #groups_user #groups_list .panel-group .panel .panel-heading {
   background-color: transparent;
 }
+#groups_user #groups_list .panel-group .panel .panel-heading a {
+  color: #0096d5;
+}
+#groups_user #groups_list .panel-group .panel .panel-heading:hover {
+  background-color: #0096d5;
+}
+#groups_user #groups_list .panel-group .panel .panel-heading:hover a {
+  display: block;
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+}
 #groups_create #required,
 #groups_manage #required {
   position: relative;
@@ -9332,6 +9348,10 @@ fieldset[disabled] #vialogues_play_embed #wrap.embed #center_section #vialogue_d
 #groups_create #create_group_form #create_right .badge,
 #groups_manage #create_group_form #create_right .badge {
   background-color: #c00;
+}
+#groups_create #create_group_form #create_right .errorlist,
+#groups_manage #create_group_form #create_right .errorlist {
+  list-style: none;
 }
 #groups_create #create_group_form #create_right .vialogue-entry,
 #groups_manage #create_group_form #create_right .vialogue-entry {
