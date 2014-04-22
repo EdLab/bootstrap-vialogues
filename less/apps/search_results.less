@@ -1,6 +1,6 @@
-#search_discussions {
+#search_left {
     /* these styles need be tested on a web server. my local dev instance can't handle search */
-    padding-top: 30px;
+    position: relative;
 
     .breadcrumb {
         position: absolute;
@@ -8,14 +8,14 @@
         top: 27px;
     }
 
-    .pagination {
-        position: absolute;
-        right: 15px;
-        top: 44px;
-    }
-
     .row {
         margin-left: 0;
         /* @TODO: This is janky and should not be done, but the template is wrong. */
+    }
+
+    #sort_options_dropdown {
+        position: absolute;
+        top: 15px;
+        right: 15px;
     }
 }
