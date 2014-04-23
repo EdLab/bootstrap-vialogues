@@ -272,10 +272,7 @@ ul.errorlist {
     &.col-xs-4 {
         .thumbnail {
             height: 107px;
-
-            .img-responsive {
-                max-height: 107px;
-            }
+            overflow: hidden;
         }
     }
 
@@ -286,8 +283,8 @@ ul.errorlist {
         font-size: @font-size-xxsmall;
         padding-right: 4px;
         padding-left: 4px;
-        position: relative;
-        bottom: 19px;
+        position: absolute;
+        top: 84px;
         right: 5px;
         border-radius: @border-radius-base;
     }
