@@ -7036,16 +7036,15 @@ ul.errorlist .alert-link {
   margin-right: auto;
   margin-left: auto;
 }
-.vialogue-entry.col-xs-4 .thumbnail {
+.vialogue-entry.col-xs-4 .thumbnail,
+.vialogue-entry.col-xs-3 .thumbnail {
   height: 107px;
-}
-.vialogue-entry.col-xs-4 .thumbnail .img-responsive {
-  max-height: 107px;
+  overflow: hidden;
 }
 .vialogue-entry .timestamp {
-  position: relative;
+  position: absolute;
+  top: 84px;
   right: 5px;
-  bottom: 19px;
   display: block;
   padding-right: 4px;
   padding-left: 4px;
@@ -7630,18 +7629,14 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
   display: inline-block;
   color: #0096d5;
 }
+#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_buttons #comment_buttons_left .btn.star-container,
+#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_buttons #comment_buttons_right .btn.star-container {
+  padding-right: 9px;
+  padding-left: 9px;
+}
 #vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_buttons #comment_buttons_left #post_comment_button,
 #vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_buttons #comment_buttons_right #post_comment_button {
   color: #fff;
-}
-#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_buttons #comment_buttons_left #fav_button,
-#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_buttons #comment_buttons_right #fav_button {
-  padding: 0;
-}
-#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_buttons #comment_buttons_left #fav_button .star-container,
-#vialogues_play #play_main #main_left #player_comment_box #comment_form #comment_buttons #comment_buttons_right #fav_button .star-container {
-  display: block;
-  padding: 6px 9px;
 }
 #vialogues_play #play_main #main_left #player_comment_box #survey_form {
   position: absolute;
@@ -9492,6 +9487,7 @@ fieldset[disabled] #vialogues_play_embed #wrap.embed #center_section #vialogue_d
 #groups_create #create_group_form #create_right #search_discussions .vialogue-right,
 #groups_manage #create_group_form #create_right #search_discussions .vialogue-right {
   height: 45px;
+  margin-right: 25px;
 }
 #groups_create #create_group_form #form_controls,
 #groups_manage #create_group_form #form_controls {
@@ -9597,10 +9593,6 @@ fieldset[disabled] #vialogues_play_embed #wrap.embed #center_section #vialogue_d
   top: 27px;
   right: 15px;
 }
-#search_results #search_left .row {
-  margin-left: 0;
-  /* @TODO: This is janky and should not be done, but the template is wrong. */
-}
 #search_results #search_left #sort_options_dropdown {
   position: absolute;
   top: 15px;
@@ -9616,6 +9608,11 @@ fieldset[disabled] #vialogues_play_embed #wrap.embed #center_section #vialogue_d
 #support_help #help_container #help_content #show_help_topic ol {
   padding-left: 0;
   margin-left: 0;
+}
+#support_help #help_container #help_content #show_help_topic > ul.second-level,
+#support_help #help_container #help_content #show_help_topic ol.second-level {
+  margin-top: 10px;
+  margin-left: 30px;
 }
 #support_help #help_container #help_content #show_help_topic > ol:not(.stepped) {
   padding-left: 20px;
