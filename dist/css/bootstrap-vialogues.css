@@ -7036,6 +7036,7 @@ ul.errorlist .alert-link {
   margin-right: auto;
   margin-left: auto;
 }
+.vialogue-entry.col-xs-6 .thumbnail,
 .vialogue-entry.col-xs-4 .thumbnail,
 .vialogue-entry.col-xs-3 .thumbnail {
   height: 107px;
@@ -7730,6 +7731,10 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 #vialogues_play #play_main #main_left > #share_central #share_bucket .tab-pane {
   height: 100%;
 }
+#vialogues_play #play_main #main_left > #share_central #share_bucket .vialogue-entry {
+  padding-right: 17px;
+  padding-left: 17px;
+}
 #vialogues_play #play_main #main_left > #share_central #share_bucket #video_info p {
   margin-top: 10px;
   margin-bottom: 8px;
@@ -8281,7 +8286,7 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
        -o-transition: background-color 0ms linear;
           transition: background-color 0ms linear;
 }
-#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main.hilite-time {
+#vialogues_play #play_main #main_right > #view_discussions .thread-div.hilite-time {
   background-color: #fde6e6;
   -webkit-transition: background-color 0ms linear;
      -moz-transition: background-color 0ms linear;
@@ -9597,6 +9602,14 @@ fieldset[disabled] #vialogues_play_embed #wrap.embed #center_section #vialogue_d
   position: absolute;
   top: 15px;
   right: 15px;
+}
+#search_results #tag_search #tagged_discussions .vialogue-entry {
+  padding-right: 29px;
+  padding-left: 29px;
+}
+#search_results #tag_search #tagged_discussions .vialogue-entry .thumbnail {
+  height: 107px;
+  overflow: hidden;
 }
 #support_help #help_container #help_content #show_help_topic {
   min-height: 200px;
