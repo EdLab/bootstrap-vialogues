@@ -7244,6 +7244,11 @@ ul.errorlist .alert-link {
 .star-container .icon-star.star-on:before {
   color: #0096d5;
 }
+/* Manage Vialogue Icon */
+.vialogue-entry .cog-container {
+  width: 18px;
+  margin-bottom: 34px;
+}
 /* Char Counter */
 .textarea-char-counter {
   display: block;
