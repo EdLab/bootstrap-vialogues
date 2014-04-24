@@ -7036,6 +7036,7 @@ ul.errorlist .alert-link {
   margin-right: auto;
   margin-left: auto;
 }
+.vialogue-entry.col-xs-6 .thumbnail,
 .vialogue-entry.col-xs-4 .thumbnail,
 .vialogue-entry.col-xs-3 .thumbnail {
   height: 107px;
@@ -7242,6 +7243,11 @@ ul.errorlist .alert-link {
 }
 .star-container .icon-star.star-on:before {
   color: #0096d5;
+}
+/* Manage Vialogue Icon */
+.vialogue-entry .cog-container {
+  width: 18px;
+  margin-bottom: 34px;
 }
 /* Char Counter */
 .textarea-char-counter {
@@ -7729,6 +7735,10 @@ textarea.bootstrap-tagsinput .twitter-typeahead .tt-hint {
 }
 #vialogues_play #play_main #main_left > #share_central #share_bucket .tab-pane {
   height: 100%;
+}
+#vialogues_play #play_main #main_left > #share_central #share_bucket .vialogue-entry {
+  padding-right: 17px;
+  padding-left: 17px;
 }
 #vialogues_play #play_main #main_left > #share_central #share_bucket #video_info p {
   margin-top: 10px;
@@ -8281,7 +8291,7 @@ fieldset[disabled] #vialogues_play #play_main #main_right > #view_discussions .t
        -o-transition: background-color 0ms linear;
           transition: background-color 0ms linear;
 }
-#vialogues_play #play_main #main_right > #view_discussions .thread-div .thread-main.hilite-time {
+#vialogues_play #play_main #main_right > #view_discussions .thread-div.hilite-time {
   background-color: #fde6e6;
   -webkit-transition: background-color 0ms linear;
      -moz-transition: background-color 0ms linear;
