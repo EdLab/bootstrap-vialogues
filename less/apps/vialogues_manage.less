@@ -5,7 +5,6 @@
 
 #manage_left {
     padding-bottom: 15px;
-    .bumper(15px);
 
     h5 {
         font-size: @font-size-med;
@@ -72,7 +71,6 @@
 #manage_right {
     border-left: 1px dotted @table-border-color;
     padding-bottom: 15px;
-    .bumper(15px);
 
     #vialogue_privacy_settings_details {
         .bootstrap-tagsinput {
@@ -137,5 +135,15 @@
         &:first-of-type {
             margin-top: 0;
         }
+    }
+}
+
+#controls {
+    border-top: 1px solid @table-border-color;
+    padding-top: 15px;
+    margin-top: 20px;
+
+    .btn {
+        text-transform: uppercase;
     }
 }
