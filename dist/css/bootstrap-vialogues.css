@@ -9608,6 +9608,14 @@ fieldset[disabled] #vialogues_play_embed #wrap.embed #center_section #vialogue_d
   top: 15px;
   right: 15px;
 }
+#search_results #tag_search #tagged_discussions .vialogue-entry {
+  padding-right: 29px;
+  padding-left: 29px;
+}
+#search_results #tag_search #tagged_discussions .vialogue-entry .thumbnail {
+  height: 107px;
+  overflow: hidden;
+}
 #support_help #help_container #help_content #show_help_topic {
   min-height: 200px;
 }
