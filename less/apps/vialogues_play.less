@@ -246,22 +246,31 @@ position: relative;
                     }
                 }
 
+                #statistics {
+                    #statistics_content {
+                        margin-top: 15px;
+                    }
+                    #statistics_legends {
+                        margin-top: 15px;
+                        #root_cmt_legend, #reply_legend {
+                            width: 25px;
+                            height: 4px;
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                        #root_cmt_legend {
+                            background-color: #EA0505;
+                        }
+                        #reply_legend {
+                            background-color: #1987CC;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+
                 #share_start_time, #embed_start_time {
                     display: inline-block;
                     width: 75px;
-                }
-            }
-
-            #share_commands {
-                border-left: #ccc 1px solid;
-                font-size: @font-size-xsmall;
-                min-height: 300px;
-                padding: 5px 0;
-
-                > li a {
-                    padding: 0 5px;
-                    line-height: 24px;
-                    white-space: nowrap;
                 }
             }
         }
