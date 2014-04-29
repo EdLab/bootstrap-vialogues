@@ -301,14 +301,24 @@ body {
 
 
     #user_menu {
-        #user_arrow {
-            border-top-color:@link-color !important;
-            border-bottom-color:@link-color !important
-        }
+        #top_username {
+            width: 160px;
 
-        #user_arrow:hover {
-            border-top-color:@link-hover-color !important;
-            border-bottom-color:@link-hover-color !important
+            .shorten {
+                .shorten(100px);
+            }
+
+            #user_arrow {
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                border-top-color:@link-color !important;
+                border-bottom-color:@link-color !important;
+                &:hover {
+                    border-top-color:@link-hover-color !important;
+                    border-bottom-color:@link-hover-color !important
+                }
+            }
         }
 
         #user_menu_ext {

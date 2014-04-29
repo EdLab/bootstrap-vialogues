@@ -61,3 +61,10 @@
     -ms-transition: @property @length @function;
     transition: @property @length @function;
 }
+
+.shorten(@length: 150px, @suffix: ellipsis) {
+    width: @length;
+    text-overflow: @suffix;
+    white-space: nowrap;
+    overflow: hidden;
+}
