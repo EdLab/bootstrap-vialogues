@@ -421,6 +421,7 @@ position: relative;
                     .comment-div {
                         .animate-transition(background-color);
                         position: relative;
+                        .clearfix;
 
                         .btn-survey-form {
                             font-size: @font-size-small;
@@ -436,6 +437,11 @@ position: relative;
                                 left: -50px;
                                 top: 21px;
                             }
+                        }
+
+                        .btn-group {
+                            .pull-right;
+                            .bumper(5px);
                         }
 
                         .comment-body {
@@ -580,7 +586,6 @@ position: relative;
 
                             .post-reply {
                                 position: relative;
-                                .bumper(5px);
                                 .hspacer(5px);
 
                                 > textarea {
@@ -588,10 +593,6 @@ position: relative;
                                     margin-bottom: 5px;
                                     resize: none;
                                 }
-                            }
-
-                            .btn-group {
-                                .pull-right;
                             }
                         }
 
