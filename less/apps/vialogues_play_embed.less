@@ -22,6 +22,7 @@
                 line-height: @navbar-height;
                 color: #fff;
                 margin: 0 0.5em;
+                display: inline-block;
                 > .btn {
                     color: #fff;
                     &.btn-xs {
@@ -40,8 +41,9 @@
                 }
             }
 
-            &.navbar-right {
-                //.pull-right;
+            &.navbar-right { // in order to disable fluid width
+                position: absolute;
+                right: 15px;
             }
         }
 
@@ -49,6 +51,9 @@
             img {
                 height: 38px;
                 width: auto;
+            }
+            &:after {
+              content: none; // in order to disable fluid width
             }
         }
 
