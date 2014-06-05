@@ -8,6 +8,16 @@
   ],
   "homepage": "http://vialogues.com",
   "author": "EdLab | Teachers College Columbia University",
+  "contributors": [
+    {
+      "name": "Nara Kasbergen",
+      "email": "nara.edlab@gmail.com"
+    },
+    {
+      "name": "Zhou Zhou",
+      "email": "zhou.eye8@gmail.com"
+    }
+  ],
   "scripts": {
     "test": "grunt test"
   },
