@@ -1,6 +1,6 @@
 /*!
  * Bootstrap v3.1.1 (http://vialogues.com)
- * Copyright 2011-2014 EdLab | Teachers College Columbia University
+ * Copyright 2011-2016 EdLab | Teachers College Columbia University
  * All Rights Reserved
  */
 
@@ -6327,7 +6327,7 @@ body > .popover .popover-content ul.list-group > li.divider {
   font-style: normal;
   font-weight: normal;
 
-  src: url('../fonts/vialogues.eot?82452476'), url('../fonts/vialogues.eot?82452476#iefix') format('embedded-opentype'), url('../fonts/vialogues.woff?82452476') format('woff'), url('../fonts/vialogues.ttf?82452476') format('truetype'), url('../fonts/vialogues.svg?82452476#vialogues') format('svg');
+  src: url('../fonts/vialogues.eot'), url('../fonts/vialogues.eot#iefix') format('embedded-opentype'), url('../fonts/vialogues.woff') format('woff'), url('../fonts/vialogues.ttf') format('truetype'), url('../fonts/vialogues.svg#vialogues') format('svg');
 }
 [class^="icon-"]:before,
 [class*=" icon-"]:before {

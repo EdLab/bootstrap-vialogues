@@ -1,6 +1,6 @@
 /*!
  * Bootstrap v3.1.1 (http://vialogues.com)
- * Copyright 2011-2014 EdLab | Teachers College Columbia University
+ * Copyright 2011-2016 EdLab | Teachers College Columbia University
  * All Rights Reserved
  */
 
